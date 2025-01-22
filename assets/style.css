@@ -119,6 +119,29 @@ line-height: 160%; /* 19.2px */
 letter-spacing: 2.16px;
 text-transform: uppercase;
 }
+.label{
+font-family: var(--bs-font-primary);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.6px; /* 25.6px */
+}
+.inputField{
+ padding: 0 21px ;
+ outline: none;
+  border-radius: 12px;
+border: 2px solid #ECF2F2;
+background: #F9F9F9;
+width: 460px;
+height: 66px;
+}
+.inputField::placeholder{
+  font-family: var(--bs-font-primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+}
 .heading-2{
     font-size: 50px;
     font-style: normal;
@@ -191,6 +214,10 @@ line-height: 49.4px; /* 49.4px */
     min-width: 180px;
     font-weight: 600;
     background: #CED7D6;
+  }
+  .btn:hover{
+      background: var( --bs-primary);
+    color: var(--bs-secondary);
   }
 .active-btn{
     background: var( --bs-primary);
@@ -608,9 +635,10 @@ inpu.newsletter-input::placeholder{
  font-family: var(--bs-font-primary);
 }
   .footer{
+   
       background-color: #EBEFEF;
       max-width: 1600px;
-      margin: 0 auto;
+      margin: 150px auto 0 auto;
   }
 .footer-newsletter{
     height: 158px;
@@ -620,4 +648,102 @@ inpu.newsletter-input::placeholder{
     padding-top: 105px;
     min-height: 653px;
     background-color: #CED7D6;
+}
+
+
+/* Login */
+.text-40{
+  font-size: 40px;
+}
+.login-container{
+  gap: 115px;
+}
+
+.login-form-container{
+  margin-top: 102px;
+}
+.login-form{
+  width: 460px;
+}
+.login-form form {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.btn-height{
+  height: 66px;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.google-btn{
+  border-radius: 12px;
+border: 2px solid var(--Body10, #ECF2F2);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.google-btn:hover{
+  border-radius: 12px;
+  border: 2px solid var(--Body10, #ECF2F2);
+    background-color: white;
+    color: var(--bs-font-primary);
+}
+.divider-line{
+  width: 111px;
+height: 2px;
+margin: 33px 0;
+}
+.second-heading{
+  font-size: 28px;
+}
+.login-second-heading{
+  margin: 56px 0 43px 0;
+}
+.login-sideimg {
+  max-width: 720px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 803px;
+  border: #d5d5d5 1px solid;
+  background-image: url('/assets/images/Login/flowers.webp');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:1400px) {
+  .login-container{
+    gap: 70px;
+  }
+}
+@media screen and (max-width:1200px) {
+  .auth-heading{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width:1100px) {
+  .login-container{
+    gap: 30px;
+  
+  }
+  .login-form{
+    width: 100% !important;
+  
+  }
+  .google-btn{
+    width: 100%;
+  }
+  .login-inputfield{
+    width: 100%;
+  }
+  .login-continueBtn{
+    width: 100%;
+  }
+  #loginForm{
+    width: 100%;
+  }
 }
