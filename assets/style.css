@@ -126,6 +126,30 @@ font-style: normal;
 font-weight: 500;
 line-height: 25.6px; /* 25.6px */
 }
+
+select{
+  appearance: none; /* Remove the default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 100%;
+  max-width: 460px;
+  height: 66px;
+  border-radius: 12px;
+  border: 2px solid #ECF2F2;
+  padding-right: 30px;
+  background: #F9F9F9 url('/assets/svgs/downarrow.svg') no-repeat right 27px center; /* Custom arrow */
+  font-size: 18px;
+font-style: normal;
+outline: none;
+font-weight: 500;
+color: #546967;
+padding: 0 21px;
+box-sizing: border-box;
+}
+select option{
+font-family: var(--font-default);
+font-size: 18px;
+}
 .inputField{
  padding: 0 21px ;
  outline: none;
@@ -704,6 +728,8 @@ margin: 33px 0;
   margin: 56px 0 43px 0;
 }
 .login-sideimg {
+  position: sticky;
+  top: 0px;
   max-width: 720px;
   width: 100%;
   border-radius: 24px;
@@ -744,6 +770,34 @@ margin: 33px 0;
     width: 100%;
   }
   #loginForm{
+    width: 100%;
+  }
+}
+
+/* registration */
+#registrationForm{
+  gap: 24px;
+  margin-top: 69px;
+  /* display: none; */
+}
+.add-manually{
+  /* padding-bottom: -5px; */
+  border-bottom: 1px solid #546967;
+  margin-bottom: 4px;
+}
+.reg-cancel{
+  margin-top: -8px;
+  background-color: #F9F9F9;
+}
+.reg-signup{
+  margin-top: 68px;
+}
+.reg-form-titles{
+  margin: 0;
+font-weight: 500 !important;
+}
+@media screen and (max-width:1100px) {
+  #registrationForm{
     width: 100%;
   }
 }
