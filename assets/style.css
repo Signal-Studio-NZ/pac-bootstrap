@@ -17,7 +17,7 @@
 
     /*  Colors */
     --bs-light: #f8f9fa;
-    --bs-dark: #343a40;
+    --bs-dark: #0A2926;
     --bs-red: #ff0000; /* Red text color */
     /* Fonts */
     --bs-font-primary:  'Manrope', sans-serif;
@@ -64,11 +64,21 @@
         font-size: var(--bs-font-size-lg);
       }
 }
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none; /* Ensures no underline appears on hover */
+}
 .fs-7{
     font-size: var(--bs-font-size-xs);
 }
 .font-600{
     font-weight: 600 !important;
+  }
+  .font-700{
+    font-weight: 700;
   }
 .font-manrope{
     font-family: var(--bs-font-primary);
@@ -799,5 +809,57 @@ font-weight: 500 !important;
 @media screen and (max-width:1100px) {
   #registrationForm{
     width: 100%;
+  }
+}
+
+.left-side {
+  width: 305px ;
+  height: fit-content;
+   position: sticky;
+   top: 50px;
+   margin-top: 247px;
+}
+.terms-container{
+  gap: 15px;
+}
+.right-side {
+  max-width: 967px;
+  flex-grow: 1;
+  padding-top: 80px;
+}
+.none-active-link{
+  color: var(--Body20, #CED4D4);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+}
+.active-link{
+  color: #0A2926;
+}
+.terms-title-heading{
+  margin-bottom: 35px ;
+}
+.terms-second-title{
+  color: var(--Body100, #0A2926);
+padding: 0;
+margin: 0;
+  font-family: var(--bs-font-primary) !important;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 44px; /* 44.8px */
+ 
+}
+.content-text-container{
+  margin-top: 50px;
+}
+.content-title-data{
+  margin-top: 53px;
+}
+@media screen and (min-width:1200px) {
+  .terms-container{
+    gap: 65px;
   }
 }
