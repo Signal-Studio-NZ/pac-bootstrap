@@ -108,3 +108,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial trigger on page load
   highlightNearestSection();
 });
+
+//
