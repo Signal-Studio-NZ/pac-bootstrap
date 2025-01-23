@@ -20,8 +20,8 @@
     --bs-dark: #0A2926;
     --bs-red: #ff0000; /* Red text color */
     /* Fonts */
-    --bs-font-primary:  'Manrope', sans-serif;
-    --bs-font-secondary: 'Coconat', sans-serif;
+    --bs-font-primary:  'Manrope';
+    --bs-font-secondary: 'Coconat';
 
     /* Typography */
     --bs-font-size-xs: 12px;
@@ -941,5 +941,105 @@ font-size: small;
   }
   .task-btn{
 font-size: 12px;
+  }
+}
+
+.custom-td{
+  min-width: 140px;                   
+  padding: 34px 24px !important;   
+  margin: 0;
+  font-weight: 500;
+line-height: 160%; /* 28.8px */
+border-bottom: 1px solid var(--Body20, #CED4D4);
+}
+.custom-th{
+  font-weight: 700;
+  line-height: 160%; /* 28.8px */
+  border: 1px solid;
+  background-color: #F9F9F9 !important; 
+  min-width: 140px;                    
+  padding: 18px 24px !important;   
+  margin: 0;        
+  border: none; 
+}
+.yourClientOrder-pagination{
+  margin-top: 120px;
+}
+.order-status-search{
+  border-bottom: 2px solid #CED4D4;
+  height: 60px;
+  width: 458px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.order-status-search input{
+  font-size: large;
+  outline: none;
+  height: 100%;
+  border: none;
+  width: 100%;
+  font-family: var(--bs-font-primary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 28.8px */
+}
+.order-status-search input::placeholder{
+  color: #CED4D4;
+  font-family: var(--bs-font-primary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 28.8px */
+}
+.order-status-search img{
+  width: 22px;
+  height:22px;
+}
+@media screen and ( max-width:1500px) {
+  .client-order-table{
+    font-size: var(--bs-font-size-sm);
+  }
+  .custom-td{
+    min-width: 120px;                   
+    padding: 30px 22px !important;   
+  }
+  .custom-th{
+    min-width: 120px;                    
+    padding: 18px 24px !important;   
+  }
+  .order-status-search{
+    width: 350px;
+  }
+  .order-status-search input{
+    font-size: 16px;
+  
+  }
+  .order-status-search input::placeholder{
+    font-size: 16px;
+  }
+}
+@media screen and ( max-width:1200px) {
+  .client-order-table{
+    font-size: var(--bs-font-size-xs);
+  }
+  .custom-td{
+    min-width: 90px;                   
+    padding: 30px 22px !important;   
+  }
+  .custom-th{
+    min-width: 90px;                    
+    padding: 18px 24px !important;   
+  }
+  .order-status-search{
+    width: 300px;
+  }
+  .order-status-search input{
+    font-size: var(--bs-font-size-xs);
+  
+  }
+  .order-status-search input::placeholder{
+    font-size: var(--bs-font-size-xs);
   }
 }
