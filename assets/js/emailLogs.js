@@ -28,7 +28,7 @@ function renderTable() {
           <td class="custom-td">${item.link}</td>
           <td class="custom-td">${item.email}</td>
           <td class="custom-td">${item.notes}</td>
-          <td class="custom-td">${item.resend}</td>
+          <td  class="custom-td">${item.resend}</td>
           `;
     tableBody.appendChild(row);
   });

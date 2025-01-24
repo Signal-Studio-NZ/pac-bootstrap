@@ -71,6 +71,12 @@
 .no-underline:hover {
   text-decoration: none; /* Ensures no underline appears on hover */
 }
+.rounded-24 {
+  border-radius: 24px;
+}
+.g-20px{
+  gap: 20px;
+}
 .fs-7{
     font-size: var(--bs-font-size-xs);
 }
@@ -1042,4 +1048,84 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
   .order-status-search input::placeholder{
     font-size: var(--bs-font-size-xs);
   }
+}
+.about-header-container{
+  background: url(/assets/images/about/bgImg.webp);
+  height: 570px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.5);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.about-header-container .pac-logo, .about-header-container .account, .about-header-container .cart{
+  filter: brightness(0) invert(1); /* Makes the image white */
+}
+.about-header-container #navbarNavDropdown{
+  background-color: transparent;
+  color: white;
+}
+.about-header-container #navbarNavDropdown a, .about-header-container #navbarNavDropdown a{
+  color: white;
+}
+.about-heading-content{
+  margin-bottom: 132px;
+  margin-top: 24px;
+}
+
+.about-rght-content{
+ max-width: 688px;
+ width: 100%;
+ min-width: 350px;
+}
+.about-left-content{
+  padding-right: 25px;
+  max-width: 533px;
+  width: 100%;
+  min-width: 300px;
+}
+.about-infoContainer{
+  height: 579px;
+}
+.about-who-we-are{
+  margin: 36px 0 98px 0;
+}
+
+.about-card{
+  height: 596px;
+  max-width: 473px !important;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+margin-bottom: 25px;
+}
+.aboutCard-container{
+  gap: 20px !important;
+  margin-top: 59px;
+}
+/* Ensure the modal scales well for smaller screens */
+@media (max-width: 1580px) {
+  .aboutCard-container{
+    justify-content: space-evenly !important;
+  }
+  .about-modal{
+    max-width: 80% !important;
+  }
+  .about-modal-content{
+    height: 700px !important;
+  }
+}
+.about-modal{
+  max-width: 1336px ;
+}
+.about-modal-content{
+  height: 940px;
+}
+.card-desc{
+  /* background-color: #28a745; */
+  max-width: 463px;
+}
+.about-symbol-continer{
+  margin-top: 87px;
 }
