@@ -15,12 +15,16 @@
 
 /* LG: Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+    .about-header-container{
+        height: 480px;
+      }
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  
+  .about-header-container{
+    height: 600px;
+  }
 }
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */

@@ -1058,7 +1058,7 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
 /* about page */
 .about-header-container{
   background: url(/assets/images/about/bgImg.webp);
-  height: 570px;
+  height: 807px;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.5);
