@@ -1056,6 +1056,12 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
 
 
 /* about page */
+.about-header-container  .about-menuBtn{
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  color: white !important;
+}
 .about-header-container{
   background: url(/assets/images/about/bgImg.webp);
   height: 807px;
