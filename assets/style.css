@@ -51,6 +51,10 @@
 }
 
 /* override classes */
+p{
+  margin: 0;
+  padding: 0;
+}
 .navbar-nav{
     gap: 20px;
     font-size: var(--bs-font-size-lg);
@@ -810,7 +814,7 @@ margin: 33px 0;
 }
 .reg-form-titles{
   margin:38px 0 0 0;
-font-weight: 500 !important;
+font-weight: 500;
 }
 @media screen and (max-width:1100px) {
   #registrationForm{
@@ -1049,6 +1053,9 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
     font-size: var(--bs-font-size-xs);
   }
 }
+
+
+/* about page */
 .about-header-container{
   background: url(/assets/images/about/bgImg.webp);
   height: 570px;
@@ -1128,4 +1135,90 @@ margin-bottom: 25px;
 }
 .about-symbol-continer{
   margin-top: 87px;
+}
+
+/* order status */
+.bg-gray{
+  background-color: #F9F9F9 !important;
+  padding: 18px 24px !important;
+  border: none;
+}
+.table-container{
+  margin-top: 77px;
+}
+.orderStatus-table-prod{
+  width: 686px;
+}
+.gst-table{
+  font-weight: 700;
+  padding-top: 0 !important;
+}
+.orderStatus-subtotal{
+  font-weight: 700;
+  padding-top: 32px !important ;
+}
+.orderStatus-total{
+  font-weight: 700;
+  padding: 12px 24px 35px 24px !important;
+}
+.delivery-add{
+  width: 286px;
+}
+.billing-add{
+ max-width: 286px;
+ width: 216px;
+}
+.orderStatus-date{
+  margin-bottom: 33px;
+}
+
+.orderStatus-backBtn{
+  color: var(--Ember100, #E65909);
+  text-decoration: none;
+}
+.orderstatus-rightSide{
+  margin-top: 80px;
+}
+.orderstatus-leftSide{
+  margin-top: 46px;
+}
+/* email us */
+.emailUs-inputfield{
+  min-width: 200px;
+  width: 100%;
+
+}
+.emailUs-messageField{
+  height: 273px;
+  width: 100%;
+}
+.send-msg-btn{
+  width: 460px !important;
+}
+.emailUs-getInTouch{
+  padding: 3px 0 24px 0 !important;
+}
+.email-img-container{
+  width: 610px;
+  height: 803px !important;
+  overflow: hidden;
+  overflow: hidden;
+  background: url("/assets/images/email/tree.png");
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 75px;
+  /* background-position: 1px center; */
+  border-radius: 24px;
+}
+.emailus-container{
+  max-width: 1600px ;
+  margin: 0 auto;
+  gap: 100px;
+    /* padding-right: 70px; */
+}
+
+.emailForm-conainer{
+  max-width: 720px ;
+  
 }
