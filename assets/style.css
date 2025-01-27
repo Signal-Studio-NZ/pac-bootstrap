@@ -1215,20 +1215,21 @@ margin-bottom: 25px;
   background-position: center;
   position: sticky;
   top: 75px;
-  /* background-position: 1px center; */
   border-radius: 24px;
 }
 .emailus-container{
   max-width: 1600px ;
   margin: 0 auto;
   gap: 100px;
-    /* padding-right: 70px; */
 }
 
 .emailForm-conainer{
   max-width: 720px ;
   
 }
+
+
+/* account */
 .custom-select-container {
   position: relative;
   width: 350px;
