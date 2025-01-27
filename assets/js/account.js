@@ -193,7 +193,7 @@ const invoiceInfo = `
 
               <div class="d-flex flex-column gap-1">
                 <label for="invoice" class="label">Generate invoice</label>
-                <select name="" id="">
+                <select name="invoice" id="invoice">
                   <option value="">
                     Please print all invoices for me-Ihave suppli...
                   </option>
@@ -207,7 +207,7 @@ const invoiceInfo = `
               </div>
 
               <div class="d-flex flex-column">
-                <label for="RNpassword" class="label">GST number *</label>
+                <label for="gst" class="label">GST number *</label>
                 <input type="text" class="inputField" name="gst" id="gst" />
               </div>
             </div>
@@ -251,79 +251,79 @@ const editAddress = `  <form class="d-flex flex-column gap-3">
             <p class="second-heading heading-3">Edit addresses</p>
             <div class="account-editAddress mb-5">
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Address *</label>
-                <select name="" id="">
+                <label for="Address" class="label">Address *</label>
+                <select name="Address" id="">
                   <option value="home">Home</option>
                 </select>
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Address name *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="AddressName" class="label">Address name *</label>
+                <input type="text" class="inputField" name="AddressName" id="AddressName" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Email *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Email" class="label">Email *</label>
+                <input type="text" class="inputField" name="Email" id="Email" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">First name *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Fname" class="label">First name *</label>
+                <input type="text" class="inputField" name="Fname" id="Fname" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Last name *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Lname" class="label">Last name *</label>
+                <input type="text" class="inputField" name="Lname" id="Lname" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Phone *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Phone" class="label">Phone *</label>
+                <input type="text" class="inputField" name="Phone" id="Phone" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Mobile</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Mobile" class="label">Mobile</label>
+                <input type="text" class="inputField" name="Mobile" id="Mobile" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Fax</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Fax" class="label">Fax</label>
+                <input type="text" class="inputField" name="Fax" id="Fax" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Company</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Company" class="label">Company</label>
+                <input type="text" class="inputField" name="Company" id="Company" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label"
+                <label for="Building" class="label"
                   >Unit/Flat/Floor/Building</label
                 >
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <input type="text" class="inputField" name="Building" id="Building" />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label
-                  for=""
+                  for="Address"
                   class="label d-flex align-items-end justify-content-between"
                   >Address *
                   <span class="orderStatus-backBtn fs-6"
                     >Type address manually</span
                   ></label
                 >
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <input type="text" class="inputField" name="Address" id="Address" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Suburb *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Suburb" class="label">Suburb *</label>
+                <input type="text" class="inputField" name="gSuburbt" id="Suburb" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">City *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="City" class="label">City *</label>
+                <input type="text" class="inputField" name="City" id="City" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Rural</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Rural" class="label">Rural</label>
+                <input type="text" class="inputField" name="Rural" id="Rural" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Postcode *</label>
-                <input type="text" class="inputField" name="gst" id="gst" />
+                <label for="Postcode" class="label">Postcode *</label>
+                <input type="text" class="inputField" name="Postcode" id="Postcode" />
               </div>
               <div class="d-flex flex-column gap-1">
-                <label for="RNpassword" class="label">Country *</label>
-                <select name="" id="">
+                <label for="Country" class="label">Country *</label>
+                <select name="Country" id="Country">
                   <option value="">New Zealand</option>
                   <option value="">India</option>
                 </select>
