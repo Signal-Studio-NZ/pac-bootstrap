@@ -1303,11 +1303,11 @@ line-height: 160%; /* 25.6px */
 .account-newsletter{
   margin-top: 83px;
 }
-.account-checkbox input[type="checkbox"]:checked {
+.account-checkbox input[type="radio"]:checked {
   background-color: #0A2926; /* Green background when checked */
   border-color: #0A2926; /* Optional: Change the border color to green */
 }
-.account-checkbox input[type="checkbox"]:checked::after {
+.account-checkbox input[type="radio"]:checked::after {
   content: ''; /* Creates a pseudo-element */
   position: absolute; /* Position the pseudo-element */
   top: 3px; /* Adjust as needed */
@@ -1372,7 +1372,7 @@ background: var(--Bg-Grey, #F9F9F9);
 .checkbox{
   min-width: 168px;
 }
-.account-checkbox input[type="checkbox"]{
+.account-checkbox input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border: 1px solid #546967;
