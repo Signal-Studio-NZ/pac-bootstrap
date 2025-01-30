@@ -232,7 +232,20 @@ line-height: 28.8px;
       padding-right: 70px;
     }
   }
-
+/* navbar  */
+.notification-banner{
+  height: 66px;
+  border-radius: 12px;
+  background-color: #FADECE;
+  margin: 15px 20px 0 20px;
+}
+.notification-closeBtn{
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  color: var(--Body100, #0A2926);
+  cursor: pointer;
+}
 .custom-navbar {
     height: 158px;
       @media (min-width: 1564px) {

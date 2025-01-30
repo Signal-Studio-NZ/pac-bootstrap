@@ -5,51 +5,17 @@ async function loadHTML(elementId, filePath) {
     const data = await response.text();
     document.getElementById(elementId).innerHTML = data;
     // notification banner close logic
-    const closeButton = document?.getElementById(
-      "notification-banner-close-btn"
-    );
+    const closeButton = document?.getElementById("notification-closeBtn");
     const notificationBanner = document?.getElementById("notification-banner");
 
     closeButton?.addEventListener("click", function () {
-      notificationBanner.style.display = "none";
+      console.log("hi");
+      notificationBanner?.classList.remove("d-flex");
+      notificationBanner?.classList.add("d-none");
     });
-
-    // If you're loading the footer, initialize the form validation after loading
-    if (elementId === "footer") {
-      initializeFormValidation(); // Call the function to initialize form validation
-    }
   } catch (error) {
     console.error("Error loading HTML:", error);
   }
-}
-
-// Separate function for initializing the form validation
-function initializeFormValidation() {
-  const validationLoginForm = new JustValidate("#newsletter-form");
-  const loginform = document.getElementById("newsletter-form");
-
-  if (!loginform) {
-    return; // Exit if form is not found
-  }
-
-  validationLoginForm
-    .addField('input[name="email"]', [
-      { rule: "required", errorMessage: " " },
-      { rule: "email", errorMessage: " " },
-    ])
-    .onSuccess((event) => {
-      // Collect form data
-      const formData = new FormData(event.target);
-      const formObject = {};
-      formData.forEach((value, key) => {
-        formObject[key] = value;
-      });
-      alert("Form submitted successfully");
-      loginform.reset();
-    })
-    .onFail((event) => {
-      alert("Please enter a valid email address");
-    });
 }
 
 // Load header and footer
@@ -154,6 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const showContents = document.querySelector(".show-content");
 const contents = document.querySelector(".contents");
 
-showContents.addEventListener("click", () => {
+showContents?.addEventListener("click", () => {
   contents.classList.toggle("hidden");
 });
