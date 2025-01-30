@@ -53,8 +53,8 @@ function initializeFormValidation() {
 }
 
 // Load header and footer
-loadHTML("header", "/components/header.html");
-loadHTML("footer", "/components/footer.html");
+loadHTML("header", "./components/header.html");
+loadHTML("footer", "./components/footer.html");
 
 const anchors = document.querySelectorAll("#data-titles li a");
 
@@ -147,4 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+});
+//
+
+// terms and conditions page contents
+const showContents = document.querySelector(".show-content");
+const contents = document.querySelector(".contents");
+
+showContents.addEventListener("click", () => {
+  contents.classList.toggle("hidden");
 });
