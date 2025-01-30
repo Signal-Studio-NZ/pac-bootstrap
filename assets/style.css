@@ -1145,3 +1145,240 @@ margin-bottom: 25px;
   padding-block: 8px;
   padding-inline: 12px;
 }
+.custom-select-container {
+  position: relative;
+  width: 350px;
+}
+.custom-select {
+  border: 2px solid var(--Body10, #ECF2F2);
+  border-radius: 8px;
+  height: 66px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+}
+.custom-select-container .selected-option {
+  box-sizing: border-box;
+  height: 100%; 
+  align-items: center; 
+  padding: 17px 42px 0 20px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  width: 100%; 
+  display: block;
+  color: #546967;
+font-family: var(--font-default);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+}
+.custom-select-container .options-list {
+  list-style: none;
+  padding: 9px;
+  top: 70px;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.custom-select-container .downarrow {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+}
+.custom-select-container .option-item {
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  margin: 0 auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  font-family: var(--font-default);
+  transition: background-color 0.2s ease;
+}
+.custom-select-container .option-item span {
+  font-size: 12px;
+  margin-left: 5px;
+      color:  #546967;
+font-family: var(--font-default);
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+}
+.custom-select-container.option-item:hover {
+  background-color: #f0f0f0;
+}
+.custom-select-container .custom-select.open .options-list {
+  display: block;
+  font-size: 18px;
+  font-family: var(--font-default);
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+color:  #546967;
+}
+.custom-select-container.option-item.selected {
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: bold;
+}
+.custom-select-container .selected-option span {
+font-size: 12px;
+}
+.account-addressDetails{
+  margin-top: 35px;
+  margin-bottom: 21px;
+}
+.account-h1{
+  margin: 80px 0 59px 0;
+}
+.account-invoice-infoContainer{
+  max-width: 1000px;
+  gap: 28px;
+  margin-top: 35px;
+}
+.editsign-btn{
+  margin-bottom: 32px;
+}
+.account-invoices{
+  min-width: 219px;
+  max-width: 350px;
+}
+.account-field{
+  min-width: 264px;
+}
+.account-signIn{
+  gap: 100px;
+}
+.account-editBtn{
+  cursor: pointer;
+  color: var(--Ember100, #E65909);
+text-align: right;
+/* Form label */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+}
+.account-containers{
+  padding: 83px 0 32px 0;
+}
+.account-checkbox{
+  gap: 5px;
+}
+.account-AccountBtns{
+  margin: 73px 0 48px 0;
+}
+.account-checkbox-container{
+  margin-top: 46px;
+  gap: 77px;
+}
+.account-newsletter{
+  margin-top: 83px;
+}
+.account-checkbox input[type="checkbox"]:checked {
+  background-color: #0A2926; /* Green background when checked */
+  border-color: #0A2926; /* Optional: Change the border color to green */
+}
+.account-checkbox input[type="checkbox"]:checked::after {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  top: 3px; /* Adjust as needed */
+  left: 6px; /* Adjust as needed */
+  width: 3px; /* Width of the checkmark */
+  height: 8px; /* Height of the checkmark */
+  border: solid white; /* White checkmark */
+  border-width: 0 2px 2px 0; /* Create the checkmark shape */
+  transform: rotate(45deg); /* Rotate to make the checkmark */
+}
+.account-active{
+  background-color: #E65909;
+  color: white;
+}
+.account-noneActive{
+  color: #0A2926;
+}
+.account-active:hover{
+  background-color: #E65909;
+}
+.account-noneActive:hover{
+  color: #0A2926;
+  background: #CED7D6;
+}
+.custom-modal {
+  padding: 62px 60px 57px 60px; /* Top, Left/Right, Bottom */
+  width: fit-content;
+  border-radius: 24px;
+}
+.account-modal-closeBtn{
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+.setup-autoPayment{
+  width: 458px;
+}
+.payment-option{
+  height: 66px;
+  width: 100%;
+  border-radius: 12px;
+  color: #546967;
+  overflow: hidden;
+  font-family: var(--bs-font-primary);
+}
+.active-payment{
+  background: #546967;
+  color: white;
+}
+.selected-file{
+  width: 458.083px;
+height: 66px;
+border-radius: 12px;
+border: 2px solid var(--Body10, #ECF2F2);
+background: var(--Bg-Grey, #F9F9F9);
+}
+.account-editAddress{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  gap: 20px; /* Adds space between the columns */
+}
+.checkbox{
+  min-width: 168px;
+}
+.account-checkbox input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #546967;
+  border-radius: 4px;
+  appearance: none;
+  position: relative;
+}
+.account-checkbox input[type="checkbox"]:checked {
+  background-color: #0A2926; /* Green background when checked */
+  border-color: #0A2926; /* Optional: Change the border color to green */
+}
+.account-checkbox input[type="checkbox"]:checked::after {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  top: 4px; /* Adjust as needed */
+  left: 7px; /* Adjust as needed */
+  width: 4px; /* Width of the checkmark */
+  height: 8px; /* Height of the checkmark */
+  border: solid white; /* White checkmark */
+  border-width: 0 2px 2px 0; /* Create the checkmark shape */
+  transform: rotate(45deg); /* Rotate to make the checkmark */
+}

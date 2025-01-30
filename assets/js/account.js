@@ -81,6 +81,34 @@ const autoPayment = `
             class="d-flex gap-4 flex-column setup-autoPayment"
             id="signInForm"
           >
+           <div
+            class="account-modal-closeBtn"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+            >
+              <line
+                x1="7.42387"
+                y1="6.71749"
+                x2="21.566"
+                y2="20.8596"
+                stroke="#0A2926"
+              />
+              <line
+                x1="6.71676"
+                y1="20.8596"
+                x2="20.8589"
+                y2="6.71744"
+                stroke="#0A2926"
+              />
+            </svg>
+          </div>
             <p class="second-heading heading-3">Setup auto payment</p>
 
             <div class="d-flex">
