@@ -140,12 +140,12 @@ const autoPayment = `
             <div class="d-flex flex-column gap-1">
               <label class="label">Choose payment option</label>
               <div class="payment-option d-flex mb-1">
-                <button
+                <button type="button"
                   class="w-50 h-100 active-payment font-manrope fw-medium border-0"
                 >
                   Pay every invoice
                 </button>
-                <button class="w-50 h-100 font-manrope fw-medium border-0">
+                <button type="button" class="w-50 h-100 font-manrope fw-medium border-0">
                   Pay monthly account
                 </button>
               </div>

@@ -367,6 +367,9 @@ line-height: 28.8px;
   font-size: 17px;
   line-height: 27.2px;
  }
+ .feature-icons{
+  height: 100px;
+}
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
@@ -400,9 +403,7 @@ line-height: 28.8px;
     height: 600px;
   }
 
-  .feature-icons{
-    height: 100px;
-  }
+
 
   .login-container{
     gap: 70px;
