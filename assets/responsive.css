@@ -1,5 +1,9 @@
 /* XS: Extra Small Devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .pac-logo{
+    height: 22px;
+    width: 178px;
+  }
   .about-header-container #navbarNavDropdown{
     background-color: white;
     color: white;
@@ -49,7 +53,8 @@
   padding-right: 16px;
  }
  .custom-navbar{
-  height: 80px;
+  height: 114px;
+  padding-bottom: 24px;
  }
 
 /* Contact Us */
@@ -110,6 +115,10 @@ line-height: 28.8px;
 
 /* SM: Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .pac-logo{
+    height: 25px;
+    width: auto;
+  }
   .about-header-container #navbarNavDropdown{
     background-color: white;
     color: white;
@@ -147,7 +156,8 @@ line-height: 28.8px;
     margin-bottom: 130px;
   }
   .custom-navbar{
-    height: 80px;   
+    height: 114px;   
+    padding-bottom: 24px;
   }
 
 /* Contact Us */
@@ -202,6 +212,10 @@ line-height: 28.8px;
 
 /* MD: Medium Devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .pac-logo{
+    height: 28px;
+    width: auto;
+  }
   .about-header-container #navbarNavDropdown{
     background-color: white;
     color: white;
@@ -240,7 +254,8 @@ line-height: 28.8px;
   }
  
   .custom-navbar{
-    height: 100px;  
+    height: 114px;  
+    padding-bottom: 24px;
   }
 
   .right-side{
@@ -289,6 +304,10 @@ line-height: 28.8px;
 
 /* LG: Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .pac-logo{
+    height: 30px;
+    width: auto;
+  }
     .about-header-container{
         height: 480px;
       }
@@ -333,7 +352,8 @@ line-height: 28.8px;
  }
 
  .custom-navbar{
-  height: 120px;   
+  height: 120px; 
+  padding-bottom: 0;  
  }
 
  /* Contact Us */
@@ -374,6 +394,10 @@ line-height: 28.8px;
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .pac-logo{
+    height: 34px;
+    width: auto;
+  }
   /* Overide Classes */
   .heading-1{
     font-size: 72px;
@@ -402,7 +426,10 @@ line-height: 28.8px;
   .about-header-container{
     height: 600px;
   }
-
+  .account-icon{
+    margin-left: 16px;
+    margin-right: -14px;
+  }
 
 
   .login-container{
@@ -443,7 +470,10 @@ line-height: 28.8px;
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
+  .account-icon{
+    margin-left: 16px;
+    margin-right: -14px;
+  }
   .pac-logo{
     height: 38px;
     width: 332px;

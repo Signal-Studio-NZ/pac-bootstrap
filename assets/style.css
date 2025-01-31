@@ -56,6 +56,9 @@ p{
   margin: 0;
   padding: 0;
 }
+.gap-12{
+  gap: 12px;
+}
 .navbar-nav{
     gap: 20px;
     font-size: var(--bs-font-size-lg);
@@ -185,7 +188,7 @@ padding: 0 21px;
 box-sizing: border-box;
 }
 select option{
-font-family: var(--font-default);
+font-family: var(--bs-font-primary);
 font-size: 18px;
 }
 .inputField{
@@ -233,6 +236,49 @@ line-height: 28.8px;
     }
   }
 /* navbar  */
+.navbarmenu{
+  background-color: #0A2926;
+  /* height: 100%; */
+}
+.navmenu-headers{
+  margin: 69px 0 76px 0;
+}
+.navbar-menuLinks{
+  gap: 32px;
+}
+.navbar-MLink{
+  color: var(--White, #FFF);
+font-family: var(--bs-font-primary);
+font-size: 23px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-decoration: none;
+}
+.navbar-subLinks{
+  color: var(--White, #FFF);
+  font-family: var(--bs-font-primary);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+text-decoration: none;
+line-height: 160%; /* 28.8px */
+}
+.navbar-Btn{
+  text-decoration: none;
+  border-radius: 8px;
+background: var(--White, #FFF);
+height: 50px;
+color: var(--Body100, #0A2926);
+text-align: center;
+font-family: var(--bs-font-primary);
+font-size: 18px;
+font-style: normal;
+line-height: 160%; /* 28.8px */
+}
+.navbar-menuBody{
+  height: calc(100vh - 205px);
+}
 .notification-banner{
   height: 66px;
   border-radius: 12px;
@@ -262,7 +308,6 @@ line-height: 28.8px;
       }
   }
   .custom-navbar .navbar-brand{
-    line-height: 100px;
   }
   .navbar-collapse{
     background-color: white;
@@ -271,10 +316,7 @@ line-height: 28.8px;
     max-height: 100%;
     max-width: auto;
   }
-  .account-icon{
-    margin-left: 16px;
-    margin-right: -14px;
-  }
+
   .hero-section{
     min-height: 636px;
     height: 636px;
@@ -804,13 +846,16 @@ line-height: 160%;
   background-color: #F9F9F9 !important; /* Set background color */
   min-width: 168px;                    /* Set minimum width */
   padding: 18px 24px;   
-  margin: 0;        
+  margin: 0; 
+  font-size: var(--bs-font-size-lg);       
   border: none;       /* Set padding */
 }
 .custom-tbody td{
   min-width: 168px;                    /* Set minimum width */
   padding: 34px 24px;   
   margin: 0;  
+  font-size: var(--bs-font-size-lg);
+  font-weight: 500;
 }
 .table-content{
   margin: 0;
@@ -878,6 +923,7 @@ font-size: 12px;
   padding: 34px 24px !important;   
   margin: 0;
   font-weight: 500;
+  font-size: var(--bs-font-size-lg);  
 line-height: 160%; /* 28.8px */
 border-bottom: 1px solid var(--Body20, #CED4D4);
 }
@@ -888,11 +934,12 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
   background-color: #F9F9F9 !important; 
   min-width: 140px;                    
   padding: 18px 24px !important;   
-  margin: 0;        
+  margin: 0;     
+  font-size: var(--bs-font-size-lg);   
   border: none; 
 }
 .yourClientOrder-pagination{
-  margin-top: 120px;
+  margin-top: 150px;
 }
 .order-status-search{
   border-bottom: 2px solid #CED4D4;
@@ -1163,6 +1210,7 @@ margin-bottom: 25px;
   width: 350px;
 }
 .custom-select {
+  font-family: var(--bs-font-primary);
   border: 2px solid var(--Body10, #ECF2F2);
   border-radius: 8px;
   height: 66px;
@@ -1256,11 +1304,12 @@ font-size: 12px;
   margin-bottom: 21px;
 }
 .account-h1{
-  margin: 80px 0 59px 0;
+  margin: 59px 0 49px 0;
 }
 .account-invoice-infoContainer{
   max-width: 1000px;
-  gap: 28px;
+ row-gap: 64px;
+ column-gap: 28px;
   margin-top: 35px;
 }
 .editsign-btn{
@@ -1288,7 +1337,7 @@ font-weight: 500;
 line-height: 160%; /* 25.6px */
 }
 .account-containers{
-  padding: 83px 0 32px 0;
+  padding: 88px 0 32px 0;
 }
 .account-checkbox{
   gap: 5px;

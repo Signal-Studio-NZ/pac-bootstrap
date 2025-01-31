@@ -123,7 +123,7 @@ const autoPayment = `
             </div>
 
             <div class="">
-              <label class="label">Condition</label>
+              <label class="label">Conditions</label>
               <div class="content-text d-flex flex-column gap-1">
                 <p>
                   I hereby give Pacific Health and Fitness permission to pay my
@@ -221,14 +221,14 @@ const invoiceInfo = `
 
               <div class="d-flex flex-column gap-1">
                 <label for="invoice" class="label">Generate invoice</label>
-                <select name="invoice" id="invoice">
-                  <option value="">
+                <select name="invoice" class="content-text" id="invoice">
+                  <option value="" class="content-text">
                     Please print all invoices for me-Ihave suppli...
                   </option>
-                  <option value="">
+                  <option value="" class="content-text">
                     Please print all invoices for me-Ihave suppli...
                   </option>
-                  <option value="">
+                  <option value="" class="content-text">
                     Please print all invoices for me-Ihave suppli...
                   </option>
                 </select>
@@ -240,7 +240,7 @@ const invoiceInfo = `
               </div>
             </div>
             <div class="d-flex flex-column gap-3 mt-5">
-              <button type="button" class="btn w-100">Save Changes</button>
+              <button type="button" class="btn active-btn w-100">Save Changes</button>
               <button class="w-100 btn" type="button" id="cancel-modal">
                 Cancel
               </button>
