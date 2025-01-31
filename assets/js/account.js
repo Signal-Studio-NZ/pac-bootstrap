@@ -124,7 +124,7 @@ const autoPayment = `
 
             <div class="">
               <label class="label">Conditions</label>
-              <div class="content-text d-flex flex-column gap-1">
+              <div class="content-text mt-2 d-flex flex-column gap-1">
                 <p>
                   I hereby give Pacific Health and Fitness permission to pay my
                   account using my credit card number.
@@ -358,8 +358,8 @@ const editAddress = `  <form class="d-flex flex-column gap-3">
               </div>
             </div>
             <div class="d-flex flex-column gap-3 mt-5">
-              <button type="button" class="btn w-100 active-btn">Save Changes</button>
-              <button class="w-100 btn" type="button" id="cancel-modal">
+              <button type="button" class="btn editModal-BtnWidth active-btn">Save Changes</button>
+              <button class="editModal-BtnWidth btn" type="button" id="cancel-modal">
                 Cancel
               </button>
             </div>
