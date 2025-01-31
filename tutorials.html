@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,27 +10,31 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="/assets/responsive.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <title>Tutorials</title>
   </head>
   <body>
     <div id="header"></div>
     <main>
     <div class="container">
-    <h1 class="heading-1 heading-1-margins">Tutorials</h1>
-    <div class="tutorial-div d-flex flex-md-row flex-column">
+    <h1 class="heading-1 tutorial-margin">Tutorials</h1>
+    <div class="tutorial-body">
+      <div class="tutorial-div d-flex flex-md-row flex-column">
         <div>
            <img class="tutorial-video" src="/assets//images//tutorials/thumbnails.jpg" class="mb-xxl-4" alt="Tutorial image">
-           <h2 class="tutorial-heading">How to register as a Practitioner</h2>
+           <div class="tutorial-duration-div">
+            <h2 class="tutorial-heading">How to register as a Practitioner</h2><span class="tutorial-duration">6:08</span>
+           </div>
            <p class="tutorial-para">
             Our online system allows our Practitioner members to purchase their clinic supplies and recommend and supply remedies to their clients online.
            </p>
         </div>
         <div>
-            <div class="tutorial-video">
-              <img class="h-100 w-100" src="/assets//images//tutorials/thumbnails.jpg"  class="mb-xxl-4"  alt="">
+            <div class="tutorial-video mb-xxl-4">
             </div>
-          <h2 class="tutorial-heading">Placeholder no-image-video</h2>
+          <div class="tutorial-duration-div">
+            <h2 class="tutorial-heading">Placeholder no-image-video</h2> <span class="tutorial-duration">6:08</span>
+          </div>
           <p class="tutorial-para">
             Our online system allows our Practitioner members to purchase their clinic supplies and recommend and supply remedies to their clients online.
         </p>
@@ -61,6 +64,7 @@
          <div class=" d-flex align-items-center gap-2 cursor-pointer">
             <span class="tutorial-para d-lg-block d-none">Next</span> <img src="/assets/images/Arrow right.svg" alt="Right arrow">
          </div>
+    </div>
     </div>
     </div>
     </div>

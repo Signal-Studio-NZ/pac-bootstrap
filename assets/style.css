@@ -601,7 +601,6 @@ inpu.newsletter-input::placeholder{
  font-family: var(--bs-font-primary);
 }
   .footer{
-   
       background-color: #EBEFEF;
       max-width: 1600px;
       margin: 150px auto 0 auto;
@@ -748,6 +747,7 @@ font-weight: 500;
 }
 .terms-container{
   gap: 15px;
+  /* margin-bottom: 110px; */
 }
 .right-side {
   max-width: 967px;
@@ -769,7 +769,7 @@ line-height: 160%;
   margin-bottom: 35px ;
 }
 .content-text-container{
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .content-title-data{
   margin-top: 53px;
@@ -802,6 +802,9 @@ line-height: 160%;
 .table-content{
   margin: 0;
   padding-top: 10px;
+}
+.shipping-content-table{
+  margin-bottom: 87px;
 }
 .task-btn{
   color: var(--Ember100, #E65909);
@@ -913,6 +916,44 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
   width: 22px;
   height:22px;
 }
+
+.client-order-div{
+font-family: var(--bs-font-primary);
+font-size: 17px;
+line-height: 27.2px;
+font-weight: 500;
+gap: 12px;
+padding-block: 22px;
+border-bottom: 1.5px solid #CED4D4;
+}
+
+.tutorial-div{
+  margin-bottom: 242px;
+  gap: 20px;
+}
+.tutorial-body{
+  margin-top: 93px;
+}
+.tutorial-duration{
+  font-size: var(--bs-font-size-xs);
+  font-family: var(--bs-font-primary);
+  letter-spacing: 2.16px;
+  font-weight: 500;
+}
+.tutorial-margin{
+  margin-top: 80px;
+}
+.shipping-table{
+padding: 14px !important;
+}
+.tutorial-video{
+  background-color:  #ECF2F2;
+}
+.tutorial-duration-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media screen and ( max-width:1500px) {
   .client-order-table{
     font-size: var(--bs-font-size-sm);
@@ -1004,7 +1045,8 @@ border-bottom: 1px solid var(--Body20, #CED4D4);
   min-width: 300px;
 }
 .about-infoContainer{
-  height: 579px;
+  /* height: 579px; */
+  height: 460px;
 }
 .about-who-we-are{
   margin: 36px 0 98px 0;

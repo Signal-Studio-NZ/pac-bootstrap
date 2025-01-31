@@ -196,6 +196,7 @@ const tableBody = document.getElementById("table-body");
 const pageNumbers = document.getElementById("page-numbers");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
+const clientDataDiv = document.getElementsByClassName("client-data-div")
 
 let currentPage = 1;
 const rowsPerPage = 12;
@@ -224,9 +225,29 @@ function renderTable() {
         `;
     tableBody.appendChild(row);
   });
-
   renderPagination();
 }
+
+function renderDiv(){
+  pageData.forEach((item) => {
+    const orderDiv = document.createElement("div");
+    orderDiv.classList.add("client-order-div")
+    orderDiv.innerHTML = `
+          <div><b>Client</b> <span>${item.client}</span></div>
+          <div><b>Order</b> <span>${item.order}</span></div>
+          <div><b>Date Created</b> <span>${item.date}</span></div>
+           <div><b>Retail nc GST</b> <span>${item.retail}</span></div>
+           <div><b>Wholesale exc ST</b> <span>${item.wholesale}</span></div>
+           <div><b>Margin exc GST</b> <span>${item.margin}</span></div>
+           <div><b>Status</b> <span>${item.status}</span></div>
+          <div><b>Activity</b> <span>${item?.activity}</span></div>
+           <div><b>Task</b> <span>${item?.task}</span></div>
+        `;
+    clientDataDiv.appendChild(orderDiv);
+  });
+  renderPagination();
+}
+
 
 // Function to Render Pagination
 function renderPagination() {
@@ -318,3 +339,4 @@ nextBtn.onclick = () => changePage(1);
 
 // Initial Render
 renderTable();
+renderDiv()
