@@ -41,8 +41,7 @@
   line-height: 24px;
  }
  .container-padding{
-  padding-inline: 15px;
-  margin-bottom: 80px;
+  padding-inline: 0px;
  }
  .terms-second-title{
   font-size: 22px;
@@ -57,6 +56,12 @@
   padding-bottom: 24px;
  }
 
+ .content-title-data{
+  margin-top: 49px;
+}
+.shipping-content-table{
+  margin-bottom: 40px;
+}
 /* Contact Us */
 
 .third-row{
@@ -89,10 +94,12 @@ line-height: 24px;
  .tutorial-heading{
 font-size: 18px;
 line-height: 28.8px;
+font-family: var(--bs-font-primary);
  }
  .tutorial-div{
   margin-bottom: 185px;
   gap: 70px;
+  margin-top: 70px;
  }
  .tutorial-nav{
  margin-bottom: 214px;
@@ -100,16 +107,41 @@ line-height: 28.8px;
  /* Terms and Conditions */
  .right-side{
   padding-top: 0px;
-  margin-top: 49px;
+  margin-top: 0px;
+  flex-grow: 0;
  }
  .left-side{
-  margin-top: 0;
   position: relative;
+  top: 0%;
   width: 100%;
   border-bottom: 1.5px solid black;
+  margin: 0;
+  padding: 0;
 }
 .terms-title-heading{
   margin-bottom: 0;
+}
+.terms-container{
+margin-bottom: 99px;
+gap: 0;
+}
+.tutorial-margin{
+  margin-top: 50px;
+}
+/* Your Order */
+.yourOrder-heading{
+  margin-bottom: 44px;
+  margin-top: 50px;
+}
+.order-status-search{
+  display: none;
+ }
+.client-order-div{
+  padding-block: 17px;
+  gap: 9px;
+  font-size: var(--bs-font-size-sm);
+  line-height: 22.4px;
+  border-bottom: 1px solid #CED4D4;
 }
 }
 
@@ -153,11 +185,14 @@ line-height: 28.8px;
   }
   .container-padding{
     padding-inline: 60px;
-    margin-bottom: 130px;
   }
   .custom-navbar{
     height: 114px;   
     padding-bottom: 24px;
+  }
+
+  .shipping-content-table{
+    margin-bottom: 50px;
   }
 
 /* Contact Us */
@@ -208,6 +243,19 @@ line-height: 28.8px;
 .terms-title-heading{
   margin-bottom: 0;
 }
+/* Your Order */
+.order-status-search{
+  display: none;
+ }
+ .client-order-div{
+  font-size: 15px;
+  line-height: 24px;
+  gap: 10px;
+  padding-block: 19px;
+ }
+ .tutorial-margin{
+  margin-top: 50px;
+}
 }
 
 /* MD: Medium Devices (tablets, 768px and up) */
@@ -250,7 +298,6 @@ line-height: 28.8px;
   }
   .container-padding{
     padding-inline: 100px;
-    margin-bottom: 180px;
   }
  
   .custom-navbar{
@@ -270,6 +317,10 @@ line-height: 28.8px;
   }
   .terms-title-heading{
     margin-bottom: 0;
+  }
+
+  .shipping-content-table{
+    margin-bottom: 60px;
   }
   /* Contact Us */
   .contact-details{
@@ -299,6 +350,22 @@ line-height: 28.8px;
   }
   .tutorial-nav{
    margin-bottom: 214px;
+   }
+   .tutorial-body{
+    margin-top: 50px;
+  }
+  .tutorial-margin{
+    margin-top: 50px;
+  }
+   /* Your Order */
+   .order-status-search{
+    display: none;
+   }
+   .client-order-div{
+    font-size: 15px;
+    line-height: 24px;
+    gap: 10px;
+    padding-block: 20px;
    }
 }
 
@@ -345,7 +412,6 @@ line-height: 28.8px;
  }
 .container-padding{
   padding-inline: 100px;
-  margin-bottom: 180px;
  }
  .about-header-container{
   height: 480px;
@@ -362,6 +428,9 @@ line-height: 28.8px;
  }
 .contact-us h2{
   margin-top: 70px;
+}
+.shipping-content-table{
+  margin-bottom: 60px;
 }
 .map{
   height: 680px;
@@ -387,8 +456,22 @@ line-height: 28.8px;
   font-size: 17px;
   line-height: 27.2px;
  }
- .feature-icons{
-  height: 100px;
+ .tutorial-body{
+  margin-top: 65px;
+}
+ /* Your Order */
+ .order-status-search{
+  display: none;
+ }
+ .client-order-div{
+  font-size: var(--bs-font-size-md);
+  line-height: 25.6px;
+  gap: 11px;
+  padding-block: 21px;
+ }
+ .terms-container{
+  gap: 11px;
+  margin-bottom: 85px;
 }
 }
 
@@ -421,7 +504,6 @@ line-height: 28.8px;
   }
   .container-padding{
     padding-inline: 270px;
-    margin-bottom: 280px;
   }
   .about-header-container{
     height: 600px;
@@ -452,6 +534,10 @@ line-height: 28.8px;
     border-radius: 20px;
   }
 
+  .shipping-content-table{
+    margin-bottom: 70px;
+  }
+
  /* Tutorials */
  .tutorial-video{
   width: 520px;
@@ -465,6 +551,16 @@ line-height: 28.8px;
  }
  .tutorial-div{
   margin-bottom: 220px;
+}
+.terms-container{
+  gap: 13px;
+  margin-bottom: 95px;
+}
+.tutorial-body{
+  margin-top: 80px;
+}
+.tutorial-margin{
+  margin-top: 70px;
 }
 }
 
@@ -504,7 +600,6 @@ line-height: 28.8px;
   .container-padding {
     padding-left: 317px;
     padding-right: 316px;
-    margin-bottom: 330px;
   }
    /* tutorials */
    .tutorial-video{
@@ -513,10 +608,6 @@ line-height: 28.8px;
     flex-shrink: 0;
     border-radius: 24px;
     margin-bottom: 31px;
-  }
-  .tutorial-div{
-    margin-bottom: 242px;
-    gap: 20px;
   }
   .tutorial-heading{
    font-family: var(--bs-font-primary);
