@@ -34,12 +34,12 @@ anchors.forEach((anchor) => {
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".c-data-container");
-  const navLinks = document.querySelectorAll("#data-titles a");
+  const sections = document.querySelectorAll(".content-text-container");
+  const navLinks = document.querySelectorAll("#data-titles li a");
 
   // Function to remove all active classes
   const removeActiveClasses = () => {
-    navLinks.forEach((link) => link.classList.remove("active"));
+    navLinks.forEach((link) => link.classList.remove("active-link"));
   };
 
   // Function to find and highlight the nearest section
@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
       removeActiveClasses();
       const id = nearestSection.id;
       const activeLink = document.querySelector(
-        `#data-titles a[href="#${id}"]`
+        `#data-titles li a[href="#${id}"]`
       );
-      if (activeLink) activeLink.classList.add("active");
+      if (activeLink) activeLink.classList.add("active-link");
     }
   };
 
