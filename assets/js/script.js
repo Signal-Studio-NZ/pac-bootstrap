@@ -9,9 +9,9 @@ async function loadHTML(elementId, filePath) {
     const notificationBanner = document?.getElementById("notification-banner");
 
     closeButton?.addEventListener("click", function () {
-      console.log("hi");
       notificationBanner?.classList.remove("d-flex");
       notificationBanner?.classList.add("d-none");
+      console.log("hi");
     });
   } catch (error) {
     console.error("Error loading HTML:", error);
