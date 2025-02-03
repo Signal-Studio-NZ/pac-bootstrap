@@ -1079,7 +1079,7 @@ padding: 14px !important;
   max-width: 1600px;
   margin: 0 auto;
 }
-.about-header-container .pac-logo, .about-header-container .account, .about-header-container .cart{
+.about-header-container .pac-logo, .about-header-container .navbar-nav, .about-header-container .account, .about-header-container .cart{
   filter: brightness(0) invert(1); /* Makes the image white */
 }
 .about-header-container #navbarNavDropdown{
