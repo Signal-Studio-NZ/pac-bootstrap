@@ -19,6 +19,7 @@
     <main class="container">
       <h1 class="heading-1 yourOrder-heading">Email log</h1>
       <div class="">
+        <div class="d-md-block d-none">
         <table class="table">
           <thead>
             <tr>
@@ -32,6 +33,17 @@
           </thead>
           <tbody id="table-body"></tbody>
         </table>
+      </div>
+        <div class="d-md-none d-flex flex-column client-data-div">
+          <div class="client-order-div">
+            <div><b>Time Stamp</b> <span>-</span></div>
+            <div><b>Description</b> <span>-</span></div>
+            <div><b>Link</b> <span>-</span></div>
+            <div><b>Email</b> <span>-</span></div>
+            <div><b>Notes</b> <span>-</span></div>
+            <div><b>Resend</b> <span>-</span></div>
+          </div>
+        </div>
 
         <div
           class="d-flex justify-content-between align-items-center yourClientOrder-pagination"

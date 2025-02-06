@@ -24,7 +24,7 @@
   font-weight: 500;
  }
  .heading-2{
-  font-size: 28px;
+  font-size: 26px;
   line-height: 33.8px;
   font-family: var(--bs-font-primary);
  }
@@ -44,26 +44,205 @@
   padding-inline: 0px;
  }
  .terms-second-title{
-  font-size: 22px;
-  line-height: 35.2px;
+  font-size: 22px !important;
+  line-height: 35.2px !important;
  }
+ .second-heading{
+  font-size: 15px;
+  line-height: 24px;
+}
  .container{
   padding-left: 16px;
   padding-right: 16px;
+ }
+ .container-2{
+  padding-inline: 8px !important;
  }
  .custom-navbar{
   height: 114px;
   padding-bottom: 24px;
  }
-
- .content-title-data{
+.content-title-data{
   margin-top: 49px;
 }
 .shipping-content-table{
-  margin-bottom: 40px;
+  margin-bottom: 57px;
+}
+ /* Home Page */
+ .hero-section{
+  min-height: auto;
+  height: auto;
+  margin-bottom: 79px;
+}
+.hero-section p{
+  padding-right: 25px;
+}
+.black-layer,  .yellow-layer,  .purple-layer,  .blue-layer {
+  height: 13.3px !important;
+  width: 13.3px !important;
+}
+.hero-animation-container .blue {
+  top: 56%;
+  left: 32.2%;
+  height: 13.3px;
+  width: 13.3px;
+  font-size: 3px;
+}
+.hero-animation-container .black {
+  top: 16%;
+  left: 35.5%;
+  height: 13.3px;
+  width: 13.3px;
+  font-size: 3px;
+}
+
+.hero-animation-container .yellow {
+  bottom: 15.1%;
+  right: 34.5%;
+  height: 13.3px;
+  width: 13.3px;
+  font-size: 3px;
+}
+
+.hero-animation-container .purple {
+  top: 39%;
+  right: 31.5%;
+  height: 13.3px;
+  width: 13.3px;
+  font-size: 2.4px;
+}
+.hero-animation-container{
+  margin-top: 65px;
+}
+.hero-animation-container svg{
+  width: 291px !important;
+  height: 246px !important;
+}
+.heading-4{
+  font-size: 11px;
+  line-height: 17.6px;
+  letter-spacing: 1.98px;
+  }
+  .home-slider {
+    margin-bottom: 60px;
+  }
+  .feature-1-content p{
+  padding-right: 20px;
+  }
+
+.feature-col-1{
+    border-radius: var(--bs-spacing-sm);
+    height: 566px;
+}
+.feature-col-1 .feature-1-content{
+  padding: 56px 32px 0 20px;
+   background: linear-gradient(90deg, #E2E8E8 0%, rgba(226, 232, 232, 0.00) 100%), #e2e8e8a0;
+}
+
+.feature-col-2{
+  border-radius: var(--bs-spacing-sm);
+  max-height: 137px;
+  padding: 50px 12px 32px 20px;
+  overflow: hidden;
+}
+.feature-col-2 p{
+  padding-right: 40px;
+  margin-top: 45px;
+}
+.feature-icons{
+  height: 78px;
+}
+.feature-col-height p{
+  margin-top: 27px !important;
+}
+.feature-col-height{
+  min-height: 450px !important;
+}
+.retail-brand{
+  margin-top: 70px;
+}
+.img-slideshow{
+  height: 117px;
+}
+/* Accounts Page */
+.account-h1{
+  margin: 50px 0;
+}
+.account-editBtn{
+  text-align: start;
+  font-weight: 700;
+}
+.account-signIn{
+  gap: 32px;
+  margin-bottom: 28px;
+}
+.account-containers{
+  padding: 46px 0 39px 0;
+}
+.account-addressDetails{
+  margin-top: 22px;
+  margin-bottom: 56px;
+}
+.custom-select {
+  border-radius: 12px;
+  height: 54px;
+}
+.custom-select-container .selected-option {
+padding: 15px 22px 15px 16px;;
+font-size: 15px;
+line-height: 24px;
+}
+.custom-select-container {
+  width: 100%;
+}
+.account-invoice-infoContainer{
+ row-gap: 32px;
+ margin-top: 20px;
+ margin-bottom: 53px;
+}
+.account-checkbox-container{
+  margin-top: 20px;
+  margin-bottom: 70px;
+  gap: 33px;
+}
+.account-newsletter{
+  margin-top: 46px;
+}
+.news-letter-para{
+  padding-right: 60px;
+  margin-top: 25px;
+}
+.custom-modal{
+  width: 100%;
+  padding: 62px 16px 24px 16px;
+}
+.setup-autoPayment{
+  width: 100%;
+}
+.payment-option{
+  height: 54px;
+  font-size: 15px;
+}
+.payment-btn{
+  margin-top: 152px !important;
+ }
+ .selected-file{
+  width: 100% !important; 
+ }
+ .inputField{
+  width: 100%;
+ }
+ .account-editAddress{
+  grid-template-columns: 1fr;
+  gap: 35px;
+}
+.editModal-BtnWidth{
+  width: 100%;
+}
+.editsign-btn{
+  margin-bottom: 39px;
 }
 /* Contact Us */
-
 .third-row{
   display: none;
 }
@@ -93,6 +272,7 @@
  .tutorial-para{
 font-size: 15px;
 line-height: 24px;
+width: 90%;
  }
  .tutorial-heading{
 font-size: 18px;
@@ -100,12 +280,12 @@ line-height: 28.8px;
 font-family: var(--bs-font-primary);
  }
  .tutorial-div{
-  margin-bottom: 185px;
-  gap: 70px;
+  margin-bottom: 170px;
+  gap: 60px;
   margin-top: 70px;
  }
- .tutorial-nav{
- margin-bottom: 214px;
+ .tutorial-body{
+  margin-top: 59px;
  }
  /* Terms and Conditions */
  .right-side{
@@ -141,13 +321,199 @@ gap: 0;
  }
 .client-order-div{
   padding-block: 17px;
-  gap: 9px;
   font-size: var(--bs-font-size-sm);
   line-height: 22.4px;
   border-bottom: 1px solid #CED4D4;
 }
+.client-order-div div{
+  margin-top: 9px;
+}
 .yourClientOrder-pagination{
   margin-top: 140px;
+}
+.pagination-container{
+  margin-top: 125px;
+}
+.orderstatus-rightSide{
+  margin-top: 35px;
+}
+.orderStatus-backBtn{
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.orderStatus-backBtn span{
+  padding-left: 20px;
+}
+.orderstatus-leftSide{
+  margin-top: 32px;
+}
+.order-page-heading{
+  font-size: 26px;
+  line-height: 33.8px;
+  margin-top: 83px;
+  margin-bottom: 22px;
+}
+.total-div{
+  margin-top: 46px;
+  height: 208px;
+  padding-left: 24px;
+  padding-right: 27px;
+  padding-top: 34px;
+}
+/* About Page */
+.about-header-container{
+  height: 570px;
+  border-radius: 0px 0px 12px 12px;
+}
+.about-page-heading{
+  font-family: var(--bs-font-secondary);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  padding-right: 50px;
+}
+
+.terms-second-title{
+  font-size: 22px !important;
+  line-height: 35.2px !important;
+  font-weight: 500;
+  }
+  .about-heading-content{
+    margin-bottom: 70px;
+  }
+  .about-infoContainer{
+   margin-top: 42px;
+   height: auto;
+   margin-bottom: 90px;
+  }
+  .about-left-content{
+    padding-right: 36px;
+    margin-bottom: 35px;
+    min-width: 100%;
+  }
+  .aboutCard-container{
+    margin-top: 34px;
+  }
+  .about-card{
+    max-height: 440px;
+    min-width: 100%;
+    gap: 13px;
+    margin-bottom: 35px;
+  }
+  .about-card img{
+    max-height: 342px;
+    min-height: 342px;
+  }
+  .about-rght-content{
+    min-width: 100%;
+   }
+   .about-modal-content{
+    height: auto !important;
+  }
+  .about-name{
+    font-size: 22px !important;
+    line-height: 28.6px !important;
+  }
+   /* Login Page */
+   .login-sideimg {
+    height: 456px;
+  }
+  .login-form-container{
+    margin-top: 39px;
+  }
+  .login-container{
+    gap: 0;
+  }
+  .login-second-heading{
+    margin: 27px 0 43px 0;
+    font-size: 26px;
+    line-height: 33.8px;
+  }
+  .label{
+  font-size: 14px;
+  line-height: 22.4px; 
+  }
+  .table-container{
+    margin-top: 6px;
+  }
+  .auth-heading{
+    font-size: 40px;
+    font-family: var(--bs-font-secondary);
+    line-height: 40px;
+    padding-right: 25px;
+  }
+  .inputField::placeholder{
+  font-size: 15px;
+  line-height: 24px;
+  }
+  .inputField{
+   padding: 0 16px ;
+   height: 54px;
+   }
+   .btn-height{
+    height: 54px;
+  }
+  .btn {
+    border-radius: var(--bs-spacing-sm);
+    font-size: 15px;
+    height: 54px;
+    padding: 15px;
+  }
+  #registrationForm{
+    gap: 18px;
+    margin-top: 21px;
+  }
+  .reg-form-titles{
+    margin: 0;
+  font-weight: 500;
+  }
+  .reg-signup{
+    margin-top: 35px;
+  }
+  select{
+    max-width: 100%;
+    height: 54px;
+  }
+  .notification-banner{
+    height: 100px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20.8px;
+    margin-bottom: 20px;
+  }
+  .notification-banner p{
+    padding: 16px 45px 0 16px;
+    text-align: left;
+  }
+  .notification-closeBtn{
+    top: 20px;
+    right: 14px;
+  }
+  .page-number{
+    font-size: 18px;
+}
+.login-form form {
+  gap: 8px;
+}
+.footer-links{
+  font-size: 16px !important;
+  line-height: 32px !important;
+}
+/* Footer */
+.footer{
+  margin: 99px auto 0 auto;
+}
+.copyright-text{
+  margin-bottom: 63px;
+  padding-inline: 0px !important;
+}
+.footer-newsletter{
+  height: auto;
+  padding-top: 74px !important;
+  padding-bottom: 82px !important;
+}
+.footer-main{
+  padding-top: 81px;
 }
 }
 
@@ -179,11 +545,16 @@ gap: 0;
   }
   .heading-3{
     font-size: 28px;
-    line-height: 36.4px;
+    line-height: 36px;
   }
+  .heading-4{
+    font-size: 11px;
+    line-height: 17.6px;
+    letter-spacing: 1.98px;
+    }
   .content-text{
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .container{
     padding-left: 30px;
@@ -198,8 +569,166 @@ gap: 0;
   }
 
   .shipping-content-table{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
+  .second-heading{
+    font-size: 17px;
+    line-height: 27.2px;
+  }
+  /* Home Page */
+.hero-section{
+  min-height: auto;
+  height: auto;
+  margin-bottom: 70px;
+}
+.black-layer,  .yellow-layer,  .purple-layer,  .blue-layer {
+  height: 30px !important;
+  width: 30px !important;
+}
+.hero-animation-container .blue {
+  top: 55%;
+  left: 32%;
+  height: 30px;
+  width: 30px;
+  font-size: 5.5px;
+}
+.hero-animation-container .black {
+  top: 16%;
+  left: 35.5%;
+  height: 30px;
+  width: 30px;
+  font-size: 5.5px;
+}
+
+.hero-animation-container .yellow {
+  bottom: 15.1%;
+  right: 33.5%;
+  height: 30px;
+  width: 30px;
+  font-size: 5.5px;
+}
+
+.hero-animation-container .purple {
+  top: 39%;
+  right: 31%;
+  height: 30px;
+  width: 30px;
+  font-size: 5.5px;
+}
+.hero-animation-container{
+  margin-top: 40px;
+  width: 490px !important;
+  height: 420px !important;
+}
+.hero-animation-container svg{
+  width: 490px;
+  height: 420px;
+}
+.feature-col-2{
+  max-height: 137px;
+  overflow: hidden;
+  padding: 50px 20px;
+}
+.home-slider {
+  margin-bottom: 35px;
+}
+.feature-1-content p{
+ padding-right: 20px;
+}
+.feature-col-1{
+  border-radius: 18px;
+  height: 420px;
+}
+.feature-col-1 .feature-1-content{
+  padding: 50px 32px 0 20px;
+   background: linear-gradient(90deg, #E2E8E8 0%, rgba(226, 232, 232, 0.00) 100%), #e2e8e8a0;
+}
+.feature-icons{
+  height: 95px;
+}
+.feature-col-2 p{
+  margin-top: 35px;
+}
+.feature-col-height p{
+  margin-top: 28px !important;
+}
+.feature-col-height{
+  min-height: 480px !important;
+}
+.retail-brand{
+  margin-top: 75px;
+}
+.img-slideshow{
+  height: 250px;
+}
+/* Accounts Page */
+.account-h1{
+  margin: 52px 0;
+}
+.account-editBtn{
+  text-align: left;
+  font-weight: 700;
+}
+.account-signIn{
+  gap: 36px;
+  margin-bottom: 50px;
+}
+.account-containers{
+  padding: 50px 0 45px 0;
+}
+.account-addressDetails{
+  margin-top: 28px;
+  margin-bottom: 62px;
+}
+.custom-select {
+  border-radius: 14px;
+  height: 58px;
+}
+.custom-select-container .selected-option {
+padding: 18px 24px 18px 18px;;
+font-size: 15px;
+line-height: 24px;
+}
+.custom-select-container {
+  width: 100%;
+}
+.account-invoice-infoContainer{
+ row-gap: 36px;
+ margin-top: 30px;
+ margin-bottom: 60px;
+}
+.account-checkbox-container{
+  margin-top: 25px;
+  margin-bottom: 75px;
+  gap: 36px;
+}
+.account-newsletter{
+  margin-top: 50px;
+}
+.custom-modal{
+  width: 100%;
+  padding: 62px 20px 24px 20px;
+}
+.setup-autoPayment{
+  width: 100%;
+}
+.payment-option{
+  height: 54px;
+  font-size: 15px;
+}
+.payment-btn{
+  margin-top: 130px !important;
+ }
+ .selected-file{
+  width: 100% !important; 
+ }
+ .inputField{
+  width: 100%;
+ }
+ .account-editAddress{
+  grid-template-columns: 1fr;
+  gap: 35px;
+}
 
 /* Contact Us */
 .map{
@@ -226,19 +755,24 @@ gap: 0;
  .tutorial-para{
   font-size: 16px;
   line-height: 25.6px;
-  width: 90%;
 }
+.tutorial-width{
+  width: 90%
+ }
 .tutorial-heading{
   font-size: 19px;
   line-height: 30.4px; 
+ }
+ .tutorial-body{
+  margin-top: 65px;
  }
  .tutorial-div{
   margin-bottom: 195px;
   gap: 85px;
  }
- .tutorial-nav{
-  margin-bottom: 79px;
- }
+ .tutorial-margin{
+  margin-top: 50px;
+}
  .right-side{
   padding-top: 0px;
   margin-top: 55px;
@@ -259,11 +793,154 @@ gap: 0;
  .client-order-div{
   font-size: 15px;
   line-height: 24px;
-  gap: 10px;
   padding-block: 19px;
  }
- .tutorial-margin{
-  margin-top: 50px;
+ .client-order-div div{
+  margin-top: 10px;
+ }
+.pagination-container{
+  margin-top: 272px;
+}
+.pagination-container{
+  margin-top: 140px;
+}
+.orderstatus-rightSide{
+  margin-top: 40px;
+}
+.orderStatus-backBtn{
+ margin-bottom: 10px;
+}
+.orderStatus-backBtn span{
+  padding-left: 24px;
+}
+.order-page-heading{
+  font-size: 30px;
+  line-height: 39px;
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+.total-div{
+  background-color: #F9F9F9;
+  margin-top: 46px;
+  height: 250px;
+  padding-left: 28px;
+  padding-right: 30px;
+  padding-top: 38px;
+}
+.orderstatus-leftSide{
+  margin-top: 36px;
+}
+.page-number{
+  font-size: 16px;
+}
+/* About Page */
+.about-header-container{
+  height: 650px;
+}
+.terms-second-title{
+  font-size: 24px !important;
+  line-height: 38.4px !important;
+  }
+  .about-heading-content{
+    margin-bottom: 60px;
+  }
+  .about-infoContainer{
+   margin-top: 40px;
+   height: auto;
+   margin-bottom: 80px;
+  }
+  .about-left-content{
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .aboutCard-container{
+    margin-top: 40px;
+  }
+  .about-rght-content{
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+   }
+   .about-modal-content{
+    height: auto !important;
+  }
+    /* Login Page */
+    .login-sideimg {
+      height: 520px;
+    }
+    .login-form-container{
+      margin-top: 45px;
+    }
+    .login-container{
+      gap: 0;
+    }
+    .login-second-heading{
+      margin: 40px 0 45px 0;
+      font-size: 26px;
+      line-height: 33.8px;
+    }
+    .label{
+    font-size: 14px;
+    line-height: 22.4px; 
+    }
+    .auth-heading{
+      font-size: 40px;
+      font-family: var(--bs-font-secondary);
+      line-height: 40px;
+    }
+    .inputField::placeholder{
+      font-size: 16px;
+      line-height: 25.6px;
+    }
+    .inputField{
+     padding: 0 16px ;
+     height: 58px;
+     }
+     .btn-height{
+      height: 58px;
+    }
+    .btn {
+      font-size: 16px;
+    }
+    #registrationForm{
+      gap: 19px;
+      margin-top: 28px;
+    }
+    .reg-form-titles{
+      margin: 0;
+    }
+    .reg-signup{
+      margin-top: 40px;
+    }
+    select{
+      height: 58px;
+      max-width: 100%;
+    }
+    .notification-banner{
+      height: 100px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 22.4px;
+    }
+    .notification-banner p{
+      padding-right: 45px;
+      padding-left: 16px;
+      text-align: left;
+    }
+    .login-form form {
+      gap: 12px;
+    }
+/* Footer */
+.footer{
+  margin: 110px auto 0 auto;
+}
+.footer-newsletter{
+  height: auto;
+  padding-top: 60px !important;
+  padding-bottom: 65px !important;
+}
+.copyright-text{
+  margin-bottom: 20px;
 }
 }
 
@@ -301,9 +978,13 @@ gap: 0;
     font-size: 30px;
     line-height: 39px;
   }
+  .second-heading{
+    font-size: 19px;
+    line-height: 30.4px;
+  }
   .content-text{
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .container-padding{
     padding-inline: 100px;
@@ -329,8 +1010,128 @@ gap: 0;
   }
 
   .shipping-content-table{
-    margin-bottom: 60px;
+    margin-bottom: 75px;
   }
+/* Home Page */
+.hero-section{
+  min-height: auto;
+  height: auto;
+  margin-bottom: 65px;
+}
+.hero-animation-container{
+  margin-top: 40px;
+  width: 490px !important;
+  height: 420px !important;
+}
+.hero-animation-container svg{
+  width: 490px;
+  height: 420px;
+}
+.feature-col-2{
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 130px;
+  overflow: hidden;
+  padding: 50px 20px;
+}
+.home-slider {
+  margin-bottom: 35px;
+}
+.feature-1-content p{
+ padding-right: 20px;
+}
+.feature-col-1{
+  border-radius: 18px;
+  height: 420px;
+}
+.feature-col-1 .feature-1-content{
+  padding: 30px;
+}
+.feature-icons{
+  height: 110px;
+}
+.feature-col-2 p{
+  margin-top: 30px;
+}
+.feature-col-height p{
+  margin-top: 28px !important;
+}
+.feature-col-height{
+  min-height: 500px !important;
+}
+.retail-brand{
+  margin-top: 75px;
+}
+.img-slideshow{
+  height: 320px;
+  border-radius: 18px;
+} 
+/* Accounts Page */
+.account-h1{
+  margin: 60px 0 38px 0;
+}
+.account-editBtn{
+  text-align: left;
+  font-weight: 700;
+}
+.account-signIn{
+  gap: 38px;
+  margin-bottom: 55px;
+}
+.account-containers{
+  padding: 60px 0 50px 0;
+}
+.account-addressDetails{
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.custom-select {
+  border-radius: 16px;
+  height: 60px;
+}
+.custom-select-container .selected-option {
+padding: 20px 24px 20px 20px;;
+font-size: 16px;
+line-height: 25.6px;
+}
+.custom-select-container {
+  width: 100%;
+}
+.account-invoice-infoContainer{
+ row-gap: 38px;
+ margin-top: 35px;
+ margin-bottom: 65px;
+}
+.account-checkbox-container{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  gap: 38px;
+}
+.account-newsletter{
+  margin-top: 60px;
+}
+.custom-modal {
+  padding: 62px 16px 24px 16px; /* Top, Left/Right, Bottom */
+  width: fit-content;
+  border-radius: 24px;
+}
+.custom-modal{
+  width: 100%;
+  padding: 62px 20px 24px 20px;
+}
+.setup-autoPayment{
+  width: 100%;
+}
+.payment-option{
+  height: 60px;
+}
+.payment-btn{
+  margin-top: 90px !important;
+ }
+ .account-editAddress{
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
   /* Contact Us */
   .contact-details{
     gap: 65px;
@@ -345,8 +1146,8 @@ gap: 0;
   }
   /* Tutorials */
   .tutorial-video{
-    width: 330px;
-    height: 250px;
+    min-width: 100%;
+    height: 300px;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -358,13 +1159,10 @@ gap: 0;
    }
    .tutorial-div{
     margin-bottom: 242px;
-    gap: 20px;
+    gap: 100px;
   }
-  .tutorial-nav{
-   margin-bottom: 214px;
-   }
    .tutorial-body{
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .tutorial-margin{
     margin-top: 50px;
@@ -376,31 +1174,144 @@ gap: 0;
    .client-order-div{
     font-size: 15px;
     line-height: 24px;
-    gap: 10px;
     padding-block: 20px;
    }
+   .client-order-div div{
+    margin-top: 10px;
+   }
+   .pagination-container{
+    margin-top: 160px;
+  }
+  .orderstatus-rightSide{
+    margin-top: 40px;
+  }
+  .order-page-heading{
+    font-size: 34px;
+    line-height: 44.2px;
+    margin-top: 80px;
+    margin-bottom: 28px;
+  }
+  .orderstatus-leftSide{
+    margin-top: 39px;
+  }
+  .total-div{
+    margin-top: 65px;
+    height: 310px;
+    padding-left: 38px;
+    padding-right: 40px;
+    padding-top: 42px;
+  }
+  /* About Page */
+.about-header-container{
+  height: 650px;
+}
+.terms-second-title{
+  font-size: 24px !important;
+  line-height: 38.4px !important;
+  }
+  .about-heading-content{
+    margin-bottom: 70px;
+  }
+  .about-infoContainer{
+   margin-top: 50px;
+   height: auto;
+   margin-bottom: 110px;
+  }
+  .about-left-content{
+    padding-right: 0px;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .aboutCard-container{
+    margin-top: 60px;
+  }
+  .about-rght-content{
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+   }
+   /* Login Page */
+.login-sideimg {
+  height: 590px;
+  max-width: 100%;
+ }
+ .login-form-container{
+  margin-top: 50px;
+ }
+ .login-container{
+   gap: 50px;
+ }
+ .login-second-heading{
+   margin: 45px 0 35px 0;
+   font-size: 17px;
+   line-height: 36.4px;
+ }
+ .inputField::placeholder{
+  font-size: 16px;
+  line-height: 25.6px;
+ }
+ .inputField{
+  padding: 0 24px ;
+  height: 60px;
+ }
+ .btn-height{
+   height: 60px;
+ }
+ .btn {
+  font-size: 18px;
+ }
+ #registrationForm{
+  gap: 19px;
+  margin-top: 40px;
+}
+.reg-form-titles{
+  margin: 28px 0 0 0;
+}
+.reg-signup{
+  margin-top: 50px;
+}
+select{
+  height: 60px;
+  max-width: 100%;
+}
+.login-form form {
+  gap: 14px;
+}
+  /* Footer */
+.footer{
+  margin: 125px auto 0 auto;
+}
+.notification-banner{
+  font-size: 14px;
+  line-height: 22.4px;
+}
+.notification-banner p{
+  padding-right: 40px;
+  padding-left: 16px;
+  text-align: left;
+}
 }
 
 /* LG: Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .pac-logo{
-    height: 30px;
-    width: auto;
-  }
-    .about-header-container{
-        height: 480px;
-      }
-      .about-header-container #navbarNavDropdown{
-        background-color: white;
-      }
-      .about-header-container #navbarNavDropdown a, .about-header-container #navbarNavDropdown a{
-        padding: 10px 15px !important;
-        color: black;
-      }
-       .about-header-container .account, .about-header-container .cart{
-        filter: none; /* Makes the image white */
-        padding: 10px 15px;
-      }
+.pac-logo{
+  height: 30px;
+  width: auto;
+}
+.about-header-container{
+  height: 480px;
+}
+.about-header-container #navbarNavDropdown{
+  background-color: white;
+}
+.about-header-container #navbarNavDropdown a, .about-header-container #navbarNavDropdown a{
+ padding: 10px 15px !important;
+ color: black;
+}
+.about-header-container .account, .about-header-container .cart{
+  filter: none; /* Makes the image white */
+  padding: 10px 15px;
+}
 /* Overide Classes */
   .heading-1{
     font-size: 64px;
@@ -419,8 +1330,8 @@ gap: 0;
   line-height: 41.6px;
  }
 .content-text{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 28.8px;
  }
 .container-padding{
   padding-inline: 100px;
@@ -428,10 +1339,116 @@ gap: 0;
  .about-header-container{
   height: 480px;
  }
+ .second-heading{
+  font-size: 22px;
+  line-height: 35.2px;
+}
 
  .custom-navbar{
   height: 120px; 
   padding-bottom: 0;  
+ }
+ /* Home Page */
+.hero-section{
+  min-height: auto;
+  height: auto;
+  margin-bottom: 60px;
+}
+.hero-animation-container{
+  margin-top: 40px;
+  width: 490px !important;
+  height: 420px !important;
+}
+.hero-animation-container svg{
+  width: 490px;
+  height: 420px;
+}
+.feature-col-2{
+  min-width: 450px;
+  max-width: 450px;
+  max-height: 150px;
+  overflow: hidden;
+  padding: 50px 20px;
+}
+.home-slider {
+  margin-bottom: 35px;
+}
+.feature-1-content p{
+ padding-right: 20px;
+}
+.feature-col-1{
+  border-radius: 18px;
+  height: 420px;
+}
+.feature-col-1 .feature-1-content{
+  padding: 30px;
+}
+.feature-icons{
+  height: 110px;
+}
+.feature-col-2 p{
+  margin-top: 40px;
+}
+.feature-col-height p{
+  margin-top: 28px !important;
+}
+.feature-col-height{
+  min-height: 530px !important;
+}
+.retail-brand{
+  margin-top: 80px;
+}
+.img-slideshow{
+  height: 380px;
+} 
+/* Accounts Page */
+.account-h1{
+  margin: 50px 0 50px 0; 
+}
+.account-checkbox-container{
+  margin-top: 35px;
+  gap: 14px;
+}
+.checkbox{
+  min-width: 125px;
+}
+.account-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.account-signIn{
+  gap: 70px;
+}
+.account-containers{
+  padding: 68px 0 28px 0;
+}
+.account-addressDetails{
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+.custom-select {
+  border-radius: 16px;
+  height: 60px;
+}
+.custom-select-container .selected-option {
+padding: 15px 35px 0 18px;;
+font-size: 17px;
+line-height: 27.2px;
+}
+.account-invoice-infoContainer{
+ row-gap: 50px;
+ column-gap: 24;
+ margin-top: 30px;
+}
+.account-checkbox-container{
+  margin-top: 35px;
+  gap: 60px;
+}
+.account-newsletter{
+  margin-top: 65px;
+}
+.inputField{
+ width: 420px;
  }
 
  /* Contact Us */
@@ -442,7 +1459,7 @@ gap: 0;
   margin-top: 70px;
 }
 .shipping-content-table{
-  margin-bottom: 60px;
+  margin-bottom: 75px;
 }
 .map{
   height: 680px;
@@ -451,7 +1468,6 @@ gap: 0;
  }
 /* Tutorials */
 .tutorial-video{
-  width: 440px;
   height: 300px;
   border-radius: 18px;
   display: flex;
@@ -472,7 +1488,7 @@ gap: 0;
   line-height: 27.2px;
  }
  .tutorial-body{
-  margin-top: 65px;
+  margin-top: 70px;
 }
  /* Your Order */
  .order-status-search{
@@ -481,12 +1497,101 @@ gap: 0;
  .client-order-div{
   font-size: var(--bs-font-size-md);
   line-height: 25.6px;
-  gap: 11px;
   padding-block: 21px;
+ }
+ .client-order-div div{
+  margin-top: 11px;
  }
  .terms-container{
   gap: 11px;
   margin-bottom: 85px;
+}
+.pagination-container{
+  margin-top: 185px;
+}
+.orderstatus-rightSide{
+  margin-top: 40px;
+}
+.order-page-heading{
+  font-size: 38px;
+  line-height: 49.4px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+}
+.orderstatus-leftSide{
+  margin-top: 43px;
+}
+  /* About Page */
+.about-header-container{
+   height: 700px;
+}
+.terms-second-title{
+  font-size: 26px !important;
+  line-height: 41.6px !important;
+}
+.about-heading-content{
+  margin-bottom: 110px;
+}
+.about-infoContainer{
+  height: auto;
+  margin-bottom: 90px;
+}
+.about-left-content{
+  padding-right: 0px;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+/* Login Page */
+.login-sideimg {
+  height: 640px;
+ }
+ .login-container{
+   gap: 90px;
+ }
+ .login-second-heading{
+   margin: 50px 0 38px 0;
+   font-size: 17px;
+   line-height: 36.4px;
+ }
+ .inputField::placeholder{
+  font-size: 17px;
+  line-height: 27.2px;
+ }
+ .inputField{
+  padding: 0 18px ;
+  height: 60px;
+ }
+ .btn-height{
+   height: 60px;
+ }
+ .btn {
+  font-size: 19px;
+  min-width: 165px;
+  padding: 16px 25px;
+ }
+ #registrationForm{
+  gap: 21px;
+  margin-top: 45px;
+}
+.reg-form-titles{
+  margin: 30px 0 0 0;
+}
+.reg-signup{
+  margin-top: 55px;
+}
+select{
+  height: 60px;
+}
+.notification-banner{
+  font-size: 15px;
+  line-height: 24px;
+}
+.login-form form {
+  gap: 18px;
+}
+/* Footer */
+.footer{
+  margin: 140px auto 0 auto;
 }
 }
 
@@ -527,12 +1632,81 @@ gap: 0;
     margin-left: 16px;
     margin-right: -14px;
   }
-
-
   .login-container{
-    gap: 70px;
+    gap: 95px;
   }
-
+  .second-heading{
+    font-size: 25px;
+    line-height: 40px;
+  }
+  /* Home Page */
+.hero-section{
+  margin-bottom: 12px;
+}
+.hero-animation-container {
+  position: relative;
+  width: 600px !important;
+  height: 493px !important;
+}
+.hero-animation-container svg{
+  width: 600px;
+ height: 493px;
+}
+.feature-col-2{
+  height: 600px;
+  padding: 50px 20px 40px 20px;
+  }
+.home-slider {
+  margin-bottom: 35px;
+}
+.feature-col-1{
+  border-radius: 20px;
+  height: 450px;
+}
+.feature-col-1 .feature-1-content{
+  padding: 48px 35px 35px 35px;
+}
+.feature-icons{
+  height: 120px;
+}
+.retail-brand{
+  margin-top: 92px;
+}
+.img-slideshow{
+  height: 450px;
+  border-radius: 22px;
+} 
+/* Accounts Page */
+.account-checkbox-container{
+  margin-top: 47px;
+  gap: 60px;
+}
+.account-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.account-signIn{
+  gap: 85px;
+}
+.account-containers{
+  padding: 75px 0 30px 0;
+}
+.custom-select {
+  border-radius: 18px;
+  height: 62px;
+}
+.account-invoice-infoContainer{
+ row-gap: 58px;
+ column-gap: 26px;
+ margin-top: 32px;
+}
+.account-checkbox-container{
+  margin-top: 40px;
+  gap: 68px;
+}
+.account-newsletter{
+  margin-top: 74px;
+}
   /* Contact Us*/
   .contact-us{
     margin-bottom: 150px;
@@ -548,14 +1722,12 @@ gap: 0;
     width: 810px;
     border-radius: 20px;
   }
-
   .shipping-content-table{
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
 
  /* Tutorials */
  .tutorial-video{
-  width: 520px;
   height: 350px;
   border-radius: 20px;
   display: flex;
@@ -579,6 +1751,76 @@ gap: 0;
 }
 .tutorial-margin{
   margin-top: 70px;
+}
+.pagination-container{
+  margin-top: 230px;
+}
+ /* About Page */
+ .about-header-container{
+  height: 750px;
+ }
+.terms-second-title{
+  font-size: 26px !important;
+  line-height: 41.6px !important;
+  }
+  .about-heading-content{
+    margin-bottom: 120px;
+  }
+  .about-infoContainer{
+   margin-bottom: 90px;
+  }
+/* Login Page */
+ .login-sideimg {
+   height: 690px;
+  }
+  .login-container{
+    gap: 100px;
+  }
+  .login-second-heading{
+    margin: 52px 0 40px 0;
+    font-size: 17px;
+    line-height: 36.4px;
+  }
+  .inputField::placeholder{
+   font-size: 17px;
+   line-height: 27.2px;
+  }
+  .inputField{
+   padding: 0 20px ;
+   height: 62px;
+  }
+  .btn-height{
+    height: 62px;
+  }
+  .btn {
+   border-radius: var(--bs-spacing-sm);
+   font-size: 20px;
+   padding: 18px 30px;
+  }
+  #registrationForm{
+    gap: 22px;
+    margin-top: 50px;
+  }
+  .reg-form-titles{
+    margin: 35px 0 0 0;
+  }
+  .reg-signup{
+    margin-top: 60px;
+  }
+  select{
+    height: 62px;
+  }
+  .custom-td{
+    min-width: 115px;                   
+    padding: 30px 22px !important;   
+  }
+  .custom-th{
+    min-width: 115px;                    
+    padding: 18px 24px !important;   
+  }
+/* Footer */
+.footer{
+  margin: 145px auto 0 auto;
 }
 }
 
@@ -618,35 +1860,6 @@ gap: 0;
   .container-padding {
     padding-left: 317px;
     padding-right: 316px;
-  }
-   /* tutorials */
-   .tutorial-video{
-    max-width: 720px;
-    height: 405px;
-    flex-shrink: 0;
-    border-radius: 24px;
-    margin-bottom: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .tutorial-heading{
-   font-family: var(--bs-font-primary);
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 38.4px; 
-  }
-.tutorial-para{
-   font-family: var(--bs-font-primary);
-   font-size: 18px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 28.8px;
-   width: 73%;
-  }
-  .tutorial-nav{
-    height: 29px;
   }
   .nav-pages{
    width: 45px;

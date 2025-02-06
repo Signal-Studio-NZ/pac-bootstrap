@@ -16,23 +16,23 @@
   <body>
     <div id="header"></div>
     <!-- hero section for desktop only -->
-    <div class="hero-section d-flex container">
+    <div class="hero-section d-flex container flex-lg-row flex-column">
       <div class="justify-content-center d-flex flex-column gap-4 h-100 w-100">
-        <h1 class="heading-1">Your total natural health supplier</h1>
-        <p class="content-text">
+        <h1 class="heading-1 auth-heading mt-xl-0 mt-5">Your total natural health supplier</h1>
+        <p class="content-text mt-xl-0 mt-md-2 mt-1">
           Pacific Health is the leader in practitioner only nutrition and
           education since 1984. Register as a health professional to access
           practitioner brands, in-depth product information and scripting
           services
         </p>
-        <div>
+        <div class="d-lg-block d-none">
           <a href="/login.html" class="btn active-btn border">Login</a>
-          <a href="/registration.html" class="btn mx-2 border">Register</a>
+          <a href="/registration.html" class="btn mx-xl-2 mx-1 border">Register</a>
         </div>
       </div>
 
       <div
-        class="hero-content-img-container d-flex justify-content-end align-items-center w-100"
+        class="hero-content-img-container d-flex justify-content-xl-end justify-content-center align-items-center w-100"
       >
         <div class="hero-animation-container">
           <div class="black">
@@ -215,8 +215,8 @@
       </div>
     </div>
     <!-- logo slider  -->
-    <div class="container">
-      <p class="heading-4">Practitioner brands</p>
+    <div class="container container-2">
+      <p class="heading-4 text-xl-start text-center">Practitioner brands</p>
 
       <div class="home-slider">
         <div class="slide-track">
@@ -287,19 +287,22 @@
       </div>
     </div>
     <!-- feature section -->
-    <div class="container gap-3">
-      <div class="border feature-col-1 mb-3">
+    <div class="container container-2 gap-3">
+      <div class="border feature-col-1 mb-lg-3 mb-2">
         <div class="col-6 feature-1-content d-flex flex-column gap-2">
-          <div class="col-6">
-            <p class="heading-4">high quality natural products</p>
-            <h3 class="heading-3">
+          <div class="col-lg-6 col-12">
+            <p class="heading-4 mb-xl-0 mb-md-2 mb-1">high quality natural products</p>
+            <h3 class="heading-3 my-xl-0 my-lg-3 my-md-5 my-4">
               70 different ranges with almost 4000 individual natural health
               products.
             </h3>
-            <p class="content-text">
+            <p class="content-text mt-xl-0 mt-md-2 mt-1">
               If you are looking for a product, chances are that we have it or
               an equivalent on our shelves and you can get them all on one order
-              with one account. We proudly support New Zealand health
+              with one account. 
+            </p>
+            <p class="content-text mt-xl-0 mt-lg-3 mt-md-4 mt-3">
+              We proudly support New Zealand health
               practitioners with a huge range of products that are shipped
               rapidly and accurately, and we have done so since 1984.
             </p>
@@ -308,19 +311,22 @@
         <div class="home-features-1-bgimg"></div>
       </div>
 
-      <div class="w-100 d-flex gap-3">
+      <div class="w-100 d-flex flex-xl-row flex-column gap-md-3 gap-2 justify-content-center">
         <div
+        id="practitioner"
           class="col feature-2 feature-col-2 d-flex flex-column justify-content-between border"
         >
           <div>
-            <h3 class="heading-3">Practitioner</h3>
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="heading-3">Practitioner</h3> <span id="practitionerBtn" class="heading-3 d-xl-none d-block">+</span>
+            </div>
             <p class="content-text">
               Our online system allows our Practitioner members to purchase
               their clinic supplies and recommend and supply remedies to their
               clients online.
             </p>
           </div>
-          <div class="d-flex align-items-end justify-content-between">
+          <div class="d-flex align-items-xl-end align-items-center justify-content-between">
             <button
               class="bg-transparent content-text border-0 d-flex gap-3 align-items-center justify-content-center"
             >
@@ -346,17 +352,20 @@
           </div>
         </div>
         <div
+        id="shopNow"
           class="col feature-3 feature-col-2 d-flex justify-content-between flex-column border"
         >
           <div>
-            <h3 class="heading-3">Shop now</h3>
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="heading-3">Shop now</h3><span id="shopNowBtn" class="d-xl-none d-block heading-3">+</span>
+            </div>
             <p class="content-text">
               We stock thousands of products: ranging from nutrients and
               nutraceuticals to herbs and homeopathics; fitness nutrition to
               flower essences and aromatherapy to mineral therapies.
             </p>
           </div>
-          <div class="d-flex align-items-end justify-content-between">
+          <div class="d-flex align-items-xl-end align-items-center justify-content-between">
             <button
               class="bg-transparent content-text border-0 d-flex gap-3 align-items-center justify-content-center"
             >
@@ -422,10 +431,14 @@
           </div>
         </div>
         <div
+          id="orderProcedure"
           class="col feature-col-2 position-relative feature-4 border d-flex justify-content-between flex-column"
         >
           <div>
-            <h3 class="heading-3">Order Procedure Information</h3>
+            <div class="d-flex align-items-center
+             justify-content-between">
+              <h3 class="heading-3">Order Procedure Information</h3> <span id="orderProcedureBtn" class="d-xl-none d-block heading-3">+</span>
+            </div>
             <p class="content-text">
               We supply clinic orders and prescriptions by courier. <br />- No
               add-on orders please. <br />- Click & collect available. <br />-
@@ -507,8 +520,8 @@
     </div>
 
     <!-- image logo slider 2 -->
-    <div class="container retail-brand">
-      <p class="heading-4 text-center">Retail Brand</p>
+    <div class="container container-2 retail-brand">
+      <p class="heading-4 text-center mb-xl-0 mb-3">Retail Brand</p>
 
       <div class="home-slider">
         <div class="slide-track">
@@ -633,7 +646,7 @@
     <!-- image slideshow -->
     <div
       id="carouselExampleAutoplaying"
-      class="carousel container-fluid slide"
+      class="carousel container-fluid slide container-2"
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">

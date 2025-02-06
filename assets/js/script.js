@@ -123,3 +123,32 @@ const contents = document.querySelector(".contents");
 showContents?.addEventListener("click", () => {
   contents.classList.toggle("hidden");
 });
+
+const currentPage = document.querySelectorAll(".current-Page div");
+Array.from(currentPage).forEach((page) => {
+  page.addEventListener("click", (e) => {
+    for (page of currentPage) {
+      page.classList.remove("active-page");
+    }
+    e.target.classList.add("active-page");
+  });
+});
+
+
+const practitionerBtn = document.getElementById("practitionerBtn")
+const shopNowBtn = document.getElementById("shopNowBtn")
+const orderProcedureBtn = document.getElementById("orderProcedureBtn")
+const practitioner = document.getElementById("practitioner")
+const shopNow = document.getElementById("shopNow")
+const orderProcedure = document.getElementById("orderProcedure")
+
+
+practitionerBtn.addEventListener("click", ()=>{
+  practitioner.classList.toggle("feature-col-height")
+})
+shopNowBtn.addEventListener("click", ()=>{
+  shopNow.classList.toggle("feature-col-height")
+})
+orderProcedureBtn.addEventListener("click", ()=>{
+  orderProcedure.classList.toggle("feature-col-height")
+})

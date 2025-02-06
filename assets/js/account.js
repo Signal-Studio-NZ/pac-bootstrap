@@ -109,9 +109,9 @@ const autoPayment = `
               />
             </svg>
           </div>
-            <p class="second-heading heading-3">Setup auto payment</p>
+            <p class="second-heading mb-md-0 mb-1 heading-3">Setup auto payment</p>
 
-            <div class="d-flex">
+            <div class="d-flex mb-md-0 mb-4">
               <div class="col-6 d-flex flex-column gap-2">
                 <label class="label">Account</label>
                 <p class="content-text">1035</p>
@@ -122,7 +122,7 @@ const autoPayment = `
               </div>
             </div>
 
-            <div class="">
+            <div class="m-md-0 mb-4">
               <label class="label">Conditions</label>
               <div class="content-text mt-2 d-flex flex-column gap-1">
                 <p>
@@ -137,9 +137,9 @@ const autoPayment = `
                 <p class="mb-5">This payment will supercede any others.</p>
               </div>
             </div>
-            <div class="d-flex flex-column gap-1">
+            <div class="d-flex flex-column gap-1 mt-md-0 mt-1">
               <label class="label">Choose payment option</label>
-              <div class="payment-option d-flex mb-1">
+              <div class="payment-option d-flex mb-1 mt-3">
                 <button id="payEveryInvoice" type="button"
                   class="w-50 h-100 active-payment font-manrope fw-medium border-0"
                 >
@@ -150,7 +150,7 @@ const autoPayment = `
                 </button>
               </div>
             </div>
-            <div class="d-flex flex-column gap-3 mt-5">
+            <div class="d-flex flex-column gap-3 mt-5 payment-btn">
               <button type="button" class="btn active-btn w-100">Save Changes</button>
               <button class="w-100 btn" type="button" id="cancel-modal">
                 Cancel
