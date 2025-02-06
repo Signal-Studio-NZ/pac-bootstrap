@@ -32,9 +32,7 @@
           </div>
         </div>
         <div class="">
-          <table
-            class="table client-order-table content-text d-xl-block d-none"
-          >
+          <table class="table client-order-table content-text">
             <thead class="">
               <tr>
                 <th class="custom-th">Client</th>
@@ -51,19 +49,6 @@
             </thead>
             <tbody id="table-body"></tbody>
           </table>
-          <div class="d-xl-none d-flex flex-column client-data-div">
-            <div class="client-order-div">
-              <div><b>Client</b> <span>Stepehnson</span></div>
-              <div><b>Order</b> <span>PHW3</span></div>
-              <div><b>Date Created</b> <span>27/11/14</span></div>
-              <div><b>Retail nc GST</b> <span>$0.00</span></div>
-              <div><b>Wholesale exc GST</b> <span>$30.00</span></div>
-              <div><b>Margin exc GST</b> <span>$20.00</span></div>
-              <div><b>Status</b> <span>Delivered</span></div>
-              <div><b>Activity</b> <span>-</span></div>
-              <div><b>Tasks</b> <span>-</span></div>
-            </div>
-          </div>
         </div>
         <div
           class="d-flex justify-content-between align-items-center yourClientOrder-pagination"
@@ -84,7 +69,7 @@
                 stroke-linejoin="round"
               />
             </svg>
-            Previous
+            <span class="d-md-block d-none">Previous</span>
           </button>
 
           <div class="d-flex justify-content-between align-items-center">
@@ -97,7 +82,7 @@
               class="pagination-btn"
               onclick="changePage(1)"
             >
-              Next
+              <span class="d-md-block d-none">Next</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

@@ -41,7 +41,7 @@ aboutCards.forEach((card, index) => {
         class="rounded-24"
         alt="${card.altText}"
       />
-      <p class="heading-3 mt-3 m-0">${card.name}</p>
+      <p class="heading-3 about-name mt-3 m-0">${card.name}</p>
       <p class="content-text m-0">${card.degree}</p>
     `;
 

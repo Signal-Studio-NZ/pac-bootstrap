@@ -19,14 +19,16 @@
     <div class="container">
     <h1 class="heading-1 tutorial-margin">Tutorials</h1>
     <div class="tutorial-body">
-      <div class="tutorial-div d-flex flex-md-row flex-column">
+      <div class="tutorial-div d-flex flex-lg-row flex-column">
         <div>
-             <img src="/assets//images//tutorials/thumbnails.jpg" class="mb-xxl-4 tutorial-video" alt="Tutorial image">
+             <div class="mb-xxl-4 tutorial-video">
+              <img src="/assets//images//tutorials/thumbnails.jpg"  class="h-100 w-100" alt="Tutorial image">
+             </div>
           
-           <div class="tutorial-duration-div">
+           <div class="d-flex align-items-center justify-content-between">
             <h2 class="tutorial-heading">How to register as a Practitioner</h2><span class="tutorial-duration">6:08</span>
            </div>
-           <p class="tutorial-para">
+           <p class="tutorial-para tutorial-width">
             Our online system allows our Practitioner members to purchase their clinic supplies and recommend and supply remedies to their clients online.
            </p>
         </div>
@@ -34,10 +36,10 @@
             <div class="tutorial-video mb-xxl-4">
               <img src="./assets//svgs/tutorials.svg" alt="Pacific Health Logo" class="h-50 w-50">
             </div>
-            <div class="tutorial-duration-div">
+            <div class="d-flex align-items-center justify-content-between">
               <h2 class="tutorial-heading">Placeholder no-image-video</h2> <span class="tutorial-duration">6:08</span>
             </div>
-            <p class="tutorial-para">
+            <p class="tutorial-para tutorial-width">
               Our online system allows our Practitioner members to purchase their clinic supplies and recommend and supply remedies to their clients online.
           </p>
           </div>
@@ -48,7 +50,7 @@
      <img src="/assets/images/Arrow left.svg" alt="Left arrow"> <span class="tutorial-para d-lg-block d-none">Previous</span>
      </div>
      <div class="d-lg-none d-flex align-items-center gap-2 current-Page">
-      <div class="nav-pages bg-light tutorial-para">1</div>
+      <div class="active-page tutorial-para">1</div>
       <div class="tutorial-para">2</div>
       <div class="tutorial-para">3</div>
       <div class="tutorial-para">...</div>
@@ -73,17 +75,6 @@
     </div>
     </main>
     <div id="footer"></div>
-    <script>
-      const currentPage = document.querySelectorAll(".current-Page div");
-      Array.from(currentPage).forEach((page) => {
-        page.addEventListener("click", (e) => {
-          for (page of currentPage) {
-            page.classList.remove("active-page");
-          }
-          e.target.classList.add("active-page");
-        });
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

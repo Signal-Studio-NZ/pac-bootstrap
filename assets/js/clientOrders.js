@@ -196,7 +196,7 @@ const tableBody = document.getElementById("table-body");
 const pageNumbers = document.getElementById("page-numbers");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
-const clientDataDiv = document.getElementsByClassName("client-data-div")
+const clientDataDiv = document.getElementsByClassName("client-data-div");
 
 let currentPage = 1;
 const rowsPerPage = 12;
@@ -212,26 +212,38 @@ function renderTable() {
 
   pageData.forEach((item) => {
     const row = document.createElement("tr");
+    // Function to update row style based on screen size
+    function updateRowStyle() {
+      if (window.innerWidth < 1200) {
+        row.classList.add("d-flex", "flex-column", "customBorder-Table");
+        row.classList.remove("d-table-row");
+      } else {
+        row.classList.remove("d-flex", "flex-column", "customBorder-Table");
+        // row.classList.add("d-table-row", "");
+      }
+    }
     row.innerHTML = `
-          <td class="custom-td">${item.client}</td>
-          <td class="custom-td">${item.order}</td>
-          <td class="custom-td">${item.date}</td>
-          <td class="custom-td">${item.retail}</td>
-          <td class="custom-td">${item.wholesale}</td>
-          <td class="custom-td">${item.margin}</td>
-          <td class="custom-td">${item.status}</td>
-          <td class="custom-td">${item?.activity}</td>
-          <td class="custom-td">${item?.task}</td>
-        `;
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Client</span>${item.client}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Order</span>${item.order}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Date created </span>${item.date}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Retail nc GST</span>${item.retail}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Wholesale exc GST</span>${item.wholesale}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Margin exc GST</span>${item.margin}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Status</span>${item.status}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Activity</span>${item?.activity}</td>
+      <td class="custom-td"><span class="responsive-lable d-xl-none">Tasks</span>${item?.task}</td>
+    `;
     tableBody.appendChild(row);
+    // Update styles dynamically when resizing
+    window.addEventListener("resize", updateRowStyle);
   });
   renderPagination();
 }
 
-function renderDiv(){
+function renderDiv() {
   pageData.forEach((item) => {
     const orderDiv = document.createElement("div");
-    orderDiv.classList.add("client-order-div")
+    orderDiv.classList.add("client-order-div");
     orderDiv.innerHTML = `
           <div><b>Client</b> <span>${item.client}</span></div>
           <div><b>Order</b> <span>${item.order}</span></div>
@@ -247,7 +259,6 @@ function renderDiv(){
   });
   renderPagination();
 }
-
 
 // Function to Render Pagination
 function renderPagination() {
@@ -339,4 +350,4 @@ nextBtn.onclick = () => changePage(1);
 
 // Initial Render
 renderTable();
-renderDiv()
+renderDiv();

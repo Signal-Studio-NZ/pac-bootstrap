@@ -531,12 +531,32 @@ function renderTable() {
 
   pageData.forEach((item) => {
     const row = document.createElement("tr");
+    // Function to update row style based on screen size
+    function updateRowStyle() {
+      if (window.innerWidth < 1200) {
+        row.classList.add("d-flex", "flex-column");
+        row.classList.remove("d-table-row");
+      } else {
+        row.classList.remove("d-flex", "flex-column");
+        // row.classList.add("d-table-row", "");
+      }
+    }
+
     row.innerHTML = `
-            <td class="tabel-data" >${item.order}</td>
-          <td class="tabel-data" >${item.date}</td>
-          <td class="tabel-data" >${item.amount}</td>
-          <td class="tabel-data" >${item.status}</td>
+            <td class="" ><span class="responsive-lable d-xl-none">Order</span>${
+              item.order
+            }</td>
+          <td class="" ><span class="responsive-lable d-xl-none">Date</span>${
+            item.date
+          }</td>
+          <td class="" ><span class="responsive-lable d-xl-none">Amount</span>${
+            item.amount
+          }</td>
+          <td class="" ><span class="responsive-lable d-xl-none">Status</span>${
+            item.status
+          }</td>
           <td class="tabel-data-activity" >
+          <span class="responsive-lable d-xl-none">Activity</span>
             <p class="table-content">${
               Array.isArray(item.activity) ? item.activity[0] : item.activity
             }</p>
@@ -551,6 +571,10 @@ function renderTable() {
           </td>
           `;
     tableBody.appendChild(row);
+    updateRowStyle(); // Apply style initially
+
+    // Update styles dynamically when resizing
+    window.addEventListener("resize", updateRowStyle);
   });
 
   renderPagination();
