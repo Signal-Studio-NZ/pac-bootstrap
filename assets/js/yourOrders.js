@@ -571,7 +571,7 @@ function renderTable() {
           </td>
           `;
     tableBody.appendChild(row);
-    updateRowStyle(); // Apply style initially
+    updateRowStyle()
 
     // Update styles dynamically when resizing
     window.addEventListener("resize", updateRowStyle);

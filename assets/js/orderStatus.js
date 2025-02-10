@@ -133,36 +133,40 @@ function renderTable() {
             <td class="custom-td text-xl-end"><span class="responsive-lable d-xl-none">Price</span>${item.price}</td>
           `;
     tableBody.appendChild(row);
+    updateRowStyle()
     // Update styles dynamically when resizing
     window.addEventListener("resize", updateRowStyle);
   });
 
   // Add GST and Total rows after the main data rows
-  const subtotal = document.createElement("tr");
-  // <span class="bg-gray orderStatus-subtotal">$300</span>
-  subtotal.classList.add("order-status-subtotal");
-  subtotal.innerHTML = `
-        <td colspan="5" class="orderStatus-subtotal bg-gray ">subtotal </td>
-        <td class=" bg-gray orderStatus-subtotal text-end">$300</td>
-      `;
-  tableBody.appendChild(subtotal);
+  // const totalDiv = document.createElement("div")
+  // totalDiv.classList.add("mt-5", "w-full", "mt-xl-0", "w-100")
+  // const subtotal = document.createElement("tr");
+  // // <span class="bg-gray orderStatus-subtotal">$300</span>
+  // subtotal.classList.add("order-status-subtotal", "border-0", "w-100");
+  // subtotal.innerHTML = `
+  //       <td colspan="5" class="orderStatus-subtotal bg-gray ">subtotal </td>
+  //       <td class=" bg-gray orderStatus-subtotal text-end">$300</td>
+  //     `;
+  // totalDiv.appendChild(subtotal);
 
-  const gstRow = document.createElement("tr");
-  gstRow.classList.add("order-status-gstrow");
+  // const gstRow = document.createElement("tr");
+  // gstRow.classList.add("order-status-gstrow", "border-0", "w-100");
 
-  gstRow.innerHTML = `
-        <td class="bg-gray gst-table" colspan="5">GST</td>
-        <td class="bg-gray gst-table text-end">$33</td>
-      `;
-  tableBody.appendChild(gstRow);
+  // gstRow.innerHTML = `
+  //       <td class="bg-gray gst-table" colspan="5">GST</td>
+  //       <td class="bg-gray gst-table text-end">$33</td>
+  //     `;
+  // totalDiv.appendChild(gstRow);
 
-  const totalprice = document.createElement("tr");
-  totalprice.classList.add("order-status-totalprice");
-  totalprice.innerHTML = `
-        <td class="bg-gray orderStatus-total" colspan="5">Total</td>
-        <td class="bg-gray orderStatus-total text-end">$300</td>
-      `;
-  tableBody.appendChild(totalprice);
+  // const totalprice = document.createElement("tr");
+  // totalprice.classList.add("order-status-totalprice", "border-0", "w-100");
+  // totalprice.innerHTML = `
+  //       <td class="bg-gray orderStatus-total" colspan="5">Total</td>
+  //       <td class="bg-gray orderStatus-total text-end">$300</td>
+  //     `;
+  // totalDiv.appendChild(totalprice);
+  // tableBody.appendChild(totalDiv)
 }
 
 renderTable();

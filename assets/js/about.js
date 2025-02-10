@@ -29,7 +29,7 @@ const container = document.getElementById("about-card-container");
 // Loop through the array and create the cards dynamically
 aboutCards.forEach((card, index) => {
   const cardElement = document.createElement("div");
-  cardElement.className = "about-card ";
+  cardElement.className = "about-card";
   cardElement.setAttribute("type", "button");
   cardElement.setAttribute("data-bs-toggle", "modal");
   cardElement.setAttribute("data-bs-target", "#exampleModal");
@@ -56,3 +56,16 @@ aboutCards.forEach((card, index) => {
   // Append the card to the container
   container.appendChild(cardElement);
 });
+function setModalImage(){
+  const modalImage = document.getElementById("modal-img")
+  const contentSection = document.getElementById("content-section")
+  const modalBody = document.getElementById("modal-body")
+  if(window.innerWidth < 768){
+      contentSection.prepend(modalImage)
+      modalBody.removeChild(modalImage)
+  }else{
+   modalBody.prepend(modalImage)
+   contentSection.removeChild(modalImage)
+  }
+}
+window.addEventListener('resize', setModalImage)

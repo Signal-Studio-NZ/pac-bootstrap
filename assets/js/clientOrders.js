@@ -234,6 +234,7 @@ function renderTable() {
       <td class="custom-td"><span class="responsive-lable d-xl-none">Tasks</span>${item?.task}</td>
     `;
     tableBody.appendChild(row);
+    updateRowStyle()
     // Update styles dynamically when resizing
     window.addEventListener("resize", updateRowStyle);
   });
