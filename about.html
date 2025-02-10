@@ -176,29 +176,28 @@
       >
         <div class="modal-dialog about-modal modal-dialog-centered">
           <div class="modal-content about-modal-content">
-            <div
-              class="modal-body p-3 d-flex flex-column flex-md-row align-items-start"
+            <div id="modal-body"
+              class="modal-body p-3 d-flex flex-md-row flex-column align-items-start"
             >
               <!-- Image Section -->
               <img
                 id="modal-img"
                 src=""
                 alt=""
-                class="rounded-24 h-100 object-fit-cover w-50"
+                class="rounded-24 h-100 object-fit-cover w-50 me-md-0 me-sm-2 me-0"
               />
 
               <!-- Content Section -->
-              <div class="content-section w-100 ms-md-4 mt-3 mt-md-0">
+              <div id="content-section" class="content-section ms-md-4 mt-3 mt-md-0 w-100">
                 <!-- Close Button -->
-                <div class="w-100 d-flex justify-content-end">
+                <div class="w-md-100 d-flex justify-content-end">
                   <button
                     type="button"
-                    class="btn-close m-0 p-3"
+                    class="btn-close m-0 p-xl-3 p-lg-2"
                     data-bs-dismiss="modal"
                     aria-label="Close"
                   ></button>
                 </div>
-
                 <!-- Name and Degree -->
                 <h3 id="modal-name" class="p-0 heading-3"></h3>
                 <p id="modal-degree" class="second-heading heading-3"></p>

@@ -861,6 +861,9 @@ line-height: 160%;
 .table{
   font-family: var(--bs-font-primary);
 }
+.horizontal-line{
+  min-width: 100%;
+}
 .custom-thead th {
   border: 1px solid;
   background-color: #F9F9F9 !important; /* Set background color */
@@ -957,7 +960,8 @@ font-size: 12px;
 .customBorder-Table{
   padding-bottom: 15px;
   padding-top: 17px;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid #CED4D4;
+  min-width: 100%;
 }
 .custom-td{
   /* min-width: 140px;                    */
@@ -1026,7 +1030,10 @@ border-bottom: 1.5px solid #CED4D4;
 .client-order-div div{
   margin-top: 12px;
 }
-
+.orders-total{
+  height: 208px;
+  background-color: #F9F9F9;
+}
 /* .total-div{
   background-color: #F9F9F9;
   /* font-size: 19px;
@@ -1065,13 +1072,6 @@ padding: 14px !important;
 .tutorial-video{
   background-color:  #ECF2F2;
 }
-.tutorial-para{
-  font-family: var(--bs-font-primary);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28.8px;
- }
  .tutorial-width{
   width: 73%
  }
