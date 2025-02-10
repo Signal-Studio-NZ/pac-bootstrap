@@ -239,10 +239,10 @@ line-height: 28.8px;
 /* navbar  */
 .navbarmenu{
   background-color: #0A2926;
-  /* height: 100%; */
 }
 .navmenu-headers{
-  margin: 69px 0 76px 0;
+  height: 100px;
+  padding-bottom: 24px;
 }
 .navbar-menuLinks{
   gap: 32px;
