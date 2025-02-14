@@ -100,31 +100,31 @@ const data = [
     price: "$16.00",
   },
 ];
+document.addEventListener("DOMContentLoaded", function () {
+  let currentPage = 1;
+  const rowsPerPage = 12;
 
-let currentPage = 1;
-const rowsPerPage = 12;
+  function renderTable() {
+    const tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = "";
 
-function renderTable() {
-  const tableBody = document.getElementById("table-body");
-  tableBody.innerHTML = "";
+    const start = (currentPage - 1) * rowsPerPage;
+    const end = currentPage * rowsPerPage;
+    const pageData = data.slice(start, end);
 
-  const start = (currentPage - 1) * rowsPerPage;
-  const end = currentPage * rowsPerPage;
-  const pageData = data.slice(start, end);
-
-  pageData.forEach((item) => {
-    const row = document.createElement("tr");
-    // Function to update row style based on screen size
-    function updateRowStyle() {
-      if (window.innerWidth < 1200) {
-        row.classList.add("d-flex", "flex-column", "customBorder-Table");
-        row.classList.remove("d-table-row");
-      } else {
-        row.classList.remove("d-flex", "flex-column", "customBorder-Table");
-        row.classList.add("d-table-row");
+    pageData.forEach((item) => {
+      const row = document.createElement("tr");
+      // Function to update row style based on screen size
+      function updateRowStyle() {
+        if (window.innerWidth < 1200) {
+          row.classList.add("d-flex", "flex-column", "customBorder-Table");
+          row.classList.remove("d-table-row");
+        } else {
+          row.classList.remove("d-flex", "flex-column", "customBorder-Table");
+          row.classList.add("d-table-row");
+        }
       }
-    }
-    row.innerHTML = `
+      row.innerHTML = `
             <td class="custom-td"><span class="responsive-lable d-xl-none">Code</span>${item.code}</td>
             <td class="orderStatus-table-prod custom-td"><span class="responsive-lable d-xl-none">Product *</span>${item.product}</td>
             <td class="custom-td"><span class="responsive-lable d-xl-none">Qty</span>${item.qty}</td>
@@ -132,41 +132,42 @@ function renderTable() {
             <td class="custom-td"><span class="responsive-lable d-xl-none">W/S excl GST</span>${item.w_s}</td>
             <td class="custom-td text-xl-end"><span class="responsive-lable d-xl-none">Price</span>${item.price}</td>
           `;
-    tableBody.appendChild(row);
-    updateRowStyle()
-    // Update styles dynamically when resizing
-    window.addEventListener("resize", updateRowStyle);
-  });
+      tableBody.appendChild(row);
+      updateRowStyle();
+      // Update styles dynamically when resizing
+      window.addEventListener("resize", updateRowStyle);
+    });
 
-  // Add GST and Total rows after the main data rows
-  // const totalDiv = document.createElement("div")
-  // totalDiv.classList.add("mt-5", "w-full", "mt-xl-0", "w-100")
-  // const subtotal = document.createElement("tr");
-  // // <span class="bg-gray orderStatus-subtotal">$300</span>
-  // subtotal.classList.add("order-status-subtotal", "border-0", "w-100");
-  // subtotal.innerHTML = `
-  //       <td colspan="5" class="orderStatus-subtotal bg-gray ">subtotal </td>
-  //       <td class=" bg-gray orderStatus-subtotal text-end">$300</td>
-  //     `;
-  // totalDiv.appendChild(subtotal);
+    // Add GST and Total rows after the main data rows
+    // const totalDiv = document.createElement("div")
+    // totalDiv.classList.add("mt-5", "w-full", "mt-xl-0", "w-100")
+    // const subtotal = document.createElement("tr");
+    // // <span class="bg-gray orderStatus-subtotal">$300</span>
+    // subtotal.classList.add("order-status-subtotal", "border-0", "w-100");
+    // subtotal.innerHTML = `
+    //       <td colspan="5" class="orderStatus-subtotal bg-gray ">subtotal </td>
+    //       <td class=" bg-gray orderStatus-subtotal text-end">$300</td>
+    //     `;
+    // totalDiv.appendChild(subtotal);
 
-  // const gstRow = document.createElement("tr");
-  // gstRow.classList.add("order-status-gstrow", "border-0", "w-100");
+    // const gstRow = document.createElement("tr");
+    // gstRow.classList.add("order-status-gstrow", "border-0", "w-100");
 
-  // gstRow.innerHTML = `
-  //       <td class="bg-gray gst-table" colspan="5">GST</td>
-  //       <td class="bg-gray gst-table text-end">$33</td>
-  //     `;
-  // totalDiv.appendChild(gstRow);
+    // gstRow.innerHTML = `
+    //       <td class="bg-gray gst-table" colspan="5">GST</td>
+    //       <td class="bg-gray gst-table text-end">$33</td>
+    //     `;
+    // totalDiv.appendChild(gstRow);
 
-  // const totalprice = document.createElement("tr");
-  // totalprice.classList.add("order-status-totalprice", "border-0", "w-100");
-  // totalprice.innerHTML = `
-  //       <td class="bg-gray orderStatus-total" colspan="5">Total</td>
-  //       <td class="bg-gray orderStatus-total text-end">$300</td>
-  //     `;
-  // totalDiv.appendChild(totalprice);
-  // tableBody.appendChild(totalDiv)
-}
+    // const totalprice = document.createElement("tr");
+    // totalprice.classList.add("order-status-totalprice", "border-0", "w-100");
+    // totalprice.innerHTML = `
+    //       <td class="bg-gray orderStatus-total" colspan="5">Total</td>
+    //       <td class="bg-gray orderStatus-total text-end">$300</td>
+    //     `;
+    // totalDiv.appendChild(totalprice);
+    // tableBody.appendChild(totalDiv)
+  }
 
-renderTable();
+  renderTable();
+});
