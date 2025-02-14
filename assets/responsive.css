@@ -542,6 +542,10 @@ gap: 0;
   font-size: 14px;
   font-style: normal;
 }
+.custom-td{             
+  padding: 0px;   
+  display: flex;
+}
 }
 
 /* SM: Small Devices (landscape phones, 576px and up) */
@@ -1016,6 +1020,10 @@ line-height: 24px;
     font-size: 14px;
     font-style: normal;
   }
+  .custom-td{             
+    padding: 0px;   
+    display: flex;
+  }
 }
 
 
@@ -1398,6 +1406,10 @@ select{
   font-size: 14px;
   font-style: normal;
 }
+.custom-td{             
+  padding: 0px;   
+  display: flex;
+}
 }
 
 /* LG: Large Devices (desktops, 992px and up) */
@@ -1727,6 +1739,7 @@ select{
 }
 .custom-td{             
   padding: 0px;   
+  display: flex;
 }
 
 }

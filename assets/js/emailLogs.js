@@ -23,20 +23,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pageData.forEach((item) => {
       const row = document.createElement("tr");
+      function updateRowStyle() {
+        if (window.innerWidth < 1200) {
+          row.classList.add("d-flex", "flex-column");
+          row.classList.remove("d-table-row");
+        } else {
+          row.classList.remove("d-flex", "flex-column");
+          // row.classList.add("d-table-row", "");
+        }
+      }
       row.innerHTML = `
-            <td class="custom-td">${item.timestamp}</td>
-          <td class="custom-td">${item.description}</td>
-          <td class="custom-td">${item.link}</td>
-          <td class="custom-td">${item.email}</td>
-          <td class="custom-td">${item.notes}</td>
-          <td  class="custom-td">${item.resend}</td>
+            <td class="custom-td"><span class="responsive-lable d-xl-none">Time stamp</span>${item.timestamp}</td>
+          <td class="custom-td"><span class="responsive-lable d-xl-none">Description</span>${item.description}</td>
+          <td class="custom-td"><span class="responsive-lable d-xl-none">Link</span>${item.link}</td>
+          <td class="custom-td"><span class="responsive-lable d-xl-none">Email</span>${item.email}</td>
+          <td class="custom-td"><span class="responsive-lable d-xl-none">Notes</span>${item.notes}</td>
+          <td  class="custom-td"><span class="responsive-lable d-xl-none">Resend</span>${item.resend}</td>
           `;
       tableBody.appendChild(row);
     });
 
     renderPagination();
+    updateRowStyle();
 
+    // Update styles dynamically when resizing
     window.scrollTo({ top: 0, behavior: "smooth" });
+    window.addEventListener("resize", updateRowStyle);
   }
 
   function renderPagination() {
