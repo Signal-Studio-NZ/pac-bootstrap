@@ -32,6 +32,10 @@
   margin-top: 50px;
   margin-bottom: 32px;
  }
+ .second-heading{
+  font-size: 15px;
+  line-height: 24px;
+}
  .heading-3{
   font-size: 26px;
   line-height: 33.8px;
@@ -47,10 +51,6 @@
   font-size: 22px !important;
   line-height: 35.2px !important;
  }
- .second-heading{
-  font-size: 15px;
-  line-height: 24px;
-}
  .container{
   padding-left: 16px;
   padding-right: 16px;
@@ -345,6 +345,9 @@ gap: 0;
   padding-right: 27px;
   padding-top: 34px;
 }
+.add-manually{
+  border: none;
+}
 /* About Page */
 .about-header-container{
   height: 570px;
@@ -445,6 +448,9 @@ gap: 0;
   .inputField::placeholder{
   font-size: 15px;
   line-height: 24px;
+  }
+  .delivery-add :nth-child(2){
+    line-height: 35px;
   }
   .inputField{
    padding: 0 16px ;
@@ -726,6 +732,9 @@ line-height: 24px;
 .account-field{
   min-width: 245px;
 }
+.delivery-add :nth-child(2){
+  line-height: 35px;
+}
 .account-invoice-infoContainer{
  row-gap: 36px;
  margin-top: 30px;
@@ -840,6 +849,9 @@ line-height: 24px;
 /* .orderStatus-backBtn span{
   padding-left: 24px;
 } */
+.add-manually{
+  border: none;
+}
 .order-page-heading{
   font-size: 30px;
   line-height: 39px;
