@@ -242,6 +242,10 @@ line-height: 24px;
 .editsign-btn{
   margin-bottom: 39px;
 }
+.account-editBtn{
+  font-size: 14px;
+  line-height: 22.4px; 
+  }
 /* Contact Us */
 .third-row{
   display: none;
@@ -360,6 +364,11 @@ gap: 0;
   line-height: 48px;
   padding-right: 50px;
 }
+.about-heading{
+  font-size: 40px;
+  line-height: 48px;
+  font-family: var(--bs-font-secondary);
+}
 
 .terms-second-title{
   font-size: 22px !important;
@@ -381,6 +390,7 @@ gap: 0;
   }
   .aboutCard-container{
     margin-top: 34px;
+    gap: 40px !important;
   }
   .about-card{
     max-height: 440px;
@@ -416,6 +426,9 @@ gap: 0;
   }
   #modal-degree{
     font-weight:600;
+  }
+  .rounded-24 {
+    border-radius: 12px;
   }
    /* Login Page */
    .login-sideimg {
@@ -772,6 +785,10 @@ line-height: 24px;
   grid-template-columns: 1fr;
   gap: 35px;
 }
+.account-editBtn{
+  font-size: 14px;
+  line-height: 22.4px; 
+  }
 
 /* Contact Us */
 .map{
@@ -895,6 +912,7 @@ line-height: 24px;
     }
     .aboutCard-container{
       margin-top: 40px;
+      gap: 35px !important;
     }
     .about-rght-content{
       max-width: 100%;
@@ -927,6 +945,9 @@ line-height: 24px;
     }
     #modal-degree{
       font-weight:600;
+    }
+    .rounded-24 {
+      border-radius: 15px;
     }
       /* Login Page */
       .login-sideimg {
@@ -1226,6 +1247,10 @@ line-height: 25.6px;
   grid-template-columns: 1fr;
   gap: 30px;
 }
+.account-editBtn{
+  font-size: 15px;
+  line-height: 23.4px; 
+  }
   /* Contact Us */
   .contact-details{
     gap: 20px;
@@ -1329,6 +1354,9 @@ line-height: 25.6px;
   }
   .modal-dialog-centered{
     justify-content: center;
+  }
+  .rounded-24 {
+    border-radius: 18px;
   }
 
    /* Login Page */
@@ -1581,6 +1609,10 @@ line-height: 27.2px;
 .inputField{
  width: 420px;
  }
+ .account-editBtn{
+ font-size: 15px;
+ line-height: 23.4px; 
+ } 
 
  /* Contact Us */
 .contact-us h2{
@@ -1670,6 +1702,9 @@ line-height: 27.2px;
 }.about-modal-content img{
   max-height: 590px !important;
 }
+.rounded-24 {
+  border-radius: 20px;
+}
 /* Login Page */
 .login-sideimg {
   height: 640px;
@@ -1717,6 +1752,13 @@ select{
 }
 .login-form form {
   gap: 18px;
+}
+ /* Promotions */
+ .promotion-gap{
+  gap: 300px;
+}
+.promoted-gap{
+  gap: 100px;
 }
 /* Footer */
 .footer{
@@ -1930,6 +1972,9 @@ select{
   .about-modal-content{
     height: 570px !important;
   }
+  .rounded-24 {
+    border-radius: 22px;
+  }
 /* Login Page */
  .login-sideimg {
    height: 690px;
@@ -1979,6 +2024,13 @@ select{
   .custom-th{
     min-width: 115px;                    
     padding: 18px 24px !important;   
+  }
+  /* Promotions */
+  .promotion-gap{
+    gap: 320px;
+  }
+  .promoted-gap{
+    gap: 120px;
   }
 /* Footer */
 .footer{
