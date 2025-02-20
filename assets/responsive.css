@@ -1795,6 +1795,19 @@ select{
   padding: 0px;   
   display: flex;
 }
+/* Promotion */
+.client-list-para{
+  padding-inline: 24px;
+  padding-block: 20px;
+  height: auto;
+  width: 800px;
+  margin-bottom: 60px;
+}
+.subscribed-clients{
+  margin-left: 0;
+  width: 500px;
+  margin-top: 50px;
+}
 
 }
 
