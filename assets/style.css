@@ -1486,16 +1486,24 @@ line-height: 25.6px;
 .account-newsletter{
   margin-top: 83px;
 }
-.account-checkbox input[type="radio"]:checked {
+.account-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #546967;
+  border-radius: 4px;
+  appearance: none;
+  position: relative;
+}
+.account-checkbox input[type="checkbox"]:checked {
   background-color: #0A2926; /* Green background when checked */
   border-color: #0A2926; /* Optional: Change the border color to green */
 }
-.account-checkbox input[type="radio"]:checked::after {
+.account-checkbox input[type="checkbox"]:checked::after {
   content: ''; /* Creates a pseudo-element */
   position: absolute; /* Position the pseudo-element */
-  top: 3px; /* Adjust as needed */
-  left: 6px; /* Adjust as needed */
-  width: 3px; /* Width of the checkmark */
+  top: 4px; /* Adjust as needed */
+  left: 7px; /* Adjust as needed */
+  width: 4px; /* Width of the checkmark */
   height: 8px; /* Height of the checkmark */
   border: solid white; /* White checkmark */
   border-width: 0 2px 2px 0; /* Create the checkmark shape */
@@ -1559,30 +1567,12 @@ background: var(--Bg-Grey, #F9F9F9);
 .checkbox{
   min-width: 168px;
 }
-.account-checkbox input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #546967;
-  border-radius: 4px;
+.prescription-to-type input[type="radio"] {
   appearance: none;
-  position: relative;
+  -webkit-appearance: none;
+  position: absolute;
+  left: 0;
 }
-.account-checkbox input[type="checkbox"]:checked {
-  background-color: #0A2926; /* Green background when checked */
-  border-color: #0A2926; /* Optional: Change the border color to green */
-}
-.account-checkbox input[type="checkbox"]:checked::after {
-  content: ''; /* Creates a pseudo-element */
-  position: absolute; /* Position the pseudo-element */
-  top: 4px; /* Adjust as needed */
-  left: 7px; /* Adjust as needed */
-  width: 4px; /* Width of the checkmark */
-  height: 8px; /* Height of the checkmark */
-  border: solid white; /* White checkmark */
-  border-width: 0 2px 2px 0; /* Create the checkmark shape */
-  transform: rotate(45deg); /* Rotate to make the checkmark */
-}
-
 /* Promotions Page */
 .promotion-input{
   padding-block: 18px;
@@ -1615,7 +1605,7 @@ border: none;
 .add-product{
   margin-top: 100px;
 }
-.promotion-table button{
+.promotion-btn{
   height: 66px;
   width: 262px;
   border-radius: var(--bs-spacing-md);
@@ -1626,6 +1616,8 @@ border: none;
   font-size: 22px;
   font-weight: 600;
   line-height: 35.2px;
+}
+.promotion-btn-margin{
   margin-top: 104px;
   margin-bottom: 60px;
 }
@@ -1706,4 +1698,75 @@ margin-inline: 10px;
   font-family: var(--bs-font-primary);
   line-height: 24px;
   font-weight: 500;
+}
+.promotion-cancel-btn{
+width: 208px;
+background: #F9F9F9;
+color: #0A2926;
+}
+.custom-radio input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0A2926;
+  border-radius: 20px;
+  appearance: none;
+  position: relative;
+}
+.custom-radio input[type="radio"]:checked {
+  border-color: #0A2926;
+}
+.custom-radio input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  background-color: #0A2926;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+/* Client  */
+.client-list-para{
+  padding-inline: 32px;
+  padding-block: 24px;
+  height: 106px;
+  width: 962px;
+  background-color: #FADECE;
+  border-radius: 12px;
+  margin-top: -15px;
+  margin-bottom: 80px;
+}
+.client-list-terms{
+  margin-top: 124px;
+  font-family: var(--bs-font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+.pointer{
+  cursor: pointer;
+}
+.promotion-thead th {
+  min-width: 134px !important;  
+  max-width: 168px !important;                
+}
+.promotion-thead td{
+  min-width: 134px !important;
+  max-width: 168px !important;       
+}
+.off-retail{
+  width: 73px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #ECF2F2;
+  font-size: 13px;
+  font-family: var(--bs-font-primary);
+  font-weight: 500;
+  line-height: 20.8px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.table-active{
+  background-color: #E65909;
+  color: #fff;
 }
