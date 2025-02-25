@@ -22,7 +22,8 @@
             ‘Create Invoice’ has been disabled as you have not supplied a GST number. If you want to create invoices for you, then your Account administrator should go to the <span class="order-btn">Administer account page</span>  and save one.
         </p>
         <div class="d-flex justify-content-between align-items-center">
-        <button class="promotion-btn mb-5">Add client</button>
+        <button class="promotion-btn mb-5" id="modal-btn" data-bs-toggle="modal"
+        data-bs-target="#products-modal">Add client</button>
         <div class="order-status-search">
           <input
             name="srch"
@@ -52,6 +53,23 @@
         Please note that these prices will be overriden by any discounts in prescriptions. Updates happen immediately
        </p>
      </div>
+     <div
+     class="modal fade"
+     id="products-modal"
+     tabindex="-1"
+     aria-labelledby="productsModalLabel"
+     aria-hidden="true"
+   >
+     <div
+       class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+     >
+       <div
+         id="modal-container"
+         class="modal-content position-relative custom-modal"
+       >
+       </div>
+     </div>
+   </div>
     </main>
     <div id="footer"></div>
     <script

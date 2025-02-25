@@ -1808,6 +1808,36 @@ select{
   width: 500px;
   margin-top: 50px;
 }
+.products-modal{
+  max-width: 900px !important;
+}
+.modal-search{
+  width: 2900px;
+  margin-right: 60px;
+}
+.modal-select{
+  height: 35px;
+  width: 140px;
+  margin-left: 15px;
+}
+.product-td{
+  max-height: 100px;
+  min-width: 250px;
+  max-width:300px;
+}
+.product-td-img{
+  max-width: 100px;
+  margin-right: 18px;
+}
+.product-modal-btn{
+margin-top: 130px;
+}
+.product-modal-btn button{
+width: 390px;
+height: 58px;
+border-radius: 10px;
+font-size: 18px;
+}
 
 }
 
@@ -2073,6 +2103,35 @@ select{
 .subscribed-clients{
   margin-left: 150px !important;
   width: 500px;
+}
+.products-modal{
+  min-width: 1000px !important;
+}
+.modal-search{
+  width: 320px;
+  margin-right: 85px;
+}
+.modal-select{
+  height: 40px;
+  width: 160px;
+  margin-left: 18px;
+}
+.product-td{
+  max-height: 100px;
+  min-width: 250px;
+  max-width:300px;
+}
+.product-td-img{
+  max-width: 100px;
+  margin-right: 18px;
+}
+.product-modal-btn{
+margin-top: 160px;
+}
+.product-modal-btn button{
+width: 420px;
+height: 62px;
+font-size: 20px;
 }
 }
 
