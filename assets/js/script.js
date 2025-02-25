@@ -134,21 +134,19 @@ Array.from(currentPage).forEach((page) => {
   });
 });
 
+const practitionerBtn = document.getElementById("practitionerBtn");
+const shopNowBtn = document.getElementById("shopNowBtn");
+const orderProcedureBtn = document.getElementById("orderProcedureBtn");
+const practitioner = document.getElementById("practitioner");
+const shopNow = document.getElementById("shopNow");
+const orderProcedure = document.getElementById("orderProcedure");
 
-const practitionerBtn = document.getElementById("practitionerBtn")
-const shopNowBtn = document.getElementById("shopNowBtn")
-const orderProcedureBtn = document.getElementById("orderProcedureBtn")
-const practitioner = document.getElementById("practitioner")
-const shopNow = document.getElementById("shopNow")
-const orderProcedure = document.getElementById("orderProcedure")
-
-
-practitionerBtn.addEventListener("click", ()=>{
-  practitioner.classList.toggle("feature-col-height")
-})
-shopNowBtn.addEventListener("click", ()=>{
-  shopNow.classList.toggle("feature-col-height")
-})
-orderProcedureBtn.addEventListener("click", ()=>{
-  orderProcedure.classList.toggle("feature-col-height")
-})
+practitionerBtn.addEventListener("click", () => {
+  practitioner.classList.toggle("feature-col-height");
+});
+shopNowBtn.addEventListener("click", () => {
+  shopNow.classList.toggle("feature-col-height");
+});
+orderProcedureBtn.addEventListener("click", () => {
+  orderProcedure.classList.toggle("feature-col-height");
+});

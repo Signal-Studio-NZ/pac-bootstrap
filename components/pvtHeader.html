@@ -1,0 +1,259 @@
+<header class="d-flex flex-md-column flex-column-reverse">
+  <section
+    id="notification-banner"
+    class="notification-banner d-flex justify-content-center align-items-center position-relative text-center"
+  >
+    <p class="fw-semibold font-manrope lh-base">
+      Christmas & New Year: We are closed from 12pm Tuesday 24th of December
+      2024 to 9am Monday 6th of January 2025.
+    </p>
+    <img
+      src="./../assets/images/svgs/close.svg"
+      alt="close"
+      id="notification-closeBtn"
+      class="notification-closeBtn"
+    />
+  </section>
+  <nav
+    class="d-flex container justify-content-between align-items-end align-items-lg-center border-danger custom-navbar"
+  >
+    <a class="navbar-brand p-0 m-0" href="/">
+      <img src="/assets/svgs/pacLogo.svg" class="pac-logo" alt="Logo" />
+    </a>
+
+    <ul
+      class="navbar-nav align-items-end align-items-xl-center d-flex flex-row font-manrope font-600"
+    >
+      <li class="nav-item d-none d-xl-block">
+        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+      </li>
+      <li class="nav-item dropdown d-none d-xl-block">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Prescriptions
+        </a>
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-menu"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle"></div>
+          <li><a class="" href="#">My prescriptions</a></li>
+          <li><a class="" href="#">Enter code</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown d-none d-xl-block">
+        <a
+          href="#"
+          class="nav-link dropdown-toggle"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Promotion
+        </a>
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-menu"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle"></div>
+          <li><a class="" href="#">My Promotion</a></li>
+          <li><a class="" href="#">Enter code</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item d-none d-xl-block">
+        <a class="nav-link">Clients</a>
+      </li>
+      <!-- <li class="nav-item d-none d-xl-block">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li> -->
+      <li class="nav-item d-none d-xl-block">
+        <a
+          class="nav-link"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          href="contact-us.html"
+          >Admin</a
+        >
+
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-admin"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle-admin dropdown-circle"></div>
+          <li><a class="" href="#">Products</a></li>
+          <li><a class="" href="#">Categories</a></li>
+          <li><a class="" href="#">Users</a></li>
+          <li><a class="" href="#">Practitioner list</a></li>
+          <li><a class="" href="#">Order search</a></li>
+          <li><a class="" href="#">Specials</a></li>
+          <li><a class="" href="#">Featured</a></li>
+          <li><a class="" href="#">Strange addresses</a></li>
+          <li><a class="border-top pt-3" href="#">Content management</a></li>
+          <li><a class="border-top pt-3" href="#">Log</a></li>
+          <li><a class="" href="#">Reset cache</a></li>
+          <li><a class="" href="#">Reindex images</a></li>
+          <li><a class="" href="#">Refresh newsletters</a></li>
+          <li><a class="" href="#">Reindex search</a></li>
+          <li><a class="" href="#">Check MailChimp</a></li>
+        </ul>
+      </li>
+      <li class="m-0 p-0 account-icon">
+        <a
+          class="nav-link p-0 m-0"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          href="/account.html"
+        >
+          <img src="/assets/images/account.svg" alt="account" class="account"
+        /></a>
+
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-user"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle-user dropdown-circle"></div>
+          <li><a class="" href="#">Order status</a></li>
+          <li><a class="" href="#">Order history</a></li>
+          <li><a class="" href="#">Client orders</a></li>
+          <li><a class="" href="#">Even log</a></li>
+          <li><a class="" href="#">Shopping basket</a></li>
+          <li><a class="" href="#">Agreements</a></li>
+          <li><a class="border-top pt-3" href="#">Account details</a></li>
+          <li><a class="" href="#">Account Statement</a></li>
+          <li><a class="" href="#">Pay account</a></li>
+          <li><a class="border-top pt-2" href="#">Hide wholesale</a></li>
+          <li><a class="" href="#">No email notifications</a></li>
+          <li><a class="border-top pt-2" href="#">Out of stock report</a></li>
+          <li><a class="border-top pt-2" href="#">Sign out</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0" href="#">
+          <img src="/assets/images/cart.svg" alt="cart" class="cart"
+        /></a>
+      </li>
+      <img
+        src="/assets/svgs/menu.svg"
+        alt="cart"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+        class="d-xl-none mb-1 d-block"
+      />
+    </ul>
+
+    <div
+      class="offcanvas d-xl-none offcanvas-end"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="navbarmenu offcanvas-body px-3">
+        <div
+          class="d-flex p-0 navmenu-headers justify-content-between align-items-end"
+        >
+          <a class="" href="/">
+            <img src="/assets/svgs/navmenuLogo.svg" class="" alt="Logo" />
+          </a>
+          <div class="d-flex justify-content-center align-items-center gap-4">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+              >
+                <path
+                  d="M12.2496 12.5998C15.7244 12.5998 18.5496 9.7718 18.5496 6.29983C18.5496 2.82786 15.7241 -0.00012207 12.2496 -0.00012207C8.77515 -0.00012207 5.94714 2.82536 5.94714 6.29983C5.94714 9.77429 8.77512 12.5998 12.2496 12.5998ZM12.2496 1.88892C14.681 1.88892 16.6577 3.86577 16.6577 6.29699C16.6577 8.72834 14.6808 10.7051 12.2496 10.7051C9.8184 10.7051 7.83902 8.72821 7.83902 6.29699C7.83902 3.86565 9.81588 1.88892 12.2496 1.88892Z"
+                  fill="white"
+                />
+                <path
+                  d="M1.4463 22.0001C1.96979 22.0001 2.39224 21.5776 2.39224 21.0542C2.39224 18.22 4.70043 15.9117 7.53468 15.9117H16.9657C19.7998 15.9117 22.1081 18.2199 22.1081 21.0542C22.1081 21.5776 22.5306 22.0001 23.0541 22.0001C23.5775 22.0001 24 21.5776 24 21.0542C24 17.1755 20.8431 14.0198 16.9657 14.0198H7.53468C3.65602 14.0198 0.500366 17.1767 0.500366 21.0542C0.500366 21.5776 0.922822 22.0001 1.4463 22.0001Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="22"
+                viewBox="0 0 19 22"
+                fill="none"
+              >
+                <path
+                  d="M0 6.99361V18.8703C0 20.596 1.52734 22 3.40467 22H15.5953C17.4727 22 19 20.596 19 18.8703V6.99361C19 6.53607 18.5965 6.16515 18.0988 6.16515H14.3931V4.37952C14.3931 1.96463 12.2558 0 9.6288 0C7.0017 0 4.86447 1.96467 4.86447 4.37952V6.16515H0.901236C0.403453 6.16515 0 6.53607 0 6.99361ZM6.66689 4.37952C6.66689 2.87827 7.99556 1.6569 9.62875 1.6569C11.2619 1.6569 12.5906 2.87827 12.5906 4.37952V6.16515H6.66689V4.37952ZM1.80247 7.82206H4.86442V12.6092C4.86442 13.0668 5.26792 13.4377 5.76565 13.4377C6.26339 13.4377 6.66689 13.0668 6.66689 12.6092V7.82206H12.5906V12.6092C12.5906 13.0668 12.9941 13.4377 13.4918 13.4377C13.9896 13.4377 14.3931 13.0668 14.3931 12.6092V7.82206H17.1975V18.8703C17.1975 19.6824 16.4788 20.3431 15.5953 20.3431H3.40467C2.52121 20.3431 1.80247 19.6824 1.80247 18.8703V7.82206Z"
+                  fill="white"
+                /></svg
+            ></a>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div
+          class="d-flex navbar-menuBody justify-content-between flex-column navbar-menuBody"
+        >
+          <div
+            class="text-white d-flex mb-4 font-manrope flex-column navbar-menuLinks"
+          >
+            <a href="" class="navbar-MLink">Shop</a>
+            <p
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              class="navbar-MLink"
+            >
+              Practioner
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="d-flex flex-column gap-12">
+                <a href="" class="navbar-subLinks">Link 1</a>
+                <a href="" class="navbar-subLinks">Link 1</a>
+                <a href="" class="navbar-subLinks">Link 1</a>
+              </div>
+            </div>
+            <p
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample2"
+              class="navbar-MLink"
+            >
+              Practioner
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="d-flex flex-column gap-12">
+                <a href="" class="navbar-subLinks">Link 1</a>
+                <a href="" class="navbar-subLinks">Link 1</a>
+                <a href="" class="navbar-subLinks">Link 1</a>
+              </div>
+            </div>
+            <a href="#" class="navbar-MLink">About Us</a>
+            <a href="#" class="navbar-MLink">Contact</a>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <a
+              class="navbar-Btn fw-semibold d-flex justify-content-center align-items-center"
+              >Register</a
+            >
+            <a
+              class="navbar-Btn fw-semibold d-flex justify-content-center align-items-center"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1777,7 +1777,7 @@ select{
   
   /* border: 1px solid black; */
 }
-.custom-tbody tr{
+.promotion-tbody tr{
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
   padding-top: 17px;
@@ -1808,11 +1808,16 @@ select{
   width: 500px;
   margin-top: 50px;
 }
-
+.header-dropdown-user{
+  right: -10px !important;
+}
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header-dropdown-user{
+    right: -10px !important;
+  }
   .pac-logo{
     height: 34px;
     width: auto;
@@ -1922,6 +1927,19 @@ select{
 }
 .account-newsletter{
   margin-top: 74px;
+}
+.promotion-thead{
+  display: none;
+}
+.promotion-tbody td{
+  padding: 9px 0;
+  border: none !important;
+  font-size: 14px;
+}
+.promotion-tbody tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
 }
   /* Contact Us*/
   .contact-details{
@@ -2045,14 +2063,28 @@ select{
   .promoted-gap{
     gap: 120px;
   }
+  .client-list-para{
+    padding-inline: 28px;
+    padding-block: 22px;
+    height: auto;
+    width: 850px;
+    margin-bottom: 70px;
+  }
 /* Footer */
 .footer{
   margin: 145px auto 0 auto;
 }
+/* Promotions */
+.subscribed-clients{
+  margin-left: 150px !important;
+  width: 500px;
+}
+
 }
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  
   .account-icon{
     margin-left: 16px;
     margin-right: -14px;

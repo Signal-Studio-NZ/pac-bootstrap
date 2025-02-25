@@ -315,6 +315,73 @@ line-height: 160%; /* 28.8px */
   .navbar-collapse{
     background-color: white;
   }
+  .dropdown-circle{
+    position: absolute;
+    top: -13px;
+    left: 12px;
+    background-color: #ECF2F2;
+    height: 26px;
+width: 26px;
+border-radius: 100%;
+  }
+  .header-dropdown-menu{
+    margin-left: -20px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    position: relative;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .dropdown-circle-user{
+    right: 12px;
+    left: auto;
+  }
+  .dropdown-circle-admin{
+    right: 110px;
+    left: auto;
+  }
+  .header-dropdown-admin{
+    margin-left: -80px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    /* position: relative; */
+    right: -100px !important;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .header-dropdown-user{
+    margin-left: -195px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    position: relative;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .header-dropdown-user li{
+    margin-bottom: 16px; 
+  }
+  .dropdown-menu li {
+    margin-bottom: 14px; /* Adds spacing between list items */
+  }
+  
+  .dropdown-menu li:last-child {
+    margin-bottom: 0; /* Removes margin from the last item */
+  }
+  .dropdown-menu a {
+    font-family: var(--bs-font-primary);
+    font-weight: 600;
+    color: var(--bs-primary);
+    /* border: 1px solid red; */
+    text-decoration: none !important; /* Removes underline */
+    color: black !important; /* Sets text color to black */
+    display: block; /* Makes links take full width */
+  }
   .navbar-brand img {
     max-height: 100%;
     max-width: auto;
@@ -1502,9 +1569,9 @@ line-height: 25.6px;
 .account-checkbox input[type="checkbox"]:checked::after {
   content: ''; /* Creates a pseudo-element */
   position: absolute; /* Position the pseudo-element */
-  top: 3px; /* Adjust as needed */
-  left: 6px; /* Adjust as needed */
-  width: 3px; /* Width of the checkmark */
+  top: 4px; /* Adjust as needed */
+  left: 7px; /* Adjust as needed */
+  width: 4px; /* Width of the checkmark */
   height: 8px; /* Height of the checkmark */
   border: solid white; /* White checkmark */
   border-width: 0 2px 2px 0; /* Create the checkmark shape */
@@ -1568,26 +1635,220 @@ background: var(--Bg-Grey, #F9F9F9);
 .checkbox{
   min-width: 168px;
 }
-.account-checkbox input[type="checkbox"] {
+.prescription-to-type input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  left: 0;
+}
+/* Promotions Page */
+.promotion-input{
+  padding-block: 18px;
+  padding-inline: 28px;
+  width: 249px;
+}
+.code{
+  left: 20px;
+  top: 50%;
+  font-size: 20px;
+}
+.input-dash{
+  left: 20px;
+  top: 45px;
+  font-size: 20px;
+}
+.pick-up-btn{
+color: #FFF;
+font-family: var(--bs-font-primary);
+font-size: var(--bs-font-size-2xl);
+font-style: normal;
+font-weight: 600;
+line-height: 35.2px;
+border-radius: var(--bs-spacing-sm);
+background: #E65909;
+width: 222px;
+height: 66px;
+border: none;
+}
+.add-product{
+  margin-top: 100px;
+}
+.promotion-btn{
+  height: 66px;
+  width: 262px;
+  border-radius: var(--bs-spacing-md);
+  color: #FFF;
+  border: none;
+  background: var(--Body100, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0A2926);
+  font-family: Manrope;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 35.2px;
+}
+.promotion-btn-margin{
+  margin-top: 104px;
+  margin-bottom: 60px;
+}
+.promotion-disclaimer{
+color: var(--Body100, #0A2926);
+font-family: var(--bs-font-primary);
+font-size: var(--bs-font-size-sm);
+font-weight: 500;
+line-height: 22.4px;
+margin-top: 60px;
+}
+
+.promotion-table{
+  padding-bottom: 73px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 83px;
+}
+.promotion-select{
+  width: 350px;
+}
+.admin-promo{
+  padding-bottom: 138px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 83px;
+}
+.promoted-to-qty{
+border-radius: 6px;
+border: 2px solid var(--Body10, #ECF2F2);
+background: var(--Bg-Grey, #F9F9F9);
+width: 76px;
+height: 40px;
+padding-block: 5px;
+padding-left: 13px;
+margin-inline: 10px;
+}
+.qty-2{
+  width: 211px;
+}
+.qty-2::-webkit-datetime-edit{
+  visibility: hidden;
+}
+.qty-2::-webkit-datetime-edit::after{
+  visibility: visible;
+}
+.promoted-to input[type="radio"]{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.prescription-to-type{
+  gap: 14px;
+}
+.subscribed-clients{
+  width: 596px;
+  margin-left: 250px;
+}
+.subscribed-clients input[type="text"]{
+  padding-left: 30px;
+}
+.promotion-gap{
+  gap: 350px;
+}
+.promotion-gap svg{
+  cursor: pointer;
+}
+.promoted-gap{
+  gap: 150px;
+}
+.promoted-to{
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 101px;
+  padding-bottom: 103px;
+}
+.promotion-terms{
+  margin-top: 121px;
+  font-size: 15px;
+  font-family: var(--bs-font-primary);
+  line-height: 24px;
+  font-weight: 500;
+}
+.promotion-cancel-btn{
+width: 208px;
+background: #F9F9F9;
+color: #0A2926;
+}
+.custom-radio input[type="radio"] {
   width: 20px;
   height: 20px;
-  border: 1px solid #546967;
-  border-radius: 4px;
+  border: 1px solid #0A2926;
+  border-radius: 20px;
   appearance: none;
   position: relative;
 }
-.account-checkbox input[type="checkbox"]:checked {
-  background-color: #0A2926; /* Green background when checked */
-  border-color: #0A2926; /* Optional: Change the border color to green */
+.custom-radio input[type="radio"]:checked {
+  border-color: #0A2926;
 }
-.account-checkbox input[type="checkbox"]:checked::after {
-  content: ''; /* Creates a pseudo-element */
-  position: absolute; /* Position the pseudo-element */
-  top: 4px; /* Adjust as needed */
-  left: 7px; /* Adjust as needed */
-  width: 4px; /* Width of the checkmark */
-  height: 8px; /* Height of the checkmark */
-  border: solid white; /* White checkmark */
-  border-width: 0 2px 2px 0; /* Create the checkmark shape */
-  transform: rotate(45deg); /* Rotate to make the checkmark */
+.custom-radio input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  background-color: #0A2926;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+/* Client  */
+.client-list-para{
+  padding-inline: 32px;
+  padding-block: 24px;
+  height: 106px;
+  width: 962px;
+  background-color: #FADECE;
+  border-radius: 12px;
+  margin-top: -15px;
+  margin-bottom: 80px;
+}
+.client-list-terms{
+  margin-top: 124px;
+  font-family: var(--bs-font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22.4px;
+}
+.pointer{
+  cursor: pointer;
+}
+.promotion-thead th {
+  min-width: 134px !important;  
+  max-width: 168px !important;                
+}
+.promotion-thead td{
+  min-width: 134px !important;
+  max-width: 168px !important;       
+}
+.off-retail{
+  width: 73px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #ECF2F2;
+  font-size: 13px;
+  font-family: var(--bs-font-primary);
+  font-weight: 500;
+  line-height: 20.8px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.table-active{
+  background-color: #E65909;
+  color: #fff;
+}
+.shop-container{
+  gap: 130px;
+}
+.shop-filter{
+  width: 240px;
+  height: fit-content;
+  background-color: #0A2926;
+}
+.shop-products{
+  width: 100%;
+  height: fit-content;
+  background-color: #3f948b;
+
 }
