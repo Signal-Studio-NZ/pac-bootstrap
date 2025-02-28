@@ -1831,6 +1831,10 @@ select{
   padding-left: 265px;
   gap: 25px;
 }
+.favourites-note{
+  font-size: 14px;
+  margin-left: 50px;
+}
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
@@ -2110,6 +2114,11 @@ select{
 .Perfect-Potion{
   font-size: 24px;
 }
+.favourites-note{
+  font-size: 14px;
+  margin-left: 60px;
+  font-family: var(--bs-font-primary);
+}
 }
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
@@ -2149,5 +2158,10 @@ select{
    width: 45px;
    padding: 8px 12px;
    border-radius: 8px;
+  }
+  .favourites-note{
+    font-size: 18px;
+    margin-left: 130px;
+    font-family: var(--bs-font-primary);
   }
 }

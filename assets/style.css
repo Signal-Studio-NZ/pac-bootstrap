@@ -1850,6 +1850,15 @@ color: #0A2926;
   /* position: sticky;
   top: 0px; */
 }
+.favourites-note{
+  font-size: 18px;
+  margin-left: 130px;
+  font-family: var(--bs-font-primary);
+}
+.shop-lbl{
+  font-size: 12px;
+  margin-top: 40px;
+}
 .shop-filter-1{
   margin-left: -14px;
 }
@@ -2041,4 +2050,19 @@ line-height: 160%; /* 22.4px */
 }
 .prd-ml-value{
   font-size: 28px;
+}
+.Shopprd-notFound{
+  font-size: 28px;
+  font-family: var(--bs-font-primary);
+  line-height: 44px;
+  color:  #0A2926;
+}
+.shop-backHome{
+  color: var(--Body100, #0A2926);
+font-family: Manrope;
+font-size: 18px;
+line-height: 28.8px; /* 28.8px */
+}
+.shop-backHome a{
+  color: var(--Body100, #f94d0e);
 }
