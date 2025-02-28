@@ -2079,6 +2079,10 @@ select{
   margin-left: 150px !important;
   width: 500px;
 }
+/* product details */
+.product-details-prdName{
+  font-size: 24px;
+}
 
 }
 
