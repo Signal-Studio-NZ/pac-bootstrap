@@ -2055,14 +2055,100 @@ line-height: 160%; /* 22.4px */
   font-size: 28px;
   font-family: var(--bs-font-primary);
   line-height: 44px;
-  color:  #0A2926;
+  color: var( --bs-primary);
 }
 .shop-backHome{
-  color: var(--Body100, #0A2926);
+  color: var( --bs-primary);
 font-family: Manrope;
 font-size: 18px;
 line-height: 28.8px; /* 28.8px */
 }
 .shop-backHome a{
   color: var(--Body100, #f94d0e);
+}
+/* checkout page  */
+.checkout-stage1{
+  font-size: 28px;
+  color: gray;
+  /* border: 1px solid black; */
+}
+.checkout-NStage1{
+  border-radius: 50%;
+  border: 1px solid;
+  height: 33px;
+  width: 33px;
+  color: gray;
+}
+.checkoutplace-order{
+  width: 150px;
+}
+.checkout-stage{
+  width: fit-content;
+}
+.checkout-stage-container{
+  margin-bottom: 322px;
+  /* border: 1px solid black; */
+}
+#checkout-line{
+  margin: 0 27px;
+  height: 2px;
+  width: 288px;
+  background-color: gray;
+}
+.checkout-NumActive{
+  background: orangered;
+  color: white;
+}
+.checkout-active{
+  color: orangered;
+}
+.checkout-numDone{
+  border: 2px solid black;
+  font-weight: 500;
+  background-color: #0A2926;
+  color: white;
+  /* color: var(--bs-primary); */
+}
+.checkout-done{
+  color: var(--bs-primary);
+}
+.checkout-stageData{
+  height: 150px;
+  width: 290px;
+  /* background-color: #13635b; */
+  bottom: -155px;
+  left: 40px;
+}
+.checkoutStagedData-label{
+color: #849393;
+}
+.checkoutStagedData-Data{
+  font-size: 18px;
+}
+.textgray{
+  color: #546967;
+}
+.checkoutDelivery-radio{
+  height: 20px;
+  width: 20px;
+}
+.checkoutDelivery-label{
+  font-size: 18px;
+}
+.Delivery-PickUp{
+  padding-bottom: 84px;
+  margin-bottom: 83px;
+}
+.checkout-continueBtn{
+  margin-top: 117px;
+  padding: 0;
+  height: 66px;
+  width: 220px;
+  font-size: 22px;
+}
+.Sameasdelivery{
+  width: 34%;
+}
+.billingAddressOpt{
+  width: 66%;
 }
