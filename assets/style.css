@@ -315,6 +315,73 @@ line-height: 160%; /* 28.8px */
   .navbar-collapse{
     background-color: white;
   }
+  .dropdown-circle{
+    position: absolute;
+    top: -13px;
+    left: 12px;
+    background-color: #ECF2F2;
+    height: 26px;
+width: 26px;
+border-radius: 100%;
+  }
+  .header-dropdown-menu{
+    margin-left: -20px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    position: relative;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .dropdown-circle-user{
+    right: 12px;
+    left: auto;
+  }
+  .dropdown-circle-admin{
+    right: 110px;
+    left: auto;
+  }
+  .header-dropdown-admin{
+    margin-left: -80px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    /* position: relative; */
+    right: -100px !important;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .header-dropdown-user{
+    margin-left: -195px !important;
+    padding: 21px 25px 21px 35px;
+    list-style: none;
+    border: none;
+    position: relative;
+    border-radius: 12px;
+    width: 229px !important;
+     background-color: #ECF2F2;
+  }
+  .header-dropdown-user li{
+    margin-bottom: 16px; 
+  }
+  .dropdown-menu li {
+    margin-bottom: 14px; /* Adds spacing between list items */
+  }
+  
+  .dropdown-menu li:last-child {
+    margin-bottom: 0; /* Removes margin from the last item */
+  }
+  .dropdown-menu a {
+    font-family: var(--bs-font-primary);
+    font-weight: 600;
+    color: var(--bs-primary);
+    /* border: 1px solid red; */
+    text-decoration: none !important; /* Removes underline */
+    color: black !important; /* Sets text color to black */
+    display: block; /* Makes links take full width */
+  }
   .navbar-brand img {
     max-height: 100%;
     max-width: auto;
@@ -887,6 +954,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: 160%; /* 22.4px */
+min-width: fit-content;
 }
 .table-content{
   margin: 0;
@@ -1185,6 +1253,7 @@ padding: 14px !important;
 .about-heading-content{
   margin-bottom: 132px;
   margin-top: 24px;
+  font-weight: 500;
 }
 
 .about-rght-content{
@@ -1344,7 +1413,7 @@ margin-bottom: 25px;
   position: relative;
   width: 350px;
 }
-.custom-select {
+.selectcustom- {
   font-family: var(--bs-font-primary);
   border: 2px solid var(--Body10, #ECF2F2);
   border-radius: 8px;
@@ -1617,6 +1686,9 @@ border: none;
   font-weight: 600;
   line-height: 35.2px;
 }
+.promotion-btn:hover{
+  background: var(--Body100, linear-gradient(0deg, #3d3c3c33 0%, #62606033 100%), #2a2828);
+}
 .promotion-btn-margin{
   margin-top: 104px;
   margin-bottom: 60px;
@@ -1764,7 +1836,20 @@ color: #0A2926;
   background-color: #E65909;
   color: #fff;
 }
-.toast-notification{
+.shop-container{
+  gap: 130px;
+}
+.shop-filter{
+  width: 240px;
+  height: fit-content;
+  background-color: #0A2926;
+}
+.shop-products{
+  width: 100%;
+  height: fit-content;
+  background-color: #3f948b;
+
+}.toast-notification{
   background-color: #FFF;
   height: 100px;
   width: 300px;
@@ -1824,3 +1909,202 @@ font-weight: 600;
 #product-modal-cancel{
   background-color: #f9f9f9;
 }
+.create-prescription-table :nth-child(1){
+ max-width: 160px !important;
+}
+.create-prescription-table :nth-child(2){
+  max-width: 306px !important;
+ }
+ .create-prescription-table :nth-child(3){
+  max-width: 117px !important;
+ }
+ .create-prescription-table :nth-child(4){
+  max-width: 183px !important;
+ }
+ .create-prescription-table :nth-child(5){
+  max-width: 170px !important;
+ }
+ .create-prescription-table :nth-child(6){
+  max-width: 239px !important;
+ }
+ .create-prescription-table :nth-child(7){
+  max-width: 297px !important;
+ }
+ .color-red{
+  color: #E65909;
+ }
+ .create-prescription-tbody td{
+  min-width: auto !important;
+ }
+ .create-prescription-total{
+  margin-top: 34px;
+ background-color: #F9F9F9;
+ }
+ .create-prescription-total div{
+  padding-right: 182px;
+ }
+ .prescription-table th:nth-child(1){
+   max-width: 168px !important;
+   min-width: 100px !important;
+ }
+ .prescription-table th:nth-child(4){
+  max-width: 268px !important;
+  min-width: 160px !important;
+}
+ .prescription-td td{
+  max-width: 168px !important;
+  min-width: 100px !important;
+}
+ .test-prescription{
+  padding-bottom: 106px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 83px;
+ }
+ .prescribe-to{
+  padding-bottom: 98px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 92px;
+ }
+ .gap-10{
+  gap: 10px;
+ }
+ .prescribe-gap{
+  padding-right: 240px;
+ }
+ .attach-promo{
+  padding-bottom: 84px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 100px;
+ }
+ .margin-120{
+  margin-top: 120px;
+ }
+ .issue-btn{
+  background-color: #FADECE;
+  color: #000;
+ }
+ .registration-para{
+  max-width: 962px;
+  padding: 24px 32px;
+  background-color: #C4D9FF;
+  border-radius: 12px;
+  margin-bottom: 76px;
+  margin-top: 38px;
+ }
+ .account-switch-btn{
+  max-width: 638px;
+  display: flex;
+  border-radius: 12px;
+  font-family: var(--bs-font-primary);
+font-size: 22px;
+font-weight: 600;
+line-height: 35.2px;
+background-color: #CED7D6;
+color: #849393;
+overflow: hidden;
+margin-block: 80px;
+ }
+ .account-switch-btn div{
+  cursor: pointer;
+  padding: 16px 28px;
+ }
+ .account-switch-active{
+  background: var(--Body100, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #0A2926);
+  color: #fff;
+ }
+ .mt-60{
+  margin-top: 60px;
+ }
+ .practitioner-application-form{
+  padding-bottom: 80px;
+  border-bottom: 1px solid #CED4D4;
+  margin-bottom: 80px;
+ }
+ .practitioner-application-form input{
+padding-left: 21px;
+ }
+ .upload-qualification{
+  padding-bottom: 91px;
+  margin-bottom: 95px;
+  border-bottom: 1px solid #CED4D4;
+ }
+ .fade-text{
+  font-family: var(--bs-font-primary);
+  font-size: var(--bs-font-size-sm);
+  font-weight: 500;
+  line-height: 22.4px;
+  color: #849393;
+ }
+ #file-upload{
+  display: none;
+ }
+ .file-upload-logo{
+  top: 35%;
+  left: 315px;
+ }
+ .file-upload{
+  padding: 18px 26px 19px 21px;
+  cursor: pointer;
+  color: #849393;
+ }
+ .upload-btn{
+  height: 51px;
+  width: 197px;
+  padding: 12px 22px;
+  color: #CED7D6;
+  border: 1px solid #CED7D6;
+  border-radius: 12px;
+  font-family: var(--bs-font-primary);
+  font-size: var(--bs-font-size-md);
+  line-height: 25.6px;
+  background-color: #fff;
+ }
+ .must-accept{
+  font-family: var(--bs-font-primary);
+  font-size: 14px;
+  color: #849393;
+ }
+ .professional-account-terms{
+  margin-bottom: 162px;
+ }
+ .send-application-btn{
+  width: 233px;
+ }
+ .save-application-btn{
+  width: 107px;
+  height: 66px;
+  padding: 15px 28px;
+  border: none;
+ }
+ .file-added{
+  color: #0A2926;
+  border: 1px solid #0A2926;
+ }
+ .upload-name{
+  display: none;
+ }
+ .uploads-name-after{
+  display: flex;
+ }
+ .triangle{
+  height: 20px;
+  width: 20px;
+  left: 49%;
+  rotate: 45deg;
+  bottom: 0;
+ }
+ .popp{
+  max-width: 247px;
+  min-width: 247px;
+  left: -120px !important;
+ }
+ .prescription-popup{
+  left: -125px !important;
+ }
+ .pop-up{
+  font-family: var(--bs-font-primary);
+  font-size: 13px;
+  line-height: 20.8px;
+  font-weight: 500;
+  padding: 12px 16px;
+ }

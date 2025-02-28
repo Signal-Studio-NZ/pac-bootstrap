@@ -6,7 +6,18 @@ const data = [
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-3" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -46,7 +57,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -86,7 +108,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-4" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -126,7 +159,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-4" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -166,7 +210,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-4" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -206,7 +261,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-4" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -246,7 +312,18 @@ clientPromotion: `
         issued: '22/11/24',
         lastOrder: '22/11/24',
         expires: '22/05/25',
-        products: `100% Whey Protien WP...<b class="pointer">+25</b>`,
+        products: `100% Whey Protien WP...<div class="dropup d-inline">
+        <div class="dropdown-menu position-absolute border-0 popp mb-4" aria-labelledby="dropdown-menu-logo">
+          <div class="px-3 rounded-2 active-page pop-up">
+           <b>2x</b> 100% Whey Protein WP Protein powder <br>
+            <b>3x</b> HS-12S12 - General tonic 30ml spray <br>
+           <b>2x</b> HS-1225012 - General tonic 250 tabs
+          </div>
+          <div class="position-absolute triangle active-page">
+          </div>
+         </div>
+         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+      </div>`,
         masterPromotion: `<svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <circle cx="18" cy="18" r="18" fill="white"/>
   <mask id="path-2-outside-1_2483_3036" maskUnits="userSpaceOnUse" x="9.56641" y="9.56848" width="17" height="17" fill="black">
@@ -435,7 +512,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <span class="responsive-lable d-xxl-none">Products</span>${
               item.products
             }</td>
-             <td>
+             <td class="d-flex align-items-center">
             <span class="responsive-lable d-xxl-none">Master Promotion</span>${
               item.masterPromotion
             }</td>

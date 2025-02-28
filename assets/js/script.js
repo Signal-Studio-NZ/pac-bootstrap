@@ -134,21 +134,44 @@ Array.from(currentPage).forEach((page) => {
   });
 });
 
+const practitionerBtn = document.getElementById("practitionerBtn");
+const shopNowBtn = document.getElementById("shopNowBtn");
+const orderProcedureBtn = document.getElementById("orderProcedureBtn");
+const practitioner = document.getElementById("practitioner");
+const shopNow = document.getElementById("shopNow");
+const orderProcedure = document.getElementById("orderProcedure");
 
-const practitionerBtn = document.getElementById("practitionerBtn")
-const shopNowBtn = document.getElementById("shopNowBtn")
-const orderProcedureBtn = document.getElementById("orderProcedureBtn")
-const practitioner = document.getElementById("practitioner")
-const shopNow = document.getElementById("shopNow")
-const orderProcedure = document.getElementById("orderProcedure")
+// practitionerBtn.addEventListener("click", () => {
+//   practitioner.classList.toggle("feature-col-height");
+// });
+// shopNowBtn.addEventListener("click", () => {
+//   shopNow.classList.toggle("feature-col-height");
+// });
+// orderProcedureBtn.addEventListener("click", () => {
+//   orderProcedure.classList.toggle("feature-col-height");
+// });
 
+const practitionerApplication = document.getElementById("practitioner-application")
+const studentApplication = document.getElementById("student-application")
 
-// practitionerBtn.addEventListener("click", ()=>{
-//   practitioner.classList.toggle("feature-col-height")
-// })
-// shopNowBtn.addEventListener("click", ()=>{
-//   shopNow.classList.toggle("feature-col-height")
-// })
-// orderProcedureBtn.addEventListener("click", ()=>{
-//   orderProcedure.classList.toggle("feature-col-height")
-// })
+practitionerApplication.addEventListener("click", ()=>{
+  studentApplication.classList.remove("account-switch-active")
+  practitionerApplication.classList.add("account-switch-active")
+})
+
+studentApplication.addEventListener("click", ()=>{
+  studentApplication.classList.add("account-switch-active")
+  practitionerApplication.classList.remove("account-switch-active")
+})
+
+const uploadLable = document.getElementById("file-uplaod-label")
+const uploadBtn = document.getElementById("file-upload-btn")
+const fileUpload = document.getElementById("file-upload")
+
+fileUpload.addEventListener("change", ()=>{
+  uploadLable.innerText = fileUpload.files[0].name
+  if(fileUpload.files[0].name){
+    uploadBtn.classList.add("file-added")
+    uploadBtn.disabled = false
+  }
+})

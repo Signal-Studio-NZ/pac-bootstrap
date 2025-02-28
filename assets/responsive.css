@@ -565,6 +565,9 @@ gap: 0;
   padding: 0px;   
   display: flex;
 }
+.new-promo-table{
+  display: none;
+}
 }
 
 /* SM: Small Devices (landscape phones, 576px and up) */
@@ -1057,6 +1060,9 @@ line-height: 24px;
     padding: 0px;   
     display: flex;
   }
+  .new-promo-table{
+    display: none;
+  }
 }
 
 
@@ -1450,6 +1456,9 @@ select{
   padding: 0px;   
   display: flex;
 }
+.new-promo-table{
+  display: none;
+}
 }
 
 /* LG: Large Devices (desktops, 992px and up) */
@@ -1796,6 +1805,12 @@ select{
   display: flex;
 }
 /* Promotion */
+.promotion-btn{
+  height: 60px;
+  width: 200px;
+  font-size: 18px;
+  line-height: 30.4px;
+}
 .client-list-para{
   padding-inline: 24px;
   padding-block: 20px;
@@ -1808,7 +1823,9 @@ select{
   width: 500px;
   margin-top: 50px;
 }
-.products-modal{
+.header-dropdown-user{
+  right: -10px !important;
+}.products-modal{
   max-width: 900px !important;
 }
 .modal-search{
@@ -1825,6 +1842,12 @@ select{
   min-width: 250px;
   max-width:300px;
 }
+.pick-up-btn{
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 30.4px;
+  }
 .product-td-img{
   max-width: 100px;
   margin-right: 18px;
@@ -1838,11 +1861,41 @@ height: 58px;
 border-radius: 10px;
 font-size: 18px;
 }
-
+.create-prescription-total div{
+  padding-right: 120px;
+ }
+ .account-switch-btn{
+  max-width: 490px;
+  border-radius: 12px;
+  margin-block: 70px;
+  font-size: 18px;
+  line-height: 30.4px;
+ }
+ .account-switch-btn div{
+  padding: 12px 24px;
+ }
+ .send-application-btn{
+  width: 200px;
+ }
+ .save-application-btn{
+  width: 100px;
+  height: 60px;
+  padding: 12px 22px;
+ }
+ .new-promo-table{
+  display: none;
+ }
+ .line-total{
+  display: inline-block;
+  margin-left: 100px;
+ }
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .header-dropdown-user{
+    right: -10px !important;
+  }
   .pac-logo{
     height: 34px;
     width: auto;
@@ -2100,10 +2153,17 @@ font-size: 18px;
   margin: 145px auto 0 auto;
 }
 /* Promotions */
+.promotion-btn{
+  height: 62px;
+  width: 230px;
+  font-size: 20px;
+  line-height: 32.6px;
+}
 .subscribed-clients{
   margin-left: 150px !important;
   width: 500px;
 }
+
 .products-modal{
   min-width: 1000px !important;
 }
@@ -2121,10 +2181,21 @@ font-size: 18px;
   min-width: 250px;
   max-width:300px;
 }
+.pick-up-btn{
+  width: 200px;
+  height: 62px;
+  font-size: 20px;
+  line-height: 32.6px;
+  }
 .product-td-img{
   max-width: 100px;
   margin-right: 18px;
 }
+.save-application-btn{
+  width: 100px;
+  height: 60px;
+  padding: 12px 22px;
+ }
 .product-modal-btn{
 margin-top: 160px;
 }
@@ -2133,10 +2204,31 @@ width: 420px;
 height: 62px;
 font-size: 20px;
 }
+.create-prescription-total div{
+  padding-right: 150px;
+ }
+ .account-switch-btn{
+  max-width: 550px;
+  border-radius: 12px;
+  margin-block: 75px;
+  font-size: 20px;
+  line-height: 32.6px;
+ }
+ .account-switch-btn div{
+  padding: 14px 26px;
+ }
+ .send-application-btn{
+  width: 210px;
+ }
+ .line-total{
+  display: inline-block;
+  margin-left: 100px;
+ }
 }
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  
   .account-icon{
     margin-left: 16px;
     margin-right: -14px;

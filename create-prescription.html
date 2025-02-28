@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>Create prescription - Pacific Health</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+     <div class="container">
+        <section class="test-prescription">
+            <h1 class="heading-1 heading-1-margins">Create prescription</h1>
+            <span class="label">Prescription name</span>
+            <h3 class="mt-3 heading-3 mb-5">Test prescription</h3>
+            <button class="mt-4 mb-3 promotion-btn" id="modal-btn" data-bs-toggle="modal" data-bs-target="#products-modal">Add products</button>
+            <table class="mt-5 mb-2 table">
+                <thead class="thead custom-thead promotion-thead">
+                    <tr class="create-prescription-table">
+                      <th>code</th>
+                      <th>Product</th>
+                      <th>QTY</th>
+                      <th>Unit Wholesale</th>
+                      <th>Unit Reatil</th>
+                      <th>Markup / Discount</th>
+                      <th>Line Total</th>
+                      <th></th>
+                    </tr>
+                    <tr class="horizontal-line"></tr>
+                  </thead>
+                  <tbody id="table-body" class="custom-tbody promotion-tbody create-prescription-tbody"></tbody>
+            </table>
+            <form action="" class="d-flex flex-column gap-2">
+                <label for="" class="label">Reamrks / Notes</label>
+                <input type="text" class="selected-file w-100">
+            </form>
+            <div class="create-prescription-total py-3 pb-4">
+             <div class="d-flex justify-content-between align-items-center content-text">
+                <span class="p-4 fw-bold">Total</span>
+                <span class="p-4 fw-bold">$111.90</span>
+             </div>
+             <p class=".client-list-terms ps-4 mb-3">Please note that these prices will override any existing discounts the customer has for these products.</p>
+            </div>
+        </section>
+        <section class="prescribe-to">
+            <h3 class="heading-3 mb-4">Prescribed to</h3>
+            <form action="" class="mt-3">
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-column custom-radio">
+                  <label for="" class="label">Precription to type</label>
+                  <div class="d-flex align-items-center mt-2 gap-10">
+                    <input type="radio" name="precriptionToType" />
+                    <p class="content-text">
+                      First person to use the Prescription Code
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="precriptionToType" />
+                    <p class="content-text">
+                      The First <input value="2" type="text" class="promoted-to-qty" /> uses
+                      of the Prescription Code
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="precriptionToType" />
+                    <p class="content-text">Anyone who uses the Prescription Code</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="precriptionToType" />
+                    <p class="content-text">Chosen clients only</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column subscribed-clients position-relative"
+                >
+                  <div class="d-flex justify-content-between mb-1">
+                    <label for="" class="label">Subscribed Clients</label>
+                    <span class="label order-btn" id="add-clients" data-bs-toggle="modal"
+             data-bs-target="#add-clients-modal">Add clients</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="selected-file w-100 mb-4 content-text"
+                  />
+                  <b class="position-absolute input-dash"> - </b>
+                  <div
+                    class="d-flex gap-2 align-items-sm-center align-items-start account-checkbox mt-2"
+                  >
+                    <input type="checkbox" name="" id="" />
+                    <p class="content-text">
+                      Automatically email promotion to clients
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between flex-wrap mt-5">
+                <div class="d-flex flex-column custom-radio">
+                  <label for="" class="label">Repeat</label>
+                  <div class="d-flex align-items-center mt-2 gap-10">
+                    <input type="radio" name="repeat" />
+                    <p class="content-text">Single Use</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="repeat" />
+                    <p class="content-text">
+                      Limited to
+                      <input type="text" class="promoted-to-qty" value="1" /> repeat(s)
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="repeat" />
+                    <p class="content-text">Unlimited repeats</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column custom-radio prescribe-gap">
+                  <label for="" class="label">Expiry</label>
+                  <div class="d-flex align-items-center mt-2 gap-10">
+                    <input type="radio" name="startDate" />
+                    <p class="content-text">Never expires</p>
+                  </div>
+                  <div class="d-flex align-items-center gap-10">
+                    <input type="radio" name="startDate" />
+                    <p class="content-text">
+                      Expires on
+                      <input type="date" class="promoted-to-qty qty-2" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </section>
+        <section class="attach-promo">
+            <h3 class="heading-3 mb-2">
+                Attach Promo <span class="content-text">(advertise promo when prescription link is sent)</span>
+            </h3>
+            <table class="mt-3 table">
+                <thead class="thead custom-thead promotion-thead">
+                    <tr>
+                      <th></th>
+                      <th>code</th>
+                      <th>Name</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                    </tr>
+                    <tr class="horizontal-line"></tr>
+                  </thead>
+                  <tbody id="attach-table-body" class="custom-tbody promotion-tbody create-prescription-tbody"></tbody>
+            </table>
+        </section>
+        <div class="d-flex flex-column gap-1">
+            <label for="" class="label">Remarks / Notes</label>
+            <input type="text" class="selected-file w-100">
+        </div>
+        <div class="d-flex justify-content-end align-items-center margin-120 gap-3">
+        <button class="pick-up-btn issue-btn">Save</button>
+        <button class="pick-up-btn">Issue</button>
+        </div>
+     </div>
+     <div
+     class="modal fade"
+     id="products-modal"
+     tabindex="-1"
+     aria-labelledby="productsModalLabel"
+     aria-hidden="true"
+   >
+     <div
+       class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+     >
+       <div
+         id="modal-container"
+         class="modal-content position-relative custom-modal"
+       >
+       </div>
+     </div>
+   </div>
+    </main>
+    <div id="footer"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/createPrescription.js"></script>
+    <script src="assets/js/pvtscript.js"></script>
+  </body>
+</html>
