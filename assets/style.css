@@ -2152,3 +2152,48 @@ color: #849393;
 .billingAddressOpt{
   width: 66%;
 }
+.checkoutTable-Qty{
+  width: 127px;
+}
+.checkoutTable-gst{
+  width: 201px;
+}
+.checkoutTable-WS{
+  width: 201px;
+}
+.checkoutTable-Price{
+  width: 155px;
+}
+.checkouttable-total{
+  height: 135px;
+}
+.totalcolor{
+  background-color: #F9F9F9 !important;
+}
+.checkouttable-Totalprice{
+  padding-right:24px !important;
+  text-align: right;
+}
+.checkoutlinks{
+  color: orangered;
+  font-size: 18px;
+}
+.checkoutsmalltext{
+  color: var(--body50, #849393);
+  font-size: 12px;
+}
+.checkout-placeorder{
+  width: 224px;
+  /* font-size; */
+  background: orangered;
+  color: white;
+}
+.checkout-placeorder:hover{
+  background-color: orangered;
+}
+.checkout-back{
+  width: 208px;
+  /* height: 66px; */
+  border-radius: 12px;
+background: var(--Bg-Grey, #F9F9F9);
+}
