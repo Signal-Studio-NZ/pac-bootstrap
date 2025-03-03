@@ -2011,7 +2011,10 @@ line-height: 160%; /* 22.4px */
 .product-d3tails-addtobacket{
   width: 460px;
 }
-
+.prd-logo{
+  z-index: 50;
+  position: relative;
+}
 .product-details-prdName{
   font-size: 38px;
   line-height: 49px;
@@ -2196,4 +2199,109 @@ color: #849393;
   /* height: 66px; */
   border-radius: 12px;
 background: var(--Bg-Grey, #F9F9F9);
+}
+.basketLayer{
+  width: 100% !important;
+  display: flex;
+  padding: 0 !important;
+  justify-content: center;
+  
+}
+
+.basketLyer{
+  width: 1600px;
+  height: 100%;
+  background-color: rgba(235, 234, 234, 0.304);
+}
+.basket{
+
+  min-width: 250px;
+  width: 48%;
+  padding-left: 41px;
+  padding-right: 70px;
+  background-color: #ECF2F2;
+}
+.basket-body{
+  height: 158px;
+padding: 0;
+}
+.basketSlider-Table tbody tr{
+}
+.basketSlider-Table{
+  width: 100%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.basket-container{
+}
+.basketSlider-Tdata img{
+  height: 66px;
+  width: 66px;
+  border-radius: 4px;
+}
+.basketSlider-Thead{
+color: var(--Body100, #0A2926);
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+
+}
+.basketSlider-Thead:nth-child(1){
+}
+.basket-PrdIncDec{
+  background-color: white;
+  border-radius: 15px;
+  padding: 2px 5px;
+  display: flex;
+  gap: 2px;
+  width: 91px;
+  align-items: center;
+  justify-content: space-between;
+}
+.basket-PrdIncDec div:nth-child(1){
+  background: #000;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+  /* place-content: cent/er; */
+
+}
+.basket-PrdIncDec div:nth-child(2){
+
+}
+.basket-PrdIncDec div:nth-child(3){
+  background: #000;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+  /* place-content: cent/er; */
+
+}
+.basket-tr{
+  margin: 21px 0 24px 0 !important;
+}
+.basket-total{
+  padding-top: 14px;
+  margin-top: 144px;
+  font-size: 22px;
+}
+.basket-checkout{
+  margin-top: 46px;
+  color: white;
+  background: orangered;
+}
+.basket-checkout:hover{
+  background: orangered;
 }

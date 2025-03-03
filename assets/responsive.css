@@ -62,6 +62,9 @@
   height: 114px;
   padding-bottom: 24px;
  }
+ .basket-body{
+  height: 114px;
+ }
 .content-title-data{
   margin-top: 49px;
 }
@@ -617,7 +620,9 @@ gap: 0;
     height: 114px;   
     padding-bottom: 24px;
   }
-
+  .basket-body{
+    height: 114px;
+   }
   .shipping-content-table{
     margin-bottom: 70px;
   }
@@ -1109,7 +1114,9 @@ line-height: 24px;
     height: 114px;  
     padding-bottom: 24px;
   }
-
+  .basket-body{
+    height: 114px;
+   }
   .right-side{
     padding-top: 0px;
     margin-top: 60px;
@@ -1507,6 +1514,9 @@ select{
  .custom-navbar{
   height: 120px; 
   padding-bottom: 0;  
+ }
+ .basket-body{
+  height: 114px;
  }
  /* Home Page */
 .hero-section{
