@@ -69,3 +69,4 @@ function setModalImage(){
   }
 }
 window.addEventListener('resize', setModalImage)
+setModalImage()

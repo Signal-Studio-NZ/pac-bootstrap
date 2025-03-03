@@ -283,6 +283,9 @@ font-family: var(--bs-font-primary);
  .tutorial-body{
   margin-top: 59px;
  }
+ .tutorial-pagination{
+  margin-right: 0;
+}
  /* Terms and Conditions */
  .right-side{
   padding-top: 0px;
@@ -829,6 +832,9 @@ line-height: 24px;
  .tutorial-margin{
   margin-top: 50px;
 }
+.tutorial-pagination{
+  margin-right: 0;
+}
  .right-side{
   padding-top: 0px;
   margin-top: 55px;
@@ -1292,6 +1298,9 @@ line-height: 25.6px;
   .tutorial-margin{
     margin-top: 50px;
   }
+  .tutorial-pagination{
+    margin-right: 0;
+  }
    /* Your Order */
    .order-status-search{
     display: none;
@@ -1655,6 +1664,9 @@ line-height: 27.2px;
  .tutorial-body{
   margin-top: 70px;
 }
+.tutorial-pagination{
+  margin-right: 35%;
+}
  /* Your Order */
  .order-status-search{
   display: none;
@@ -1775,22 +1787,22 @@ select{
 }
 
 /* your order */
-.custom-thead th, .custom-th {
+/* .custom-thead th, .custom-th {
   display: none;
   border: 1px solid red;
-}
-.custom-tbody td{
+} */
+/* .custom-tbody td{
   padding: 9px 0;
   border: none;
   font-size: 14px;
   
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
-.promotion-tbody tr{
+/* .promotion-tbody tr{
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
   padding-top: 17px;
-}
+} */
 .table-content{
   margin: 0;
   padding-top: 0px;
@@ -1823,6 +1835,243 @@ select{
   width: 500px;
   margin-top: 50px;
 }
+.client-list-table td{
+  font-size: 13px;
+  padding: 10px 8px;
+  min-width: 80px !important;
+}
+.client-list-table th{
+  font-size: 13px;
+  padding: 10px 8px;
+}
+.client-list-table th:nth-child(1){
+ min-width: 96px !important;
+  }
+  .client-list-table td:nth-child(1){
+    min-width: 86px !important;
+     }
+  .client-list-table th:nth-child(3){
+    min-width: 106px !important;
+  }
+  .client-list-table td:nth-child(3){
+    min-width: 132px !important;
+  }
+  .client-list-table th:nth-child(4){
+     min-width: 103px !important;
+  }
+   .client-list-table th:nth-child(5){
+     min-width: 103px !important;
+  }
+  .client-list-table th:nth-child(6){
+    min-width: 76px;
+  }
+  .client-list-table th:nth-child(7){
+    min-width: 172px;
+  }
+.client-discount-table td {
+  font-size: 13px;
+  padding: 10px;
+}
+.client-discount-table th{
+  font-size: 13px;
+  padding: 10px;
+}
+.client-discount-table td:nth-child(1){
+  min-width: 60px;
+}
+.client-discount-table th:nth-child(1){
+  min-width: 60px;
+}
+.client-discount-table td:nth-child(2){
+  min-width: 145px !important;
+}
+.client-discount-table th:nth-child(2){
+  min-width: 140px !important;
+}
+.client-discount-table th:nth-child(3){
+  min-width: 113px;
+}
+.client-discount-table td:nth-child(3){
+  min-width: 100px;
+}
+.client-discount-table th:nth-child(4){
+  min-width: 80px;
+}
+.client-discount-table td:nth-child(4){
+  min-width: 83px;
+}
+.client-discount-table td:nth-child(5){
+  min-width: 110px !important;
+}
+.client-discount-table th:nth-child(5){
+  min-width: 132px !important;
+}
+.client-discount-table td:nth-child(6){
+  min-width: 120px;
+}
+.client-discount-table th:nth-child(6){
+  min-width: 126px;
+}
+.promotion-tbody tr{
+  border-bottom: 1px solid #CED4D4;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+.off-retail{
+  margin-left: 5px;
+}
+.create-prescription-table td{
+    font-size: 12px;
+    padding: 8px;
+}
+.create-prescription-table th{
+    font-size: 12px;
+    padding: 8px;
+}
+.create-prescription-table th:nth-child(1){
+  min-width: 70px !important;
+ }
+ .create-prescription-table td:nth-child(1){
+  min-width: 70px !important;
+ }
+.create-prescription-table th:nth-child(2){
+  min-width: 200px !important;
+ }
+ .create-prescription-table th:nth-child(3){
+  min-width: 70px !important;
+ }
+ .create-prescription-table th:nth-child(4){
+  min-width: 95px !important;
+ }
+ .create-prescription-table :nth-child(5){
+  min-width: 75px !important;
+ }
+ .create-prescription-table :nth-child(6){
+  min-width: 147px !important;
+ }
+ .create-prescription-table :nth-child(7){
+  min-width: 70px !important;
+ }
+ .create-prescription-table td:nth-child(8){
+  min-width: 90px !important;
+ }
+ .create-prescription-table th:nth-child(8){
+  min-width: 80px !important;
+ }
+ .qty-input{
+  margin-inline: 0px !important;
+  width: 45px;
+  padding: 5px;
+  height: 30px;
+  font-size: 12px;
+ }
+.prescription-table th{
+  font-size: 12px !important;
+  padding: 10px 12px;
+  min-width: 20px !important;
+}
+ .prescription-td td{
+  font-size: 12px !important;
+  padding: 10px 12px;
+  }
+  .prescription-td td:nth-child(1){
+    min-width: 70px !important;
+  }
+  .prescription-td td:nth-child(4){
+    min-width: 96px !important;
+  }
+  .prescription-td td:nth-child(6){
+    min-width: 182px !important;
+  }
+  .prescription-td td:nth-child(7){
+    min-width: 133px !important;
+  }
+  .prescription-td td:nth-child(8){
+    min-width: 127px !important;
+    }
+    .new-promotion-table th{
+      font-size: 13px !important;
+      padding: 12px 16px;
+    }
+    .new-promotion-table td{
+      font-size: 13px !important;
+      padding: 12px 16px;
+    }
+    .new-promotion-table td:nth-child(1){
+      min-width: 100px;
+    }
+    .new-promotion-table th:nth-child(1){
+      min-width: 100px;
+    }
+    .new-promotion-table td:nth-child(3){
+      min-width: 60px;
+    }
+    .new-promotion-table th:nth-child(3){
+      min-width: 60px;
+    }
+    .new-promotion-table td:nth-child(6){
+      min-width: 150px;
+    }
+    .new-promotion-table th:nth-child(6){
+      min-width: 150px;
+    }
+    .new-promotion-table th:nth-child(7){
+      min-width: 80px;
+    }
+    .new-promotion-table td:nth-child(7){
+      min-width: 80px;
+    }
+    .new-promotion-table td:nth-child(2){
+      min-width: 150px !important;
+      max-width: 180px;
+    }
+    .new-promotion-table th:nth-child(5){
+      min-width: 100px;
+    }
+    .new-promotion-table td:nth-child(5){
+      min-width: 100px;
+    }
+    .promotion-list-table td{
+      font-size: 12px;
+      padding: 12px;
+  }
+  .promotion-list-table th{
+      font-size: 12px;
+      padding: 12px;
+  }
+  .promotion-list-table td:nth-child(5){
+  min-width: 180px;
+  }
+  .promotion-list-table td:nth-child(1){
+    min-width: 125px !important;
+  }
+  .promotion-list-table th:nth-child(1){
+    min-width: 125px !important;
+  }
+  .promotion-list-table td:nth-child(2){
+    min-width: 70px !important;
+  }
+  .promotion-list-table th:nth-child(2){
+    min-width: 70px !important;
+  }
+  .promotion-list-table td:nth-child(5){
+    min-width: 182px !important;
+  }
+  .promotion-list-table th:nth-child(3){
+    min-width: 81px !important;
+  }
+  .promotion-list-table td:nth-child(3){
+    min-width: 81px !important;
+  }
+    .promotion-list-table th:nth-child(4){
+    min-width: 74px !important;
+  }
+  .promotion-list-table td:nth-child(4){
+    min-width: 74px !important;
+  }
+  .promotion-list-table td:nth-child(6){
+    min-width: 120px;
+  }
 .header-dropdown-user{
   right: -10px !important;
 }.products-modal{
@@ -1889,6 +2138,30 @@ font-size: 18px;
   display: inline-block;
   margin-left: 100px;
  }
+.product-details-prdName{
+  font-size: 24px;
+  line-height: 28px;
+}
+.prd-ml-value{
+  font-size: 20px;
+}
+.Perfect-Potion{
+  font-size: 22px;
+}
+.shop-search{
+  display: flex;
+}
+.shop-container{
+  gap: 80px;
+}
+.shop-search-sort{
+  padding-left: 265px;
+  gap: 25px;
+}
+.favourites-note{
+  font-size: 14px;
+  margin-left: 50px;
+}
 }
 
 /* XL: Extra Large Devices (large desktops, 1200px and up) */
@@ -2006,10 +2279,202 @@ font-size: 18px;
 .account-newsletter{
   margin-top: 74px;
 }
-.promotion-thead{
-  display: none;
+.client-discount-table td {
+  font-size: 15px;
+  padding: 16px 20px;
 }
-.promotion-tbody td{
+.client-discount-table th{
+  font-size: 15px;
+  padding: 16px 20px;
+}
+.client-list-table td{
+  font-size: 15px;
+  padding: 16px 18px;
+  min-width: 120px !important;
+}
+.client-list-table th{
+  font-size: 15px;
+  padding: 16px 18px;
+}
+.client-list-table th:nth-child(1){
+ min-width: 127px !important;
+  }
+  .client-list-table td:nth-child(1){
+    min-width: 127px !important;
+     }
+  .client-list-table tr:nth-child(2){
+   min-width: 120px !important;
+  }
+  .client-list-table th:nth-child(3){
+    min-width: 135px !important;
+  }
+  .client-list-table td:nth-child(3){
+    min-width: 146px !important;
+  }
+  .client-list-table th:nth-child(4){
+     min-width: 140px !important;
+  }
+   .client-list-table th:nth-child(5){
+     min-width: 136px !important;
+  }
+  .client-list-table th:nth-child(6){
+    min-width: 116px;
+  }
+  .client-list-table td:nth-child(6){
+    min-width: 116px;
+  }
+  .client-list-table th:nth-child(7){
+    min-width: 189px;
+  }
+.client-discount-table td:nth-child(1){
+  min-width: 85px;
+}
+.client-discount-table th:nth-child(1){
+  min-width: 85px;
+}
+.client-discount-table td:nth-child(2){
+  min-width: 180px;
+}
+.client-discount-table th:nth-child(3){
+  min-width: 110px;
+}
+.client-discount-table td:nth-child(3){
+  min-width: 110px;
+}
+.client-discount-table th:nth-child(4){
+  min-width: 115px;
+}
+.client-discount-table td:nth-child(5){
+  min-width: 130px !important;
+}
+.client-discount-table td:nth-child(6){
+  max-width: 212px;
+  min-width: 150px;
+}
+.client-discount-table th:nth-child(6){
+  max-width: 212px;
+  min-width: 150px;
+}
+.off-retail{
+  margin-left: 5px;
+}
+.create-prescription-table td{
+    font-size: 14px;
+    padding: 15px;
+}
+.create-prescription-table th{
+    font-size: 14px;
+    padding: 15px;
+}
+.create-prescription-table th:nth-child(2){
+  min-width: 240px !important;
+ }
+ .create-prescription-table th:nth-child(3){
+  min-width: 90px !important;
+ }
+ .create-prescription-table th:nth-child(4){
+  min-width: 128px !important;
+ }
+ .create-prescription-table :nth-child(5){
+  min-width: 97px !important;
+ }
+ .create-prescription-table :nth-child(6){
+  min-width: 187px !important;
+ }
+ .create-prescription-table td:nth-child(8){
+  min-width: 90px !important;
+ }
+ .create-prescription-table th:nth-child(8){
+  min-width: 80px !important;
+ }
+ .qty-input{
+  margin-inline: 0px !important;
+ }
+.prescription-table th{
+  font-size: 14px !important;
+  padding: 15px 18px;
+  }
+ .prescription-td td{
+  font-size: 14px !important;
+  padding: 15px 18px;
+  }
+  .prescription-td td:nth-child(4){
+    min-width: 120px !important;
+  }
+  .prescription-td td:nth-child(7){
+    min-width: 165px !important;
+  }
+  .prescription-td td:nth-child(8){
+    min-width: 160px !important;
+    }
+    .new-promotion-table th{
+      font-size: 15px !important;
+      padding: 15px 20px;
+    }
+    .new-promotion-table td{
+      font-size: 15px !important;
+      padding: 15px 20px;
+    }
+    .new-promotion-table td:nth-child(3){
+      min-width: 120px;
+    }
+    .new-promotion-table th:nth-child(3){
+      min-width: 120px;
+    }
+    .new-promotion-table th:nth-child(7){
+      min-width: 120px;
+    }
+    .new-promotion-table td:nth-child(7){
+      min-width: 120px;
+    }
+    .new-promotion-table td:nth-child(2){
+      min-width: 180px;
+    }
+    .new-promotion-table th:nth-child(5){
+      min-width: 120px;
+    }
+    .new-promotion-table td:nth-child(5){
+      min-width: 120px;
+    }
+    .promotion-list-table td{
+        font-size: 14px;
+        padding: 16px 18px;
+    }
+    .promotion-list-table th{
+        font-size: 14px;
+        padding: 16px 18px;
+    }
+    .promotion-list-table td:nth-child(5){
+    min-width: 180px;
+    }
+    .promotion-list-table td:nth-child(2){
+      min-width: 90px !important;
+    }
+    .promotion-list-table th:nth-child(2){
+      min-width: 90px !important;
+    }
+    .promotion-list-table td:nth-child(5){
+      min-width: 225px !important;
+    }
+    .promotion-list-table th:nth-child(3){
+      min-width: 105px !important;
+    }
+    .promotion-list-table td:nth-child(3){
+      min-width: 105px !important;
+    }
+      .promotion-list-table th:nth-child(4){
+      min-width: 105px !important;
+    }
+    .promotion-list-table td:nth-child(4){
+      min-width: 105px !important;
+    }
+    .promotion-list-table td:nth-child(6){
+      min-width: 165px;
+    }
+/* .promotion-thead{
+  display: none;
+} */
+/* .promotion-tbody td{
   padding: 9px 0;
   border: none !important;
   font-size: 14px;
@@ -2018,7 +2483,7 @@ font-size: 18px;
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
   padding-top: 17px;
-}
+} */
   /* Contact Us*/
   .contact-details{
     gap: 80px;
@@ -2063,6 +2528,9 @@ font-size: 18px;
 }
 .pagination-container{
   margin-top: 230px;
+}
+.tutorial-pagination{
+  margin-right: 45%;
 }
  /* About Page */
  .about-header-container{
@@ -2160,10 +2628,25 @@ font-size: 18px;
   line-height: 32.6px;
 }
 .subscribed-clients{
-  margin-left: 150px !important;
+  margin-left: 128px !important;
   width: 500px;
 }
-
+/* product details */
+.product-details-prdName{
+  font-size: 28px;
+  line-height: 40px;
+}
+.prd-ml-value{
+  font-size: 22px;
+}
+.Perfect-Potion{
+  font-size: 24px;
+}
+.favourites-note{
+  font-size: 14px;
+  margin-left: 60px;
+  font-family: var(--bs-font-primary);
+}
 .products-modal{
   min-width: 1000px !important;
 }
@@ -2220,10 +2703,6 @@ font-size: 20px;
  .send-application-btn{
   width: 210px;
  }
- .line-total{
-  display: inline-block;
-  margin-left: 100px;
- }
 }
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
@@ -2263,5 +2742,10 @@ font-size: 20px;
    width: 45px;
    padding: 8px 12px;
    border-radius: 8px;
+  }
+  .favourites-note{
+    font-size: 18px;
+    margin-left: 130px;
+    font-family: var(--bs-font-primary);
   }
 }
