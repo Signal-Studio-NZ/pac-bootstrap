@@ -21,3 +21,42 @@ async function loadHTML(elementId, filePath) {
 // Load header and footer
 loadHTML("header", "./components/pvtHeader.html");
 loadHTML("footer", "./components/footer.html");
+//custom select
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all the custom select elements
+  const customSelects = document.querySelectorAll(".custom-select");
+
+  customSelects.forEach((customSelect) => {
+    const selectedOption = customSelect.querySelector(".selected-option");
+    const optionsList = customSelect.querySelector(".options-list");
+    const optionItems = customSelect.querySelectorAll(".option-item");
+
+    // Toggle dropdown visibility
+    selectedOption.addEventListener("click", () => {
+      optionsList.style.display =
+        optionsList.style.display === "block" ? "none" : "block";
+    });
+
+    // Handle option selection
+    optionItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Get the text and span content
+        const itemText = item.childNodes[0].textContent.trim();
+        const spanText = item.querySelector("span").textContent;
+
+        // Update the selected-option content
+        selectedOption.innerHTML = `${itemText} <span>${spanText}</span>`;
+
+        // Close the dropdown
+        optionsList.style.display = "none";
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!customSelect.contains(e.target)) {
+        optionsList.style.display = "none";
+      }
+    });
+  });
+});

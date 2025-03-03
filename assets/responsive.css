@@ -550,7 +550,26 @@ gap: 0;
   
   /* border: 1px solid black; */
 }
+.custom-thead2 th {
+  display: none;
+  border: 1px solid red;
+}
+.custom-tbody2 td{
+  padding: 9px 0;
+  border: none;
+  font-size: 14px;
+} 
+.custom-tbody2 tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
 .custom-tbody tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+.client-order-table tr{
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
   padding-top: 17px;
@@ -1053,6 +1072,20 @@ line-height: 24px;
     padding-bottom: 15px;
     padding-top: 17px;
   }
+  .custom-thead2 th {
+    display: none;
+    border: 1px solid red;
+  }
+  .custom-tbody2 td{
+    padding: 9px 0;
+    border: none;
+    font-size: 14px;
+  } 
+  .custom-tbody2 tr{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    padding-top: 17px;
+  }
   .table-content{
     margin: 0;
     padding-top: 0px;
@@ -1406,6 +1439,12 @@ line-height: 25.6px;
   min-width: 190px;
  }
 
+ .client-order-table tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+
  #registrationForm{
   gap: 19px;
   margin-top: 40px;
@@ -1447,7 +1486,26 @@ select{
   border: none;
   font-size: 14px;
 }
+.custom-thead2 th {
+  display: none;
+  border: 1px solid red;
+}
+.custom-tbody2 td{
+  padding: 9px 0;
+  border: none;
+  font-size: 14px;
+} 
+.custom-tbody2 tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
 .custom-tbody tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+.client-order-table tr{
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
   padding-top: 17px;
@@ -1791,12 +1849,17 @@ select{
   display: none;
   border: 1px solid red;
 } */
-/* .custom-tbody td{
+ .custom-tbody td{
   padding: 9px 0;
   border: none;
   font-size: 14px;
   
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.custom-tbody tr{
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 17px;
 }
 /* .promotion-tbody tr{
   border-bottom: 1px solid gray;
@@ -1812,10 +1875,10 @@ select{
   font-size: 14px;
   font-style: normal;
 }
-.custom-td{             
+/* .custom-td{             
   padding: 0px;   
   display: flex;
-}
+} */
 /* Promotion */
 .promotion-btn{
   height: 60px;
@@ -1843,6 +1906,18 @@ select{
 .client-list-table th{
   font-size: 13px;
   padding: 10px 8px;
+}
+.edit-logos img{
+  height: 30px;
+  width: 30px;
+}
+.edit-logos-2 img{
+  height: 30px;
+  width: 20px;
+}
+.edit-logos-2 img:nth-child(3){
+  height: 30px;
+  width: 30px;
 }
 .client-list-table th:nth-child(1){
  min-width: 96px !important;
@@ -1958,6 +2033,9 @@ select{
  .create-prescription-table th:nth-child(8){
   min-width: 80px !important;
  }
+ .dot-notation{
+  max-width: 140px;
+}
  .qty-input{
   margin-inline: 0px !important;
   width: 45px;
@@ -2595,8 +2673,8 @@ font-size: 18px;
   }
   .custom-td{
     min-width: 115px;   
-    width: 100%;                
-    padding: 30px 22px;   
+    /* width: 100%;                 */
+    padding: 30px 22px;  
   }
   .custom-th{
     min-width: 115px;                    
