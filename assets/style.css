@@ -354,7 +354,7 @@ border-radius: 100%;
      background-color: #ECF2F2;
   }
   .header-dropdown-user{
-    margin-left: -195px !important;
+    margin-left: -125px !important;
     padding: 21px 25px 21px 35px;
     list-style: none;
     border: none;
@@ -1652,7 +1652,9 @@ background: var(--Bg-Grey, #F9F9F9);
   width: 249px;
 }
 .cart{
-  margin-left: -14px;
+  @media (min-width: 1500px) {
+    margin-left: -14px;
+  }
 }
 .dropdown-toggle::after{
  content: url('/assets/svgs/down-arrow.svg');

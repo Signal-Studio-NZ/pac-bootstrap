@@ -8,8 +8,8 @@ const data = [
     unitRetail: '$111.90',
     markup: `<input value="10%" type="text" class="promoted-to-qty content-text qty-input"/> <span class="off-retail">Off Retail</span>`,
     lineTotal: '$111.90',
-    logos: `<div class="d-flex align-items-center justify-content-end edit-logos-2 gap-2">
-          <img src="assets/svgs/calendar.svg" class="pointer" alt="edit">
+    logos: `<div class="d-flex align-items-center justify-content-lg-end edit-logos-2 gap-2">
+          <img src="assets/svgs/calendar.svg" class="pointer calendar-logo" alt="edit">
           <img src="assets/svgs/close.svg" class="pointer" alt="">
         </div>`      
     },

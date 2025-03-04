@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const row = document.createElement("tr");
         // Function to update row style based on screen size
         function updateRowStyle() {
+          console.log(window.innerWidth)
           if (window.innerWidth < 992) {
             row.classList.add("d-flex", "flex-column");
             row.classList.remove("d-table-row");

@@ -2155,6 +2155,9 @@ select{
 }.products-modal{
   max-width: 900px !important;
 }
+.calendar-logo{
+  height: 16px !important;
+ }
 .modal-search{
   width: 2900px;
   margin-right: 60px;
@@ -2548,6 +2551,9 @@ font-size: 18px;
     }
     .promotion-list-table td:nth-child(6){
       min-width: 165px;
+    }
+    .header-dropdown-user{
+      margin-left: -105px !important;
     }
 /* .promotion-thead{
   display: none;
