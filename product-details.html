@@ -13,13 +13,17 @@
     <link rel="stylesheet" href="./assets/responsive.css" />
     <title>New Promotions - Pacific Health</title>
   </head>
-  <body>
+  <body class="position-relative">
     <header class="d-flex flex-md-column flex-column-reverse">
       <nav
         class="d-flex container justify-content-between align-items-end align-items-lg-center border-danger custom-navbar"
       >
         <a class="navbar-brand p-0 m-0" href="/">
-          <img src="/assets/svgs/pacLogo.svg" class="pac-logo" alt="Logo" />
+          <img
+            src="/assets/svgs/pacLogo.svg"
+            class="pac-logo prd-logo"
+            alt="Logo"
+          />
         </a>
 
         <button
@@ -36,9 +40,9 @@
     </header>
 
     <main>
-      <div class="container font-manrope" id="page2">
+      <div class="container overflow-hidden font-manrope mt-4" id="page2">
         <div class="d-flex productDetails-container gap-5">
-          <div class="w-100 h-100 position-sticky top-0">
+          <div id="productImg" class="w-100 h-100 position-sticky top-0">
             <img
               src="/assets/images/product/product1.png"
               class="w-100"
@@ -62,7 +66,7 @@
               />
             </div>
           </div>
-          <div class="w-100 h-100">
+          <div id="productDetails-info" class="w-100 h-100">
             <div class="d-flex gap-4 justify-content-between">
               <p class="product-details-prdName fw-medium">
                 Broad Leaved P/Mint
@@ -326,6 +330,10 @@
 
             <div class="d-flex product-details-btns">
               <button
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                id="addToCart"
                 class="btn active-btn d-flex align-items-center w-100 gap-2 justify-content-center btn-height product-details-addtobacket"
               >
                 Add to backet
@@ -341,13 +349,102 @@
         </div>
       </div>
     </main>
+    <div
+      id="basketLayers"
+      class="w-100 position-absolute d-none top-0 h-100 basketLayer"
+    >
+      <div class="d-flex basketLyer justify-content-end align-items-end">
+        <div class="basket h-100">
+          <header class="d-flex flex-md-column flex-column-reverse">
+            <nav
+              class="d-flex container justify-content-between align-items-end align-items-lg-center border-danger basket-body"
+            >
+              <a class="navbar-brand heading-3 fw-semibold p-0 m-0" href="/">
+                Basket
+              </a>
 
+              <button id="basketClose" class="bg-transparent border-0">
+                <img
+                  src="/assets/svgs/closeicon.svg"
+                  class="prd-details-closeBtn"
+                  alt="closebtn"
+                />
+              </button>
+            </nav>
+          </header>
+          <section class="basket-container">
+            <table class="basketSlider-Table fw-medium">
+              <thead>
+                <tr>
+                  <th class="basketSlider-Thead border-bottom pb-5">Product</th>
+                  <th class="basketSlider-Thead border-bottom pb-5">
+                    Quantity
+                  </th>
+                  <th class="basketSlider-Thead border-bottom pb-5 text-end">
+                    Price
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="basket-tr border-bottom">
+                  <td class="d-flex pt-4 pb-4 basketSlider-Tdata gap-3">
+                    <img
+                      src="/assets/images/product/product1.png"
+                      alt="product1"
+                    />
+                    <div>
+                      <p>Broad Leaved P/Mint</p>
+                      <p>Eucalypt 5ml</p>
+                    </div>
+                  </td>
+                  <td class="basketSlider-Tdata pt-4 pb-4">
+                    <div class="basket-PrdIncDec">
+                      <div>-</div>
+                      <div>2</div>
+                      <div>+</div>
+                    </div>
+                  </td>
+                  <td class="basketSlider-Tdata text-end pb-4 pt-4">$35.00</td>
+                </tr>
+                <tr class="basket-tr border-bottom">
+                  <td class="d-flex pt-4 pb-4 basketSlider-Tdata gap-3">
+                    <img
+                      src="/assets/images/product/product1.png"
+                      alt="product1"
+                    />
+                    <div>
+                      <p>Broad Leaved P/Mint</p>
+                      <p>Eucalypt 5ml</p>
+                    </div>
+                  </td>
+                  <td class="basketSlider-Tdata pt-4 pb-4">
+                    <div class="basket-PrdIncDec">
+                      <div>-</div>
+                      <div>2</div>
+                      <div>+</div>
+                    </div>
+                  </td>
+                  <td class="basketSlider-Tdata text-end pb-4 pt-4">$35.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="basket-total border-top border-black d-flex justify-content-between fw-semibold"
+            >
+              <p class="">Subtotal</p>
+              <p class="text-end">$140.00</p>
+            </div>
+            <button class="btn w-100 basket-checkout">Checkout</button>
+          </section>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
-    <script src="assets/js/pvtscript.js"></script>
+    <script src="assets/js/productDetails.js"></script>
   </body>
 </html>

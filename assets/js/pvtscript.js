@@ -59,4 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  //addToCart basket slider
+  const addToCart = document.getElementById("addToCart");
+  const productImg = document.getElementById("productImg");
+  // const basket = document.getElementById("basket");
+  addToCart.addEventListener("click", () => {
+    productImg.style.left = "-100%";
+  });
 });
