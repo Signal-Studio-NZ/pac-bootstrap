@@ -158,6 +158,31 @@ buttons.forEach((btn) => {
     }
   });
 });
+//Price rabge slider
+const rangeInput = document.querySelectorAll(".price-range input")
+const progress = document.querySelector(".slider-track")
+const sliderTrack = document.querySelector(".slider-track");
+const startRange = document.getElementById("start-range")
+const endRange = document.getElementById("end-range")
+const priceGap = 50
+
+rangeInput.forEach(input =>{
+  input.addEventListener("input", (e)=>{
+    let minVal = parseInt(rangeInput[0].value)
+    let maxVal = parseInt(rangeInput[1].value)
+    startRange.innerText = "$" + rangeInput[0].value
+    endRange.innerText = "$" + rangeInput[1].value
+   if(maxVal - minVal < priceGap){
+    if(e.target.className === "range-min"){
+      rangeInput[0].value = maxVal - priceGap
+    }
+    rangeInput[1].value = minVal + priceGap
+   }else{
+     progress.style.left = (minVal / rangeInput[0].max) * 100 + "%"
+    progress.style.right = 100 - (maxVal / rangeInput[0].max) * 100 + "%"
+   }
+  })
+})
 
 // Reset on Save button click
 saveBtn.addEventListener("click", function () {

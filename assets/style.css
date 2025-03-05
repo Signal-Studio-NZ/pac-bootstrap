@@ -2072,45 +2072,65 @@ line-height: 160%; /* 22.4px */
 .shop-search{
   width: 720px;
 }
-.price-range{
-  width: 227px;
-  height: 1px;
-  background-color: #849393;
+.price-range {
   position: relative;
+  max-width: 227px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.price-range-circle{
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+  bottom: -9px;
+  z-index: 30;
+}
+.slider-track {
+  min-height: 3px;
+  max-height: 3px;
+  position: absolute;
+  margin: auto;
+  top: 0.6px;
+  bottom: 0;
+  left: 18.4%;
+  background-color: #000000;
+  z-index: 1;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  border: 1px solid #0A2926;
-  position: absolute;
-  top: -7px;
-  background-color: #fff;
-  left: 62px;
   cursor: pointer;
-}
-.price-range-circle div{
-  height: 7px;
-  width: 7px;
-  background-color: #000;
+  margin-top: -9px;
+  pointer-events: auto;
   border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 20;
 }
-.price-range-slide{
-  width: 67px;
-  height: 3px;
-  background-color: #000;
-  position: absolute;
-  left: 77px;
-  top: -1.1px;
+.track{
+    width: 227px;
+    height: 1px;
+    background-color: #849393;
+    position: absolute;
+    z-index: -1;
 }
-.price-circle{
-  left: 144px;
-}
-.price-range-price{
-font-family: var(--bs-font-primary);
-font-size: 10px;
-font-weight: 600;
-line-height: 16px;
+
+.price-value{
+  width: 227px;
+  font-family: var(--bs-font-primary);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
 }
 .prd-selection{
   height: 134px;
@@ -2694,16 +2714,25 @@ background: var(--Bg-Grey, #F9F9F9);
   display: flex;
   padding: 0 !important;
   justify-content: center;
-  
+  transition: .7s ease-in-out;
 }
-
+#productImg{
+  position: absolute;
+  transition: .7s ease-in-out;
+}
+#productDetails-info{
+  transition: .7s linear;
+  max-width: 710px;
+}
 .basketLyer{
   width: 1600px;
   height: 100%;
   background-color: rgba(235, 234, 234, 0.304);
+  transition: .7s ease-in;
+  margin-left: 150%;
 }
-.basket{
 
+.basket{
   min-width: 250px;
   width: 48%;
   padding-left: 41px;
@@ -2800,7 +2829,4 @@ line-height: 160%;
   max-width: 210px;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.fd{
-  display: block !important;
 }
