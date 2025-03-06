@@ -158,31 +158,40 @@ buttons.forEach((btn) => {
     }
   });
 });
-//Price rabge slider
-const rangeInput = document.querySelectorAll(".price-range input")
-const progress = document.querySelector(".slider-track")
-const sliderTrack = document.querySelector(".slider-track");
-const startRange = document.getElementById("start-range")
-const endRange = document.getElementById("end-range")
-const priceGap = 50
 
-rangeInput.forEach(input =>{
-  input.addEventListener("input", (e)=>{
-    let minVal = parseInt(rangeInput[0].value)
-    let maxVal = parseInt(rangeInput[1].value)
-    startRange.innerText = "$" + rangeInput[0].value
-    endRange.innerText = "$" + rangeInput[1].value
-   if(maxVal - minVal < priceGap){
-    if(e.target.className === "range-min"){
-      rangeInput[0].value = maxVal - priceGap
-    }
-    rangeInput[1].value = minVal + priceGap
-   }else{
-     progress.style.left = (minVal / rangeInput[0].max) * 100 + "%"
-    progress.style.right = 100 - (maxVal / rangeInput[0].max) * 100 + "%"
-   }
-  })
-})
+//Price rabge slider
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range-1");
+let displayValTwo = document.getElementById("range-2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+
+window.onload = function () {
+  slideOne();
+  slideTwo();
+};
+
+function slideOne() {
+  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+    sliderOne.value =  parseInt(sliderTwo.value) - minGap;
+  }
+  displayValOne.textContent = "$" + sliderOne.value;
+  fillColor();
+}
+function slideTwo() {
+  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+    sliderTwo.value = parseInt(sliderOne.value) + minGap;
+  }
+  displayValTwo.textContent = "$" + sliderTwo.value;
+  fillColor();
+}
+function fillColor() {
+  percent1 = (sliderOne.value / sliderMaxValue) * 100;
+  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+  sliderTrack.style.background = `linear-gradient(to right, #ffffff05 ${percent1}% , #0A2926 ${percent1}% , #0A2926 ${percent2}%, #ffffff05 ${percent2}%)`;
+}
 
 // Reset on Save button click
 saveBtn.addEventListener("click", function () {

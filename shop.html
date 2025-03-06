@@ -95,20 +95,24 @@
             >
               <label for="" class="fw-semibold shop-filter-label">Filter</label>
               <label for="" class="fw-semibold shop-filter-label">Price range</label>
-               <div class="d-flex flex-column">
+              <div class="d-flex flex-column gap-3">
                 <div class="price-range">
-                  <div class="slider-track"></div>
-                  <input type="range" min="0" max="1250" value="200">
-                  <input type="range" min="0" max="1250" value="535">
-                  <div class="track"></div>
-                </div>
-                <div class="price-value d-flex justify-content-between position-relative">
-                  <span class="checkoutStagedData-label">$0</span>
-                  <span id="start-range">$100</span>
-                  <span id="end-range">$535</span>
-                  <span class="checkoutStagedData-label">$1250</span>
-                </div>
-               </div>
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="1250" value="100" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="1250" value="535" id="slider-2" oninput="slideTwo()">
+                    <div class="bg-track"></div>
+                  </div>
+                  <div class="range-values d-flex justify-content-between">
+                      <span class="checkoutStagedData-label">$0</span>
+                      <span id="range-1">
+                        $100
+                      </span>
+                      <span id="range-2">
+                        $535
+                      </span>
+                      <span class="checkoutStagedData-label">$1250</span>
+                    </div>
+            </div>
               <div class="d-flex flex-column gap-1">
                 <label for="unit" class="fw-semibold shop-filter-label"
                   >Access Level</label
