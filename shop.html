@@ -17,10 +17,30 @@
     <div id="header" class=""></div>
     <main>
       <div class="container" id="shop-page">
-        <div id="shop-header">
+        <div
+          id="shop-header"
+          class="d-flex align-items-end justify-content-between"
+        >
           <h1 class="heading-1 heading-1-margins">Shop</h1>
+          <div class="d-flex gap-4 filter-shopmobile d-lg-none">
+            <img
+              src="/assets/svgs/shopFilterison.svg"
+              alt="shopFilterison"
+              class="shop-icon"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#secondOffcanvas"
+            />
+            <img
+              src="/assets/svgs/searchIcon.svg"
+              alt="searchIcon"
+              class="shop-icon"
+              data-bs-toggle="offcanvas"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#ThirdOffcanvas"
+            />
+          </div>
         </div>
-        <div class="d-flex shop-search-sort justify-content-between">
+        <div class="d-none d-lg-flex shop-search-sort justify-content-between">
           <div class="shop-search order-status-search">
             <input
               name="srch"
@@ -94,25 +114,37 @@
               class="d-flex gap-4 flex-column filter border-top align-items-start"
             >
               <label for="" class="fw-semibold shop-filter-label">Filter</label>
-              <label for="" class="fw-semibold shop-filter-label">Price range</label>
+              <label for="" class="fw-semibold shop-filter-label"
+                >Price range</label
+              >
               <div class="d-flex flex-column gap-3">
                 <div class="price-range">
-                    <div class="slider-track"></div>
-                    <input type="range" min="0" max="1250" value="100" id="slider-1" oninput="slideOne()">
-                    <input type="range" min="0" max="1250" value="535" id="slider-2" oninput="slideTwo()">
-                    <div class="bg-track"></div>
-                  </div>
-                  <div class="range-values d-flex justify-content-between">
-                      <span class="checkoutStagedData-label">$0</span>
-                      <span id="range-1">
-                        $100
-                      </span>
-                      <span id="range-2">
-                        $535
-                      </span>
-                      <span class="checkoutStagedData-label">$1250</span>
-                    </div>
-            </div>
+                  <div class="slider-track"></div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="1250"
+                    value="100"
+                    id="slider-1"
+                    oninput="slideOne()"
+                  />
+                  <input
+                    type="range"
+                    min="0"
+                    max="1250"
+                    value="535"
+                    id="slider-2"
+                    oninput="slideTwo()"
+                  />
+                  <div class="bg-track"></div>
+                </div>
+                <div class="range-values d-flex justify-content-between">
+                  <span class="checkoutStagedData-label">$0</span>
+                  <span id="range-1"> $100 </span>
+                  <span id="range-2"> $535 </span>
+                  <span class="checkoutStagedData-label">$1250</span>
+                </div>
+              </div>
               <div class="d-flex flex-column gap-1">
                 <label for="unit" class="fw-semibold shop-filter-label"
                   >Access Level</label
@@ -145,14 +177,14 @@
           </div>
           <div class="shop-products-container">
             <div id="shop-products" class="shop-products">
-              <div class="product-card">
+              <div id="goToPage2" class="product-card">
                 <div class="img-container position-relative overflow-hidden">
                   <img
                     src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
+                    class="w-100 h-100 object-fit-contain rounded-4"
                     alt=""
                   />
-                  <div
+                  <!-- <div
                     class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
                   >
                     <button
@@ -167,62 +199,39 @@
                       Add to basket
                       <img src="/assets/svgs/basketicon.svg" alt="" />
                     </button>
-                  </div>
+                  </div> -->
                 </div>
                 <div
                   class="d-flex px-2 pt-4 justify-content-between align-items-start"
                 >
                   <div class="fw-semibold">
                     <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
+                    <p class="text-truncate-2">
+                      Chakra Balance 5ml abhishek Chakra Balance 5ml abhishek
+                      nayak kkrh wassup hey by
+                    </p>
+                    <button
+                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <p class="fw-medium">$35.00</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div id="goToPage2" class="product-card">
                 <div class="img-container position-relative overflow-hidden">
                   <img
                     src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
+                    class="w-100 h-100 object-fit-contain rounded-4"
                     alt=""
                   />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
                   <p
                     class="position-absolute out-of-stock fw-medium text-uppercase"
                   >
                     OUt of stock
                   </p>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
+                  <!-- <div
                     class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
                   >
                     <button
@@ -237,199 +246,45 @@
                       Add to basket
                       <img src="/assets/svgs/basketicon.svg" alt="" />
                     </button>
-                  </div>
+                  </div> -->
                 </div>
                 <div
                   class="d-flex px-2 pt-4 justify-content-between align-items-start"
                 >
                   <div class="fw-semibold">
                     <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
+                    <p class="text-truncate-2">
+                      Chakra Balance 5ml abhishek Chakra Balance 5ml abhishek
+                      nayak kkrh wassup hey by
+                    </p>
+                    <button
+                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
+                    >
+                      Add to cart
+                    </button>
                   </div>
                   <p class="fw-medium">$35.00</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div id="goToPage2" class="product-card">
                 <div class="img-container position-relative overflow-hidden">
                   <img
                     src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
+                    class="w-100 h-100 object-fit-contain rounded-4"
                     alt=""
                   />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button
-                      id="goToPage2"
-                      class="border-0 fw-semibold bg-transparent"
-                    >
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button
-                      id="goToPage2"
-                      class="border-0 fw-semibold bg-transparent"
-                    >
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button
-                      id="goToPage2"
-                      class="border-0 fw-semibold bg-transparent"
-                    >
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
                   <p
                     class="position-absolute out-of-stock fw-medium text-uppercase"
                   >
                     OUt of stock
                   </p>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
+                  <!-- <div
                     class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
                   >
-                    <button class="border-0 fw-semibold bg-transparent">
+                    <button
+                      id="goToPage2"
+                      class="border-0 fw-semibold bg-transparent"
+                    >
                       View Detail
                     </button>
                     <button
@@ -438,124 +293,22 @@
                       Add to basket
                       <img src="/assets/svgs/basketicon.svg" alt="" />
                     </button>
-                  </div>
-                  <p
-                    class="position-absolute out-of-stock fw-medium text-uppercase"
-                  >
-                    OUt of stock
-                  </p>
+                  </div> -->
                 </div>
                 <div
                   class="d-flex px-2 pt-4 justify-content-between align-items-start"
                 >
                   <div class="fw-semibold">
                     <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
+                    <p class="text-truncate-2">
+                      Chakra Balance 5ml abhishek Chakra Balance 5ml abhishek
+                      nayak kkrh wassup hey by
+                    </p>
                     <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
+                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
                     >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
+                      Add to cart
                     </button>
-                  </div>
-                  <p
-                    class="position-absolute out-of-stock fw-medium text-uppercase"
-                  >
-                    OUt of stock
-                  </p>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div>
-                  <div class="product-card">
-                    <div
-                      class="img-container position-relative overflow-hidden"
-                    >
-                      <img
-                        src="/assets/images/product/product1.png"
-                        class="w-100 h-100 object-fit-cover rounded-4"
-                        alt=""
-                      />
-                      <div
-                        class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                      >
-                        <button class="border-0 fw-semibold bg-transparent">
-                          View Detail
-                        </button>
-                        <button
-                          class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                        >
-                          Add to basket
-                          <img src="/assets/svgs/basketicon.svg" alt="" />
-                        </button>
-                      </div>
-                      <p
-                        class="position-absolute out-of-stock fw-medium text-uppercase"
-                      >
-                        OUt of stock
-                      </p>
-                    </div>
-                    <div
-                      class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                    >
-                      <div class="fw-semibold">
-                        <p>Perfect Potion</p>
-                        <p>Chakra Balance 5ml</p>
-                      </div>
-                      <p class="fw-medium">$35.00</p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
                   </div>
                   <p class="fw-medium">$35.00</p>
                 </div>
@@ -575,7 +328,7 @@
                   <option value="25">25</option>
                 </select>
               </div>
-              <p class="shop-info">
+              <p class="shop-info d-none d-lg-block">
                 All prices are quoted in NZ Dollars including gst
               </p>
             </div>
@@ -591,17 +344,255 @@
           </div>
 
           <div class="d-flex justify-content-betweeen gap-5">
-            <div class="d-lg-flex d-none align-items-center gap-2 current-Page">
+            <div class="d-flex align-items-center gap-2 current-Page">
               <div class="active-page contebt-text">1</div>
               <div class="contebt-text">2</div>
-              <div class="contebt-text">3</div>
+              <div class="contebt-text d-none d-md-flex">3</div>
               <div class="contebt-text">...</div>
-              <div class="contebt-text">67</div>
+              <div class="contebt-text d-none d-md-flex">67</div>
               <div class="contebt-text">68</div>
             </div>
             <div class="d-flex align-items-center gap-2 cursor-pointer">
               <span class="contebt-text d-lg-block d-none">Next</span>
               <img src="/assets/images/Arrow right.svg" alt="Right arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Offcanvas -->
+      <div
+        class="offcanvas shopFilterSlider offcanvas-end"
+        tabindex="-1"
+        id="secondOffcanvas"
+        aria-labelledby="secondOffcanvasLabel"
+      >
+        <div class="d-flex flex-column h-100">
+          <!-- Fixed Top Icon Only -->
+
+          <button
+            type="button"
+            style="filter: brightness(0) invert(1)"
+            class="btn-close shop-close position-fixed"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+
+          <!-- Scrollable Content including "Filter" title -->
+          <div class="offcanvas-body flex-grow-1 overflow-auto">
+            <a class="" href="/">
+              <img src="/assets/svgs/navmenuLogo.svg" class="" alt="Logo" />
+            </a>
+            <!-- Fake height to demo scroll -->
+            <p class="shop-lable shop-label-filter">Filter</p>
+            <div class="shop-filter-side fs-5 fw-semibold">
+              <div
+                class="d-flex flex-column shop-filter-1 align-items-start gap-1"
+              >
+                <button
+                  id="Featuredbtn"
+                  class="lh-base textwhite border-0 filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+                >
+                  <img
+                    src="/assets/svgs/starIcon.svg"
+                    alt="starIcon"
+                    class=""
+                  />
+                  Featured
+                </button>
+                <button
+                  id="FavoritesBtn"
+                  class="lh-base textwhite border-0 filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+                >
+                  <img
+                    src="/assets/svgs/hearticon.svg"
+                    alt="starIcon"
+                    class=""
+                  />
+                  Favorites
+                </button>
+                <button
+                  id="SpecialsBtn"
+                  class="lh-base border-0 textwhite filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+                >
+                  <img src="/assets/svgs/diamond.svg" alt="starIcon" class="" />
+                  Specials
+                </button>
+              </div>
+              <div class="d-flex flex-column align-items-start mt-5 pt-2 gap-2">
+                <p class="shop-lable">Categories</p>
+                <button class="p-0 lh-base textwhite bg-transparent border-0">
+                  Aromatherapy
+                </button>
+                <button class="p-0 lh-base textwhite bg-transparent border-0">
+                  Essences
+                </button>
+                <button class="p-0 lh-base textwhite bg-transparent border-0">
+                  Fitness
+                </button>
+                <button class="p-0 lh-base textwhite bg-transparent border-0">
+                  Massage
+                </button>
+                <button class="p-0 lh-base textwhite bg-transparent border-0">
+                  Mineral therapies
+                </button>
+                <button class="lh-base textwhite bg-transparent border-0 p-0">
+                  Nutrition
+                </button>
+              </div>
+              <div class="d-flex gap-4 flex-column mt-5 pt-2 align-items-start">
+                <label for="" class="shop-lable">Price range</label>
+                <div class="d-flex flex-column gap-3">
+                  <div class="price-range">
+                    <div class="slider-track"></div>
+                    <input
+                      type="range"
+                      min="0"
+                      max="1250"
+                      value="100"
+                      id="slider-1"
+                      oninput="slideOne()"
+                    />
+                    <input
+                      type="range"
+                      min="0"
+                      max="1250"
+                      value="535"
+                      id="slider-2"
+                      oninput="slideTwo()"
+                    />
+                    <div class="bg-track"></div>
+                  </div>
+                  <div class="range-values d-flex justify-content-between">
+                    <span class="checkoutStagedData-label">$0</span>
+                    <span id="range-1"> $100 </span>
+                    <span id="range-2"> $535 </span>
+                    <span class="checkoutStagedData-label">$1250</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="unit" class="shop-lable">Access Level</label>
+                  <select
+                    name="Access-Level"
+                    class="access-Level textwhite unit-select fw-semibold border-0"
+                    id="Access-Level"
+                  >
+                    <option>Practitioner</option>
+                    <option>Sort by</option>
+                    <option>Practitioner</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="unit" class="shop-lable">Unit</label>
+                  <select
+                    name="unit"
+                    class="unit-select textwhite fw-semibold border-0"
+                    id="unit-select"
+                  >
+                    <option>Powder</option>
+                    <option>Sort by</option>
+                    <option>Sort by</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fixed Bottom Buttons -->
+          <div class="apply-container">
+            <div class="d-flex justify-content-between gap-3">
+              <button class="btn btn-primary shopfilterApply-btn w-100">
+                Apply
+              </button>
+              <button
+                class="shopFilter-cancel border-0 bg-transparent"
+                data-bs-dismiss="offcanvas"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="ThirdOffcanvas"
+        aria-labelledby="ThirdOffcanvasLabel"
+      >
+        <div class="d-flex flex-column h-100">
+          <!-- Fixed Top Icon Only -->
+          <!-- Scrollable Content including "Filter" title -->
+          <div class="offcanvas-body flex-grow-1 overflow-auto">
+            <div
+              class="shop-filter-search overflow-hidden px-3 border d-flex align-items-center gap-2"
+            >
+              <input
+                placeholder="Try with perfect potion..."
+                class="border-0"
+                type="text"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                  stroke="#0A2926"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
+                  stroke="black"
+                  stroke-opacity="0.2"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                aria-label="Close"
+                data-bs-dismiss="offcanvas"
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <rect
+                  x="1.20264"
+                  width="18"
+                  height="1.7"
+                  transform="rotate(45 1.20264 0)"
+                  fill="#0A2926"
+                />
+                <rect
+                  x="1.20264"
+                  width="18"
+                  height="1.7"
+                  transform="rotate(45 1.20264 0)"
+                  fill="black"
+                  fill-opacity="0.2"
+                />
+                <rect
+                  width="18"
+                  height="1.7"
+                  transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.728 0)"
+                  fill="#0A2926"
+                />
+                <rect
+                  width="18"
+                  height="1.7"
+                  transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.728 0)"
+                  fill="black"
+                  fill-opacity="0.2"
+                />
+              </svg>
             </div>
           </div>
         </div>

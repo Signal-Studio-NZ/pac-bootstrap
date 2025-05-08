@@ -1,5 +1,78 @@
 /* XS: Extra Small Devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .client-discountTable-tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .client-discount-save-Container{
+    width: 100%;
+  }
+  .client-discount-addProd{
+    width: 100%;
+    font-size: 15px;
+  }
+  .filter-shopmobile{
+    height: 65px;
+  }
+  .billingAddressOpt{
+    width: 100%;
+  }
+  .clientlist-addClient{
+    height: fit-content;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 15px;
+font-style: normal;
+font-weight: 600;
+  }
+  .Sameasdelivery{
+    width: 100%;
+  }
+  .checkout-continueBtn{
+    margin-top: 48px;
+    width: 100%;
+  }
+  .Delivery-PickUp{
+    padding-bottom: 0;
+    margin-bottom: 97px;
+    border-bottom: none;
+  }
+  .checkout-label{
+    margin-bottom: 20px;
+    margin-top: 20px;
+font-size: 14px;
+  }
+  .checkoutDelivery-label{
+    font-size: 15px;
+  }
+  .checkout-line{
+    display: none;
+  }
+  .checkout-stage-container{
+    margin-bottom: 50px;
+    /* height: 420px; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .client-list-table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .client-order-table tbody tr{
+    border-bottom: 1px solid gray !important;
+    /* border-width: 1px !important; */
+  }
+  .thankyou-h1{
+    /* font-weight: 600 !important; */
+    margin-top: 60px;
+    font-family: var(--bs-font-secondary) !important;
+  }
+  .thankYou-note{
+    margin: 28px 0 40px 0;
+  }
+  .thankyou-container button{
+    font-size: 18px;
+  }
   .pac-logo{
     height: 22px;
     width: 178px;
@@ -37,7 +110,7 @@
   line-height: 24px;
 }
  .heading-3{
-  font-size: 26px;
+  font-size: 26px !important;
   line-height: 33.8px;
  }
  .content-text{
@@ -319,7 +392,8 @@ gap: 0;
   margin-top: 50px;
 }
 .order-status-search{
-  display: none;
+  width: 100%;
+  /* display: none; */
  }
 .client-order-div{
   padding-block: 17px;
@@ -593,10 +667,89 @@ gap: 0;
 .new-promo-table{
   display: none;
 }
+/* thank you page */
+.thankyou-h1{
+  margin-top: 60px;
+}
+.thankYou-note{
+  margin: 28px 0 50px 0;
+}
+.thankyou-container button{
+  font-size: 18px;
+}
+.shop-filter{
+  display: none;
+}
+.product-card{
+  min-width: 300px;
+  max-width: 100%;
+}
+.checkout-payment-container{
+  flex-direction: column;
+  }
+  .checkout-stage1{
+    font-size: 22px !important;
+  }
 }
 
 /* SM: Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .client-discountTable-tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .clientlist-addClient{
+    width: 100%;
+  }
+  .client-discount-save-Container{
+    width: 100%;
+  }
+  .client-discount-addProd{
+    width: 100%;
+    font-size: 15px;
+
+  }
+  .checkout-stage1{
+    font-size: 22px !important;
+  }
+  .Delivery-PickUp{
+    padding-bottom: 0;
+    margin-bottom: 97px;
+    border-bottom: none;
+  }
+  .client-order-table tbody tr{
+    border-bottom: 1px solid gray !important;
+    /* border-width: 1px !important; */
+  }
+  .checkout-stage-container{
+    margin-bottom: 80px;
+    /* height: 350px; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .checkout-line{
+    display: none;
+  }
+   .checkout-stage-container{
+    margin-bottom: 80px;
+    overflow: scroll;
+  }
+  .shop-filter{
+    display: none;
+  }
+  .product-card{
+    min-width: 300px;
+    max-width: 100%;
+  }
+  .thankyou-h1{
+    margin-top: 60px;
+  }
+  .thankYou-note{
+    margin: 28px 0 56px 0;
+  }
+  .thankyou-container button{
+    font-size: 18px;
+  }
   .pac-logo{
     height: 25px;
     width: auto;
@@ -874,7 +1027,8 @@ line-height: 24px;
 }
 /* Your Order */
 .order-status-search{
-  display: none;
+  /* display: none; */
+  width: 100%;
  }
  .client-order-div{
   font-size: 15px;
@@ -1107,11 +1261,45 @@ line-height: 24px;
   .new-promo-table{
     display: none;
   }
+  .checkout-payment-container{
+    flex-direction: column;
+    }
 }
 
 
 /* MD: Medium Devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .client-discountTable-tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .client-discount-save-Container{
+    width: 100%;
+  }
+  .client-discount-addProd{
+    /* width: 100%; */
+    font-size: 16px;
+
+  }
+  .checkout-payment-container{
+  flex-direction: column;
+  }
+  .checkout-stage-container{
+    margin-bottom: 80px;
+    /* height: 300px; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .checkout-stage-container{
+    margin-bottom: 80px;
+  }
+  
+  .shop-filter{
+    display: none;
+  }
+  .product-card{
+    min-width: 300px;
+  }
   .pac-logo{
     height: 28px;
     width: auto;
@@ -1343,7 +1531,8 @@ line-height: 25.6px;
   }
    /* Your Order */
    .order-status-search{
-    display: none;
+    /* display: none; */
+    width: 100%;
    }
    .client-order-div{
     font-size: 15px;
@@ -1533,10 +1722,24 @@ select{
 .new-promo-table{
   display: none;
 }
+.client-list-table tr {
+  display: flex;
+  flex-direction: column;
+}
 }
 
 /* LG: Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .edit-logos{
+    /* background-color: red; */
+    width: 100%;
+    display: block;
+  }
+  .client-order-table tr{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    padding-top: 17px;
+  }
   .pac-logo{
     height: 30px;
     width: auto;
@@ -1737,7 +1940,8 @@ line-height: 27.2px;
 }
  /* Your Order */
  .order-status-search{
-  display: none;
+  /* width: 100%; */
+  /* display: none; */
  }
  .client-order-div{
   font-size: var(--bs-font-size-md);
@@ -1900,7 +2104,7 @@ select{
   padding-inline: 24px;
   padding-block: 20px;
   height: auto;
-  width: 800px;
+  width: 100%;
   margin-bottom: 60px;
 }
 .subscribed-clients{
@@ -1908,6 +2112,7 @@ select{
   width: 500px;
   margin-top: 50px;
 }
+
 .client-list-table td{
   font-size: 13px;
   padding: 10px 8px;
@@ -1929,6 +2134,7 @@ select{
   height: 30px;
   width: 30px;
 }
+
 .client-list-table th:nth-child(1){
  min-width: 96px !important;
   }
@@ -2259,6 +2465,11 @@ font-size: 18px;
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .header-dropdown-user{
     right: -10px !important;
+  }
+  .edit-logos{
+    /* background-color: red; */
+    width: 100%;
+    display: block;
   }
   .pac-logo{
     height: 34px;
@@ -2801,7 +3012,11 @@ font-size: 20px;
 
 /* XXL: Extra Extra Large Devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  
+  .edit-logos{
+    /* background-color: red; */
+    width: 100%;
+    display: block;
+  }
   .account-icon{
     margin-left: 16px;
     margin-right: -14px;

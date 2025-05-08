@@ -16,171 +16,309 @@
   <body>
     <div id="header"></div>
     <main>
-     <div class="container">
+      <div class="container">
         <section class="test-prescription">
-            <h1 class="heading-1 heading-1-margins">Create prescription</h1>
-            <span class="label">Prescription name</span>
-            <h3 class="mt-3 heading-3 mb-5">Test prescription</h3>
-            <button class="mt-4 mb-3 promotion-btn" id="modal-btn" data-bs-toggle="modal" data-bs-target="#products-modal">Add products</button>
-            <table class="mt-5 mb-2 table create-prescription-table">
-                <thead class="thead custom-thead2 promotion-thead">
-                    <tr>
-                      <th>code</th>
-                      <th>Product</th>
-                      <th>QTY</th>
-                      <th>Unit Wholesale</th>
-                      <th>Unit Reatil</th>
-                      <th>Markup / Discount</th>
-                      <th>Line Total</th>
-                      <th></th>
-                    </tr>
-                    <tr class="horizontal-line"></tr>
-                  </thead>
-                  <tbody id="table-body" class="custom-tbody2 promotion-tbody create-prescription-tbody"></tbody>
-            </table>
-            <form action="" class="d-flex flex-column gap-2">
-                <label for="" class="label">Reamrks / Notes</label>
-                <input type="text" class="selected-file w-100">
-            </form>
-            <div class="create-prescription-total py-3 pb-4">
-             <div class="d-flex justify-content-between align-items-center content-text">
-                <span class="p-4 fw-bold">Total</span>
-                <span class="p-4 fw-bold">$111.90</span>
-             </div>
-             <p class=".client-list-terms ps-4 mb-3">Please note that these prices will override any existing discounts the customer has for these products.</p>
+          <h1 class="heading-1 heading-1-margins">Create prescription</h1>
+          <span class="label">Prescription name</span>
+          <h3 class="mt-3 heading-3 mb-5">Test prescription</h3>
+          <button
+            class="mt-4 mb-3 promotion-btn"
+            id="modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#products-modal"
+          >
+            Add products
+          </button>
+          <table class="mt-5 mb-2 table create-prescription-table">
+            <thead class="thead custom-thead2 promotion-thead">
+              <tr>
+                <th>code</th>
+                <th>Product</th>
+                <th>QTY</th>
+                <th>Unit Wholesale</th>
+                <th>Unit Reatil</th>
+                <th>Markup / Discount</th>
+                <th>Line Total</th>
+                <th></th>
+              </tr>
+              <tr class="horizontal-line"></tr>
+            </thead>
+            <tbody
+              id="table-body"
+              class="custom-tbody2 promotion-tbody create-prescription-tbody"
+            ></tbody>
+          </table>
+          <form action="" id="remarkform" class="d-flex flex-column gap-2">
+            <label for="" class="label">Reamrks / Notes</label>
+            <input type="text" class="selected-file w-100" />
+          </form>
+          <div class="create-prescription-total py-3 pb-4">
+            <div
+              class="d-flex justify-content-between align-items-center content-text"
+            >
+              <span class="p-4 fw-bold">Total</span>
+              <span class="p-4 fw-bold">$111.90</span>
             </div>
+            <p class=".client-list-terms ps-4 mb-3">
+              Please note that these prices will override any existing discounts
+              the customer has for these products.
+            </p>
+          </div>
         </section>
         <section class="prescribe-to">
-            <h3 class="heading-3 mb-4">Prescribed to</h3>
-            <form action="" class="mt-3">
-              <div class="d-flex flex-wrap justify-content-between">
-                <div class="d-flex flex-column custom-radio">
-                  <label for="" class="label">Precription to type</label>
-                  <div class="d-flex align-items-center mt-2 gap-10">
-                    <input type="radio" name="precriptionToType" />
-                    <p class="content-text">
-                      First person to use the Prescription Code
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="precriptionToType" />
-                    <p class="content-text">
-                      The First <input value="2" type="text" class="promoted-to-qty" /> uses
-                      of the Prescription Code
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="precriptionToType" />
-                    <p class="content-text">Anyone who uses the Prescription Code</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="precriptionToType" />
-                    <p class="content-text">Chosen clients only</p>
-                  </div>
+          <h3 class="heading-3 mb-4">Prescribed to</h3>
+          <form action="" class="mt-3">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="d-flex flex-column custom-radio">
+                <label for="" class="label">Precription to type</label>
+                <div class="d-flex align-items-center mt-2 gap-10">
+                  <input type="radio" name="precriptionToType" />
+                  <p class="content-text">
+                    First person to use the Prescription Code
+                  </p>
                 </div>
-                <div
-                  class="d-flex flex-column subscribed-clients position-relative"
-                >
-                  <div class="d-flex justify-content-between mb-1">
-                    <label for="" class="label">Subscribed Clients</label>
-                    <span class="label order-btn" id="add-clients" data-bs-toggle="modal"
-             data-bs-target="#add-clients-modal">Add clients</span>
-                  </div>
-                  <input
-                    type="text"
-                    class="selected-file w-100 mb-4 content-text"
-                  />
-                  <b class="position-absolute input-dash"> - </b>
-                  <div
-                    class="d-flex gap-2 align-items-sm-center align-items-start account-checkbox mt-2"
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="precriptionToType" />
+                  <p class="content-text">
+                    The First
+                    <input value="2" type="text" class="promoted-to-qty" /> uses
+                    of the Prescription Code
+                  </p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="precriptionToType" />
+                  <p class="content-text">
+                    Anyone who uses the Prescription Code
+                  </p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="precriptionToType" />
+                  <p class="content-text">Chosen clients only</p>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column subscribed-clients position-relative"
+              >
+                <div class="d-flex justify-content-between mb-1">
+                  <label for="" class="label">Subscribed Clients</label>
+                  <span
+                    class="label order-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#edit-signin-modal"
+                    id="edit-address"
+                    >Add clients</span
                   >
-                    <input type="checkbox" name="" id="" />
-                    <p class="content-text">
-                      Automatically email promotion to clients
-                    </p>
-                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="selected-file w-100 mb-4 content-text"
+                />
+                <b class="position-absolute input-dash"> - </b>
+                <div
+                  class="d-flex gap-2 align-items-sm-center align-items-start account-checkbox mt-2"
+                >
+                  <input type="checkbox" name="" id="" />
+                  <p class="content-text">
+                    Automatically email promotion to clients
+                  </p>
                 </div>
               </div>
-              <div class="d-flex justify-content-between flex-wrap mt-5">
-                <div class="d-flex flex-column custom-radio">
-                  <label for="" class="label">Repeat</label>
-                  <div class="d-flex align-items-center mt-2 gap-10">
-                    <input type="radio" name="repeat" />
-                    <p class="content-text">Single Use</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="repeat" />
-                    <p class="content-text">
-                      Limited to
-                      <input type="text" class="promoted-to-qty" value="1" /> repeat(s)
-                    </p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="repeat" />
-                    <p class="content-text">Unlimited repeats</p>
-                  </div>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap mt-5">
+              <div class="d-flex flex-column custom-radio">
+                <label for="" class="label">Repeat</label>
+                <div class="d-flex align-items-center mt-2 gap-10">
+                  <input type="radio" name="repeat" />
+                  <p class="content-text">Single Use</p>
                 </div>
-                <div class="d-flex flex-column custom-radio prescribe-gap">
-                  <label for="" class="label">Expiry</label>
-                  <div class="d-flex align-items-center mt-2 gap-10">
-                    <input type="radio" name="startDate" />
-                    <p class="content-text">Never expires</p>
-                  </div>
-                  <div class="d-flex align-items-center gap-10">
-                    <input type="radio" name="startDate" />
-                    <p class="content-text">
-                      Expires on
-                      <input type="date" class="promoted-to-qty qty-2" />
-                    </p>
-                  </div>
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="repeat" />
+                  <p class="content-text">
+                    Limited to
+                    <input type="text" class="promoted-to-qty" value="1" />
+                    repeat(s)
+                  </p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="repeat" />
+                  <p class="content-text">Unlimited repeats</p>
                 </div>
               </div>
-            </form>
+              <div class="d-flex flex-column custom-radio prescribe-gap">
+                <label for="" class="label">Expiry</label>
+                <div class="d-flex align-items-center mt-2 gap-10">
+                  <input type="radio" name="startDate" />
+                  <p class="content-text">Never expires</p>
+                </div>
+                <div class="d-flex align-items-center gap-10">
+                  <input type="radio" name="startDate" />
+                  <p class="content-text">
+                    Expires on
+                    <input type="date" class="promoted-to-qty qty-2" />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
         </section>
         <section class="attach-promo">
-            <h3 class="heading-3 mb-2">
-                Attach Promo <span class="content-text">(advertise promo when prescription link is sent)</span>
-            </h3>
-            <table class="mt-3 table create-prescription-table">
-                <thead class="thead custom-thead promotion-thead">
-                    <tr>
-                      <th></th>
-                      <th>code</th>
-                      <th>Name</th>
-                      <th>Start Date</th>
-                      <th>End Date</th>
-                    </tr>
-                    <tr class="horizontal-line"></tr>
-                  </thead>
-                  <tbody id="attach-table-body" class="custom-tbody promotion-tbody create-prescription-tbody"></tbody>
-            </table>
+          <h3 class="heading-3 mb-2">
+            Attach Promo
+            <span class="content-text"
+              >(advertise promo when prescription link is sent)</span
+            >
+          </h3>
+          <table class="mt-3 table create-prescription-table">
+            <thead class="thead custom-thead promotion-thead">
+              <tr>
+                <th></th>
+                <th>code</th>
+                <th>Name</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+              </tr>
+              <tr class="horizontal-line"></tr>
+            </thead>
+            <tbody
+              id="attach-table-body"
+              class="custom-tbody promotion-tbody create-prescription-tbody"
+            ></tbody>
+          </table>
         </section>
         <div class="d-flex flex-column gap-1">
-            <label for="" class="label">Remarks / Notes</label>
-            <input type="text" class="selected-file w-100">
+          <label for="" class="label">Remarks / Notes</label>
+          <input type="text" class="selected-file w-100" />
         </div>
-        <div class="d-flex justify-content-end align-items-center margin-120 gap-3">
-        <button class="pick-up-btn issue-btn">Save</button>
-        <button class="pick-up-btn">Issue</button>
+        <div
+          class="d-flex justify-content-end align-items-center margin-120 gap-3"
+        >
+          <button class="pick-up-btn issue-btn">Save</button>
+          <button class="pick-up-btn">Issue</button>
         </div>
-     </div>
-     <div
-     class="modal fade"
-     id="products-modal"
-     tabindex="-1"
-     aria-labelledby="productsModalLabel"
-     aria-hidden="true"
-   >
-     <div
-       class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
-     >
-       <div
-         id="modal-container"
-         class="modal-content position-relative custom-modal"
-       >
-       </div>
-     </div>
-   </div>
+      </div>
+      <div
+        class="modal fade"
+        id="products-modal"
+        tabindex="-1"
+        aria-labelledby="productsModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+        >
+          <div
+            id="modal-container"
+            class="modal-content position-relative custom-modal"
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="edit-signin-modal"
+        tabindex="-1"
+        aria-labelledby="editSignInModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+        >
+          <div
+            id="modal-container"
+            class="modal-content position-relative custom-modal"
+          >
+            <form class="d-flex flex-column gap-3">
+              <p class="second-heading heading-3">Edit addresses</p>
+              <div class="account-editAddress mb-5">
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Address *</label>
+                  <select name="" id="">
+                    <option value="home">Home</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Address name *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Email *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">First name *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Last name *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Phone *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Mobile</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Fax</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Company</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label"
+                    >Unit/Flat/Floor/Building</label
+                  >
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label
+                    for=""
+                    class="label d-flex align-items-end justify-content-between"
+                    >Address *
+                    <span class="orderStatus-backBtn fs-6"
+                      >Type address manually</span
+                    ></label
+                  >
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Suburb *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">City *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Rural</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Postcode *</label>
+                  <input type="text" class="inputField" name="gst" id="gst" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="RNpassword" class="label">Country *</label>
+                  <select name="" id="">
+                    <option value="">New Zealand</option>
+                    <option value="">India</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex flex-column gap-3 mt-5">
+                <button class="btn w-100 active-btn">Save Changes</button>
+                <button class="w-100 btn" type="button" id="cancel-modal">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <div id="footer"></div>
     <script

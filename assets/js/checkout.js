@@ -116,63 +116,110 @@ const editAddress = `  <form class="d-flex flex-column gap-3">
             </div>
           </form>`;
 
-const deliveryDetails = document.getElementById("delivery-details")
-const paymentDetails = document.getElementById("payment-detail")
-const deliveryPage = document.getElementById("delivery")
-const paymentPage = document.getElementById("payment")
-const placeOrderPage = document.getElementById("place-order")
-const deliverPageBtn = document.getElementById("delivery-page-btn")
-const paymentPageBtn = document.getElementById("paymeent-page-btn")
-const backBtn = document.getElementById("back-btn")
-const deliveryNumber = document.getElementById("delivery-num")
-const deliveryHeading = document.getElementById("deliveryHeading")
-const paymentNumber = document.getElementById("payment-num")
-const paymentHeading = document.getElementById("payment-heading")
-const placeOrderNum = document.getElementById("place-order-num")
-const placeOrderHeading = document.getElementById("place-order-heading")
+const deliveryDetails = document.getElementById("delivery-details");
+const paymentDetails = document.getElementById("payment-detail");
+const deliveryPage = document.getElementById("delivery");
+const paymentPage = document.getElementById("payment");
+const placeOrderPage = document.getElementById("place-order");
+const deliverPageBtn = document.getElementById("delivery-page-btn");
+const paymentPageBtn = document.getElementById("paymeent-page-btn");
+const backBtn = document.getElementById("back-btn");
+const deliveryNumber = document.getElementById("delivery-num");
+const deliveryHeading = document.getElementById("deliveryHeading");
+const paymentNumber = document.getElementById("payment-num");
+const paymentHeading = document.getElementById("payment-heading");
+const placeOrderNum = document.getElementById("place-order-num");
+const placeOrderHeading = document.getElementById("place-order-heading");
 
-deliverPageBtn.addEventListener("click" , ()=>{
-  deliveryPage.classList.add("d-none")
-  paymentPage.classList.remove("d-none")
-  paymentPage.classList.add("d-block")
-  deliveryDetails.classList.remove("d-none")
-  deliveryDetails.classList.add("d-block")
-  deliveryNumber.classList.remove("checkout-NumActive")
-  deliveryHeading.classList.remove("checkout-active")
-  deliveryNumber.classList.add("checkout-numDone")
-  deliveryHeading.classList.add("checkout-done")
-  paymentNumber.classList.add("checkout-NumActive")
-  paymentHeading.classList.add("checkout-active")
-})
+const checkoutStageContainer = document.querySelector(
+  ".checkout-stage-container"
+);
 
-paymentPageBtn.addEventListener("click", ()=>{
-  placeOrderPage.classList.remove("d-none")
-  paymentPage.classList.remove("d-block")
-  paymentPage.classList.add("d-none")
-  paymentDetails.classList.remove("d-none")
-  paymentDetails.classList.add("d-block")
-  paymentNumber.classList.add("checkout-numDone")
-  paymentHeading.classList.add("checkout-done")
-  placeOrderNum.classList.add("checkout-NumActive")
-  placeOrderHeading.classList.add("checkout-active")
-})
+deliveryHeading?.addEventListener("click", () => {
+  const isVisible = deliveryDetails.classList.contains("d-block");
+  const deliveryArrow = deliveryHeading.querySelector("img");
+  const paymentArrow = paymentHeading?.querySelector("img");
 
-backBtn.addEventListener("click", ()=>{
-  placeOrderPage.classList.add("d-none")
-  paymentPage.classList.remove("d-block")
-  paymentPage.classList.remove("d-none")
-  paymentDetails.classList.add("d-none")
-  paymentDetails.classList.remove("d-block")
-  paymentNumber.classList.remove("checkout-numDone")
-  paymentHeading.classList.remove("checkout-done")
-  placeOrderNum.classList.remove("checkout-NumActive")
-  placeOrderHeading.classList.remove("checkout-active")
-})
+  if (isVisible) {
+    deliveryDetails.classList.remove("d-block");
+    deliveryDetails.classList.add("d-none");
+    deliveryArrow?.classList.remove("rotate-180");
+    checkoutStageContainer?.classList.remove("checkoutstage-height");
+  } else {
+    paymentDetails.classList.remove("d-block");
+    paymentDetails.classList.add("d-none");
+    paymentArrow?.classList.remove("rotate-180");
 
+    deliveryDetails.classList.remove("d-none");
+    deliveryDetails.classList.add("d-block");
+    deliveryArrow?.classList.add("rotate-180");
+    checkoutStageContainer?.classList.add("checkoutstage-height");
+  }
+});
+
+paymentHeading?.addEventListener("click", () => {
+  const isVisible = paymentDetails.classList.contains("d-block");
+  const paymentArrow = paymentHeading.querySelector("img");
+  const deliveryArrow = deliveryHeading?.querySelector("img");
+
+  if (isVisible) {
+    paymentDetails.classList.remove("d-block");
+    paymentDetails.classList.add("d-none");
+    paymentArrow?.classList.remove("rotate-180");
+    checkoutStageContainer?.classList.remove("checkoutstage-height");
+  } else {
+    deliveryDetails.classList.remove("d-block");
+    deliveryDetails.classList.add("d-none");
+    deliveryArrow?.classList.remove("rotate-180");
+
+    paymentDetails.classList.remove("d-none");
+    paymentDetails.classList.add("d-block");
+    paymentArrow?.classList.add("rotate-180");
+    checkoutStageContainer?.classList.add("checkoutstage-height");
+  }
+});
+
+deliverPageBtn.addEventListener("click", () => {
+  deliveryPage.classList.add("d-none");
+  paymentPage.classList.remove("d-none");
+  paymentPage.classList.add("d-block");
+  deliveryDetails.classList.remove("d-none");
+  deliveryDetails.classList.add("d-block");
+  deliveryNumber.classList.remove("checkout-NumActive");
+  deliveryHeading.classList.remove("checkout-active");
+  deliveryNumber.classList.add("checkout-numDone");
+  deliveryHeading.classList.add("checkout-done");
+  paymentNumber.classList.add("checkout-NumActive");
+  paymentHeading.classList.add("checkout-active");
+});
+
+paymentPageBtn.addEventListener("click", () => {
+  placeOrderPage.classList.remove("d-none");
+  paymentPage.classList.remove("d-block");
+  paymentPage.classList.add("d-none");
+  paymentDetails.classList.remove("d-none");
+  paymentDetails.classList.add("d-block");
+  paymentNumber.classList.add("checkout-numDone");
+  paymentHeading.classList.add("checkout-done");
+  placeOrderNum.classList.add("checkout-NumActive");
+  placeOrderHeading.classList.add("checkout-active");
+});
+
+backBtn.addEventListener("click", () => {
+  placeOrderPage.classList.add("d-none");
+  paymentPage.classList.remove("d-block");
+  paymentPage.classList.remove("d-none");
+  paymentDetails.classList.add("d-none");
+  paymentDetails.classList.remove("d-block");
+  paymentNumber.classList.remove("checkout-numDone");
+  paymentHeading.classList.remove("checkout-done");
+  placeOrderNum.classList.remove("checkout-NumActive");
+  placeOrderHeading.classList.remove("checkout-active");
+});
 
 const container = document.getElementById("modal-container");
-const modalBtn = document.getElementById("modal-btn")
-  const loadContent = (content) => {
-    container.innerHTML = content
-  };
-  modalBtn.addEventListener("click", ()=>loadContent(editAddress))
+const modalBtn = document.getElementById("modal-btn");
+const loadContent = (content) => {
+  container.innerHTML = content;
+};
+modalBtn.addEventListener("click", () => loadContent(editAddress));

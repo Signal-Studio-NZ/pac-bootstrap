@@ -1,95 +1,105 @@
 const data = [
- {
-  id: 1,
-  name: 'Signal Studio',
-  email: 'hello@signalstudio.com',
-  discount: `10% <span class="off-retail">Off Retail</span>`,
-  showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
-  createInvoice: `<form class="account-checkbox d-inline"><input checked type="checkbox" name="" id="" /></form>`,
-  codeName: 'SGNSTD',       
-  action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
+  {
+    id: 1,
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
+    discount: `10% <span class="off-retail">Off Retail</span>`,
+    showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
+    createInvoice: `<form class="account-checkbox d-inline"><input checked type="checkbox" name="" id="" /></form>`,
+    codeName: "SGNSTD",
+    action: `<div class="d-flex align-items-center justify-content-end edit-logos">
+          <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
           <img src="assets/svgs/details.svg" class="pointer" alt="details">
           <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
           <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
+        </div>`,
   },
- {
- id: 2,
- name: 'Signal Studio',
- email: 'hello@signalstudio.com',
- discount: `10% <span class="off-retail">Off Retail</span>`,
- showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
- createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
- codeName: 'SGNSTD',       
- action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
-          <img src="assets/svgs/details.svg" class="pointer" alt="details">
-          <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
-          <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
+  {
+    id: 2,
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
+    discount: `10% <span class="off-retail">Off Retail</span>`,
+    showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
+    createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
+    codeName: "SGNSTD",
+    action: `<div class="entry">
+  <div class="d-flex align-items-center justify-content-end edit-logos">
+    <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
+    <img src="assets/svgs/details.svg" class="pointer" alt="details">
+    <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
+    <img src="assets/svgs/close.svg" class="pointer" alt="">
+  </div>
+</div>`,
   },
- {
-  id: 4,
-  name: 'Signal Studio',
-  email: 'hello@signalstudio.com',
-  discount: `10% <span class="off-retail">Off Retail</span>`,
-  showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
-  createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
-  codeName: 'SGNSTD',       
-  action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
-          <img src="assets/svgs/details.svg" class="pointer" alt="details">
-          <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
-          <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
+  {
+    id: 4,
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
+    discount: `10% <span class="off-retail">Off Retail</span>`,
+    showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
+    createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
+    codeName: "SGNSTD",
+    action: `<div class="entry">
+  <div class="d-flex align-items-center justify-content-end edit-logos">
+    <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
+    <img src="assets/svgs/details.svg" class="pointer" alt="details">
+    <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
+    <img src="assets/svgs/close.svg" class="pointer" alt="">
+  </div>
+</div>`,
   },
- {
-  id: 5,
-  name: 'Signal Studio',
-  email: 'hello@signalstudio.com',
-  discount: `10% <span class="off-retail">Off Retail</span>`,
-  showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
-  createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
-  codeName: 'SGNSTD',       
-  action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
-          <img src="assets/svgs/details.svg" class="pointer" alt="details">
-          <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
-          <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
+  {
+    id: 5,
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
+    discount: `10% <span class="off-retail">Off Retail</span>`,
+    showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
+    createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
+    codeName: "SGNSTD",
+    action: `<div class="entry">
+  <div class="d-flex align-items-center justify-content-end edit-logos">
+    <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
+    <img src="assets/svgs/details.svg" class="pointer" alt="details">
+    <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
+    <img src="assets/svgs/close.svg" class="pointer" alt="">
+  </div>
+</div>`,
   },
- {
+  {
     id: 6,
-    name: 'Signal Studio',
-    email: 'hello@signalstudio.com',
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
     discount: `10% <span class="off-retail">Off Retail</span>`,
     showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
     createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
-    codeName: 'SGNSTD',       
-    action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
-          <img src="assets/svgs/details.svg" class="pointer" alt="details">
-          <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
-          <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
+    codeName: "SGNSTD",
+    action: `<div class="entry">
+  <div class="d-flex align-items-center justify-content-end edit-logos">
+    <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
+    <img src="assets/svgs/details.svg" class="pointer" alt="details">
+    <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
+    <img src="assets/svgs/close.svg" class="pointer" alt="">
+  </div>
+</div>`,
   },
- {
-  id: 7,
-  name: 'Signal Studio',
-  email: 'hello@signalstudio.com',
-  discount: `10% <span class="off-retail">Off Retail</span>`,
-  showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
-  createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
-  codeName: 'SGNSTD',       
-  action:`<div class="d-flex align-items-center justify-content-end edit-logos">
-          <img src="assets/svgs/percentage.svg" class="pointer" alt="discount percent">
-          <img src="assets/svgs/details.svg" class="pointer" alt="details">
-          <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
-          <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>`
- },
-]
+  {
+    id: 7,
+    name: "Signal Studio",
+    email: "hello@signalstudio.com",
+    discount: `10% <span class="off-retail">Off Retail</span>`,
+    showSpecials: `<form class="account-checkbox d-inline"><input type="checkbox" checked name="" id="" /></form>`,
+    createInvoice: `<form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>`,
+    codeName: "SGNSTD",
+    action: `<div class="entry">
+  <div class="d-flex align-items-center justify-content-end edit-logos">
+    <img src="assets/svgs/percentage.svg" class="pointer pointer-active" alt="discount percent">
+    <img src="assets/svgs/details.svg" class="pointer" alt="details">
+    <img src="assets/svgs/edit.svg" class="pointer" alt="edit">
+    <img src="assets/svgs/close.svg" class="pointer" alt="">
+  </div>
+</div>`,
+  },
+];
 
 const modalData = [
   {
@@ -121,8 +131,8 @@ const modalData = [
     product: "Perfect Potion Aniseed Myrtle 5ml",
     wholesale: "$67.00",
     retail: "$144.00",
-  }
-]
+  },
+];
 
 const productsModal = `  <div class=" products-modal">
         <div
@@ -244,93 +254,83 @@ const productsModal = `  <div class=" products-modal">
         </div>
       </div>
      </div>
-       </div>`
+       </div>`;
 
 document.addEventListener("DOMContentLoaded", function () {
-    function renderTable() {
-      const tableBody = document.getElementById("table-body");
-      tableBody.innerHTML = "";  
-      data.forEach((item) => {
-        const row = document.createElement("tr");
-        // Function to update row style based on screen size
-        function updateRowStyle() {
-          if (window.innerWidth < 992) {
-            row.classList.add("d-flex", "flex-column");
-            row.classList.remove("d-table-row");
-          } else {
-            row.classList.remove("d-flex", "flex-column");
-          }
+  function renderTable() {
+    const tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = "";
+    data.forEach((item) => {
+      const row = document.createElement("tr");
+      // Function to update row style based on screen size
+      function updateRowStyle() {
+        if (window.innerWidth < 992) {
+          row.classList.add("d-flex", "flex-column", "clientList-table");
+          row.classList.remove("d-table-row");
+        } else {
+          row.classList.remove("d-flex", "flex-column");
         }
-    row.innerHTML = `
-            <td class="" ><span class="responsive-lable d-lg-none">Name</span>${
-              item.name
-            }</td>
+      }
+      row.innerHTML = `
+            <td class="" ><span class="responsive-lable d-lg-none">Name</span>${item.name}</td>
             <td>
-            <span class="responsive-lable d-lg-none">Email</span>${
-              item.email
-            }</td>
+            <span class="responsive-lable d-lg-none">Email</span>${item.email}</td>
             <td>
-            <span class="responsive-lable d-lg-none">Discount</span>${
-              item.discount
-            }
+            <span class="responsive-lable d-lg-none">Discount</span>${item.discount}
             </td>
-            <td class="text-lg-center" ><span class="responsive-lable d-lg-none">Show specials</span>${
-              item.showSpecials
-            }</td>
-            <td class="text-xxl-center" ><span class="responsive-lable d-lg-none">Create invoice</span>${
-              item.createInvoice
-            }</td>
+            <td class="text-lg-center" ><span class="responsive-lable d-lg-none">Show specials</span>${item.showSpecials}</td>
+            <td class="text-xxl-center" ><span class="responsive-lable d-lg-none">Create invoice</span>${item.createInvoice}</td>
              <td>
-            <span class="responsive-lable d-lg-none">Codename</span>${
-              item.codeName
-            }</td>
+            <span class="responsive-lable d-lg-none">Codename</span>${item.codeName}</td>
               <td class="text-lg-end">
-            <span class="responsive-lable d-lg-none">Action</span>${
-              item.action
-            }</td>
+            ${item.action}</td>
             `;
-        tableBody.appendChild(row);
-        updateRowStyle();
-       window.addEventListener("resize", updateRowStyle)
-      });
-    }
-
-    // Modal table
-  // function renderModalTable(){
-  //   const modalTable = document.getElementById("modal-table-body")
-  //   modalTable.innerHTML = ""; 
-  //   modalData.forEach((item) => {
-  //     const modalRow = document.createElement("tr");
-  // modalRow.innerHTML = `
-  //         <td>
-  //          <div class="product-td d-flex align-items-center">
-  //       <div class="h-100 rounded-4 product-td-img p-3">
-  //         <img src="/assets/images/product-table-image.jpg" alt="" class="h-100 w-100">
-  //       </div>
-  //       ${item.product}
-  //     </div>
-  //         </td>
-  //         <td>
-  //         ${item.wholesale}
-  //         </td>
-  //         <td class="">
-  //         ${item.retail}
-  //         </td>
-  //         <td class="text-end">
-  //         <form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>
-  //         </td>`;
-  //     modalTable.appendChild(modalRow);
-  //   });
-  // }
+      tableBody.appendChild(row);
+      updateRowStyle();
+      window.addEventListener("resize", updateRowStyle);
+    });
+  }
   renderTable();
   // renderModalTable()
+});
+
+{
+  /* <span class="responsive-lable d-lg-none">Action</span> */
+}
+//Products Modal
+const modalBtn = document.getElementById("modal-btn");
+const container = document.getElementById("modal-container");
+const loadContent = (content) => {
+  container.innerHTML = content;
+};
+modalBtn.addEventListener("click", () => {
+  loadContent(productsModal);
+  renderModalTable();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const entries = document.querySelectorAll(".entry");
+
+  entries.forEach((entry) => {
+    const icons = entry.querySelectorAll(".edit-logos img");
+
+    icons.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        const isActive = icon.classList.contains("pointer-active");
+
+        // Reset all icons in this entry
+        icons.forEach((i) => {
+          i.classList.remove("pointer-active");
+          i.src = i.src.replace("Active.svg", ".svg");
+        });
+
+        // If this icon was not active, activate it
+        if (!isActive) {
+          icon.classList.add("pointer-active");
+          icon.src = icon.src.replace(".svg", "Active.svg");
+        }
+
+        // If it was active, we already reset it above (toggle off)
+      });
+    });
   });
-  //Products Modal
-  const modalBtn = document.getElementById("modal-btn")
-  const container = document.getElementById("modal-container");
-  const loadContent = (content) => {
-    container.innerHTML = content
-  };
-  modalBtn.addEventListener("click", ()=>{loadContent(productsModal)
-    renderModalTable()
-  })
+});

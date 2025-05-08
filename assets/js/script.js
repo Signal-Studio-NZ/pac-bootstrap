@@ -13,6 +13,18 @@ async function loadHTML(elementId, filePath) {
       notificationBanner?.classList.add("d-none");
       console.log("hi");
     });
+    const openBtn = document.getElementById("openShopMenu");
+    const closeBtn = document.getElementById("closeShopMenu");
+    const shopMenu = document.getElementById("shopMenu");
+
+    openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      shopMenu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      shopMenu.classList.remove("active");
+    });
   } catch (error) {
     console.error("Error loading HTML:", error);
   }
@@ -151,27 +163,29 @@ orderProcedureBtn.addEventListener("click", () => {
   orderProcedure.classList.toggle("feature-col-height");
 });
 
-const practitionerApplication = document.getElementById("practitioner-application")
-const studentApplication = document.getElementById("student-application")
+const practitionerApplication = document.getElementById(
+  "practitioner-application"
+);
+const studentApplication = document.getElementById("student-application");
 
-practitionerApplication.addEventListener("click", ()=>{
-  studentApplication.classList.remove("account-switch-active")
-  practitionerApplication.classList.add("account-switch-active")
-})
+practitionerApplication.addEventListener("click", () => {
+  studentApplication.classList.remove("account-switch-active");
+  practitionerApplication.classList.add("account-switch-active");
+});
 
-studentApplication.addEventListener("click", ()=>{
-  studentApplication.classList.add("account-switch-active")
-  practitionerApplication.classList.remove("account-switch-active")
-})
+studentApplication.addEventListener("click", () => {
+  studentApplication.classList.add("account-switch-active");
+  practitionerApplication.classList.remove("account-switch-active");
+});
 
-const uploadLable = document.getElementById("file-uplaod-label")
-const uploadBtn = document.getElementById("file-upload-btn")
-const fileUpload = document.getElementById("file-upload")
+const uploadLable = document.getElementById("file-uplaod-label");
+const uploadBtn = document.getElementById("file-upload-btn");
+const fileUpload = document.getElementById("file-upload");
 
-fileUpload.addEventListener("change", ()=>{
-  uploadLable.innerText = fileUpload.files[0].name
-  if(fileUpload.files[0].name){
-    uploadBtn.classList.add("file-added")
-    uploadBtn.disabled = false
+fileUpload.addEventListener("change", () => {
+  uploadLable.innerText = fileUpload.files[0].name;
+  if (fileUpload.files[0].name) {
+    uploadBtn.classList.add("file-added");
+    uploadBtn.disabled = false;
   }
-})
+});

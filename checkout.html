@@ -19,16 +19,26 @@
       <div class="container font-manrope">
         <h1 class="heading-1 heading-1-margins">Checkout</h1>
         <div class="checkout-stage-container d-flex align-items-center">
-          <div 
+          <div
             class="d-flex gap-2 position-relative align-items-center checkout-stage"
           >
             <div
-             id="delivery-num"
+              id="delivery-num"
               class="checkout-NStage1 checkout-NumActive fw-medium d-flex align-items-center justify-content-center"
             >
               1
             </div>
-            <p id="deliveryHeading" class="checkout-stage1 checkout-active fw-medium">Delivery</p>
+            <p
+              id="deliveryHeading"
+              class="checkout-stage1 d-flex align-items-center flex-column pt-2 checkout-active fw-medium"
+            >
+              Delivery
+              <img
+                src="/assets/svgs/downarrow2.svg"
+                class="d-md-none"
+                alt="downarrow"
+              />
+            </p>
             <div
               id="delivery-details"
               class="checkout-stageData position-absolute d-none flex-column gap-2"
@@ -61,7 +71,17 @@
             >
               2
             </div>
-            <p id="payment-heading" class="checkout-stage1 fw-medium">Payment</p>
+            <p
+              id="payment-heading"
+              class="checkout-stage1 fw-medium d-flex align-items-center flex-column pt-2"
+            >
+              Payment
+              <img
+                src="/assets/svgs/downarrow2.svg"
+                class="d-md-none"
+                alt="downarrow"
+              />
+            </p>
             <div
               id="payment-detail"
               class="checkout-stageData position-absolute d-none flex-column gap-2"
@@ -109,79 +129,83 @@
           </div>
         </div>
         <div id="delivery" class="deliver-stage">
-          <section class="border-bottom border-black Delivery-PickUp">
+          <section class="border-black Delivery-PickUp">
             <h2 class="heading-3 mb-5">Delivery / Pick-up</h2>
-            <div class="d-flex gap-4">
-              <div class="w-100">
-                <h4 for="" class="fw-medium textgray lh-lg fs-6">Service</h4>
+            <div class="row gy-4">
+              <div class="col-12 col-md-4">
+                <h4 class="fw-medium textgray lh-lg checkout-label fs-6">
+                  Service
+                </h4>
                 <div class="d-flex gap-3 flex-column">
                   <div class="d-flex align-items-center gap-2 custom-radio">
                     <input
                       class="checkoutDelivery-radio"
                       type="radio"
-                      name="Pick-upfromShop"
-                      id="Pick-upfromShop"
+                      name="deliveryOption"
+                      id="pickup"
                     />
-                    <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Pick-up from Shop</label
-                    >
+                    <label for="pickup" class="checkoutDelivery-label">
+                      Pick-up from Shop
+                    </label>
                   </div>
                   <div class="d-flex align-items-center gap-2 custom-radio">
                     <input
                       class="checkoutDelivery-radio"
                       type="radio"
-                      name="Pick-upfromShop"
-                      id="Pick-upfromShop"
+                      name="deliveryOption"
+                      id="deliver"
                     />
-                    <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Deliver to me</label
-                    >
+                    <label for="deliver" class="checkoutDelivery-label">
+                      Deliver to me
+                    </label>
                   </div>
                   <div class="d-flex align-items-center gap-2 custom-radio">
                     <input
                       class="checkoutDelivery-radio"
                       type="radio"
-                      name="Pick-upfromShop"
-                      id="Pick-upfromShop"
+                      name="deliveryOption"
+                      id="deliverClient"
                     />
-                    <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Deliver Direct to Client</label
-                    >
+                    <label for="deliverClient" class="checkoutDelivery-label">
+                      Deliver Direct to Client
+                    </label>
                   </div>
                 </div>
               </div>
-              <div class="w-100">
-                <h4 for="" class="fw-medium textgray fs-6 lh-lg">
+
+              <div class="col-12 col-md-4">
+                <h4 class="fw-medium textgray fs-6 checkout-label lh-lg">
                   Class of Service
                 </h4>
-                <div>
-                  <div class="d-flex align-items-center gap-2 custom-radio">
-                    <input
-                      class="checkoutDelivery-radio"
-                      type="radio"
-                      name="Pick-upfromShop"
-                      id="Pick-upfromShop"
-                    />
-                    <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Courier (default) Free</label
-                    >
-                  </div>
+                <div class="d-flex align-items-center gap-2 custom-radio">
+                  <input
+                    class="checkoutDelivery-radio"
+                    type="radio"
+                    name="classOfService"
+                    id="courier"
+                  />
+                  <label for="courier" class="checkoutDelivery-label">
+                    Courier (default) Free
+                  </label>
                 </div>
               </div>
-              <div class="w-100">
-                <h4 for="" class="fw-medium textgray lh-lg fs-6">Options</h4>
-                <div>
-                  <div class="d-flex align-items-center gap-2 account-checkbox">
-                    <input
-                      type="checkbox"
-                      name=""
-                      class="checkoutDelivery-radio"
-                      id=""
-                    />
-                    <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Sign for parcel Free</label
-                    >
-                  </div>
+
+              <div class="col-12 col-md-4">
+                <h4 class="fw-medium textgray checkout-label lh-lg fs-6">
+                  Options
+                </h4>
+                <div class="d-flex align-items-center gap-2 account-checkbox">
+                  <input
+                    type="checkbox"
+                    id="signParcel"
+                    class="checkoutDelivery-radio"
+                  />
+                  <label
+                    for="signParcel"
+                    class="checkoutDelivery-label flex-nowrap"
+                  >
+                    Sign for parcel Free
+                  </label>
                 </div>
               </div>
             </div>
@@ -221,26 +245,32 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-end mt-4">
+            <div
+              class="d-flex align-items-center justify-content-lg-end mt-5 pt-4 pt-md-0 mt-md-4"
+            >
               <button
                 class="editsign-btn account-editBtn bg-transparent border-0"
-                id="modal-btn" data-bs-toggle="modal"
-        data-bs-target="#products-modal"
+                id="modal-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#products-modal"
               >
                 Edit addresses
               </button>
             </div>
             <div class="d-flex align-items-center justify-content-end">
-              <button id="delivery-page-btn" class="btn active-btn checkout-continueBtn">
+              <button
+                id="delivery-page-btn"
+                class="btn active-btn checkout-continueBtn"
+              >
                 Continue
               </button>
             </div>
           </section>
         </div>
         <div id="payment" class="deliver-stage d-none">
-          <section class="border-bottom border-black Delivery-PickUp">
+          <section class="Delivery-PickUp">
             <h2 class="heading-3 mb-5">Payment Method</h2>
-            <div class="d-flex gap-4">
+            <div class="d-flex checkout-payment-container gap-4">
               <div class="w-100">
                 <label for="" class="checkoutDelivery-label fs-6 label"
                   >Select a payment method from below</label
@@ -300,7 +330,9 @@
                 </div>
               </div>
               <div class="w-100">
-                <h4 for="" class="fw-medium textgray lh-lg fs-6">Options</h4>
+                <h4 for="" class="fw-medium textgray lh-lg mb-3 mb-sm-0 fs-6">
+                  Options
+                </h4>
                 <div>
                   <div class="d-flex align-items-center gap-2 account-checkbox">
                     <input
@@ -319,8 +351,10 @@
           </section>
           <section>
             <h2 class="heading-3">Billing Address</h2>
-            <div class="mt-5 d-flex align-items-center">
-              <div class="d-flex Sameasdelivery align-items-center w-25 gap-2 account-checkbox">
+            <div class="mt-5 d-lg-flex align-items-center">
+              <div
+                class="d-flex mb-4 mb-lg-0 Sameasdelivery align-items-center gap-2 account-checkbox"
+              >
                 <input
                   type="checkbox"
                   name=""
@@ -367,7 +401,10 @@
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-end">
-              <button id="paymeent-page-btn" class="btn active-btn checkout-continueBtn">
+              <button
+                id="paymeent-page-btn"
+                class="btn active-btn checkout-continueBtn"
+              >
                 Continue
               </button>
             </div>
@@ -376,11 +413,11 @@
         <div id="place-order" class="deliver-stage d-none">
           <section class="">
             <h2 class="heading-3">Place Order</h2>
-            <p class="pb-4 checkoutDelivery-label mb-2">
+            <p class="pb-5 pb-md-4 checkoutDelivery-label mb-2">
               Please review your order, accept our Terms and Conditions and
               click the Place Order button below.
             </p>
-            <div class="d-flex gap-4">
+            <div class="d-flex flex-lg-row flex-column gap-5 gap-md-4">
               <div class="w-100">
                 <label for="" class="checkoutDelivery-label fs-6 label"
                   >Delivery Address
@@ -416,102 +453,132 @@
               </thead>
               <tbody id="table-body">
                 <tr>
-                  <td class="custom-td">AA033B</td>
                   <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Code
+                    </span>
+                    AA033B
                   </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
                   <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Products
+                    </span>
+                    <p class="d-lg-none">
+                      Aniseed Myrtle 5ml Buy 3 of AA033B and receive 5% off
+                    </p>
+                    <p class="d-none d-lg-block">Aniseed Myrtle 5ml</p>
+                    <p class="d-none d-lg-block">
+                      Buy 3 of AA033B and receive 5% off
+                    </p>
                   </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst ">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr>
-                  <td class="custom-td">AA033B</td>
-                  <td class="custom-td">
-                    <p>Aniseed Myrtle 5ml</p>
-                    <p>Buy 3 of AA033B and receive 5% off</p>
-                  </td>
-                  <td class="custom-td checkoutTable-Qty text-xl-start text-lg-center">5</td>
-                  <td class="custom-td checkoutTable-gst">$35.50</td>
-                  <td class="custom-td checkoutTable-WS">$19.38</td>
-                  <td class="custom-td checkoutTable-Price">$92.06</td>
-                </tr>
-                <tr class="checkouttable-total">
-                  <td colspan="5" class="custom-td totalcolor fw-bold">
-                    Total
-                  </td>
-
                   <td
-                    class="custom-td totalcolor fw-bold checkouttable-Totalprice"
+                    class="custom-td checkoutTable-Qty text-xl-start text-lg-center"
                   >
-                    $92.06
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Qty
+                    </span>
+                    5
+                  </td>
+                  <td class="custom-td checkoutTable-gst">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >RRP incl GST </span
+                    >$35.50
+                  </td>
+                  <td class="custom-td checkoutTable-WS">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >W/s </span
+                    >$19.38
+                  </td>
+                  <td class="custom-td checkoutTable-Price">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Price</span
+                    >$92.06
+                  </td>
+                </tr>
+                <tr>
+                  <td class="custom-td">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Code
+                    </span>
+                    AA033B
+                  </td>
+                  <td class="custom-td">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Products
+                    </span>
+                    <p class="d-lg-none">
+                      Aniseed Myrtle 5ml Buy 3 of AA033B and receive 5% off
+                    </p>
+                    <p class="d-none d-lg-block">Aniseed Myrtle 5ml</p>
+                    <p class="d-none d-lg-block">
+                      Buy 3 of AA033B and receive 5% off
+                    </p>
+                  </td>
+                  <td
+                    class="custom-td checkoutTable-Qty text-xl-start text-lg-center"
+                  >
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Qty
+                    </span>
+                    5
+                  </td>
+                  <td class="custom-td checkoutTable-gst">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >RRP incl GST </span
+                    >$35.50
+                  </td>
+                  <td class="custom-td checkoutTable-WS">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >W/s </span
+                    >$19.38
+                  </td>
+                  <td class="custom-td checkoutTable-Price">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Price</span
+                    >$92.06
+                  </td>
+                </tr>
+                <tr>
+                  <td class="custom-td">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Code
+                    </span>
+                    AA033B
+                  </td>
+                  <td class="custom-td">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Products
+                    </span>
+                    <p class="d-lg-none">
+                      Aniseed Myrtle 5ml Buy 3 of AA033B and receive 5% off
+                    </p>
+                    <p class="d-none d-lg-block">Aniseed Myrtle 5ml</p>
+                    <p class="d-none d-lg-block">
+                      Buy 3 of AA033B and receive 5% off
+                    </p>
+                  </td>
+                  <td
+                    class="custom-td checkoutTable-Qty text-xl-start text-lg-center"
+                  >
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Qty
+                    </span>
+                    5
+                  </td>
+                  <td class="custom-td checkoutTable-gst">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >RRP incl GST </span
+                    >$35.50
+                  </td>
+                  <td class="custom-td checkoutTable-WS">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >W/s </span
+                    >$19.38
+                  </td>
+                  <td class="custom-td checkoutTable-Price">
+                    <span class="fw-bold d-lg-none checkoutMobile-tabletitle"
+                      >Price</span
+                    >$92.06
                   </td>
                 </tr>
               </tbody>
@@ -520,7 +587,9 @@
               <label for="" class="label">Any special instructions?</label>
               <input type="text" class="w-100 inputField" />
             </div>
-            <div class="d-flex align-items-center gap-2 mt-5 pt-2 account-checkbox">
+            <div
+              class="d-flex align-items-center gap-2 mt-5 pt-2 account-checkbox"
+            >
               <input
                 type="checkbox"
                 name=""
@@ -549,22 +618,21 @@
         </div>
       </div>
       <div
-     class="modal fade"
-     id="products-modal"
-     tabindex="-1"
-     aria-labelledby="productsModalLabel"
-     aria-hidden="true"
-   >
-     <div
-       class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
-     >
-       <div
-         id="modal-container"
-         class="modal-content position-relative custom-modal"
-       >
-       </div>
-     </div>
-   </div>
+        class="modal fade"
+        id="products-modal"
+        tabindex="-1"
+        aria-labelledby="productsModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+        >
+          <div
+            id="modal-container"
+            class="modal-content position-relative custom-modal"
+          ></div>
+        </div>
+      </div>
     </main>
     <div id="footer"></div>
     <script

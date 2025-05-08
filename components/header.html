@@ -25,7 +25,9 @@
       class="navbar-nav align-items-end align-items-xl-center d-flex flex-row font-manrope font-600"
     >
       <li class="nav-item d-none d-xl-block">
-        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+        <a class="nav-link active" aria-current="page" href="/shop.html"
+          >Shop</a
+        >
       </li>
       <li class="nav-item dropdown d-none d-xl-block">
         <a
@@ -38,18 +40,21 @@
         >
           Prescriptions
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-menu"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle"></div>
           <li>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="" href="/prescription-list.html">My prescriptions</a>
           </li>
+          <li><a class="" href="#">Enter code</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown d-none d-xl-block">
         <a
-          class="nav-link dropdown-toggle"
           href="#"
+          class="nav-link dropdown-toggle"
           id="navbarDropdownMenuLink"
           role="button"
           data-bs-toggle="dropdown"
@@ -57,28 +62,90 @@
         >
           Promotion
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </li>
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-menu"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle"></div>
+          <li><a class="" href="/promotion-list.html">My Promotion</a></li>
+          <li><a class="" href="/pick-up-promotion.html">Enter code</a></li>
         </ul>
       </li>
+
       <li class="nav-item d-none d-xl-block">
-        <a class="nav-link" href="/about.html">About Us</a>
+        <a class="nav-link dropdown-toggle">Clients</a>
       </li>
+      <!-- <li class="nav-item d-none d-xl-block">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li> -->
       <li class="nav-item d-none d-xl-block">
-        <a class="nav-link" href="contact-us.html">Contact</a>
+        <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          href="contact-us.html"
+          >Admin</a
+        >
+
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-admin"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle-admin dropdown-circle"></div>
+          <li><a class="" href="#">Products</a></li>
+          <li><a class="" href="#">Categories</a></li>
+          <li><a class="" href="#">Users</a></li>
+          <li><a class="" href="#">Practitioner list</a></li>
+          <li><a class="" href="#">Order search</a></li>
+          <li><a class="" href="#">Specials</a></li>
+          <li><a class="" href="#">Featured</a></li>
+          <li><a class="" href="#">Strange addresses</a></li>
+          <li><a class="border-top pt-3" href="#">Content management</a></li>
+          <li><a class="border-top pt-3" href="#">Log</a></li>
+          <li><a class="" href="#">Reset cache</a></li>
+          <li><a class="" href="#">Reindex images</a></li>
+          <li><a class="" href="#">Refresh newsletters</a></li>
+          <li><a class="" href="#">Reindex search</a></li>
+          <li><a class="" href="#">Check MailChimp</a></li>
+        </ul>
       </li>
       <li class="m-0 p-0 account-icon">
-        <a class="p-0 m-0" href="/account.html">
-          <img src="/assets/images/account.svg" alt="account" class="account"
+        <a
+          class="nav-link p-0 m-0"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          href="/account.html"
+        >
+          <img
+            src="/assets/svgs/account-grery.svg"
+            alt="account"
+            class="account"
         /></a>
+
+        <ul
+          class="dropdown-menu mt-4 header-dropdown-user"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <div class="dropdown-circle-user dropdown-circle"></div>
+          <li><a class="" href="#">Order status</a></li>
+          <li><a class="" href="#">Order history</a></li>
+          <li><a class="" href="#">Client orders</a></li>
+          <li><a class="" href="#">Even log</a></li>
+          <li><a class="" href="#">Shopping basket</a></li>
+          <li><a class="" href="#">Agreements</a></li>
+          <li><a class="border-top pt-3" href="#">Account details</a></li>
+          <li><a class="" href="#">Account Statement</a></li>
+          <li><a class="" href="#">Pay account</a></li>
+          <li><a class="border-top pt-2" href="#">Hide wholesale</a></li>
+          <li><a class="" href="#">No email notifications</a></li>
+          <li><a class="border-top pt-2" href="#">Out of stock report</a></li>
+          <li><a class="border-top pt-2" href="#">Sign out</a></li>
+        </ul>
       </li>
       <li class="nav-item">
         <a class="nav-link p-0" href="#">
-          <img src="/assets/images/cart.svg" alt="cart" class="cart"
+          <img src="/assets/svgs/cart-grey.svg" alt="cart" class="cart"
         /></a>
       </li>
       <img
@@ -91,70 +158,6 @@
       />
     </ul>
 
-    <!-- <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto font-manrope font-600">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Shop</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Prescriptions
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Promotion
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-us.html">Contact</a>
-          </li>
-          <li class="nav-item account-icon">
-            <a class="nav-link" href="#">
-              <img
-                src="/assets/images/account.svg"
-                alt="account"
-                class="account"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img src="/assets/images/cart.svg" alt="cart" class="cart"
-            /></a>
-          </li>
-        </ul>
-      </div> -->
     <div
       class="offcanvas d-xl-none offcanvas-end"
       tabindex="-1"
