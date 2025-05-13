@@ -1707,6 +1707,7 @@ background: var(--Bg-Grey, #F9F9F9);
   padding-inline: 28px;
   width: 249px;
 }
+
 .cart{
   @media (min-width: 1500px) {
     margin-left: -14px;
@@ -1808,7 +1809,7 @@ margin-inline: 10px;
 }
 .subscribed-clients{
   width: 596px;
-  margin-left: 250px;
+  /* margin-left: 250px; */
 }
 .subscribed-clients input[type="text"]{
   padding-left: 30px;
@@ -2557,6 +2558,9 @@ min-width: 180px;
  }
  .prescribe-gap{
   padding-right: 240px;
+ }
+ .create-prescription-save{
+  margin-top: 120px;
  }
  .attach-promo{
   padding-bottom: 84px;

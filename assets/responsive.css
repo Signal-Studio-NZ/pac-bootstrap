@@ -4,6 +4,33 @@
     display: flex;
     flex-direction: column;
   }
+  .create-prescription-save{
+    margin-top: 60px;
+  }
+
+  .prescribe-to{
+    margin-bottom: 60px;
+padding-bottom: 60px;
+}
+.custom-modal{
+  margin: 25px;
+}
+  .test-prescription{
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  .attach-promo {
+    border: none;
+    margin-bottom: 60px;
+    padding-bottom: 0;
+  }
+  .prescribe-gap{
+    padding-right: 0 !important;
+  }
+  .pick-up-btn{
+    width: 100%;
+    font-size: 15px;
+  }
   .client-discount-save-Container{
     width: 100%;
   }
@@ -310,7 +337,7 @@ line-height: 24px;
  }
  .account-editAddress{
   grid-template-columns: 1fr;
-  gap: 35px;
+  gap: 25px;
 }
 .editModal-BtnWidth{
   width: 100%;
@@ -690,14 +717,52 @@ gap: 0;
   .checkout-stage1{
     font-size: 22px !important;
   }
+   .promo-list-table{
+  flex-direction: column;
+  display: flex;
+}
+.promotion-list-btn{
+width: 100%;
+font-size: 15px !important;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 24px */
+}
 }
 
 /* SM: Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .promo-list-table{
+  flex-direction: column !important;
+}
   .client-discountTable-tr{
     display: flex;
     flex-direction: column;
   }
+  .custom-modal{
+    margin: 25px;
+  }
+  .test-prescription{
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  .create-prescription-save{
+    margin-top: 60px;
+  }
+  .prescribe-to{
+    margin-bottom: 60px;
+padding-bottom: 60px;
+}
+  .attach-promo {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+  .pick-up-btn{
+    font-size: 15px;
+    width: 100%;
+  }
+
   .clientlist-addClient{
     width: 100%;
   }
@@ -966,7 +1031,7 @@ line-height: 24px;
  }
  .account-editAddress{
   grid-template-columns: 1fr;
-  gap: 35px;
+  gap: 25px;
 }
 .account-editBtn{
   font-size: 14px;
@@ -1272,6 +1337,32 @@ line-height: 24px;
   .client-discountTable-tr{
     display: flex;
     flex-direction: column;
+  }
+   .promo-list-table{
+  flex-direction: column;
+  display: flex;
+}
+  .custom-modal{
+    margin: 25px;
+  }
+  .account-editAddress{
+    gap: 20px;
+  }
+  .test-prescription{
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+  .prescribe-to{
+        margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+  .create-prescription-save{
+    margin-top: 60px;
+  }
+  .attach-promo {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 60px;
   }
   .client-discount-save-Container{
     width: 100%;
@@ -1735,6 +1826,7 @@ select{
     width: 100%;
     display: block;
   }
+  
   .client-order-table tr{
     border-bottom: 1px solid gray;
     padding-bottom: 15px;
@@ -2933,7 +3025,7 @@ font-size: 18px;
   line-height: 32.6px;
 }
 .subscribed-clients{
-  margin-left: 128px !important;
+  /* margin-left: 128px !important; */
   width: 500px;
 }
 /* product details */

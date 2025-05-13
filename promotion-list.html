@@ -18,9 +18,17 @@
     <main>
       <div class="container">
         <h1 class="heading-1 heading-1-margins">Promotion list</h1>
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="promotion-btn mb-5" id="modal-btn" data-bs-toggle="modal"
-        data-bs-target="#products-modal">New promotion</button>
+        <div
+          class="d-flex flex-column gap-md-5 flex-md-row justify-content-between align-items-center"
+        >
+          <button
+            class="promotion-btn promotion-list-btn mb-5"
+            id="modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#products-modal"
+          >
+            New promotion
+          </button>
           <div class="order-status-search">
             <input
               name="srch"
@@ -46,8 +54,10 @@
           </thead>
           <tbody id="table-body" class="custom-tbody2 promotion-tbody"></tbody>
         </table>
-        <button class="promotion-btn mt-5">New promotion</button>
-     </div>
+        <button class="promotion-btn promotion-list-btn mt-5">
+          New promotion
+        </button>
+      </div>
     </main>
     <div id="footer"></div>
     <script

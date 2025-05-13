@@ -16,20 +16,26 @@
   <body>
     <div id="header"></div>
     <main>
-     <div class="container">
+      <div class="container">
         <h1 class="heading-1 heading-1-margins">Prescription list</h1>
-        <div class="d-flex justify-content-between align-items-center">
-        <button class="promotion-btn mb-5" id="modal-btn" data-bs-toggle="modal"
-        data-bs-target="#products-modal">New prescription</button>
-        <div class="order-status-search">
-          <input
-            name="srch"
-            id="order-status-search-input"
-            type="text"
-            placeholder="Search for order number, date, client..."
-          />
-          <img src="assets/images/OrderStatus/Search.png" alt="Search" />
-        </div>
+        <div class="d-flex flex-column flex-lg-row w-100 justify-content-between align-content-lg-center">
+          <button
+            class="promotion-btn client-discount-addProd mb-5"
+            id="modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#products-modal"
+          >
+            New prescription
+          </button>
+          <div class="order-status-search">
+            <input
+              name="srch"
+              id="order-status-search-input"
+              type="text"
+              placeholder="Search for order number, date, client..."
+            />
+            <img src="assets/images/OrderStatus/Search.png" alt="Search" />
+          </div>
         </div>
         <table class="table mt-3 mb-5">
           <thead class="thead custom-thead promotion-thead prescription-table">
@@ -45,34 +51,49 @@
             </tr>
             <tr class="horizontal-line"></tr>
           </thead>
-          <tbody id="table-body" class="custom-tbody promotion-tbody prescription-td"></tbody>
+          <tbody
+            id="table-body"
+            class="custom-tbody promotion-tbody prescription-td"
+          ></tbody>
         </table>
-       <div class="d-flex align-items-center justify-content-between">
-        <button class="promotion-btn" id="modal-btn" data-bs-toggle="modal"
-        data-bs-target="#products-modal">New prescription</button>
-        <div class="d-flex align-items-center">
-        <button class="pick-up-btn promotion-cancel-btn me-2">Cancel</button>
-        <button class="pick-up-btn ms-2">Save</button>
+        <div
+          class="d-flex gap-2 gap-lg-0 flex-column flex-md-row align-items-center justify-content-between"
+        >
+          <button
+            class="promotion-btn client-discount-addProd"
+            id="modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#products-modal"
+          >
+            Add product
+          </button>
+          <div class="d-flex client-discount-save-Container align-items-center">
+            <button
+              class="pick-up-btn border client-discount-addProd promotion-cancel-btn me-2"
+            >
+              Cancel
+            </button>
+            <button class="pick-up-btn border client-discount-addProd ms-2">
+              Save
+            </button>
         </div>
-       </div>
-     </div>
-     <div
-     class="modal fade"
-     id="products-modal"
-     tabindex="-1"
-     aria-labelledby="productsModalLabel"
-     aria-hidden="true"
-   >
-     <div
-       class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
-     >
-       <div
-         id="modal-container"
-         class="modal-content position-relative custom-modal"
-       >
-       </div>
-     </div>
-   </div>
+      </div>
+      <div
+        class="modal fade"
+        id="products-modal"
+        tabindex="-1"
+        aria-labelledby="productsModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog d-flex justify-content-center align-items-center modal-dialog-centered"
+        >
+          <div
+            id="modal-container"
+            class="modal-content position-relative custom-modal"
+          ></div>
+        </div>
+      </div>
     </main>
     <div id="footer"></div>
     <script

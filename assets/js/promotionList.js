@@ -1,10 +1,10 @@
 const data = [
-    {
-        name: 'Admin Promo Test',
-        code: 'ovj6671p',
-        startDate: '22/11/24',
-        endDate: '22/11/24',
-        products: `<div class="d-flex align-items-center">
+  {
+    name: "Admin Promo Test",
+    code: "ovj6671p",
+    startDate: "22/11/24",
+    endDate: "22/11/24",
+    products: `<div class="d-flex align-items-center">
         <span class="dot-notation">100% Whey Protien WP supplement</span><div class="dropup d-inline">
         <div class="dropdown-menu position-absolute border-0 popp mb-1" aria-labelledby="dropdown-menu-logo">
           <div class="px-3 rounded-2 active-page pop-up">
@@ -18,15 +18,15 @@ const data = [
          <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
       </div>
         </div>`,
-        masterPromotion: `<div class="d-flex align-items-center edit-logos">
+    masterPromotion: `<div class="d-flex align-items-center edit-logos">
           <img src="assets/svgs/edit.svg" class="pointer">
           <img src="assets/svgs/close.svg" class="pointer" alt="">
-        </div>` ,
-        clientPromotions: `pract2@pract.com \n 
+        </div>`,
+    clientPromotions: `pract2@pract.com \n 
                            client4@client.com \n                   
-                           overseasNat2@nat.com                    `
-    }
-]
+                           overseasNat2@nat.com                    `,
+  },
+];
 const productsModal = `  <div class=" products-modal">
         <div
         class="account-modal-closeBtn"
@@ -147,60 +147,48 @@ const productsModal = `  <div class=" products-modal">
         </div>
       </div>
      </div>
-       </div>`
+       </div>`;
 document.addEventListener("DOMContentLoaded", function () {
-    function renderTable() {
-      const tableBody = document.getElementById("table-body");
-      tableBody.innerHTML = "";  
-      data.forEach((item) => {
-        const row = document.createElement("tr");
-        // Function to update row style based on screen size
-        function updateRowStyle() {
-          console.log(window.innerWidth)
-          if (window.innerWidth < 992) {
-            row.classList.add("d-flex", "flex-column");
-            row.classList.remove("d-table-row");
-          } else {
-            row.classList.remove("d-flex", "flex-column");
-          }
+  function renderTable() {
+    const tableBody = document.getElementById("table-body");
+    tableBody.innerHTML = "";
+    data.forEach((item) => {
+      const row = document.createElement("tr");
+      // Function to update row style based on screen size
+      row?.classList?.add("promo-list-table");
+      function updateRowStyle() {
+        console.log("width", window.innerWidth);
+        if (window.innerWidth < 992) {
+          // console.log(window.innerWidth);
+          row.classList.add("d-flex", "flex-column", "promo-list-table");
+          row.classList.remove("d-table-row");
+        } else {
+          row.classList.remove("d-flex", "flex-column");
         }
-  
-        row.innerHTML = `
-              <td class="" ><span class="responsive-lable d-lg-none">Name</span>${
-                item.name
-              }</td>
-            <td class="" ><span class="responsive-lable d-lg-none">Code</span>${
-              item.code
-            }</td>
-            <td class="" ><span class="responsive-lable d-lg-none">Start Date</span>${
-              item.startDate
-            }</td>
-            <td class="" ><span class="responsive-lable d-lg-none">End Date</span>${
-              item.endDate
-            }</td>
+      }
+
+      row.innerHTML = `
+              <td class="" ><span class="responsive-lable d-lg-none">Name</span>${item.name}</td>
+            <td class="" ><span class="responsive-lable d-lg-none">Code</span>${item.code}</td>
+            <td class="" ><span class="responsive-lable d-lg-none">Start Date</span>${item.startDate}</td>
+            <td class="" ><span class="responsive-lable d-lg-none">End Date</span>${item.endDate}</td>
             <td>
-            <span class="responsive-lable d-lg-none">Products</span>${
-              item.products
-            }</td>
+            <span class="responsive-lable d-lg-none">Products</span>${item.products}</td>
              <td>
-            <span class="responsive-lable d-lg-none">Master Promotion</span>${
-              item.masterPromotion
-            }</td>
+            <span class="responsive-lable d-lg-none">Master Promotion</span>${item.masterPromotion}</td>
               <td>
-            <span class="responsive-lable d-lg-none">Client Promotion</span>${
-              item.clientPromotions
-            }</td>
+            <span class="responsive-lable d-lg-none">Client Promotion</span>${item.clientPromotions}</td>
             `;
-        tableBody.appendChild(row);
-        updateRowStyle();
-       window.addEventListener("resize", updateRowStyle)
-      });
-    }
-    renderTable();
-    const modalBtn = document.getElementById("modal-btn")
+      tableBody.appendChild(row);
+      updateRowStyle();
+      window.addEventListener("resize", updateRowStyle);
+    });
+  }
+  renderTable();
+  const modalBtn = document.getElementById("modal-btn");
   const container = document.getElementById("modal-container");
   const loadContent = (content) => {
-    container.innerHTML = content
+    container.innerHTML = content;
   };
-  modalBtn.addEventListener("click", ()=>loadContent(productsModal))
-  });
+  modalBtn.addEventListener("click", () => loadContent(productsModal));
+});
