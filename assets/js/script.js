@@ -17,12 +17,12 @@ async function loadHTML(elementId, filePath) {
     const closeBtn = document.getElementById("closeShopMenu");
     const shopMenu = document.getElementById("shopMenu");
 
-    openBtn.addEventListener("click", (e) => {
+    openBtn?.addEventListener("click", (e) => {
       e.preventDefault();
       shopMenu.classList.add("active");
     });
 
-    closeBtn.addEventListener("click", () => {
+    closeBtn?.addEventListener("click", () => {
       shopMenu.classList.remove("active");
     });
   } catch (error) {
@@ -98,20 +98,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionItems = customSelect.querySelectorAll(".option-item");
 
     // Toggle dropdown visibility
-    selectedOption.addEventListener("click", () => {
+    selectedOption?.addEventListener("click", () => {
       optionsList.style.display =
         optionsList.style.display === "block" ? "none" : "block";
     });
 
     // Handle option selection
-    optionItems.forEach((item) => {
+    optionItems?.forEach((item) => {
       item.addEventListener("click", () => {
         // Get the text and span content
         const itemText = item.childNodes[0].textContent.trim();
         const spanText = item.querySelector("span").textContent;
 
         // Update the selected-option content
-        selectedOption.innerHTML = `${itemText} <span>${spanText}</span>`;
+        selectedOption?.innerHTML = `${itemText} <span>${spanText}</span>`;
 
         // Close the dropdown
         optionsList.style.display = "none";
@@ -156,7 +156,7 @@ const orderProcedure = document.getElementById("orderProcedure");
 practitionerBtn.addEventListener("click", () => {
   practitioner.classList.toggle("feature-col-height");
 });
-shopNowBtn.addEventListener("click", () => {
+shopNowBtn?.addEventListener("click", () => {
   shopNow.classList.toggle("feature-col-height");
 });
 orderProcedureBtn.addEventListener("click", () => {
@@ -183,7 +183,7 @@ const uploadBtn = document.getElementById("file-upload-btn");
 const fileUpload = document.getElementById("file-upload");
 
 fileUpload.addEventListener("change", () => {
-  uploadLable.innerText = fileUpload.files[0].name;
+  uploadLable?.innerText = fileUpload.files[0].name;
   if (fileUpload.files[0].name) {
     uploadBtn.classList.add("file-added");
     uploadBtn.disabled = false;

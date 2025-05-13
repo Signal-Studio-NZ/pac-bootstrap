@@ -48,7 +48,7 @@
       <section class="border-bottom account-containers">
         <h3 class="heading-3">Address details</h3>
         <div
-          class="d-flex flex-sm-row flex-column gap-lg-4 gap-md-3 gap-sm-2 gap-3 account-addressDetails"
+          class="d-flex flex-md-row flex-column flex-wrap gap-lg-4 gap-md-3 gap-sm-2 gap-3 account-addressDetails"
         >
           <div class="d-flex flex-column gap-1">
             <label class="label">Delivery address *</label>
@@ -82,6 +82,37 @@
           </div>
           <div class="d-flex flex-column gap-1">
             <label class="label">Billing address *</label>
+
+            <div class="custom-select-container">
+              <div class="custom-select">
+                <div class="selected-option">Select an option</div>
+                <div class="downarrow">
+                  <img
+                    src="/assets/svgs/downarrow.svg"
+                    class="mb-3"
+                    alt="downarrow"
+                  />
+                </div>
+                <ul class="options-list">
+                  <li class="option-item">
+                    Home
+                    <span>(8 Quay street, AUK, NZ)</span>
+                  </li>
+                  <li class="option-item">
+                    Home <span>(8 Quay street, AUK, NZ)</span>
+                  </li>
+                  <li class="option-item">
+                    Home <span>(8 Quay street, AUK, NZ)</span>
+                  </li>
+                  <li class="option-item">
+                    Home <span>(8 Quay street, AUK, NZ)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <label class="label">Paper work address *</label>
 
             <div class="custom-select-container">
               <div class="custom-select">
@@ -230,17 +261,23 @@
         </div>
       </section>
       <section
-        class="d-flex flex-lg-row flex-column account-newsletter align-items-lg-center align-items-start gap-lg-5 gap-0"
+        class="d-flex flex-column account-newsletter align-items-start gap-lg-4 gap-0"
       >
         <h3 class="heading-3">Newsletter</h3>
         <div
           class="d-flex gap-2 align-items-sm-center align-items-start account-checkbox"
         >
           <input type="checkbox" name="" id="" />
-          <p class="content-text pe-5">
-            I would like to receive your newsletter
-          </p>
+          <p class="content-text">I would like to receive your newsletter</p>
         </div>
+      </section>
+      <section
+        class="d-flex w-auto flex-column border-top Professional-accBtn-container gap-lg-4 gap-0"
+      >
+        <h3 class="heading-3">Professional Account</h3>
+        <button class="btn w-auto Professional-accBtn account-active">
+          Apply for a Professional Account
+        </button>
       </section>
     </main>
     <!-- Modal -->

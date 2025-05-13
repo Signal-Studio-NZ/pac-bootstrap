@@ -601,6 +601,8 @@ gap: 0;
     height: 54px;
   }
   .notification-banner{
+    margin-left: 10px;
+    margin-right: 10px;
     height: 100px;
     border-radius: 8px;
     font-size: 13px;
@@ -1255,6 +1257,9 @@ line-height: 24px;
       }
       .notification-banner{
         height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
         border-radius: 8px;
         font-size: 14px;
         line-height: 22.4px;
