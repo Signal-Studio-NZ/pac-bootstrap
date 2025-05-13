@@ -25,7 +25,7 @@
           <h1 class="text-40">Sign up</h1>
 
           <div class="login-form">
-            <form action=" " class="" id="registrationForm">
+            <form class="" id="registrationForm">
               <p class="reg-form-titles login-second-heading">
                 Contact for this address
               </p>
@@ -34,20 +34,33 @@
                 <input
                   class="inputField login-inputfield"
                   type="text"
+                  name="email"
                   placeholder="e.g someone@somewhere.com"
                 />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">First name *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="firstName"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">Last name *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="lastName"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">Phone *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="phone"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <!-- *************** -->
               <p class="heading-3 reg-form-titles second-heading mt-lg-0 mt-5">
@@ -61,23 +74,43 @@
                   >Address *
                   <span class="add-manually">Type address manually</span></label
                 >
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="address"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">Suburb *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="suburb"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">City *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="city"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">Rural</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="rural"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
               <div class="d-flex flex-column gap-1">
                 <label for="" class="label">Postcode *</label>
-                <input class="inputField login-inputfield" type="text" />
+                <input
+                  name="postcode"
+                  class="inputField login-inputfield"
+                  type="text"
+                />
               </div>
 
               <div class="d-flex flex-column gap-1">
@@ -90,6 +123,7 @@
                 </select>
               </div>
               <button
+                type="submit"
                 class="btn reg-signup active-btn w-100 btn-height login-continueBtn"
               >
                 Sign up
@@ -110,6 +144,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+    <script src="/assets/js/registration.js"></script>
     <script src="/assets/js/script.js"></script>
   </body>
 </html>

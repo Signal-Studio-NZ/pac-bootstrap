@@ -94,6 +94,10 @@ p{
 .g-20px{
   gap: 20px;
 }
+.just-validate-error-field {
+  border: 2px solid red !important;
+}
+
 .fs-7{
     font-size: var(--bs-font-size-xs);
 }
