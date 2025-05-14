@@ -1,5 +1,36 @@
 /* XS: Extra Small Devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+       .account-switch-btn{
+  max-width: 490px;
+  border-radius: 12px;
+  margin-block: 70px;
+  font-size: 15px;
+  line-height: normal;
+ }
+ .save-application-btn:first-child{
+  width: fit-content;
+ }
+ .account-switch-btn div{
+  cursor: pointer;
+  padding: 15px 18px;
+ }
+  .selected-file{
+    width: 100% !important;
+  }
+  .professional-acc-input{
+    width: 100%;
+  }
+  .file-upload-logo{
+  /* top: 35%; */
+  right: 20px;
+  left: auto;
+ }
+  .professional-AccNumber{
+    width: 100%;
+  }
+  .professional-acc-ModalityInput{
+    width: 100%;
+  }
   .client-discountTable-tr{
     display: flex;
     flex-direction: column;
@@ -305,8 +336,8 @@ line-height: 24px;
 }
 .account-checkbox-container{
   margin-top: 20px;
-  margin-bottom: 70px;
-  gap: 33px;
+  margin-bottom: 20px !important;
+  gap: 18px;
 }
 .account-newsletter{
   margin-top: 46px;
@@ -330,7 +361,7 @@ line-height: 24px;
   margin-top: 152px !important;
  }
  .selected-file{
-  width: 100% !important; 
+  /* width: 100% !important;  */
  }
  .inputField{
   width: 100%;
@@ -734,6 +765,12 @@ line-height: 160%; /* 24px */
 
 /* SM: Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .professional-AccNumber{
+    width: 100%;
+  }
+  .professional-acc-input{
+    width: 50%;
+  }
   .promo-list-table{
   flex-direction: column !important;
 }
@@ -1026,7 +1063,7 @@ line-height: 24px;
   margin-top: 130px !important;
  }
  .selected-file{
-  width: 100% !important; 
+  /* width: 100% !important;  */
  }
  .inputField{
   width: 100%;
@@ -1334,11 +1371,31 @@ line-height: 24px;
   .checkout-payment-container{
     flex-direction: column;
     }
+     .account-switch-btn{
+  max-width: 490px;
+  border-radius: 12px;
+  margin-block: 70px;
+  font-size: 15px;
+  line-height: 30.4px;
+ }
 }
 
 
 /* MD: Medium Devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .account-switch-btn{
+  max-width: 490px;
+  border-radius: 12px;
+  margin-block: 70px;
+  font-size: 18px;
+  line-height: 30.4px;
+ }
+  .professional-AccNumber{
+    width: 50%;
+  }
+  .professional-acc-input{
+    width: 50%;
+  }
   .client-discountTable-tr{
     display: flex;
     flex-direction: column;
