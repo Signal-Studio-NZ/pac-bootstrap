@@ -1,5 +1,54 @@
 /* XS: Extra Small Devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .product-details-prdName{
+  font-size: 24px !important;
+  line-height: 28px !important;
+}
+.prd-details-closeBtn{
+  width: 14px;
+    height: 14px;
+}
+.backet-body{
+  height: 100px;
+}
+.basket{
+  min-width: 250px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #ECF2F2;
+}
+  .offer-btn{
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+#productDetails-info{
+  max-width: 100%;
+}
+  .admin-promo{
+    padding: 0px 0 50px 0 !important;
+  }
+    .promoted-gap{
+    gap: 40px !important;
+  }
+  .subscribed-clients{
+    margin-top: 20px;
+  }
+    .promotion-table{
+    margin-bottom: 50px !important;
+  }
+  .new-promo-table tr, .promotion-tbody tr{
+    display: flex;
+    flex-direction: column;
+  }
+   .promotion-btn-margin{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+  .promotion-gap{
+  gap: 50px;
+}
        .account-switch-btn{
   max-width: 490px;
   border-radius: 12px;
@@ -725,7 +774,7 @@ gap: 0;
   display: flex;
 }
 .new-promo-table{
-  display: none;
+  /* display: none; */
 }
 /* thank you page */
 .thankyou-h1{
@@ -765,6 +814,51 @@ line-height: 160%; /* 24px */
 
 /* SM: Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .product-details-prdName{
+  font-size: 24px;
+  line-height: 28px;
+}
+.prd-details-closeBtn{
+  width: 14px;
+    height: 14px;
+}
+.backet-body{
+  height: 100px;
+}
+.basket{
+  min-width: 250px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #ECF2F2;
+}
+  .offer-btn{
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+#productDetails-info{
+  max-width: 100%;
+}
+    .admin-promo{
+    padding: 0px 0 50px 0 !important;
+  }
+    .promoted-gap{
+    gap: 50px !important;
+  }
+  .subscribed-clients{
+    margin-top: 30px;
+  }
+    .promotion-table{
+    margin-bottom: 60px !important;
+  }
+  .new-promo-table tr, .promotion-tbody tr{
+    display: flex;
+    flex-direction: column;
+  }
+  .promotion-gap{
+  gap: 80px;
+}
   .professional-AccNumber{
     width: 100%;
   }
@@ -1366,7 +1460,7 @@ line-height: 24px;
     display: flex;
   }
   .new-promo-table{
-    display: none;
+    /* display: none; */
   }
   .checkout-payment-container{
     flex-direction: column;
@@ -1378,11 +1472,60 @@ line-height: 24px;
   font-size: 15px;
   line-height: 30.4px;
  }
+ .promotion-btn-margin{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
 }
 
 
 /* MD: Medium Devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .promoted-gap{
+    gap: 60px !important;
+  }
+  .prd-details-closeBtn{
+  width: 14px;
+    height: 14px;
+}
+  .basket{
+  min-width: 250px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #ECF2F2;
+}
+.backet-body{
+  height: 100px;
+}
+  .offer-btn{
+    padding: 15px 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  #productDetails-info{
+  max-width: 100%;
+}
+  .promotion-table{
+    margin-bottom: 60px !important;
+  }
+    .subscribed-clients{
+    margin-top: 30px;
+  }
+    .admin-promo{
+    padding: 0 0 50px 0;
+  }
+  .promotion-btn-margin{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+  .promotion-gap{
+  gap: 90px;
+}
+    .new-promo-table tr, .promotion-tbody tr{
+    display: flex;
+    flex-direction: column;
+  }
   .account-switch-btn{
   max-width: 490px;
   border-radius: 12px;
@@ -1873,11 +2016,15 @@ select{
   display: flex;
 }
 .new-promo-table{
-  display: none;
+  /* display: none; */
 }
 .client-list-table tr {
   display: flex;
   flex-direction: column;
+}
+.product-details-prdName{
+  font-size: 24px;
+  line-height: 28px;
 }
 }
 
@@ -1888,7 +2035,9 @@ select{
     width: 100%;
     display: block;
   }
-  
+  .prd-manual{
+    font-size: 20px;
+  }
   .client-order-table tr{
     border-bottom: 1px solid gray;
     padding-bottom: 15px;
@@ -2583,7 +2732,7 @@ font-size: 18px;
   padding: 12px 22px;
  }
  .new-promo-table{
-  display: none;
+  /* display: none; */
  }
  .line-total{
   display: inline-block;
@@ -2619,6 +2768,9 @@ font-size: 18px;
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .header-dropdown-user{
     right: -10px !important;
+  }
+    .prd-manual{
+    font-size: 20px;
   }
   .edit-logos{
     /* background-color: red; */
@@ -3170,6 +3322,9 @@ font-size: 20px;
     /* background-color: red; */
     width: 100%;
     display: block;
+  }
+    .prd-manual{
+    font-size: 20px;
   }
   .account-icon{
     margin-left: 16px;

@@ -1840,7 +1840,7 @@ margin-inline: 10px;
   cursor: pointer;
 }
 .promoted-gap{
-  gap: 150px;
+  gap: 150px !important;
 }
 .promoted-to{
   border-bottom: 1px solid #CED4D4;
@@ -2334,14 +2334,117 @@ line-height: 160%; /* 22.4px */
   text-decoration: none;
   font-size: 18px;
 }
+.prd-label{
+  font-size: 12px;
+  color: var(--Body100, #0A2926);
+text-align: right;
+font-family: var(--bs-font-primary);
+font-style: normal;
+line-height: 111%; /* 13.32px */
+}
+.prd-manual{
+  font-size: 18px;
+}
+.prd-price-container{
+  margin-bottom: 51px;
+}
+.prdRetail-label{
+  font-size: 12px;
+  color: var(--Body100, #0A2926);
+text-align: left;
+font-family: var(--bs-font-primary);
+font-style: normal;
+line-height: 111%; /* 13.32px */
+}
+.retail-prd-price{
+  color: var(--Body100, #0A2926);
+text-align: right;
+font-family: Manrope;
+font-size: 38px;
+font-style: normal;
+line-height: 130%; /* 49.4px */
+}
+.Wholesale-prd-price{
+  color: var(--Body100, #0A2926);
+text-align: right;
+font-family: Manrope;
+font-size: 28px;
+font-style: normal;
+line-height: 160%; /* 44.8px */
+}
+.offer-btn{
+  padding: 24px;
+  color: var(--Ember100, #E65909);
+text-align: center;
+background-color: #FFF4EE;
+border: 1px solid orangered;
+font-family: Manrope;
+margin-bottom: 39px;
+font-size: 18px;
+border-radius: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 28.8px */
+}
 .recmd-retail-price{
   color: #000;
   font-size: 12px;
   text-align: end;
 }
+.backet-prd img{
+width: 66px;
+height: 66px;
+}
+.backet-prd img:first-child{
+  border-radius: 8px;
+  overflow: hidden;
+}
+.backet-prdname{
+  font-size: 14px;
+  color: var(--Body100, #0A2926);
+font-family: Manrope;
+line-height: 160%; /* 22.4px */
+}
+.delete-icon{
+  width: 16px !important;
+  height: 20px !important;
+}
+.backet-prd{
+  padding: 18px 0 16px 0;
+}
+.basket-body{
+  height: 80px !important;
+  margin-bottom: 30px;
+}
+.basket-prd-container{
+  height: calc(100vh - 300px);
+}
+.basket-mobile-total p{
+  font-size: 18px;
+  color: var(--Body100, #0A2926);
+font-family: Manrope;
+line-height: 160%; /* 28.8px */
+}
+.basket-mobile-total{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 23px 16px 40px 16px;
+}
+.basket-PrdIncDec2{
+  height: 30px;
+}
+.backet-prd-price{
+  font-size: 18px;
+  line-height: 160%; /* 28.8px */
+}
 .prd-details-closeBtn{
   width: 33px;
   height: 33px;
+}
+.prd-details-closeBtn2{
+  width: 14px;
+  height: 14px;
 }
 .prd-ml-value{
   font-size: 28px;
@@ -3040,4 +3143,7 @@ line-height: 160%;
   color: white;
   line-height: 34px;
 margin-top: 35px;
+}
+.newpromotion-Subscribed{
+  max-width: 100%;
 }
