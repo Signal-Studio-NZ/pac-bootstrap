@@ -15,7 +15,7 @@
     />
   </section>
   <nav
-    class="d-flex container justify-content-between align-items-end align-items-lg-center border-danger custom-navbar"
+    class="d-flex container navbar-menus justify-content-between align-items-end align-items-lg-center border-danger custom-navbar"
   >
     <a class="navbar-brand p-0 m-0" href="/">
       <img src="/assets/svgs/pacLogo.svg" class="pac-logo" alt="Logo" />
@@ -25,9 +25,9 @@
       class="navbar-nav align-items-end align-items-xl-center d-flex flex-row font-manrope font-600"
     >
       <li class="nav-item d-none d-xl-block">
-        <a class="nav-link active" aria-current="page" href="/shop.html">Shop</a>
+        <p class="nav-link active" id="shopBtn">Shop</p>
       </li>
-      <li class="nav-item dropdown d-none d-xl-block">
+      <li class="nav-item dropdown d-none d-xl-block nav-fade-target">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -43,11 +43,13 @@
           aria-labelledby="navbarDropdownMenuLink"
         >
           <div class="dropdown-circle"></div>
-          <li><a class="" href="/prescription-list.html">My prescriptions</a></li>
+          <li>
+            <a class="" href="/prescription-list.html">My prescriptions</a>
+          </li>
           <li><a class="" href="#">Enter code</a></li>
         </ul>
       </li>
-      <li class="nav-item dropdown d-none d-xl-block">
+      <li class="nav-item dropdown nav-fade-target d-none d-xl-block">
         <a
           href="#"
           class="nav-link dropdown-toggle"
@@ -68,13 +70,13 @@
         </ul>
       </li>
 
-      <li class="nav-item d-none d-xl-block">
+      <li class="nav-item d-none nav-fade-target d-xl-block">
         <a class="nav-link dropdown-toggle">Clients</a>
       </li>
       <!-- <li class="nav-item d-none d-xl-block">
           <a class="nav-link" href="contact-us.html">Contact</a>
         </li> -->
-      <li class="nav-item d-none d-xl-block">
+      <li class="nav-item d-none nav-fade-target d-xl-block">
         <a
           class="nav-link dropdown-toggle"
           data-bs-toggle="dropdown"
@@ -105,7 +107,7 @@
           <li><a class="" href="#">Check MailChimp</a></li>
         </ul>
       </li>
-      <li class="m-0 p-0 account-icon">
+      <li class="m-0 nav-fade-target p-0 account-icon">
         <a
           class="nav-link p-0 m-0"
           role="button"
@@ -113,7 +115,10 @@
           aria-expanded="false"
           href="/account.html"
         >
-          <img src="/assets/svgs/account-grery.svg" alt="account" class="account"
+          <img
+            src="/assets/svgs/account-grery.svg"
+            alt="account"
+            class="account"
         /></a>
 
         <ul
@@ -136,7 +141,7 @@
           <li><a class="border-top pt-2" href="#">Sign out</a></li>
         </ul>
       </li>
-      <li class="nav-item">
+      <li class="nav-item nav-fade-target">
         <a class="nav-link p-0" href="#">
           <img src="/assets/svgs/cart-grey.svg" alt="cart" class="cart"
         /></a>
@@ -256,4 +261,225 @@
       </div>
     </div>
   </nav>
+  <section
+    id="shopContainer"
+    class="justify-content-between d-none d-xl-none align-content-center position-fixed w-100 h-100 shop-conatainer"
+  >
+    <div class="mx-auto container">
+      <div class="d-flex justify-content-between mb-3 shop-inner-container">
+        <p class="shop-all">Shop all</p>
+        <span
+          class="fw-semibold closeshop-menu d-flex gap-3 align-items-center"
+        >
+          <p>Close shop menu</p>
+          <img
+            id="shopCloseBtn"
+            class="shop-CloseIcon"
+            src="/assets/svgs/closeicon.svg"
+            alt=""
+          />
+        </span>
+      </div>
+      <div class="d-flex h-100">
+        <div class="h-100 w-100">
+          <span class="">
+            <b class="shop-all category-container">Category</b>
+          </span>
+          <div
+            class="overflow-y-scroll mt-3 category-container shop-list-container"
+          >
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-100 w-100">
+          <span class="px-xl-5 px-3 d-flex justify-content-between w-100">
+            <b class="shop-all">Brands</b>
+            <img
+              src="/assets/svgs/searchIcon.svg"
+              class="shop-searchIcon shop-brand-searchIcon"
+              alt="searchIcon"
+            />
+          </span>
+          <div class="border-bottom d-none shop-brand-input mx-xl-5 mx-3">
+            <input
+              type="text"
+              placeholder="Search for input"
+              class="shop-Brands-search"
+            />
+          </div>
+
+          <div
+            class="overflow-y-scroll mt-3 px-xl-5 px-3 shop-brand-container shop-list-container"
+          >
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+          </div>
+        </div>
+        <div class="h-100 w-100">
+          <span class="d-flex justify-content-between w-100">
+            <b class="shop-all subcategory-container">Subcategories</b>
+            <img
+              src="/assets/svgs/searchIcon.svg"
+              class="shop-searchIcon shop-Subcategories-searchIcon"
+              alt="searchIcon"
+            />
+          </span>
+          <div
+            class="border-bottom d-none shop-Subcategories-input mx-xl-5 mx-3"
+          >
+            <input
+              type="text"
+              placeholder="Search for input"
+              class="shop-Brands-search"
+            />
+          </div>
+          <div
+            class="overflow-y-scroll mt-3 subcategory-container shop-list-container"
+          >
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+            <div class="shop-list d-flex justify-content-between fw-medium">
+              <p>Aromatherapy</p>
+              <p>20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </header>

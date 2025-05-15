@@ -25,9 +25,7 @@
       class="navbar-nav align-items-end align-items-xl-center d-flex flex-row font-manrope font-600"
     >
       <li class="nav-item d-none d-xl-block">
-        <a class="nav-link active" aria-current="page" href="/shop.html"
-          >Shop</a
-        >
+        <a class="nav-link active" id="openShop" aria-current="page">Shop</a>
       </li>
       <li class="nav-item dropdown d-none d-xl-block">
         <a
@@ -263,4 +261,46 @@
       </div>
     </div>
   </nav>
+  <div id="shopOverlay">
+    <div class="d-flex justify-content-end">
+      <button id="closeShop" class="btn btn-danger mb-3">Close</button>
+    </div>
+
+    <!-- First row with search -->
+    <div class="mb-4">
+      <input
+        type="text"
+        class="form-control mb-3"
+        placeholder="Search Products..."
+      />
+      <div class="row">
+        <div class="col-md-4 product-name">Product A</div>
+        <div class="col-md-4 product-name">Product B</div>
+        <div class="col-md-4 product-name">Product C</div>
+      </div>
+    </div>
+
+    <!-- Second row of products -->
+    <div class="mb-4">
+      <div class="row">
+        <div class="col-md-4 product-name">Product D</div>
+        <div class="col-md-4 product-name">Product E</div>
+        <div class="col-md-4 product-name">Product F</div>
+      </div>
+    </div>
+
+    <!-- Third row with search and more products -->
+    <div class="mb-4">
+      <input
+        type="text"
+        class="form-control mb-3"
+        placeholder="Search More Products..."
+      />
+      <div class="row">
+        <div class="col-md-4 product-name">Product G</div>
+        <div class="col-md-4 product-name">Product H</div>
+        <div class="col-md-4 product-name">Product I</div>
+      </div>
+    </div>
+  </div>
 </header>

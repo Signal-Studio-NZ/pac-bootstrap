@@ -292,6 +292,53 @@ line-height: 160%; /* 28.8px */
 .navbar-menuBody{
   height: calc(100vh - 205px);
 }
+.shop-conatainer{
+  z-index: 10000;
+  display: none ;
+  /* background-color:  !important; */
+}
+.shop-brand-container{
+ border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.shop-Brands-search, .shop-Subcategories-search{
+  background-color: transparent;
+}
+.shop-Brands-search::placeholder{
+  font-family: Manrope;
+font-size: 18px;
+}
+.shop-Brands-search:focus{
+outline: none;
+}
+.shop-list-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.shop-list-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.shop-Brands-search{
+  width: 100%;
+  /* display: none; */
+  max-width: 390px;
+  border: none;
+  /* margin: 0 50px; */
+  height: 79px;
+/* color: var(--Body20, #CED4D4); */
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
+}
+.shopContainer{
+  /* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+}
 .notification-banner{
   height: 79px;
   /* border-radius: 12px; */
@@ -300,6 +347,60 @@ line-height: 160%; /* 28.8px */
   font-size: var(--bs-font-size-md);
   font-family: var(--bs-font-primary);
   line-height: 25.6px;
+}
+.shop-inner-container{
+  margin-top: 150px;
+}
+.shop-all{
+  color: var(--Body100, #0A2926);
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 44.8px */
+}
+#shopContainer{
+  font-size: var(--bs-font-primary);
+  background-color: #ECF2F2;
+}
+.shop-CloseIcon{
+  width: 20px;
+  height: 20px;
+}
+.shop-list{
+  color:#0A2926;
+line-height: 200%; /* 32px */
+}
+.shop-list-container{
+  max-height: 69vh;
+  padding-bottom: 300px;
+  /* padding-right: 50px; */
+}
+.category-container{
+  padding-right: 50px;
+}
+.subcategory-container{
+  padding-left: 50px;
+}
+.shop-list p:last-child{
+  font-size: 13px;
+  color: var(--body50, #849393);
+text-align: right;
+}
+.closeshop-menu{
+  cursor: pointer; 
+  margin-bottom: 30px;
+}
+.navbar-menus{
+  z-index: 11000;
+  position: relative;
+}
+.closeshop-menu p{
+  color: #0A2926;
+  opacity: 0.2;
+  
+}
+.closeshop-menu p:hover{
+opacity: 100%;
 }
 .notification-closeBtn{
   position: absolute;

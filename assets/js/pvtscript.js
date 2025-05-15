@@ -68,3 +68,81 @@ document.addEventListener("DOMContentLoaded", () => {
     productImg.style.left = "-100%";
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Ensure shop interaction logic runs after dynamic HTML load
+
+  const shopLogic = () => {
+    const navFadeTargets = document.querySelectorAll(".nav-fade-target");
+
+    const disableNavItems = () => {
+      navFadeTargets.forEach((el) => {
+        el.style.opacity = "0.2";
+        el.style.pointerEvents = "none";
+      });
+    };
+
+    const enableNavItems = () => {
+      navFadeTargets.forEach((el) => {
+        el.style.opacity = "1";
+        el.style.pointerEvents = "auto";
+      });
+    };
+
+    const shopBtn = document.getElementById("shopBtn");
+    const shopContainer = document.getElementById("shopContainer");
+    const shopCloseBtn = document.getElementById("shopCloseBtn");
+    const notificationBanner = document.getElementById("notification-banner");
+    const htmlBody = document.getElementsByTagName("body")[0];
+
+    const brandSearchIcon = document.querySelector(".shop-brand-searchIcon");
+    const brandInput = document.querySelector(".shop-brand-input");
+
+    const subcatSearchIcon = document.querySelector(
+      ".shop-Subcategories-searchIcon"
+    );
+    const subcatInput = document.querySelector(".shop-Subcategories-input");
+
+    if (shopBtn && shopContainer && shopCloseBtn) {
+      shopBtn.addEventListener("click", () => {
+        shopContainer.classList.remove("d-xl-none");
+        shopContainer.classList.add("d-xl-block");
+        notificationBanner?.classList.remove("d-flex");
+        notificationBanner?.classList.add("d-none");
+        htmlBody.style.overflow = "hidden";
+        disableNavItems(); // <-- Disable and fade others
+      });
+
+      shopCloseBtn.addEventListener("click", () => {
+        shopContainer.classList.remove("d-xl-block");
+        shopContainer.classList.add("d-xl-none");
+        htmlBody.style.overflow = "auto";
+        enableNavItems(); // <-- Restore them
+      });
+    }
+
+    // Toggle brand input
+    if (brandSearchIcon && brandInput) {
+      let brandInputVisible = true;
+
+      brandSearchIcon.addEventListener("click", () => {
+        brandInput.classList.toggle("d-none");
+        brandInput.classList.toggle("d-block");
+        brandInputVisible = !brandInputVisible;
+      });
+    }
+
+    // Toggle subcategory input
+    if (subcatSearchIcon && subcatInput) {
+      let subcatInputVisible = true;
+
+      subcatSearchIcon.addEventListener("click", () => {
+        subcatInput.classList.toggle("d-none");
+        subcatInput.classList.toggle("d-block");
+        subcatInputVisible = !subcatInputVisible;
+      });
+    }
+  };
+
+  setTimeout(shopLogic, 300);
+});
