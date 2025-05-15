@@ -391,7 +391,7 @@ text-align: right;
   margin-bottom: 30px;
 }
 .navbar-menus{
-  z-index: 11000;
+  z-index: 100;
   position: relative;
 }
 .closeshop-menu p{
@@ -2107,6 +2107,18 @@ max-width: 213px;
 /* shop  */
 .shop-container{
   gap: 130px;
+}
+.shop-sodebar-prd img{
+width: 66px;
+height: 66px;
+}
+.shop-sodebar-prd p {
+  color: var(--Body100, #0A2926);
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 28.8px */
 }
 .shop-filter{
   padding-top: 61px;

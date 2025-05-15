@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.pointerEvents = "auto";
       });
     };
-
+    const navmenu = document?.querySelector(".navbar-menus");
     const shopBtn = document.getElementById("shopBtn");
     const shopContainer = document.getElementById("shopContainer");
     const shopCloseBtn = document.getElementById("shopCloseBtn");
@@ -110,6 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         notificationBanner?.classList.remove("d-flex");
         notificationBanner?.classList.add("d-none");
         htmlBody.style.overflow = "hidden";
+        // console.log(navmenu);
+        // navmenu?.style.zIndex ="10000"
         disableNavItems(); // <-- Disable and fade others
       });
 
@@ -117,6 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
         shopContainer.classList.remove("d-xl-block");
         shopContainer.classList.add("d-xl-none");
         htmlBody.style.overflow = "auto";
+        // navmenu?.style.zIndex ="100"
+
         enableNavItems(); // <-- Restore them
       });
     }
