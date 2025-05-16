@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td class="d-flex  border-0" ><span class="responsive-lable d-lg-none ">Markup/Discount</span>${item.markup}</td>
              <td>
             <span class="responsive-lable d-lg-none">Discounted price</span>${item.discontedPrice}</td>
-              <td>
+              <td class="pr-0">
             ${item.action}</td>
             `;
       tableBody.appendChild(row);

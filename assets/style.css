@@ -292,6 +292,9 @@ line-height: 160%; /* 28.8px */
 .navbar-menuBody{
   height: calc(100vh - 205px);
 }
+#shopBtn{
+  cursor: pointer;
+}
 .shop-conatainer{
   z-index: 10000;
   display: none ;
@@ -1839,7 +1842,9 @@ background: var(--Bg-Grey, #F9F9F9);
   padding-inline: 28px;
   width: 249px;
 }
-
+.promotionList-input{
+  margin-bottom: 40px;
+}
 .cart{
   @media (min-width: 1500px) {
     margin-left: -14px;
@@ -2020,6 +2025,9 @@ color: #0A2926;
   line-height: 22.4px;
 }
 
+.pr-0{
+  padding-right: 0 !important;
+}
 .client-list-table th:nth-child(1){
 max-width: 213px;
 }

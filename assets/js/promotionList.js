@@ -18,7 +18,7 @@ const data = [
          <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
       </div>
         </div>`,
-    masterPromotion: `<div class="d-flex align-items-center edit-logos">
+    masterPromotion: `<div class="d-flex align-items-center  justify-content-start edit-logos">
           <img src="assets/svgs/edit.svg" class="pointer">
           <img src="assets/svgs/close.svg" class="pointer" alt="">
         </div>`,
@@ -174,8 +174,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <td class="" ><span class="responsive-lable d-lg-none">End Date</span>${item.endDate}</td>
             <td>
             <span class="responsive-lable d-lg-none">Products</span>${item.products}</td>
-             <td>
-            <span class="responsive-lable d-lg-none">Master Promotion</span>${item.masterPromotion}</td>
+             <td class="">
+            <span class="responsive-lable d-lg-none ">Master Promotion</span>${item.masterPromotion}</td>
               <td>
             <span class="responsive-lable d-lg-none">Client Promotion</span>${item.clientPromotions}</td>
             `;

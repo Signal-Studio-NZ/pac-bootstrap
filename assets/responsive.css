@@ -2035,6 +2035,9 @@ select{
     width: 100%;
     display: block;
   }
+  .pr-0{
+  padding-right: 0 !important;
+}
   .addPrd-table-container{
     width: fit-content !important;
   }
