@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const customSelects = document.querySelectorAll(".custom-select");
 
   customSelects.forEach((customSelect) => {
-    const selectedOption = customSelect.querySelector(".selected-option");
+    const selectedOption = customSelect?.querySelector(".selected-option");
     const optionsList = customSelect.querySelector(".options-list");
     const optionItems = customSelect.querySelectorAll(".option-item");
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const spanText = item.querySelector("span").textContent;
 
         // Update the selected-option content
-        selectedOption?.innerHTML = `${itemText} <span>${spanText}</span>`;
+        selectedOption.innerHTML = `${itemText} <span>${spanText}</span>`;
 
         // Close the dropdown
         optionsList.style.display = "none";
@@ -178,12 +178,12 @@ studentApplication.addEventListener("click", () => {
   practitionerApplication.classList.remove("account-switch-active");
 });
 
-const uploadLable = document.getElementById("file-uplaod-label");
+const uploadLable = document?.getElementById("file-uplaod-label");
 const uploadBtn = document.getElementById("file-upload-btn");
 const fileUpload = document.getElementById("file-upload");
 
 fileUpload.addEventListener("change", () => {
-  uploadLable?.innerText = fileUpload.files[0].name;
+  uploadLable.innerText = fileUpload.files[0].name;
   if (fileUpload.files[0].name) {
     uploadBtn.classList.add("file-added");
     uploadBtn.disabled = false;

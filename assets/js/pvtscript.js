@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const addToCart = document.getElementById("addToCart");
   const productImg = document.getElementById("productImg");
   // const basket = document.getElementById("basket");
-  addToCart.addEventListener("click", () => {
+  addToCart?.addEventListener("click", () => {
     productImg.style.left = "-100%";
   });
 });
