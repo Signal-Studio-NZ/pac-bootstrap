@@ -58,7 +58,7 @@ const modalData = [
   },
 ];
 
-const productsModal = `  <div class=" products-modal">
+const productsModal = `  <div class=" products-modal AddProducts-modal">
     <div
     class="account-modal-closeBtn"
     data-bs-dismiss="modal"
@@ -138,7 +138,7 @@ const productsModal = `  <div class=" products-modal">
   <span class="content-text pointer">Mineral therapies</span>
   <span class="content-text pointer">Nutrition</span>
   </div>
-  <div class="w-75">
+  <div class="w-75 addPrd-table-container">
     <table class="table mt-3 mb-5">
       <thead class="thead custom-thead promotion-thead">
         <tr class="modal-table">
@@ -171,7 +171,7 @@ const productsModal = `  <div class=" products-modal">
         </tr>
       </tbody>
     </table>
-    <div class="d-flex flex-column gap-3 product-modal-btn">
+    <div class="d-flex flex-column align-items-center align-items-lg-start gap-3 product-modal-btn">
    <button id="product-modal-save">Save changes</button>
    <button id="product-modal-cancel" data-bs-dismiss="modal"
     aria-label="Close">Cancel</button>
