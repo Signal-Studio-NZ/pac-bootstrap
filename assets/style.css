@@ -390,8 +390,14 @@ text-align: right;
   cursor: pointer; 
   margin-bottom: 30px;
 }
-.navbar-menus{
+.zindex11000{
+  z-index: 11000;
+}
+.zindex100{
   z-index: 100;
+}
+.navbar-menus{
+  /* z-index: 100; */
   position: relative;
 }
 .closeshop-menu p{

@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.pointerEvents = "auto";
       });
     };
-    const navmenu = document?.querySelector(".navbar-menus");
+    const navmenu = document.querySelector(".navbar-menus");
     const shopBtn = document.getElementById("shopBtn");
     const shopContainer = document.getElementById("shopContainer");
     const shopCloseBtn = document.getElementById("shopCloseBtn");
@@ -105,21 +105,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (shopBtn && shopContainer && shopCloseBtn) {
       shopBtn.addEventListener("click", () => {
+        navmenu.classList.remove("zindex100");
+        navmenu.classList.add("zindex11000");
         shopContainer.classList.remove("d-xl-none");
         shopContainer.classList.add("d-xl-block");
         notificationBanner?.classList.remove("d-flex");
         notificationBanner?.classList.add("d-none");
         htmlBody.style.overflow = "hidden";
         // console.log(navmenu);
-        // navmenu?.style.zIndex ="10000"
         disableNavItems(); // <-- Disable and fade others
       });
 
       shopCloseBtn.addEventListener("click", () => {
+        navmenu.classList.remove("zindex11000");
+        navmenu.classList.add("zindex100");
         shopContainer.classList.remove("d-xl-block");
         shopContainer.classList.add("d-xl-none");
         htmlBody.style.overflow = "auto";
-        // navmenu?.style.zIndex ="100"
 
         enableNavItems(); // <-- Restore them
       });
