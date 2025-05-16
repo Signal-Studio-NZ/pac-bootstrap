@@ -117,23 +117,22 @@ const addClientsForm = `  <form class="d-flex flex-column gap-3">
             </div>
           </form>`;
 
-const copyLogo = document.getElementById("copy-text-logo")
-const copiedText = document.getElementById("copied-text")
-const addClients = document.getElementById("add-clients")
+const copyLogo = document.getElementById("copy-text-logo");
+const copiedText = document.getElementById("copied-text");
+const addClients = document.getElementById("add-clients");
 const container = document.getElementById("modal-container");
-const toastNotification = document.getElementById("toast-notification")
+const toastNotification = document.getElementById("toast-notification");
 
-function copyText(){
-    const text = copiedText.innerText
-    navigator.clipboard.writeText(text)
-    toastNotification.style.top = '5%'
-    setTimeout(()=>{
-      toastNotification.style.top = '-5%'
-    },1500)
+function copyText() {
+  const text = copiedText.innerText;
+  navigator.clipboard.writeText(text);
+  toastNotification.style.top = "5%";
+  setTimeout(() => {
+    toastNotification.style.top = "-5%";
+  }, 1500);
 }
 const loadContent = (content) => {
-  container.innerHTML = content
+  container.innerHTML = content;
 };
-copyLogo.addEventListener("click", copyText)
-addClients.addEventListener("click", ()=> loadContent(addClientsForm))
-
+copyLogo.addEventListener("click", copyText);
+addClients.addEventListener("click", () => loadContent(addClientsForm));

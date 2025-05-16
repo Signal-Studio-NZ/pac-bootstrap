@@ -95,48 +95,48 @@ const productsModal = `  <div class=" products-modal AddProducts-modal">
       name="srch"
       id="order-status-search-input"
       type="text"
-      placeholder="Search for order number, date, client..."
+      placeholder="Search for product"
     />
     <img src="assets/images/OrderStatus/Search.png" alt="Search" />
   </div>
-  <span class="heading-4">SORT BY</span>
-  <select name="" class="promotion-select modal-select">
+  <span class="heading-4 flex-shrink-0">SORT BY</span>
+  <select name="" class="promotion-select flex-shrink-0 modal-select">
     <option value="">Retail</option>
   </select>
  </div>
- <div class="d-flex mt-1">
+ <div class="d-flex mt-1 fw-semibold fs-18 fw-semibold">
   <div class="w-25 d-flex flex-column align-items-start gap-3 pt-4">
     <div
-    class="d-flex flex-column shop-filter-1 align-items-start gap-1"
+    class="d-flex flex-column fs-18 fw-semibold shop-filter-1 align-items-start gap-1"
   >
     <button
       id="Featuredbtn"
-      class="lh-base border-0 filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+      class="lh-base border-0 filter-btn-Feature rounded-5 fw-semibold fs-18 d-flex align-items-center gap-2"
     >
       <img src="/assets/svgs/starIcon.svg" alt="starIcon" class="" />
       Featured
     </button>
     <button
       id="FavoritesBtn"
-      class="lh-base border-0 filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+      class="lh-base border-0 fs-18 fw-semibold filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
     >
       <img src="/assets/svgs/hearticon.svg" alt="starIcon" class="" />
       Favorites
     </button>
     <button
       id="SpecialsBtn"
-      class="lh-base border-0 filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
+      class="lh-base border-0 fs-18 fw-semibold filter-btn-Feature rounded-5 d-flex align-items-center gap-2"
     >
       <img src="/assets/svgs/diamond.svg" alt="starIcon" class="" />
       Specials
     </button>
   </div>
-  <span class="content-text pointer">Aromatherapy</span>
-  <span class="content-text pointer">Essences</span>
-  <span class="content-text pointer">Fitness</span>
-  <span class="content-text pointer">Massage</span>
-  <span class="content-text pointer">Mineral therapies</span>
-  <span class="content-text pointer">Nutrition</span>
+  <span class="content-text fw-semibold pointer">Aromatherapy</span>
+  <span class="content-text fw-semibold pointer">Essences</span>
+  <span class="content-text fw-semibold pointer">Fitness</span>
+  <span class="content-text fw-semibold pointer">Massage</span>
+  <span class="content-text fw-semibold pointer">Mineral therapies</span>
+  <span class="content-text fw-semibold pointer">Nutrition</span>
   </div>
   <div class="w-75 addPrd-table-container">
     <table class="table mt-3 mb-5">
@@ -152,20 +152,22 @@ const productsModal = `  <div class=" products-modal AddProducts-modal">
       <tbody id="modal-table-body" class="custom-tbody promotion-tbody">
       <tr>
       <td>
-         <div class="product-td d-flex align-items-center">
+         <div class="product-td fw-semibold prdmobilemodel-name d-flex align-items-center">
       <div class="h-100 rounded-4 product-td-img p-3">
         <img src="/assets/images/product-table-image.jpg" alt="" class="h-100 w-100">
       </div>
       Perfect Potion Aniseed Myrtle 5ml
     </div>
         </td>
-        <td>
+        <td class="grid-center prdmobilemodel-name">
+        
         $67.00
+
         </td>
-        <td class="">
+        <td class="grid-center prdmobilemodel-name">
         $144.00
         </td>
-        <td class="text-end">
+        <td class="text-end grid-center">
         <form class="account-checkbox d-inline"><input type="checkbox" name="" id="" /></form>
         </td>
         </tr>

@@ -185,10 +185,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   renderTable();
-  const modalBtn = document.getElementById("modal-btn");
-  const container = document.getElementById("modal-container");
-  const loadContent = (content) => {
-    container.innerHTML = content;
-  };
-  modalBtn.addEventListener("click", () => loadContent(productsModal));
 });

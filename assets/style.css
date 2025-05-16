@@ -201,6 +201,9 @@ color: #546967;
 padding: 0 21px;
 box-sizing: border-box;
 }
+.fs-18{
+  font-size: 18px;
+}
 select option{
 font-family: var(--bs-font-primary);
 font-size: 18px;
@@ -1232,7 +1235,7 @@ border: none ;
 .order-status-search{
   border-bottom: 2px solid #CED4D4;
   height: 60px;
-  width: 458px;
+  width: 44%;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -1310,7 +1313,7 @@ border-bottom: 1.5px solid #CED4D4;
   margin-top: 80px;
 }
 .shipping-table{
-padding: 14px !important;
+padding: 14px 8px !important;
 }
 .tutorial-video{
   background-color:  #ECF2F2;
@@ -2453,7 +2456,8 @@ line-height: 160%; /* 22.4px */
   color: orangered;
 }
 .accordion-height{
-  height: 55px;
+  height: fit-content;
+  padding: 13px 0;
   border-radius: 0%;
 }
 .prd-accordion-card{
@@ -2615,8 +2619,14 @@ line-height: 28.8px; /* 28.8px */
   background-color: #fff;
   min-width: 1212px !important;
 }
+.AddProducts-modal{
+  font-family: var(--bs-font-primary);
+}
+.prdmobilemodel-name{
+  font-size: 16px !important;
+}
 .modal-search{
-  width: 350px;
+  /* width: 350px; */
   margin-right: 107px;
 }
 .modal-select{
@@ -2661,6 +2671,9 @@ font-weight: 600;
     font-size: 16px;
     padding: 16px 20px;
   }
+}
+.grid-center{
+  place-content: center;
 }
 .create-prescription-table th{
   @media (max-width: 1480px){
