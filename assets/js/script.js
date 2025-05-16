@@ -163,14 +163,14 @@ orderProcedureBtn.addEventListener("click", () => {
   orderProcedure.classList.toggle("feature-col-height");
 });
 
-const practitionerApplication = document.getElementById(
+const practitionerApplication = document?.getElementById(
   "practitioner-application"
 );
 const studentApplication = document.getElementById("student-application");
 
-practitionerApplication.addEventListener("click", () => {
-  studentApplication.classList.remove("account-switch-active");
-  practitionerApplication.classList.add("account-switch-active");
+practitionerApplication?.addEventListener("click", () => {
+  studentApplication?.classList.remove("account-switch-active");
+  practitionerApplication?.classList.add("account-switch-active");
 });
 
 studentApplication.addEventListener("click", () => {
