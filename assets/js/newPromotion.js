@@ -120,7 +120,7 @@ const addClientsForm = `  <form class="d-flex flex-column gap-3">
 const copyLogo = document.getElementById("copy-text-logo");
 const copiedText = document.getElementById("copied-text");
 const addClients = document.getElementById("add-clients");
-const container = document.getElementById("modal-container");
+const container = document.getElementById("modal-container2");
 const toastNotification = document.getElementById("toast-notification");
 
 function copyText() {
