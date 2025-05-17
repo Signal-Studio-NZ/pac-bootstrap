@@ -20,20 +20,9 @@
         <h1 class="heading-1 heading-1-margins">Prescription list</h1>
         <div class="d-flex flex-column mb-lg-5 flex-lg-row w-100 justify-content-between align-items-lg-end">
           
-          <button
-            class="mb-4 mb-lg-3 promotion-btn d-lg-none clientlist-addClient"
+          <button  onclick="window.location=`/new-promotion.html`"
+            class="mb-4 mb-lg-3 promotion-btn clientlist-addClient"
             
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-                        New prescription
-          </button>
-          <button
-            class="mt-lg-4 mb-0  promotion-btn d-none d-lg-block clientlist-addClient"
-            id="modal-btn"
-            data-bs-toggle="modal"
-            data-bs-target="#products-modal"
           >
                         New prescription
           </button>
@@ -69,22 +58,12 @@
         <div
           class="d-flex gap-2 gap-lg-0 flex-column flex-md-row align-items-center justify-content-between"
         >
-        <button
-            class="promotion-btn client-discount-addProd d-lg-none"
-        data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
+        <button onclick="window.location=`/new-promotion.html`"
+            class="promotion-btn client-discount-addProd "
           >
-            Add product
+            New prescription
           </button>
 
-          <button
-            class="promotion-btn client-discount-addProd d-none d-lg-block"
-             data-bs-toggle="modal"
-            data-bs-target="#products-modal"
-          >
-            Add product
-          </button>
           <div class="d-flex client-discount-save-Container align-items-center">
             <button
               class="pick-up-btn border client-discount-addProd promotion-cancel-btn me-2"

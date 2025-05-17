@@ -65,6 +65,7 @@ p{
   margin: 0;
   padding: 0;
 }
+
 .gap-12{
   gap: 12px;
 }
@@ -2122,12 +2123,12 @@ max-width: 213px;
   cursor: pointer;
 }
 .promotion-thead th {
-  min-width: 134px !important;  
-  max-width: 168px !important;                
+  /* min-width: 134px !important;   */
+  /* max-width: 168px !important;                 */
 }
 .promotion-thead td{
-  min-width: 134px !important;
-  max-width: 168px !important;       
+  /* min-width: 134px !important; */
+  /* max-width: 168px !important;        */
 }
 .off-retail{
   width: 73px;
@@ -2708,9 +2709,9 @@ font-weight: 600;
 }
 }
 .create-prescription-table th:nth-child(2){
-  min-width: 305px !important;
+  /* min-width: 305px !important; */
   @media (max-width: 1480px){
-    min-width: 280px !important;
+    /* min-width: 280px !important; */
   }
  }
  .create-prescription-table th:nth-child(3){
