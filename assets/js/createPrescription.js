@@ -204,6 +204,8 @@ document.addEventListener("DOMContentLoaded", function () {
     tableBody.innerHTML = "";
     data.forEach((item) => {
       const row = document.createElement("tr");
+      row.classList.add("create-prescription-table1-tr");
+
       // Function to update row style based on screen size
       function updateRowStyle() {
         if (window.innerWidth < 992) {
@@ -214,23 +216,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       row.innerHTML = `
-                <td class="" ><span class="responsive-lable d-lg-none">Code</span>
+                <td class=" align-content-center" ><span class="responsive-lable d-lg-none">Code</span>
                   <span class="color-red">${item.code}</span>
                 </td>
-                <td>
+                <td class=" align-content-center">
                 <span class="responsive-lable d-lg-none">Product</span>
                 <span class="color-red">${item.product}</span>
                 </td>
-                <td>
+                <td class=" align-content-center">
                 <span class="responsive-lable d-lg-none">QTY</span>${item.qty}
                 </td>
-                <td class="text-lg-center" ><span class="responsive-lable d-lg-none">Unit Wholesale</span>${item.unitWholesale}</td>
-                <td class="text-lg-center" ><span class="responsive-lable d-lg-none">Unit Retail</span>${item.unitRetail}</td>
-                 <td>
+                <td class="text-lg-center align-content-center" ><span class="responsive-lable d-lg-none">Unit Wholesale</span>${item.unitWholesale}</td>
+                <td class="text-lg-center align-content-center" ><span class="responsive-lable d-lg-none">Unit Retail</span>${item.unitRetail}</td>
+                 <td class="align-content-center">
                 <span class="responsive-lable d-lg-none">Markup / Discount</span>${item.markup}</td>
-                  <td>
+                  <td class="align-content-center">
                 <span class="responsive-lable d-lg-none">Line Total</span>${item.lineTotal}</td>
-                  <td class="text-lg-end">
+                  <td class="text-lg-end align-content-center">
                   ${item.logos}
                 </td>
                 `;

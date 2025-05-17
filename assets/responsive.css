@@ -4,6 +4,10 @@
   font-size: 24px !important;
   line-height: 28px !important;
 }
+.checkoutDelivery-label-termscondition a{
+/* color: black !important; */
+font-size: 15px !important;
+}
 .showPrd-perPage{
   width: 100%;
 }
@@ -174,6 +178,9 @@ font-size: 14px;
   .client-order-table tbody tr{
     border-bottom: 1px solid gray !important;
     /* border-width: 1px !important; */
+  }
+  .client-order-table thead{
+    display: none;
   }
   .thankyou-h1{
     /* font-weight: 600 !important; */
@@ -2046,6 +2053,9 @@ select{
     width: 100%;
     display: block;
   }
+  .create-prescription-table1-tr{
+  height: 97px;
+}
   .pr-0{
   padding-right: 0 !important;
 }
@@ -2794,6 +2804,9 @@ font-size: 18px;
   .header-dropdown-user{
     right: -10px !important;
   }
+  .create-prescription-table1-tr{
+  height: 97px;
+}
     .prd-manual{
     font-size: 20px;
   }
@@ -3348,6 +3361,9 @@ font-size: 20px;
     width: 100%;
     display: block;
   }
+  .create-prescription-table1-tr{
+  height: 97px;
+}
     .prd-manual{
     font-size: 20px;
   }
