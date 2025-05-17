@@ -107,7 +107,7 @@
                   >Options</label
                 >
                 <p class="p-0 m-0 checkoutStagedData-Data fw-medium lh-base">
-                  Sign for parcel Free
+                  Sign for parcel <span class="checkout-free">Free</span>
                 </p>
               </div>
             </div>
@@ -185,7 +185,7 @@
                     id="courier"
                   />
                   <label for="courier" class="checkoutDelivery-label">
-                    Courier (default) Free
+                    Courier (default) <span class="checkout-free">Free</span>
                   </label>
                 </div>
               </div>
@@ -204,7 +204,7 @@
                     for="signParcel"
                     class="checkoutDelivery-label flex-nowrap"
                   >
-                    Sign for parcel Free
+                    Sign for parcel <span class="checkout-free">Free</span>
                   </label>
                 </div>
               </div>
@@ -213,7 +213,7 @@
           <section>
             <h2 class="heading-3">Client Delivery Address</h2>
             <div class="mt-5">
-              <label for="" class="checkoutDelivery-label label"
+              <label for="" class="checkoutDelivery-label fs-6 label"
                 >Please select a client delivery address from the dropdown
                 below</label
               >
@@ -315,7 +315,10 @@
                       />
                     </div>
                     <ul class="options-list">
-                      <li class="option-item">Courier (default) Free</li>
+                      <li class="option-item">
+                        Courier (default)
+                        <span class="checkout-free">Free</span>
+                      </li>
                       <li class="option-item">
                         Home <span>(8 Quay street, AUK, NZ)</span>
                       </li>
@@ -342,7 +345,8 @@
                       id=""
                     />
                     <label for="Pick-upfromShop" class="checkoutDelivery-label"
-                      >Sign for parcel Free</label
+                      >Sign for parcel
+                      <span class="checkout-free">Free</span></label
                     >
                   </div>
                 </div>
@@ -361,13 +365,13 @@
                   class="checkoutDelivery-radio"
                   id=""
                 />
-                <label for="Pick-upfromShop" class="checkoutDelivery-label"
+                <label for="Pick-upfromShop" class="checkoutDelivery-label fs-6"
                   >Same as delivery</label
                 >
               </div>
 
               <div class="billingAddressOpt">
-                <label for="" class="checkoutDelivery-label label"
+                <label for="" class="checkoutDelivery-label fs-6 label"
                   >Please select a billing address from the options
                   below.</label
                 >
@@ -580,6 +584,10 @@
                       >Price</span
                     >$92.06
                   </td>
+                </tr>
+                <tr class="checkout-total fw-bold">
+                  <td>Total</td>
+                  <td colspan="5" class="text-end">$584.00</td>
                 </tr>
               </tbody>
             </table>

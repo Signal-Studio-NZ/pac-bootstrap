@@ -333,7 +333,9 @@
               id="prd-perPage"
               class="prd-per-page d-flex justify-content-between align-items-center"
             >
-              <div class="d-flex gap-3 align-items-center">
+              <div
+                class="d-flex gap-3 d-flex showPrd-perPage justify-content-between align-items-center"
+              >
                 <label for="" class="per-page-label fw-medium text-uppercase"
                   >SHOW PRODUCTS PER PAGE
                 </label>
@@ -373,6 +375,9 @@
             </div>
           </div>
         </div>
+        <p class="shop-info d-lg-none mt-5">
+          All prices are quoted in NZ Dollars including gst
+        </p>
       </div>
       <!-- Offcanvas -->
       <div
@@ -401,7 +406,7 @@
             <p class="shop-lable shop-label-filter">Filter</p>
             <div class="shop-filter-side fs-5 fw-semibold">
               <div
-                class="d-flex flex-column shop-filter-1 align-items-start gap-1"
+                class="d-flex flex-column shop-filter-1 shop-filter-mobile align-items-start gap-1"
               >
                 <button
                   id="Featuredbtn"
@@ -516,7 +521,7 @@
           <div class="apply-container">
             <div class="d-flex justify-content-between gap-3">
               <button class="btn btn-primary shopfilterApply-btn w-100">
-                Apply
+                Apply filters
               </button>
               <button
                 class="shopFilter-cancel border-0 bg-transparent"
