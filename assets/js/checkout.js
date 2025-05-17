@@ -130,7 +130,6 @@ const paymentNumber = document.getElementById("payment-num");
 const paymentHeading = document.getElementById("payment-heading");
 const placeOrderNum = document.getElementById("place-order-num");
 const placeOrderHeading = document.getElementById("place-order-heading");
-
 const checkoutStageContainer = document.querySelector(
   ".checkout-stage-container"
 );
@@ -191,6 +190,7 @@ deliverPageBtn.addEventListener("click", () => {
   deliveryHeading.classList.add("checkout-done");
   paymentNumber.classList.add("checkout-NumActive");
   paymentHeading.classList.add("checkout-active");
+  checkoutStageContainer.classList.add("mb-322");
 });
 
 paymentPageBtn.addEventListener("click", () => {

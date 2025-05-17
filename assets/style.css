@@ -3152,9 +3152,16 @@ height: 270px;
 display: flex;
 align-items: start !important;
 }
+.shop-filter button{
+  color: #0A2926;
+  font-family: var(--bs-font-primary);
+}
 .checkout-stage-container{
-  margin-bottom: 322px;
-  /* border: 1px solid black; */
+  margin-bottom: 129px;
+}
+.mb-322{
+    margin-bottom: 322px;
+
 }
 #checkout-line{
   margin: 0 27px;
