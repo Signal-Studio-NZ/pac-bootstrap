@@ -35,14 +35,19 @@ const notFoundPrd = `
               </div>
 `;
 const prd = `
-  <div class="product-card">
+  <div id="goToPage2" class="product-card">
                 <div class="img-container position-relative overflow-hidden">
                   <img
                     src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
+                    class="w-100 h-100 object-fit-contain rounded-4"
                     alt=""
                   />
-                  <div
+                  <img
+                    src="/assets/svgs/heart.svg"
+                    alt="heart"
+                    class="fav-option"
+                  />
+                  <!-- <div
                     class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
                   >
                     <button
@@ -57,52 +62,24 @@ const prd = `
                       Add to basket
                       <img src="/assets/svgs/basketicon.svg" alt="" />
                     </button>
-                  </div>
+                  </div> -->
                 </div>
                 <div
                   class="d-flex px-2 pt-4 justify-content-between align-items-start"
                 >
                   <div class="fw-semibold">
                     <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
-                  </div>
-                  <p class="fw-medium">$35.00</p>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-cover rounded-4"
-                    alt=""
-                  />
-                  <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button class="border-0 fw-semibold bg-transparent">
-                      View Detail
-                    </button>
+                    <p class="text-truncate-2">Aniseed Myrtle 5ml</p>
                     <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
+                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
                     >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
+                      Add to cart
                     </button>
                   </div>
-                  <p
-                    class="position-absolute out-of-stock fw-medium text-uppercase"
-                  >
-                    OUt of stock
-                  </p>
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p>Chakra Balance 5ml</p>
+                  <div class="d-flex flex-shrink-0 flex-column">
+                    <p class="fw-medium flex-shrink-0">R $35.00</p>
+                    <p class="fw-medium flex-shrink-0">W $28.00</p>
                   </div>
-                  <p class="fw-medium">$35.00</p>
                 </div>
               </div>
 `;
@@ -113,7 +90,7 @@ const saveBtn = document.getElementById("SaveBtn"); // Assuming you have a Save 
 const shopProducts = document.getElementById("shop-products");
 const shopPagination = document.getElementById("shopPagination");
 const prdPerPage = document.getElementById("prd-perPage");
-
+const clearAll = document?.getElementById("shop-filter-clearall");
 const buttons = [featureBtn, favoritesBtn, specialsBtn];
 
 buttons.forEach((btn) => {
@@ -135,6 +112,8 @@ buttons.forEach((btn) => {
       if (btn === featureBtn) {
         shopHeaderContainer.innerHTML = feat;
         shopProducts.innerHTML = "";
+        clearAll?.classList.remove("d-none");
+        clearAll?.classList.add("d-block");
         for (let i = 0; i < 3; i++) {
           shopProducts.innerHTML += prd;
         }
@@ -175,7 +154,7 @@ window.onload = function () {
 
 function slideOne() {
   if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-    sliderOne.value =  parseInt(sliderTwo.value) - minGap;
+    sliderOne.value = parseInt(sliderTwo.value) - minGap;
   }
   displayValOne.textContent = "$" + sliderOne.value;
   fillColor();
