@@ -344,7 +344,14 @@ outline: none;
 .shop-list-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 .shop-Brands-search{
   width: 100%;
   /* display: none; */
@@ -2440,7 +2447,7 @@ line-height: 160%; /* 22.4px */
   margin-top: 120px;
 }
 .shop-search{
-  width: 720px;
+  width: 780px;
 }
 .prd-selection{
   height: 134px;
