@@ -1910,6 +1910,9 @@ border: none;
 .add-product{
   margin-top: 100px;
 }
+.admin-promo-container{
+  gap: 196px;
+}
 .promotion-btn{
   height: 66px;
   width: 262px;
