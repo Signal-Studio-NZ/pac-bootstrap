@@ -193,10 +193,7 @@ fileUpload?.addEventListener("change", () => {
 
 function setupNewsletterValidation() {
   const form = document.getElementById("footer-newsletter");
-  if (!form) {
-    setTimeout(setupNewsletterValidation, 100);
-    return;
-  }
+  if (!form) return;
 
   const emailInput = form.querySelector('input[type="text"]');
   const errorMsg = form.querySelector(".news-error");
@@ -223,6 +220,14 @@ function setupNewsletterValidation() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setupNewsletterValidation();
-});
+// Polling function to wait for footer form to load
+function waitForFooterAndSetup() {
+  const form = document.getElementById("footer-newsletter");
+  if (form) {
+    setupNewsletterValidation();
+    clearInterval(checkInterval); // Stop checking once form is found and setup
+  }
+}
+
+// Start polling every 200 milliseconds
+const checkInterval = setInterval(waitForFooterAndSetup, 200);

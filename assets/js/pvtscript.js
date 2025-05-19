@@ -25,8 +25,6 @@ async function loadHTML(elementId, filePath) {
 loadHTML("header", "/components/pvtHeader.html").then(() => {
   shopLogic(); // only run after header is loaded
 });
-loadHTML("footer", "/components/footer.html");
-
 // custom select dropdown logic
 document.addEventListener("DOMContentLoaded", () => {
   const customSelects = document.querySelectorAll(".custom-select");

@@ -239,6 +239,7 @@ line-height: 28.8px;
       background: var( --bs-primary);
     color: var(--bs-secondary);
   }
+
 .active-btn{
     background: var( --bs-primary);
     color: var(--bs-secondary);
@@ -2488,6 +2489,15 @@ line-height: 160%; /* 22.4px */
 }
 .productDetails-container{
   padding-bottom: 150px;
+}
+.prd-detail-cancelBtn{
+   border-radius: var(--bs-spacing-sm);
+    /* padding: 20px 40px; */
+    background-color: #F9F9F9;
+    font-size: 15px;
+    font-family: var(--bs-font-primary);
+    min-width: 180px;
+    font-weight: 600;
 }
 .product-details-btns{
   height: 66px;
