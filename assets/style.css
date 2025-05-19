@@ -916,6 +916,9 @@ background-position: center;
   display: flex;
   justify-content: space-between;
 }
+.newsletter .just-validate-error-label{
+  display: none !important;
+}
 .newsletter-submit-btn{
   
 }

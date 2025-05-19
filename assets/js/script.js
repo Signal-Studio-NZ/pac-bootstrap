@@ -1,26 +1,3 @@
-function setupNewsletterFormValidation() {
-  const validator = new JustValidate("#footer-newsletter");
-
-  validator
-    .addField(".newsletter-input", [
-      {
-        rule: "required",
-        errorMessage: "Email cannot be empty. This is a required field.",
-      },
-      {
-        rule: "email",
-        errorMessage: "Please enter a valid email address.",
-      },
-    ])
-    .onSuccess((event) => {
-      event.preventDefault(); // Prevents the default form submission
-      const email = document.querySelector(".newsletter-input").value;
-      console.log("Email submitted:", email);
-
-      // TODO: Add your email submission logic here (e.g., API call)
-    });
-}
-
 // Async function to load HTML content into a div
 async function loadHTML(elementId, filePath) {
   try {
@@ -36,13 +13,44 @@ async function loadHTML(elementId, filePath) {
       notificationBanner?.classList.add("d-none");
       console.log("hi");
     });
+
+    const form = document.querySelector("#footer-newsletter");
+    const formInput = document.querySelector("#newsletter-input");
+    const formBtn = document.querySelector("#newsletter-submit-btn");
+    const errorElement = document.querySelector(".news-error");
+
+    if (form && formInput && formBtn && errorElement) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent form refresh
+
+        const email = formInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!email) {
+          errorElement.textContent = "Email is required";
+          errorElement.style.display = "block";
+          return;
+        }
+
+        if (!emailRegex.test(email)) {
+          errorElement.textContent = "Please enter a valid email";
+          errorElement.style.display = "block";
+          return;
+        }
+
+        // Valid
+        errorElement.style.display = "none";
+        alert("Thank you for subscribing!");
+        form.reset();
+      });
+
+      formInput.addEventListener("input", () => {
+        errorElement.style.display = "none";
+      });
+    }
     const openBtn = document.getElementById("openShopMenu");
     const closeBtn = document.getElementById("closeShopMenu");
     const shopMenu = document.getElementById("shopMenu");
-
-    if (elementId === "footer") {
-      setupNewsletterFormValidation();
-    }
 
     openBtn?.addEventListener("click", (e) => {
       e.preventDefault();
@@ -200,18 +208,18 @@ practitionerApplication?.addEventListener("click", () => {
   practitionerApplication?.classList.add("account-switch-active");
 });
 
-studentApplication.addEventListener("click", () => {
-  studentApplication.classList.add("account-switch-active");
-  practitionerApplication.classList.remove("account-switch-active");
+studentApplication?.addEventListener("click", () => {
+  studentApplication?.classList.add("account-switch-active");
+  practitionerApplication?.classList.remove("account-switch-active");
 });
 
 const uploadLable = document?.getElementById("file-uplaod-label");
 const uploadBtn = document.getElementById("file-upload-btn");
 const fileUpload = document.getElementById("file-upload");
 
-fileUpload.addEventListener("change", () => {
-  uploadLable.innerText = fileUpload.files[0].name;
-  if (fileUpload.files[0].name) {
+fileUpload?.addEventListener("change", () => {
+  uploadLable.innerText = fileUpload.files[0]?.name;
+  if (fileUpload?.files[0]?.name) {
     uploadBtn.classList.add("file-added");
     uploadBtn.disabled = false;
   }

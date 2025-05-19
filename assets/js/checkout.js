@@ -132,6 +132,7 @@ const placeOrderNum = document.getElementById("place-order-num");
 const placeOrderHeading = document.getElementById("place-order-heading");
 const deliverDownarrow = document.querySelector(".deliver-downarrow");
 const paymentDownarrow = document.querySelector(".payment-downarrow");
+
 const checkoutStageContainer = document.querySelector(
   ".checkout-stage-container"
 );
@@ -209,6 +210,13 @@ paymentPageBtn.addEventListener("click", () => {
   placeOrderHeading.classList.add("checkout-active");
   paymentDownarrow.classList.remove("d-none");
   paymentDownarrow.classList.add("d-block");
+  // Scroll checkout-stage-container to bottom smoothly
+  if (checkoutStageContainer) {
+    checkoutStageContainer.scrollTo({
+      left: checkoutStageContainer.scrollWidth,
+      behavior: "smooth",
+    });
+  }
 });
 
 backBtn.addEventListener("click", () => {
