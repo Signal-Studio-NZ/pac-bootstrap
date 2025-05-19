@@ -1,3 +1,26 @@
+function setupNewsletterFormValidation() {
+  const validator = new JustValidate("#footer-newsletter");
+
+  validator
+    .addField(".newsletter-input", [
+      {
+        rule: "required",
+        errorMessage: "Email cannot be empty. This is a required field.",
+      },
+      {
+        rule: "email",
+        errorMessage: "Please enter a valid email address.",
+      },
+    ])
+    .onSuccess((event) => {
+      event.preventDefault(); // Prevents the default form submission
+      const email = document.querySelector(".newsletter-input").value;
+      console.log("Email submitted:", email);
+
+      // TODO: Add your email submission logic here (e.g., API call)
+    });
+}
+
 // Async function to load HTML content into a div
 async function loadHTML(elementId, filePath) {
   try {
@@ -16,6 +39,10 @@ async function loadHTML(elementId, filePath) {
     const openBtn = document.getElementById("openShopMenu");
     const closeBtn = document.getElementById("closeShopMenu");
     const shopMenu = document.getElementById("shopMenu");
+
+    if (elementId === "footer") {
+      setupNewsletterFormValidation();
+    }
 
     openBtn?.addEventListener("click", (e) => {
       e.preventDefault();

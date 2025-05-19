@@ -1,17 +1,27 @@
 <footer class="footer rounded-top-4">
-  <div class="row container footer-newsletter rounded-top-4">
+  <form
+    id="footer-newsletter"
+    class="row container footer-newsletter rounded-top-4"
+  >
     <div class="col-md-6 heading-2 my-auto">Subscribe to our Newsletter</div>
     <div
       class="col-md-6 d-flex newsletter align-items-center justify-content-between mt-md-auto mt-4"
     >
       <input
-        type="text"
+        required
+        type="email"
         placeholder="Your email goes here"
         class="newsletter-input border-0 h-100 bg-transparent w-100"
       />
-      <img src="/assets/images/svgs/ArrowRight.svg" alt="ArrowRight" />
+
+      <button
+        type="submit"
+        class="newsletter-submit-btn border-0 bg-transparent"
+      >
+        <img src="/assets/images/svgs/ArrowRight.svg" alt="ArrowRight" />
+      </button>
     </div>
-  </div>
+  </form>
   <div class="row footer-main container rounded-top-4">
     <div class="col-6 mb-3 mb-lg-0 d-md-block d-none">
       <img src="/assets/images/logo.png" alt="logo" />
@@ -82,17 +92,18 @@
       </div>
       <p class="copyright-text w-100">
         Copyright © 2024 Pacific Health and Fitness Limited. All rights
-        reserved. <br> All content, materials, and information provided on this
-        website, including but not limited to text, images, logos, graphics,
-        designs, audio, video, and other files (the "Content"), are the
-        exclusive property of Pacific Health and Fitness Limited or its
-        licensors. The Content is protected by copyright, trademark, and other
-        intellectual property laws. You may access and view the Content for
-        personal, non-commercial use, provided that you do not modify,
-        reproduce, distribute, or otherwise exploit any part of the Content
-        without prior written permission from Pacific Health and Fitness
-        Limited. Unauthorized use, reproduction, or distribution of any Content
-        from this website is strictly prohibited.
+        reserved. <br />
+        All content, materials, and information provided on this website,
+        including but not limited to text, images, logos, graphics, designs,
+        audio, video, and other files (the "Content"), are the exclusive
+        property of Pacific Health and Fitness Limited or its licensors. The
+        Content is protected by copyright, trademark, and other intellectual
+        property laws. You may access and view the Content for personal,
+        non-commercial use, provided that you do not modify, reproduce,
+        distribute, or otherwise exploit any part of the Content without prior
+        written permission from Pacific Health and Fitness Limited. Unauthorized
+        use, reproduction, or distribution of any Content from this website is
+        strictly prohibited.
       </p>
     </div>
   </div>

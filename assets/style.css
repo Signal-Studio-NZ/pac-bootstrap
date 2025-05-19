@@ -916,6 +916,9 @@ background-position: center;
   display: flex;
   justify-content: space-between;
 }
+.newsletter-submit-btn{
+  
+}
 .newsletter-input{
     height: 60px;
     font-size: var(--bs-font-size-lg);
@@ -1485,16 +1488,40 @@ padding: 14px 8px !important;
 .about-card{
   height: 596px;
   max-width: 473px !important;
-  min-width: 350px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 margin-bottom: 25px;
 }
 .aboutCard-container{
-  gap: 20px !important;
+  /* gap: 20px !important; */
   margin-top: 59px;
 }
+.aboutCard-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+        justify-items: center;
+
+  }
+
+  @media (min-width: 768px) {
+    .aboutCard-container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: stretch;
+          gap: 20px;
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+    /* .aboutCard-container {
+      grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          row-gap: 101px;
+    } */
+  }
 /* Ensure the modal scales well for smaller screens */
 @media (max-width: 1580px) {
   .aboutCard-container{

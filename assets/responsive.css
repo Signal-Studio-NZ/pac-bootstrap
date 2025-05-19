@@ -2813,6 +2813,11 @@ font-size: 18px;
   .header-dropdown-user{
     right: -10px !important;
   }
+.aboutCard-container {
+      grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          row-gap: 41px;
+    }
   .create-prescription-table1-tr{
   height: 97px;
 }
@@ -3370,6 +3375,11 @@ font-size: 20px;
     width: 100%;
     display: block;
   }
+  .aboutCard-container {
+      grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          row-gap: 101px;
+    }
   .create-prescription-table1-tr{
   height: 97px;
 }
