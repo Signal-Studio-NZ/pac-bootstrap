@@ -130,6 +130,8 @@ const paymentNumber = document.getElementById("payment-num");
 const paymentHeading = document.getElementById("payment-heading");
 const placeOrderNum = document.getElementById("place-order-num");
 const placeOrderHeading = document.getElementById("place-order-heading");
+const deliverDownarrow = document.querySelector(".deliver-downarrow");
+const paymentDownarrow = document.querySelector(".payment-downarrow");
 const checkoutStageContainer = document.querySelector(
   ".checkout-stage-container"
 );
@@ -191,6 +193,8 @@ deliverPageBtn.addEventListener("click", () => {
   paymentNumber.classList.add("checkout-NumActive");
   paymentHeading.classList.add("checkout-active");
   checkoutStageContainer.classList.add("mb-322");
+  deliverDownarrow.classList.remove("d-none");
+  deliverDownarrow.classList.add("d-block");
 });
 
 paymentPageBtn.addEventListener("click", () => {
@@ -203,6 +207,8 @@ paymentPageBtn.addEventListener("click", () => {
   paymentHeading.classList.add("checkout-done");
   placeOrderNum.classList.add("checkout-NumActive");
   placeOrderHeading.classList.add("checkout-active");
+  paymentDownarrow.classList.remove("d-none");
+  paymentDownarrow.classList.add("d-block");
 });
 
 backBtn.addEventListener("click", () => {

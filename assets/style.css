@@ -1240,7 +1240,7 @@ font-size: 12px;
 }
 .custom-td{
   /* min-width: 140px;                    */
-  padding: 9px 0 !important;   
+  /* padding: 9px 0 !important;    */
   margin: 0;
   font-weight: 500;
   font-size: var(--bs-font-size-sm);  

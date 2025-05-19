@@ -1480,7 +1480,7 @@ line-height: 24px;
     font-style: normal;
   }
   .custom-td{             
-    padding: 0px;   
+    padding: 0.5rem !important;   
     display: flex;
   }
   .new-promo-table{
@@ -2039,7 +2039,7 @@ select{
   font-style: normal;
 }
 .custom-td{             
-  padding: 0px;   
+  padding: 0.5rem !important;   
   display: flex;
 }
 .new-promo-table{
