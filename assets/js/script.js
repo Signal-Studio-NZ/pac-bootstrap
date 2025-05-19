@@ -14,40 +14,6 @@ async function loadHTML(elementId, filePath) {
       console.log("hi");
     });
 
-    const form = document.querySelector("#footer-newsletter");
-    const formInput = document.querySelector("#newsletter-input");
-    const formBtn = document.querySelector("#newsletter-submit-btn");
-    const errorElement = document.querySelector(".news-error");
-
-    if (form && formInput && formBtn && errorElement) {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault(); // Prevent form refresh
-
-        const email = formInput.value.trim();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!email) {
-          errorElement.textContent = "Email is required";
-          errorElement.style.display = "block";
-          return;
-        }
-
-        if (!emailRegex.test(email)) {
-          errorElement.textContent = "Please enter a valid email";
-          errorElement.style.display = "block";
-          return;
-        }
-
-        // Valid
-        errorElement.style.display = "none";
-        alert("Thank you for subscribing!");
-        form.reset();
-      });
-
-      formInput.addEventListener("input", () => {
-        errorElement.style.display = "none";
-      });
-    }
     const openBtn = document.getElementById("openShopMenu");
     const closeBtn = document.getElementById("closeShopMenu");
     const shopMenu = document.getElementById("shopMenu");
@@ -223,4 +189,40 @@ fileUpload?.addEventListener("change", () => {
     uploadBtn.classList.add("file-added");
     uploadBtn.disabled = false;
   }
+});
+
+function setupNewsletterValidation() {
+  const form = document.getElementById("footer-newsletter");
+  if (!form) {
+    setTimeout(setupNewsletterValidation, 100);
+    return;
+  }
+
+  const emailInput = form.querySelector('input[type="text"]');
+  const errorMsg = form.querySelector(".news-error");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+      errorMsg.textContent = "Email field cannot be empty.";
+      errorMsg.style.color = "red";
+      emailInput.focus();
+    } else if (!emailRegex.test(email)) {
+      errorMsg.textContent = "Please enter a valid email address.";
+      errorMsg.style.color = "red";
+      emailInput.focus();
+    } else {
+      errorMsg.textContent = "";
+      alert("Thank you for subscribing!");
+      form.reset();
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupNewsletterValidation();
 });
