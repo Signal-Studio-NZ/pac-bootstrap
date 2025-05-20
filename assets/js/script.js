@@ -33,7 +33,7 @@ async function loadHTML(elementId, filePath) {
 }
 
 // Load header and footer
-loadHTML("header", "./components/header.html");
+loadHTML("header", "./components/pvtHeader.html");
 loadHTML("footer", "./components/footer.html");
 
 const anchors = document?.querySelectorAll("#data-titles li a");
