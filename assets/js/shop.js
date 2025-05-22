@@ -90,7 +90,7 @@ const saveBtn = document.getElementById("SaveBtn"); // Assuming you have a Save 
 const shopProducts = document.getElementById("shop-products");
 const shopPagination = document.getElementById("shopPagination");
 const prdPerPage = document.getElementById("prd-perPage");
-const clearAll = document?.getElementById("shop-filter-clearall");
+const clearAll = document.getElementById("shop-filter-clearall");
 const buttons = [featureBtn, favoritesBtn, specialsBtn];
 
 buttons.forEach((btn) => {
@@ -112,8 +112,8 @@ buttons.forEach((btn) => {
       if (btn === featureBtn) {
         shopHeaderContainer.innerHTML = feat;
         shopProducts.innerHTML = "";
-        clearAll.classList.remove("d-none");
-        clearAll.classList.add("d-block");
+        clearAll?.classList.remove("d-lg-none");
+        clearAll?.classList.add("d-lg-block");
         for (let i = 0; i < 3; i++) {
           shopProducts.innerHTML += prd;
         }
