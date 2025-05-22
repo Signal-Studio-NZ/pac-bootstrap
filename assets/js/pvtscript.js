@@ -88,7 +88,7 @@ function shopLogic() {
   const navmenu = document.querySelector(".navbar-menus");
   const shopBtn = document.getElementById("shopBtn");
   const shopContainer = document.getElementById("shopContainer");
-  const shopCloseBtn = document.getElementById("shopCloseBtn");
+  const shopCloseBtns = document.querySelectorAll(".shopCloseBtn");
   const notificationBanner = document.getElementById("notification-banner");
   const htmlBody = document.getElementsByTagName("body")[0];
 
@@ -99,7 +99,7 @@ function shopLogic() {
   );
   const subcatInput = document.querySelector(".shop-Subcategories-input");
 
-  if (shopBtn && shopContainer && shopCloseBtn) {
+  if (shopBtn && shopContainer && shopCloseBtns) {
     shopBtn.addEventListener("click", () => {
       navmenu.classList.remove("zindex100");
       navmenu.classList.add("zindex11000");
@@ -111,13 +111,15 @@ function shopLogic() {
       disableNavItems();
     });
 
-    shopCloseBtn.addEventListener("click", () => {
-      navmenu.classList.remove("zindex11000");
-      navmenu.classList.add("zindex100");
-      shopContainer.classList.remove("d-xl-block");
-      shopContainer.classList.add("d-xl-none");
-      htmlBody.style.overflow = "auto";
-      enableNavItems();
+    shopCloseBtns.forEach((shopCloseBtn) => {
+      shopCloseBtn.addEventListener("click", () => {
+        navmenu.classList.remove("zindex11000");
+        navmenu.classList.add("zindex100");
+        shopContainer.classList.remove("d-xl-block");
+        shopContainer.classList.add("d-xl-none");
+        htmlBody.style.overflow = "auto";
+        enableNavItems();
+      });
     });
   }
 

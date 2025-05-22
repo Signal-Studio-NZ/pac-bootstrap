@@ -16,8 +16,8 @@ addToCart.addEventListener("click", () => {
   productDetailsInfo.classList.remove("w-100");
   setTimeout(() => {
     productImg.style.display = "none";
-    basketLayer.classList.remove("d-none");
-    basketLayer.classList.add("d-flex");
+    basketLayer.classList.remove("d-lg-none");
+    basketLayer.classList.add("d-lg-flex");
   }, 500);
 });
 
@@ -25,8 +25,8 @@ basketClose.addEventListener("click", () => {
   productImg.style.marginLeft = "0";
   productDetailsInfo.style.marginLeft = "50%";
   productDetailsInfo.classList.add("w-100");
-  basketLayer.classList.add("d-none");
-  basketLayer.classList.remove("d-flex");
+  basketLayer.classList.add("d-lg-none");
+  basketLayer.classList.remove("d-lg-flex");
   setTimeout(() => {
     productDetailsInfo.style.marginLeft = "0";
     productImg.style.display = "block";

@@ -52,8 +52,9 @@
             />
             <img src="assets/images/OrderStatus/Search.png" alt="Search" />
           </div>
-          <div class="d-flex gap-3 align-items-center">
-            <label class="fw-medium sortby-label text-uppercase lh-1"
+          <div class="d-flex gap-20px align-items-center">
+            <label
+              class="fw-medium sortby-label flex-shrink-0 fs-12px font-manrope text-uppercase lh-1"
               >Sort By</label
             >
             <select class="shop-sort-select" name="" id="">
@@ -65,13 +66,17 @@
           </div>
         </div>
 
-        <p class="checkout-free d-none" id="shop-filter-clearall">Clear all</p>
+        <p class="shop-clear font-manrope" id="shop-filter-clearall ">
+          Clear all
+        </p>
         <div class="d-flex shop-container">
           <div class="shop-filter fs-5 fw-semibold">
             <div
               class="d-flex flex-column shop-filter-1 align-items-start gap-1"
             >
-              <label for="" class="fw-semibold shop-filter-label m-3"
+              <label
+                for=""
+                class="fw-semibold font-manrope shop-filter-label m-3"
                 >Filters</label
               >
               <button
@@ -97,7 +102,9 @@
               </button>
             </div>
             <div class="d-flex flex-column align-items-start mt-4 gap-2">
-              <label for="" class="fw-semibold shop-filter-label mb-1"
+              <label
+                for=""
+                class="fw-semibold font-manrope shop-filter-label mb-1"
                 >Categories</label
               >
 
@@ -123,7 +130,9 @@
             <div
               class="d-flex gap-4 flex-column filter border-top align-items-start"
             >
-              <label for="" class="fw-semibold shop-filter-label mb-1"
+              <label
+                for=""
+                class="fw-semibold font-manrope shop-filter-label mb-1"
                 >Price range</label
               >
               <div class="d-flex flex-column gap-3">
@@ -222,7 +231,43 @@
                     <p>Perfect Potion</p>
                     <p class="text-truncate-2">Aniseed Myrtle 5ml</p>
                     <button
-                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
+                      class="border-0 mt-2 manrope addbasket-btn fw-semibold bg-transparent"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                  <div class="d-flex flex-shrink-0 flex-column">
+                    <p class="fw-medium flex-shrink-0">R $35.00</p>
+                    <p class="fw-medium flex-shrink-0">W $28.00</p>
+                  </div>
+                </div>
+              </div>
+              <div id="goToPage2" class="product-card">
+                <div class="img-container position-relative overflow-hidden">
+                  <img
+                    src="/assets/images/product/product1.png"
+                    class="w-100 h-100 object-fit-contain rounded-4"
+                    alt=""
+                  />
+                  <img
+                    src="/assets/svgs/heart.svg"
+                    alt="heart"
+                    class="fav-option"
+                  />
+                  <p
+                    class="position-absolute out-of-stock fw-medium text-uppercase"
+                  >
+                    OUt of stock
+                  </p>
+                </div>
+                <div
+                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
+                >
+                  <div class="fw-semibold">
+                    <p>Perfect Potion</p>
+                    <p class="text-truncate-2">Aniseed Myrtle 5ml</p>
+                    <button
+                      class="border-0 mt-2 manrope addbasket-btn fw-semibold bg-transparent"
                     >
                       Add to cart
                     </button>
@@ -274,59 +319,7 @@
                     <p>Perfect Potion</p>
                     <p class="text-truncate-2">Aniseed Myrtle 5ml</p>
                     <button
-                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
-                    >
-                      Add to cart
-                    </button>
-                  </div>
-                  <div class="d-flex flex-shrink-0 flex-column">
-                    <p class="fw-medium flex-shrink-0">R $35.00</p>
-                    <p class="fw-medium flex-shrink-0">W $28.00</p>
-                  </div>
-                </div>
-              </div>
-              <div id="goToPage2" class="product-card">
-                <div class="img-container position-relative overflow-hidden">
-                  <img
-                    src="/assets/images/product/product1.png"
-                    class="w-100 h-100 object-fit-contain rounded-4"
-                    alt=""
-                  />
-                  <img
-                    src="/assets/svgs/heart.svg"
-                    alt="heart"
-                    class="fav-option"
-                  />
-                  <p
-                    class="position-absolute out-of-stock fw-medium text-uppercase"
-                  >
-                    OUt of stock
-                  </p>
-                  <!-- <div
-                    class="top-0 w-100 product-overlay h-100 d-flex align-items-center justify-content-center flex-column fs-5 fw-semibold position-absolute"
-                  >
-                    <button
-                      id="goToPage2"
-                      class="border-0 fw-semibold bg-transparent"
-                    >
-                      View Detail
-                    </button>
-                    <button
-                      class="border-0 fw-semibold bg-transparent d-flex gap-2"
-                    >
-                      Add to basket
-                      <img src="/assets/svgs/basketicon.svg" alt="" />
-                    </button>
-                  </div> -->
-                </div>
-                <div
-                  class="d-flex px-2 pt-4 justify-content-between align-items-start"
-                >
-                  <div class="fw-semibold">
-                    <p>Perfect Potion</p>
-                    <p class="text-truncate-2">Aniseed Myrtle 5ml</p>
-                    <button
-                      class="border-0 manrope addbasket-btn fw-semibold bg-transparent"
+                      class="border-0 mt-2 manrope addbasket-btn fw-semibold bg-transparent"
                     >
                       Add to cart
                     </button>
@@ -412,7 +405,7 @@
               <img src="/assets/svgs/navmenuLogo.svg" class="" alt="Logo" />
             </a>
             <!-- Fake height to demo scroll -->
-            <p class="shop-lable shop-label-filter">Filter</p>
+            <p class="shop-lable shop-label-filter font-manrope">Filter</p>
             <div class="shop-filter-side fs-5 fw-semibold">
               <div
                 class="d-flex flex-column shop-filter-1 shop-filter-mobile align-items-start gap-1"
@@ -448,7 +441,7 @@
                 </button>
               </div>
               <div class="d-flex flex-column align-items-start mt-5 pt-2 gap-2">
-                <p class="shop-lable">Categories</p>
+                <p class="shop-lable font-manrope">Categories</p>
                 <button class="p-0 lh-base textwhite bg-transparent border-0">
                   Aromatherapy
                 </button>
@@ -469,7 +462,9 @@
                 </button>
               </div>
               <div class="d-flex gap-4 flex-column mt-5 pt-2 align-items-start">
-                <label for="" class="shop-lable">Price range</label>
+                <label for="" class="shop-lable font-manrope"
+                  >Price range</label
+                >
                 <div class="d-flex flex-column gap-3">
                   <div class="price-range">
                     <div class="slider-track"></div>

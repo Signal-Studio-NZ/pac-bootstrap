@@ -134,7 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // Function to update row style based on screen size
       function updateRowStyle() {
         if (window.innerWidth < 992) {
-          row.classList.add("d-flex", "flex-column");
+          row.classList.add(
+            "d-flex",
+            "flex-column",
+            "create-promo-attachPromo"
+          );
           row.classList.remove("d-table-row");
         } else {
           row.classList.remove("d-flex", "flex-column");
@@ -152,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <span class="responsive-lable d-lg-none">Name</span>${item.name}
                   </td>
                   <td ><span class="responsive-lable d-lg-none">Start Date</span>${item.startDate}</td>
-                  <td><span class="responsive-lable d-lg-none">End Datel</span>${item.endDate}</td>
+                  <td><span class="responsive-lable d-lg-none">End Date</span>${item.endDate}ss</td>
                   `;
       tableBody.appendChild(row);
       updateRowStyle();

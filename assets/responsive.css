@@ -4,9 +4,13 @@
   font-size: 24px !important;
   line-height: 28px !important;
 }
+.checkout-back,.checkout-placeorder{
+  width: 100%;
+}
 .admin-promo-container{
   gap: 16px;
 }
+
 .checkoutDelivery-label-termscondition a{
 /* color: black !important; */
 font-size: 15px !important;
@@ -699,18 +703,18 @@ gap: 0;
   .notification-banner{
     margin-left: 10px;
     margin-right: 10px;
-    height: 100px;
+    height: fit-content;
     border-radius: 8px;
     font-size: 13px;
     line-height: 20.8px;
     margin-bottom: 20px;
   }
   .notification-banner p{
-    padding: 16px 45px 0 16px;
+    padding: 16px 50px 16px 16px;
     text-align: left;
   }
   .notification-closeBtn{
-    top: 20px;
+    top: 22px;
     right: 14px;
   }
   .page-number{
@@ -2062,6 +2066,9 @@ select{
     width: 100%;
     display: block;
   }
+  .create-promo-attachPromo{
+  border-bottom: none !important;
+}
   .create-prescription-table1-tr{
   height: 97px;
 }
@@ -2755,7 +2762,7 @@ border-radius: 10px;
 font-size: 18px;
 }
 .create-prescription-total div{
-  padding-right: 120px;
+  /* padding-right: 120px; */
  }
  .account-switch-btn{
   max-width: 490px;
@@ -2813,6 +2820,9 @@ font-size: 18px;
   .header-dropdown-user{
     right: -10px !important;
   }
+  .create-promo-attachPromo td{
+  border-bottom: none !important;
+}
 .aboutCard-container {
       grid-template-columns: repeat(3, 1fr);
           gap: 20px;
@@ -3351,7 +3361,7 @@ height: 62px;
 font-size: 20px;
 }
 .create-prescription-total div{
-  padding-right: 150px;
+  /* padding-right: 150px; */
  }
  .account-switch-btn{
   max-width: 550px;
@@ -3375,6 +3385,9 @@ font-size: 20px;
     width: 100%;
     display: block;
   }
+  .create-promo-attachPromo td{
+  border-bottom: none !important;
+}
   .aboutCard-container {
       grid-template-columns: repeat(3, 1fr);
           gap: 20px;

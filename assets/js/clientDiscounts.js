@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <span class="responsive-lable d-lg-none">Unit Wholesale</span>${item.unitWholesale}
             </td>
             <td class="" ><span class="responsive-lable d-lg-none">Unit retail</span>${item.unitRetail}</td>
-            <td class="d-flex  border-0" ><span class="responsive-lable d-lg-none ">Markup/Discount</span>${item.markup}</td>
+            <td class="" ><span class="responsive-lable d-lg-none ">Markup/Discount</span>${item.markup}</td>
              <td>
             <span class="responsive-lable d-lg-none">Discounted price</span>${item.discontedPrice}</td>
               <td class="pr-0">

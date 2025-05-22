@@ -108,6 +108,12 @@ p{
   .font-700{
     font-weight: 700;
   }
+  .fs-12px{
+    font-size: 12px;
+  }
+  .gap-20px{
+ gap: 20px;
+  }
 .font-manrope{
     font-family: var(--bs-font-primary);
 }
@@ -1430,11 +1436,11 @@ padding: 14px 8px !important;
     width: 300px;
   }
   .order-status-search input{
-    font-size: var(--bs-font-size-xs);
+    font-size: 16px;
   
   }
   .order-status-search input::placeholder{
-    font-size: var(--bs-font-size-xs);
+    font-size: 16px;
   }
 }
 
@@ -2362,14 +2368,19 @@ line-height: 160%; /* 28.8px */
   width: 183px;
   border-radius: 12px;
 }
+.shop-clear{
+color: #E65909;
+font-size: 18px;
+font-weight: 600;
+}
 .shop-search-sort{
   padding-left: 320px;
 
-  gap: 25px;
+  gap: 70px;
 }
 .sortby-label{
-  width: 75px;
-  margin-left: 20px;
+  width: fit-content;
+  /* margin-left: 20px; */
   
 }
 .product-card{
@@ -2550,7 +2561,7 @@ font-style: normal;
 line-height: 111%; /* 13.32px */
 }
 .prd-manual{
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .prd-price-container{
   margin-bottom: 51px;
@@ -2580,6 +2591,8 @@ font-style: normal;
 line-height: 160%; /* 44.8px */
 }
 .offer-btn{
+ /* cursor: ; */
+ height: fit-content;
   padding: 24px;
   color: var(--Ember100, #E65909);
 text-align: center;
@@ -2622,6 +2635,9 @@ line-height: 160%; /* 22.4px */
 .basket-body{
   height: 150px !important;
   margin-bottom: 30px;
+}
+.basket-head{
+  height: 90px !important;
 }
 .basket-prd-container{
   height: calc(100vh - 300px);
@@ -2746,6 +2762,9 @@ font-weight: 600;
 .grid-center{
   place-content: center;
 }
+.remark-input{
+  max-width: 100% ;
+}
 .create-prescription-table th{
   @media (max-width: 1480px){
     font-size: 16px;
@@ -2805,7 +2824,7 @@ font-weight: 600;
  background-color: #F9F9F9;
  }
  .create-prescription-total div{
-  padding-right: 182px;
+  /* padding-right: 182px; */
  }
  .prescription-table th{
   min-width: 70px !important;
@@ -3211,7 +3230,7 @@ align-items: start !important;
   margin-bottom: 129px;
 }
 .mb-322{
-    margin-bottom: 322px;
+    margin-bottom: 334px;
 
 }
 #checkout-line{
@@ -3334,9 +3353,13 @@ background: var(--Bg-Grey, #F9F9F9);
   transition: .7s ease-in-out;
 }
 #productImg{
-  position: absolute;
+  /* position: absolute; */
+  /* height: fit-content; */
+  position: sticky;
+  top: 0px;
   transition: .7s ease-in-out;
 }
+
 #productDetails-info{
   transition: .7s linear;
   max-width: 710px;

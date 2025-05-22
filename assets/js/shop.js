@@ -112,8 +112,8 @@ buttons.forEach((btn) => {
       if (btn === featureBtn) {
         shopHeaderContainer.innerHTML = feat;
         shopProducts.innerHTML = "";
-        clearAll?.classList.remove("d-none");
-        clearAll?.classList.add("d-block");
+        clearAll.classList.remove("d-none");
+        clearAll.classList.add("d-block");
         for (let i = 0; i < 3; i++) {
           shopProducts.innerHTML += prd;
         }
