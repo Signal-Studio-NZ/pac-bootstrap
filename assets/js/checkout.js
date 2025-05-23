@@ -132,6 +132,7 @@ const placeOrderNum = document.getElementById("place-order-num");
 const placeOrderHeading = document.getElementById("place-order-heading");
 const deliverDownarrow = document.querySelector(".deliver-downarrow");
 const paymentDownarrow = document.querySelector(".payment-downarrow");
+const checkoutLine = document.getElementsByClassName("checkout-line");
 
 const checkoutStageContainer = document.querySelector(
   ".checkout-stage-container"
@@ -147,7 +148,11 @@ deliveryHeading?.addEventListener("click", () => {
     deliveryDetails.classList.add("d-none");
     deliveryArrow?.classList.remove("rotate-180");
     checkoutStageContainer?.classList.remove("checkoutstage-height");
+    checkoutLine[0].classList.remove("mt-20");
+    checkoutLine[1].classList.remove("mt-20");
   } else {
+    checkoutLine[0].classList.add("mt-20");
+    checkoutLine[1].classList.add("mt-20");
     paymentDetails.classList.remove("d-block");
     paymentDetails.classList.add("d-none");
     paymentArrow?.classList.remove("rotate-180");
@@ -169,7 +174,11 @@ paymentHeading?.addEventListener("click", () => {
     paymentDetails.classList.add("d-none");
     paymentArrow?.classList.remove("rotate-180");
     checkoutStageContainer?.classList.remove("checkoutstage-height");
+    checkoutLine[0].classList.remove("mt-20");
+    checkoutLine[1].classList.remove("mt-20");
   } else {
+    checkoutLine[0].classList.add("mt-20");
+    checkoutLine[1].classList.add("mt-20");
     deliveryDetails.classList.remove("d-block");
     deliveryDetails.classList.add("d-none");
     deliveryArrow?.classList.remove("rotate-180");
