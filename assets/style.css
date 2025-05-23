@@ -1851,6 +1851,7 @@ line-height: 25.6px;
   width: 20px;
   height: 20px;
   border: 1px solid #546967;
+  background-color: #f9f9f9;
   border-radius: 4px;
   appearance: none;
   position: relative;
@@ -2086,6 +2087,7 @@ color: #0A2926;
   border: 1px solid #0A2926;
   border-radius: 20px;
   appearance: none;
+  background-color: #f9f9f9;
   position: relative;
 }
 .custom-radio input[type="radio"]:checked {
