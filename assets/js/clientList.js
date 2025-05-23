@@ -156,8 +156,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>
             <span class="responsive-lable d-lg-none">Discount</span>${item.discount}
             </td>
-            <td class="text-lg-center" ><span class="responsive-lable d-lg-none">Show specials</span>${item.showSpecials}</td>
-            <td class="text-xxl-center" ><span class="responsive-lable d-lg-none">Create invoice</span>${item.createInvoice}</td>
+            <td class="text-lg-center" >${item.showSpecials}<span class="responsive-lable m-2 d-lg-none">Show specials</span></td>
+            <td class="text-xxl-center " >${item.createInvoice}<span class="responsive-lable m-2 d-lg-none">Create invoice</span></td>
              <td>
             <span class="responsive-lable d-lg-none">Codename</span>${item.codeName}</td>
               <td class="text-lg-end">
