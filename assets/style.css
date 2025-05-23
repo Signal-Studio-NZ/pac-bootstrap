@@ -952,6 +952,32 @@ inpu.newsletter-input::placeholder{
     height: 158px;
     /* background-color: #142E3633; */
 }
+.custom-tooltip {
+  --bs-tooltip-bg: #CED4D4;       /* Background color */
+  --bs-tooltip-color: #0A2926;    /* Text color */
+  --bs-tooltip-padding-x: 10px;
+  --bs-tooltip-padding-y: 12px;
+  --bs-tooltip-border-radius: 0.5rem;
+  --bs-tooltip-opacity: 1;
+  --bs-tooltip-font-size: 13px !important;
+  --bs-tooltip-max-width: 247px;
+    --bs-tooltip-font-family: var(--bs-font-primary) !important;
+    text-align: left !important;             /* Align text to right */
+  /* font-weight: 500 !important; */
+margin-top: -10px !important;  /* Move tooltip up */
+  /* margin-left: -14px !important; */
+}
+.custom-tooltip p {
+      font-size: 13px !important;
+      padding: 0 6px;
+      line-height: 20px;
+      font-weight: 500 !important;
+      font-family: var(--bs-font-primary) !important;
+      text-align: left !important;
+}
+.custom-tooltip p span{
+  font-weight: 700 !important;
+}
 .footer-main-container{
       
     min-height: 653px;

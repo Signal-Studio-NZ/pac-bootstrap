@@ -17,7 +17,7 @@ const data = [
           <div class="position-absolute triangle active-page">
           </div>
          </div>
-         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+         <b  class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
       </div>
         </div>`,
     masterPromotion: `<div class="d-flex align-items-center justify-content-center edit-logos">

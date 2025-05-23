@@ -15,7 +15,14 @@ const data = [
           <div class="position-absolute triangle active-page">
           </div>
          </div>
-         <b class="pointer" id="dropdown-menu-logo" data-bs-toggle="dropdown" aria-expanded="false"">25+</b>
+         <b class="pointer" data-bs-custom-class="custom-tooltip"
+ data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="<div>
+        <p><span>2x </span> 100% Whey Protein WP Protein powder</p>
+        <p><span>2x </span> HS-12S12 - General tonic 30ml spray</p>
+        <p><span>2x </span> HS-1225012 - General tonic 250 tabs</p>
+        </div>"  >25+</b>
       </div>
         </div>`,
     masterPromotion: `<div class="d-flex align-items-center  justify-content-start edit-logos">
@@ -185,4 +192,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   renderTable();
+});
+
+const editAddressBtn = document.getElementById("edit-address");
+document.addEventListener("DOMContentLoaded", function () {
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 });

@@ -8,12 +8,16 @@ const data = [
     unitRetail: "$111.90",
     markup: `<input value="10%" type="text" class="promoted-to-qty content-text qty-input"/> <span class="off-retail">Off Retail</span>`,
     lineTotal: "$111.90",
-    logos: `<div class="d-flex align-items-center justify-content-lg-end edit-logos-2 gap-2">
-          <img src="assets/svgs/calendar.svg" class="pointer open-remark calendar-logo" alt="edit">
+    logos: `<div class="d-flex align-items-center justify-content-lg-end edit-logos-2 gap-2"> 
+          <img   data-bs-custom-class="custom-tooltip"
+ data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="<p>Add any specific dosage or remarks for this product</p>" src="assets/svgs/calendar.svg" class="pointer open-remark calendar-logo" alt="edit">
           <img src="assets/svgs/close.svg" class="pointer" alt="">
         </div>`,
   },
 ];
+
 const attachData = [
   {
     id: 1,
@@ -296,3 +300,11 @@ const editAddress = `  <form class="d-flex flex-column gap-3">
             </div>
           </form>`;
 const editAddressBtn = document.getElementById("edit-address");
+document.addEventListener("DOMContentLoaded", function () {
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+});
