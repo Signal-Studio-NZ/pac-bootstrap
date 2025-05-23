@@ -60,7 +60,7 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
-            class="promotion-btn promotion-btn-margin d-lg-none"
+            class="promotion-btn promotion-btn-margin btn d-flex align-items-center justify-content-center d-lg-none"
           >
             Add category
           </button>
@@ -91,7 +91,7 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight"
-            class="promotion-btn promotion-btn-margin d-lg-none"
+            class="promotion-btn promotion-btn-margin btn d-flex align-items-center justify-content-center d-lg-none"
           >
             Add products
           </button>
@@ -268,7 +268,9 @@
               <input type="text" class="w-100 selected-file ps-4" />
             </div>
             <div class="d-flex justify-content-end promotion-terms">
-              <div class="d-flex gap-5 align-items-center">
+              <div
+                class="d-flex gap-5 flex-column flex-md-row align-items-center"
+              >
                 <p class="me-xxl-2 me-0">
                   I acknowledge my tax responsibilities in regard to clause 3.4
                   of the
@@ -276,7 +278,11 @@
                     >Terms and Conditions of Business</span
                   >
                 </p>
-                <button class="pick-up-btn">Save</button>
+                <button
+                  class="pick-up-btn btn d-flex align-items-center justify-content-center"
+                >
+                  Save
+                </button>
               </div>
             </div>
           </form>
