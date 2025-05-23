@@ -205,6 +205,8 @@ deliverPageBtn.addEventListener("click", () => {
   checkoutStageContainer.classList.add("mb-322");
   deliverDownarrow.classList.remove("d-none");
   deliverDownarrow.classList.add("d-block");
+  deliveryHeading.classList.add("mt-2");
+  deliveryHeading.classList.add("mt-sm-0");
 });
 
 paymentPageBtn.addEventListener("click", () => {
@@ -219,6 +221,8 @@ paymentPageBtn.addEventListener("click", () => {
   placeOrderHeading.classList.add("checkout-active");
   paymentDownarrow.classList.remove("d-none");
   paymentDownarrow.classList.add("d-block");
+  paymentHeading.classList.add("mt-2");
+  paymentHeading.classList.add("mt-sm-0");
   // Scroll checkout-stage-container to bottom smoothly
   if (checkoutStageContainer) {
     checkoutStageContainer.scrollTo({
