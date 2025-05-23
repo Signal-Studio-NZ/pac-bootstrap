@@ -4,6 +4,9 @@
   font-size: 24px !important;
   line-height: 28px !important;
 }
+.client-list-para{
+  margin-bottom: 30px;
+}
 .checkout-back,.checkout-placeorder{
   width: 100%;
 }
