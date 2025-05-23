@@ -46,7 +46,7 @@ const dataStruct = `
     <tr class="basket-tr border-bottom">
       <td class="d-flex pt-4 pb-4 basketSlider-Tdata gap-3">
         <img src="/assets/images/product/product1.png" alt="product1" />
-        <div>
+        <div class="font-manrope">
           <p>Broad Leaved P/Mint</p>
           <p>Eucalypt 5ml</p>
         </div>
