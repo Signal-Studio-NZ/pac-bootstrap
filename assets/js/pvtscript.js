@@ -25,47 +25,6 @@ async function loadHTML(elementId, filePath) {
 loadHTML("header", "/components/pvtHeader.html").then(() => {
   shopLogic(); // only run after header is loaded
 });
-// custom select dropdown logic
-document.addEventListener("DOMContentLoaded", () => {
-  const customSelects = document.querySelectorAll(".custom-select");
-
-  customSelects.forEach((customSelect) => {
-    const selectedOption = customSelect.querySelector(".selected-option");
-    const optionsList = customSelect.querySelector(".options-list");
-    const optionItems = customSelect.querySelectorAll(".option-item");
-
-    // Toggle dropdown visibility
-    selectedOption?.addEventListener("click", () => {
-      optionsList.style.display =
-        optionsList.style.display === "block" ? "none" : "block";
-    });
-
-    // Handle option selection
-    optionItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        const itemText = item.childNodes[0].textContent.trim();
-        const spanText = item.querySelector("span").textContent;
-        selectedOption.innerHTML = `${itemText} <span>${spanText}</span>`;
-        optionsList.style.display = "none";
-      });
-    });
-
-    // Close dropdown when clicking outside
-    document.addEventListener("click", (e) => {
-      if (!customSelect.contains(e.target)) {
-        optionsList.style.display = "none";
-      }
-    });
-  });
-
-  // addToCart basket slider
-  const addToCart = document.getElementById("addToCart");
-  const productImg = document.getElementById("productImg");
-
-  addToCart?.addEventListener("click", () => {
-    productImg.style.left = "-100%";
-  });
-});
 
 // shop logic function (runs after header loads)
 function shopLogic() {
