@@ -945,12 +945,17 @@ inpu.newsletter-input::placeholder{
 }
   .footer{
       background-color: #EBEFEF;
-      max-width: 1600px;
+      /* max-width: 1600px; */
       margin: 150px auto 0 auto;
   }
 .footer-newsletter{
     height: 158px;
     /* background-color: #142E3633; */
+}
+.footer-main-container{
+      
+    min-height: 653px;
+    background-color: #CED7D6;
 }
 .footer-main{
     padding-top: 105px;
